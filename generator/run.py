@@ -157,16 +157,6 @@ class Website_generator():
         basedir = (os.path.dirname(os.path.realpath(__file__)))
         json_dir = os.path.join(basedir,'content')
 
-        if mode is None:
-            sitemap_base_url = 'https://trolleway.github.io/texts/t/'
-        if mode == 'standalone-full':
-            sitemap_base_url = 'https://trolleway.com/reports/'
-
-        sitemap_path_manual = os.path.join( 'sitemap_manual.xml') #, ".."+os.sep
-        sitemap_path = os.path.join(os.getcwd(),'sitemap.xml')
-        assert os.path.isfile(sitemap_path_manual),'not found file '+sitemap_path_manual
-        #assert os.path.isfile(sitemap_path)
-        pages2sitemap=[]
 
         #---- set output directory for files
         if mode is None:
@@ -174,6 +164,17 @@ class Website_generator():
         if mode == 'standalone-full':
             output_directory = os.path.join(basedir,'..','html','reports')
             if not os.path.isdir(output_directory): os.makedirs(output_directory)
+
+
+        if mode is None:
+            sitemap_base_url = 'https://trolleway.github.io/texts/t/'
+        if mode == 'standalone-full':
+            sitemap_base_url = 'https://trolleway.com/reports/'
+
+        sitemap_path_manual = os.path.join( 'sitemap_manual.xml') #, ".."+os.sep
+        sitemap_path = os.path.join(basedir,'..','html','sitemap.xml')
+        assert os.path.isfile(sitemap_path_manual),'not found file '+sitemap_path_manual
+        pages2sitemap=[]
 
         #---- copy static files
         src = os.path.join(basedir,'static')
