@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mapnik -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+<link href="../newsincerity.css" rel="stylesheet">
+<meta name="author" content="Artem Svetlov">
+<title>{title}</title>
+</head>
+<body>
+<div itemscope itemtype="https://schema.org/Photograph">
+
+<div class="stack">
+<figure class="stack__element">
+    <div id="backwardlink"><a href="{url_left}" rel="{rel_left}" >{left_link_image}</a></div>
+    <div id="forwardlink"><a href="{url_right}" rel="{rel_right}" >{right_link_image}</a></div>
+<img class="stack__element" src='{image_url}'>
+
+  <figcaption class="caption">
+    <span class="border"  itemprop="abstract">
+	{caption}
+	</span>
+  <br>
+	<meta itemprop="image" content="{image_url}" />
+	<div itemprop="geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+    <meta itemprop="latitude" content="{lat}" />
+    <meta itemprop="longitude" content="{lon}" />
+  </div>
+
+  </figcaption>
+  </figure>
+</div>
+  <div>
+  {city}
+  </div>
+
+<div id="map" style="width: 100%; height: 400px;"></div>
+<!-- metadata schema.org -->
+
+
+<div id="copyright">
+       <a rel="cc:attributionURL" property="dc:title">Photo</a> by
+       <a rel="dc:creator" href=""
+       property="cc:attributionName">Artem Svetlov</a> is licensed to the public under 
+       the <a rel="license"
+       href="https://creativecommons.org/licenses/by/4.0/">Creative
+       Commons Attribution 4.0 License</a>.
+</div>
+<div><a href="{image_url}">Image link</a></div>
+<div><a href="index.htm"><img src="../Controls_eject.svg" alt="Go to index page"></a></div>
+</div> <!-- end main itemscope-->
+<!-- / metadata -->
+<!-- generator map start-->
+<footer>
+<script>
+{map_js}
+</script>
+
+{google_counter}
+{yandex_counter}
+</footer>
+</body>
+</html>
