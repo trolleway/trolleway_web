@@ -172,7 +172,7 @@ class Website_generator():
         if mode is None:
             output_directory = os.path.join(os.getcwd(), ".."+os.sep,'texts','t')
         if mode == 'standalone-full':
-            output_directory = os.path.join(basedir,'..','reports')
+            output_directory = os.path.join(basedir,'..','html','reports')
             if not os.path.isdir(output_directory): os.makedirs(output_directory)
 
         #---- copy static files

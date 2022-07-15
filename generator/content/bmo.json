@@ -1,0 +1,24 @@
+{
+  "title": "Большое Московское кольцо",
+  "h1": "Склад моих фотографий Большого Кольца Московской железной дороги",
+  "text": "Страница, куда я складываю отдельные фотографии",
+  "text_en": "Big Moscow circle railway",
+  "map_center":"55.666,37.666",
+  "map_zoom":"11",
+  "date_mod":"2022-03-25",
+  "images": [
+    { "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/RZD_VL10K-1393_2021-08.jpg",
+      "text": "Электровоз ВЛ10К-1393 на юге БМО, линия Михнево - Воскресенск. 2021-08",
+	  "center_map":1, "date_append":"2022-03-25"
+    },
+    { "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/RZD_VL10U-865.jpg",
+      "text": "Электровоз ВЛ10У-865 на юге БМО, линия Воскресенск - Михнево. 2021-08",
+	  "center_map":1, "date_append":"2022-03-25"
+    },
+    { "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/RZD_Voskresensk-Egorevsk_2021-12_13.jpg",
+      "text": "Всё БМО построено в 1960-х, но в него входит короткая линия Воскресенск - Егорьевск с дореволюционным вокзалом на промежуточном разъезде Хорлово. 2022-01",
+	  "center_map":1, "date_append":"2022-03-25"
+    }
+
+  ]
+}
