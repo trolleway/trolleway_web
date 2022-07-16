@@ -3,7 +3,8 @@
 
 import json
 import os
-import urllib.request
+import urllib
+import urllib.parse
 
 from exif import Image
 import shutil,logging
@@ -110,7 +111,6 @@ class Website_generator():
       "text": "{text}"
     },'''
         for (root,dirs,files) in os.walk(path):
-            print(os.path.dirname(root))
             for filename in files:
                 if not filename.lower().endswith('.jpg'): continue
                 temp_path = os.path.normpath(path)
@@ -142,12 +142,12 @@ class Website_generator():
 
         content_json['images'] = images
         json_path = os.path.join(path,os.path.basename(path))+'.json'
-        #self.logger.debug(json_path)
+
         with open(json_path, "wb") as outfile:
             json_str = json.dumps(content_json, ensure_ascii=False,indent = 1).encode('utf8')
             outfile.write(json_str)
             #json.dump(content_json, outfile)
-        self.logger.debug(json_str)
+
         
     
     def generate(self,mode=None):
@@ -198,6 +198,7 @@ class Website_generator():
         #generate article for each json
         for json_filename in json_files:
             with open(os.path.join(json_dir,json_filename), encoding='utf-8') as json_file:
+                self.logger.debug(json_filename)
                 try:
                     data = json.load(json_file)
                 except Exception as e:
@@ -277,11 +278,11 @@ class Website_generator():
                 if not os.path.exists(photo_local_cache):
                     try:
                         if 'url_hotlink' in image.keys():
-                            urllib.request.urlretrieve(image['url_hotlink'], photo_local_cache)
+                            urllib.request.urlretrieve(urllib.parse.quote(image['url_hotlink']), photo_local_cache)
                         else:
-                            urllib.request.urlretrieve(image['url'], photo_local_cache)
+                            urllib.request.urlretrieve(urllib.parse.quote(image['url']), photo_local_cache)
                     except:
-                        print('cant download '+image.get('url','')+image.get('url_hotlink','')  )
+                        print('cant download '+urllib.parse.quote(image.get('url',''))+urllib.parse.quote(image.get('url_hotlink','')  ))
 
                 #copy photo to website dir
 
@@ -289,7 +290,6 @@ class Website_generator():
                     if 'url_hotlink' not in image.keys():
                         photo_static_website_path = os.path.join(output_directory_path,photo_filename)
                         if not os.path.isfile(photo_static_website_path):
-                            self.logger.debug(photo_local_cache+' > '+photo_static_website_path)
                             try:
                                 shutil.copyfile(photo_local_cache,photo_static_website_path)
                             except:
@@ -310,7 +310,7 @@ class Website_generator():
                 # get coordinates from exif
 
                 if photo_coord is not None:
-                    print('coordinates found in json '+photo_coord)
+                    pass
                 else:
                     photo_coord='0,0'
                     #TODO: simplify, code taken from already exist script https://github.com/trolleway/photos2map/blob/master/photos2geojson.py
@@ -332,7 +332,6 @@ class Website_generator():
 
                             coords_list.append( coord ) 
 
-                            self.logger.debug('coordinates obtained from EXIF data of image '+photo_coord)
                     except:
                         photo_coord='0,0'
                         lat='0'
@@ -340,9 +339,10 @@ class Website_generator():
                 # print map
 
 
-                map_center = data['map_center']
+                map_center = image.get('center_map',photo_coord)
                 if str(image.get('center_map'))=='1':
                     map_center = photo_coord
+
                 map_js = '''
             var photo_coord = ['''+photo_coord+''']
             var map = L.map('map').setView(['''+map_center+'''], '''+data['map_zoom']+''');
@@ -458,8 +458,6 @@ class Website_generator():
             else:
                 text = data.get('text','')
                     
-                    
-            print(coords_list)
 
             html = template.format(
                 title = data['title'],
