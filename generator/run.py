@@ -3,8 +3,7 @@
 
 import json
 import os
-import urllib
-import urllib.parse
+import requests
 
 from exif import Image
 import shutil,logging
@@ -171,7 +170,7 @@ class Website_generator():
         if mode == 'standalone-full':
             sitemap_base_url = 'https://trolleway.com/reports/'
 
-        sitemap_path_manual = os.path.join( 'sitemap_manual.xml') #, ".."+os.sep
+        sitemap_path_manual = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'sitemap_manual.xml') #, ".."+os.sep
         sitemap_path = os.path.join(basedir,'..','html','sitemap.xml')
         assert os.path.isfile(sitemap_path_manual),'not found file '+sitemap_path_manual
         pages2sitemap=[]
@@ -273,17 +272,34 @@ class Website_generator():
                     photo_filename = pathlib.Path(image['url_hotlink']).name
                 else:
                     photo_filename = pathlib.Path(image['url']).name
-                photo_local_cache = os.path.join(exif_cache_directory,photo_filename)
+                photo_local_cache = os.path.join(exif_cache_directory,requests.utils.unquote(photo_filename))
                 
                 if not os.path.exists(photo_local_cache):
+                
+                    image_url_4exif=image.get('url_hotlink',image.get('url'))
+                    useragent = ''
+                    if 'wikimedia' in image_url_4exif:
+                        useragent='User-Agent: ArtemSvetlovBot/1.0 (https://github.com/trolleway/trolleway_web/blob/master/generator/run.py; trolleway@yandex.ru) '
+                    r = requests.get(image_url_4exif, allow_redirects=True, stream=True,headers = {'User-Agent': useragent})
+                    r.raise_for_status()
+                    open(photo_local_cache, 'wb').write(r.content)
+                '''
+                    #try:
+                    if 'url_hotlink' in image.keys():
+                        image_url_4exif = urllib.parse.quote(image['url_hotlink'])
+                        image_url_4exif = image['url_hotlink']
+                    else:
+                        image_url_4exif = urllib.parse.quote(image.get('url'))
+                        image_url_4exif = image.get('url')
                     try:
-                        if 'url_hotlink' in image.keys():
-                            urllib.request.urlretrieve(urllib.parse.quote(image['url_hotlink']), photo_local_cache)
-                        else:
-                            urllib.request.urlretrieve(urllib.parse.quote(image['url']), photo_local_cache)
-                    except:
-                        print('cant download '+urllib.parse.quote(image.get('url',''))+urllib.parse.quote(image.get('url_hotlink','')  ))
+                        #urllib.request.urlretrieve(image_url_4exif, photo_local_cache)
+                        r = requests.get(image_url_4exif, allow_redirects=True)
+                        open(photo_local_cache, 'wb').write(r.content)
 
+                    except:
+                        print('cant download ' + image_url_4exif)
+                    '''
+                    
                 #copy photo to website dir
 
                 if mode == 'standalone-full':
