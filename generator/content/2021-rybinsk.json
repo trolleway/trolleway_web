@@ -7,34 +7,34 @@
   "map_zoom":"13",
   "date_mod":"2022-03-28",
   "images": [
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Rybinsk_trolleybus_83_2021-02.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Rybinsk_trolleybus_83_2021-02.jpg",
       "text": "Троллейбус ВМЗ-5298 на главной улице Рыбинска ранним утром. Слайд Fuji Provia 100."
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Rybinsk_trolleybus_89_2021-03.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/0/09/Rybinsk_trolleybus_89_2021-03.jpg",
         "text": "Основной подвижной состав Рыбинского троллейбуса в 2021 году - низкопольные ВМЗ-5298.01 зелёного цвета. Западная конечная. "
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Rybinsk_trolleybus_84_2021-03.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Rybinsk_trolleybus_84_2021-03.jpg",
         "text": "Троллейбус ВМЗ-5298.01 84 2008 года выпуска, ex-Казань 2019. Конечная Троллейбусный Парк на западе Рыбинска"
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Rybinsk_trolleybus_66_2021-03.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/3/32/Rybinsk_trolleybus_66_2021-03.jpg",
         "text": "Улица Ворошилова с пятиэтажками."
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Rybinsk_trolleybus_2021-03_Voroshilova_street.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Rybinsk_trolleybus_2021-03_Voroshilova_street.jpg",
         "text": "Улица Ворошилова с пятиэтажками."
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Rybinsk_trolleybus_68_2021-03.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/2/22/Rybinsk_trolleybus_68_2021-03.jpg",
         "text": "Ещё одна конечная в квартале хрущёвок: Улица Расторгуева"
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Rybinsk_trolleybus_50_2021-03.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Rybinsk_trolleybus_50_2021-03.jpg",
         "text": "ВМЗ-5298.01 №50 в жёлтой рекламе на улице Крестовая, район сталинок у начала промзоны."
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Rybinsk_trolleybus_56_2021-03.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/5/53/Rybinsk_trolleybus_56_2021-03.jpg",
         "text": "ВМЗ-5298.01 №56 на центральной улице Крестовая."
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rybinsk_trolleybus_89_center.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Rybinsk_trolleybus_89_center.jpg",
         "text": "ВМЗ-5298.01 №89 на центральной улице Крестовая. На ней установлены вывески магазинов в историческом стиле, но одновременно и куча современных дорожных знаков для тупых шофёров."
     },
-    { "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Rybinsk_trolleybus_11_2021-03.jpg",
+    { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Rybinsk_trolleybus_11_2021-03.jpg",
         "text": "ВМЗ-5298.01 №11 на центральной улице Крестовая. Оторвался держатель контактного провода."
     }
 
