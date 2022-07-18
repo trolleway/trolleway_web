@@ -6,6 +6,7 @@
   "map_center":"55.88417,38.78433",
   "map_zoom":"14",
   "date_mod":"2022-03-24",
+  "hide":true,
   "images": [
     { "url_hotlink": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Elektrogorsk_2022-01_03.jpg",
       "text": "Электрогорск. Вид на улицу от вокзала к домам. Слева за деревьями до 1990 года была станция торфовозной узкоколейки. Она заходила на электростанцию где-то справа"

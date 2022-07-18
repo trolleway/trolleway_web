@@ -455,8 +455,8 @@ class Website_generator():
                 with open(filename, "w", encoding='utf-8') as text_file:
                     text_file.write(html)
 
-                pages2sitemap.append({'loc':sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm','priority':'0.4','lastmod':GALLERY_DATE_MOD})
-            pages2sitemap.append({'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6','lastmod':GALLERY_DATE_MOD})
+                if not data.get('hide'): pages2sitemap.append({'loc':sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm','priority':'0.4','lastmod':GALLERY_DATE_MOD})
+            if not data.get('hide'):  pages2sitemap.append({'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6','lastmod':GALLERY_DATE_MOD})
 
             # ----------- index page
             
