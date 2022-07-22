@@ -1,0 +1,37 @@
+{
+  "title": "Дореволюционные кирпичные дома",
+  "h1": "Российские краснокирпичные здания начала XX века",
+  "text": "Фотографии зданий в краснокирпичном стиле",
+  "text_en": "Red brick architecture",
+  "map_center":"55.666,37.666",
+  "map_zoom":"8",
+  "date_mod":"2022-07-23",
+  "center_map":1,
+  "images": [
+ {
+   "text": "Дореволюционное здание в кирпичном стиле. 1-й Краснокурсантский пр., 3/5 корпус 5, Москва",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_109.jpg",
+   "city": "Moscow"
+  },
+    {
+   "text": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_143.JPG",
+   "city": "Moscow"
+  },
+  {
+   "text": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_144.JPG",
+   "city": "Moscow"
+  },
+  {
+   "text": "Старый московский дворик. Доброслободская улица, 10.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_150.JPG",
+   "city": "Moscow"
+  },
+  {
+   "text": "Доходный дом О. О. Вильнера 1904 года постройки,  Старая Басманная ул., 12 строение 1, Москва",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_157.JPG",
+   "city": "Moscow"
+  }
+  ]
+}
