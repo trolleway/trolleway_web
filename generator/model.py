@@ -108,6 +108,16 @@ class Model():
                 wkt_geometry = image['wkt_geometry'],
                 city = image['city'])
             sql += tmpstr
+        
+        page_url = root
+        sql+='''INSERT INTO pages(page_url  ) VALUES ("{page_url}") '''.format(page_url=page_url)
+        sql += ''' INSERT INTO pages_photos (photo_id, page_url) SELECT photos.id, {page_url} 
+        FROM photos 
+        WHERE photos.inserting_id={inserting_id}
+        ORDER BY photos.hotlink;'''
+        sql += ''' UPDATE pages_photos SET page_id = (SELECT page_id FROM pages WHERE page_url="{page_url}") WHERE page_url={page_url}; '''
+        sql += ''' UPDATE pages_photos SET page_url = '' '''
+    
         sql+="COMMIT;"
         
         print(sql)
