@@ -66,6 +66,8 @@ class Model():
                         
                         
     def dir2db(self,path,base_url=''):
+    
+        today = datetime.today()
         assert os.path.isdir(path)
         
         for (root,dirs,files) in os.walk(path):
@@ -96,31 +98,39 @@ class Model():
                 
                 images.append(image)
                 
-        sql="BEGIN TRANSACTION; \n"
+        #sql="BEGIN TRANSACTION; \n"
+        sql=""
         values = list()
         for image in images:
             values.append([image['url_hotlink'],image['text'],image['city']])
             
             tmpstr = '''INSERT INTO photos (hotlink,text,city,inserting_id, wkt_geometry) VALUES ( "{hotlink}" , "{text}", "{city}", "{inserting_id}", "{wkt_geometry}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
-                inserting_id = datetime.today().strftime('%Y-%m-%d-%H%M%S '),
+                inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 text = image['text'],
                 wkt_geometry = image['wkt_geometry'],
                 city = image['city'])
             sql += tmpstr
         
-        page_url = root
-        sql+='''INSERT INTO pages(page_url  ) VALUES ("{page_url}") '''.format(page_url=page_url)
-        sql += ''' INSERT INTO pages_photos (photo_id, page_url) SELECT photos.id, {page_url} 
+        page_url = os.path.basename(root)
+        sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}' );\n '''.format(
+        page_url=page_url,
+        inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
+        date=today.strftime('%Y-%m-%d'))
+        sql += ''' INSERT INTO photos_pages (photoid, pageuri, pageid, inserting_id) SELECT photoid, "{page_url}",0, "{inserting_id}"
         FROM photos 
-        WHERE photos.inserting_id={inserting_id}
-        ORDER BY photos.hotlink;'''
-        sql += ''' UPDATE pages_photos SET page_id = (SELECT page_id FROM pages WHERE page_url="{page_url}") WHERE page_url={page_url}; '''
-        sql += ''' UPDATE pages_photos SET page_url = '' '''
+        WHERE photos.inserting_id='{inserting_id}'
+        ORDER BY photos.hotlink;\n  '''.format(inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),page_url=page_url,)
+        sql += ''' UPDATE photos_pages SET pageid = (SELECT pageid FROM pages WHERE uri='{page_url}') WHERE pageuri='{page_url}';\n   '''.format(page_url=page_url)
+        sql += ''' UPDATE photos_pages SET pageuri = '';\n   '''
     
-        sql+="COMMIT;"
+        #sql+="COMMIT;"
         
         print(sql)
+        sql_file = "tmp_add_page.sql"
+        with open(sql_file, "w") as text_file:
+            text_file.write(sql)
+        self.logger.info('sql saved to '+sql_file)
         sql='''INSERT INTO photos (hotlink,text,city) VALUES ( "?" , "?", "?" );'''
         return
         
