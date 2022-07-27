@@ -426,7 +426,7 @@ class Website_generator():
 
 
                 image_page_title = ''
-                image_page_title = image.get('city','') + ' ' + os.path.splitext(os.path.basename(image['url']))[0]  
+                image_page_title = image.get('city','') + ' '+ image['text'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]  
                 #build html
 
                 html = str()
@@ -444,6 +444,7 @@ class Website_generator():
                 map_js = map_js,
                 
                 city = image.get('city',''),
+                alt = image['text'],
                 lat=lat,lon=lon,
                 right_link_image = right_link_image,
                 left_link_image = left_link_image,
