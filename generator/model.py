@@ -12,6 +12,7 @@ from shapely.geometry import Point
 from iptcinfo3 import IPTCInfo
 from exif import Image
 from datetime import datetime
+from dateutil import parser
 
 class Model():
 
@@ -36,6 +37,16 @@ class Model():
         return dd
 
 
+    def image2datetime(self,path):
+        with open(path, 'rb') as image_file:
+            image_exif = Image(image_file)
+            dt=image_exif.get('datetime_original',None)
+            if dt is None:
+                return None
+            return parser.parse(dt)
+
+    
+            
     def image2latlon(self,path):
         try:
             with open(path, 'rb') as image_file:
@@ -93,6 +104,7 @@ class Model():
                 if city is not None: image['city']=city
                 
                 lat,lon=self.image2latlon(os.path.join(root,filename))
+                photo_datetime = self.image2datetime(os.path.join(root,filename))
 
                 image['wkt_geometry']=wkt.dumps(Point(lat or 0,lon or 0))
                 
@@ -104,10 +116,11 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image['text'],image['city']])
             
-            tmpstr = '''INSERT INTO photos (hotlink,text,city,inserting_id, wkt_geometry) VALUES ( "{hotlink}" , "{text}", "{city}", "{inserting_id}", "{wkt_geometry}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,text,city,inserting_id, wkt_geometry, datetime) VALUES ( "{hotlink}" , "{text}", "{city}", "{inserting_id}", "{wkt_geometry}", "{datetime}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 text = image['text'],
+                datetime = photo_datetime.isoformat(),
                 wkt_geometry = image['wkt_geometry'],
                 city = image['city'])
             sql += tmpstr
