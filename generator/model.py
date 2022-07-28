@@ -152,6 +152,12 @@ class Model():
         cur.executemany(sql,values)
         self.con.commit()
 
+    '''
+    CREATE VIEW photos_pages_view AS SELECT photos_pages."order", photos."text", pages.uri 
+FROM photos_pages JOIN photos ON photos_pages.photoid=photos.photoid 
+JOIN pages ON photos_pages.pageid = pages.pageid
+ORDER BY pages.uri, photos_pages."order";
+    '''
     
     def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content2')):
         sql = 'SELECT * FROM pages where hidden=0;'
