@@ -74,32 +74,7 @@ class Model():
             lat='0'
             lon='0'
             return None, None
-
-    def json2db(self,filename,base_url=''):
-
-        today = datetime.today()
-        assert os.path.isfile(filename)
-
-        with open(filename) as json_file:
-            data = json.load(json_file)
-        sql = '''INSERT INTO pages (uri, title, date_mod, inserting_id)
-        VALUES ("{uri}","{title}", "{date}", "{inserting_id}") ;\n'''.format(
-        uri=os.path.splitext(os.path.basename(filename))[0],
-        title=data['title'],
-        inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
-        date=today.strftime('%Y-%m-%d'))
-        )
-
-        for image in data['images']:
-            tmpstr = '''INSERT INTO photos (hotlink,text,city,inserting_id, wkt_geometry, datetime) VALUES ( "{hotlink}" , "{text}", "{city}", "{inserting_id}", "{wkt_geometry}", "{datetime}" );\n  '''
-            tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
-                inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
-                text = image['text'],
-                datetime = '',
-                wkt_geometry = image['wkt_geometry'],
-                city = image.get('city',''))
-            sql += tmpstr
-
+  
 
     def dir2db(self,path,base_url=''):
 
@@ -117,9 +92,13 @@ class Model():
 
                 info = IPTCInfo(os.path.join(root,filename), force=True)
                 city = None
+                sublocation = None
 
                 if info['city'] is not None:
                     city = info['city'].decode('UTF-8')
+                if info['sub-location'] is not None:
+                    sublocation = info['sub-location'].decode('UTF-8')
+                    
                 caption = info['caption/abstract']
                 if caption is not None:
                     caption = caption.decode('UTF-8')
@@ -127,6 +106,7 @@ class Model():
                     caption = ''
                 image = {'text':caption,'url_hotlink':url}
                 if city is not None: image['city']=city
+                if sublocation is not None: image['sublocation']=sublocation
 
                 lat,lon=self.image2latlon(os.path.join(root,filename))
                 photo_datetime = self.image2datetime(os.path.join(root,filename))
@@ -137,20 +117,33 @@ class Model():
                 images.append(image)
 
         #sql="BEGIN TRANSACTION; \n"
-        sql=""
+        sql = ""
+        sql_custom = ""
         values = list()
         for image in images:
             values.append([image['url_hotlink'],image['text'],image['city']])
 
-            tmpstr = '''INSERT INTO photos (hotlink,text,city,inserting_id, wkt_geometry, datetime)
-            VALUES ( "{hotlink}" , "{text}", "{city}", "{inserting_id}", "{wkt_geometry}", "{datetime}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,text,city,sublocation,inserting_id, wkt_geometry, datetime)
+            VALUES ( "{hotlink}" , "{text}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 text = image['text'],
-                datetime = image['datetime'].isoformat(),
+                datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
-                city = image['city'])
+                city = image.get('city',''),
+                sublocation = image.get('sublocation','')
+                )
             sql += tmpstr
+            
+            sql_custom += '''UPDATE photos SET city="{city}", sublocation="{sublocation}",datetime="{datetime}", wkt_geometry="{wkt_geometry}"
+            WHERE hotlink="{hotlink}"  ;\n '''.format(hotlink=image['url_hotlink'],
+                inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
+                text = image['text'],
+                datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
+                wkt_geometry = image['wkt_geometry'],
+                city = image.get('city',''),
+                sublocation = image.get('sublocation','')
+                )
 
         page_url = os.path.basename(root)
         sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}' );\n '''.format(
@@ -170,6 +163,11 @@ class Model():
         sql_file = "tmp_add_page.sql"
         with open(sql_file, "w") as text_file:
             text_file.write(sql)
+        self.logger.info('sql saved to '+sql_file)
+        
+        sql_file = "tmp_custom.sql"
+        with open(sql_file, "w") as text_file:
+            text_file.write(sql_custom)
         self.logger.info('sql saved to '+sql_file)
 
         return
