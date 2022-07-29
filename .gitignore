@@ -166,3 +166,4 @@ cython_debug/
 #.idea/
 tmp_add_page.sql
 generator/.*
+tmp_custom.sql

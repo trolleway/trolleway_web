@@ -104,7 +104,7 @@ class Model():
                     caption = caption.decode('UTF-8')
                 else:
                     caption = ''
-                image = {'text':caption,'url_hotlink':url}
+                image = {'caption':caption,'url_hotlink':url}
                 if city is not None: image['city']=city
                 if sublocation is not None: image['sublocation']=sublocation
 
@@ -121,13 +121,13 @@ class Model():
         sql_custom = ""
         values = list()
         for image in images:
-            values.append([image['url_hotlink'],image['text'],image['city']])
+            values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
 
-            tmpstr = '''INSERT INTO photos (hotlink,text,city,sublocation,inserting_id, wkt_geometry, datetime)
-            VALUES ( "{hotlink}" , "{text}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime)
+            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
-                text = image['text'],
+                caption = image['caption'],
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
                 city = image.get('city',''),
@@ -138,7 +138,7 @@ class Model():
             sql_custom += '''UPDATE photos SET city="{city}", sublocation="{sublocation}",datetime="{datetime}", wkt_geometry="{wkt_geometry}"
             WHERE hotlink="{hotlink}"  ;\n '''.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
-                text = image['text'],
+                caption = image['caption'],
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
                 city = image.get('city',''),
@@ -161,24 +161,24 @@ class Model():
 
         print(sql)
         sql_file = "tmp_add_page.sql"
-        with open(sql_file, "w") as text_file:
-            text_file.write(sql)
+        with open(sql_file, "w") as caption_file:
+            caption_file.write(sql)
         self.logger.info('sql saved to '+sql_file)
         
         sql_file = "tmp_custom.sql"
-        with open(sql_file, "w") as text_file:
-            text_file.write(sql_custom)
+        with open(sql_file, "w") as caption_file:
+            caption_file.write(sql_custom)
         self.logger.info('sql saved to '+sql_file)
 
         return
 
-        sql='INSERT INTO photos (hotlink,text,city) VALUES ( ? , ?, ? );'
+        sql='INSERT INTO photos (hotlink,caption,city) VALUES ( ? , ?, ? );'
         cur = self.con.cursor()
         cur.executemany(sql,values)
         self.con.commit()
 
     '''
-    CREATE VIEW photos_pages_view AS SELECT photos_pages."order", photos."text", pages.uri
+    CREATE VIEW photos_pages_view AS SELECT photos_pages."order", photos."caption", pages.uri
 FROM photos_pages JOIN photos ON photos_pages.photoid=photos.photoid
 JOIN pages ON photos_pages.pageid = pages.pageid
 ORDER BY pages.uri, photos_pages."order";
@@ -211,7 +211,7 @@ ORDER BY pages.uri, photos_pages."order";
             for row2 in cur_photos.execute(sql,str(db_page['pageid'])):
                 db_photo = dict(row2)
 
-                images.append({   "text": db_photo['text'],
+                images.append({   "caption": db_photo['caption'],
                "url_hotlink": db_photo['hotlink'],
                "city":  db_photo['city']})
             json_content['images']=images
