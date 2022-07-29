@@ -13,6 +13,7 @@ from iptcinfo3 import IPTCInfo
 from exif import Image
 from datetime import datetime
 from dateutil import parser
+from tqdm import tqdm
 
 class Model():
 
@@ -114,6 +115,7 @@ class Model():
                 image['wkt_geometry']=wkt.dumps(Point(lon or 0,lat or 0))
                 image['datetime']=photo_datetime
 
+
                 images.append(image)
 
         #sql="BEGIN TRANSACTION; \n"
@@ -123,10 +125,11 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
 
-            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime)
-            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime, date_add)
+            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_add}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
+                date_add = today.strftime('%Y-%m-%d'),
                 caption = image['caption'],
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
@@ -185,10 +188,18 @@ ORDER BY pages.uri, photos_pages."order";
     '''
 
     def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content2')):
-        sql = 'SELECT * FROM pages where hidden=0;'
         cur_pages = self.con.cursor()
         cur_photos = self.con.cursor()
+
+        sql = "SELECT COUNT(*) as count FROM pages WHERE hidden=0 ;"
+        cur_pages.execute(sql)
+        row = cur_pages.fetchone()
+        count=row['count']
+        pbar = tqdm(total=count)
+        
+        sql = "SELECT * FROM pages WHERE hidden=0 ;"
         for row in cur_pages.execute(sql):
+            
             db_page = dict(row)
             json_path = os.path.join(path,db_page['uri'])+'.json'
 
@@ -201,24 +212,56 @@ ORDER BY pages.uri, photos_pages."order";
  "date_mod": db_page['date_mod'] or ''}
             images = list()
 
-            sql = '''SELECT photos.*
-            FROM photos
-            JOIN photos_pages ON photos.photoid=photos_pages.photoid
-            JOIN pages ON pages.pageid=photos_pages.pageid
-            WHERE photos_pages.pageid=?
-            ORDER BY photos_pages.'order' ;
-            '''
-            for row2 in cur_photos.execute(sql,str(db_page['pageid'])):
+            if db_page.get('source','') in ('','photos_pages'):
+                sql = '''SELECT photos.*
+                FROM photos
+                JOIN photos_pages ON photos.photoid=photos_pages.photoid
+                JOIN pages ON pages.pageid=photos_pages.pageid
+                WHERE photos_pages.pageid={pageid}
+                ORDER BY photos_pages.'order' ;
+                '''.format(pageid=int(db_page['pageid']))
+            elif  db_page.get('source','') == 'photos':
+                sql = '''SELECT photos.*
+                FROM photos   WHERE photos.pages LIKE "%{uri}%"'''
+                
+                if db_page.get('order','')=='dates':
+                    sql += 'ORDER BY photos.datetime'
+                elif db_page.get('order','')=='uri':
+                    sql += 'ORDER BY photos.hotlink'
+                           
+                sql = sql.format(uri=db_page['uri'])
+            elif  db_page.get('source','') == 'tags':
+                sql = '''SELECT photos.*
+                FROM photos   WHERE photos.tags LIKE "%{uri}%"'''
+                
+                if db_page.get('order','')=='dates':
+                    sql += 'ORDER BY photos.datetime'
+                elif db_page.get('order','')=='uri':
+                    sql += 'ORDER BY photos.hotlink'
+                           
+                sql = sql.format(uri=db_page['uri'])
+                
+                
+            for row2 in cur_photos.execute(sql):
                 db_photo = dict(row2)
 
-                images.append({   "caption": db_photo['caption'],
-               "url_hotlink": db_photo['hotlink'],
-               "city":  db_photo['city']})
+                image={   "caption": db_photo['caption'],
+                "url_hotlink": db_photo['hotlink'],
+                "city":  db_photo['city']
+                }
+                
+                if db_photo.get('date_append') is not None:
+                    image['date_append'] = db_photo.get('date_append')
+               
+                images.append(image)
             json_content['images']=images
 
             with open(json_path, "wb") as outfile:
                 json_str = json.dumps(json_content, ensure_ascii=False,indent = 1).encode('utf8')
                 outfile.write(json_str)
+                
+            pbar.update(1)
+        pbar.close()
 
 
 

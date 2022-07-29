@@ -91,61 +91,7 @@ class Website_generator():
                     
     def coords_list_average(self,coords):
         return None
-    def json_from_dir(self,path,base_url=''):
-    
-        content_json = dict()
-        content_json = {'title':'',
-        'h1':'',
-        'text':'',
-        'text_en':'',
-        'map_center':'55.666,37.666',
-        'map_zoom':'12',
-        'date_mod':datetime.today().strftime('%Y-%m-%d')}
-        images = list()
-        self.logger.debug(path)
-        assert os.path.isdir(path)
-        
-       
-        record_template = '''    { "url": "{url}",
-      "text": "{text}"
-    },'''
-        for (root,dirs,files) in os.walk(path):
-            for filename in files:
-                if not filename.lower().endswith('.jpg'): continue
-                temp_path = os.path.normpath(path)
-                path_as_list = temp_path.split(os.sep)
-                
-                url = base_url + '/' + os.path.join(path_as_list[-2],path_as_list[-1]) + '/' + filename
-                '''
-                exif_dict = piexif.load(os.path.join(root,filename))
-                for ifd in ("0th", "Exif", "GPS", "1st"):
-                    for tag in exif_dict[ifd]:
-                        print(ifd,tag,piexif.TAGS[ifd][tag]["name"], exif_dict[ifd][tag])
-                description = exif_dict['0th'].get(270,'')
-                print('d: ',description)
-                '''
-                
-                info = IPTCInfo(os.path.join(root,filename), force=True)
-                city = None
-                if info['city'] is not None:
-                    city = info['city'].decode('UTF-8')
-                caption = info['caption/abstract']
-                if caption is not None:
-                    caption = caption.decode('UTF-8')
-                else:
-                    caption = ''
-                image = {'text':caption,'url_hotlink':url}
-                if city is not None: image['city']=city
-                
-                images.append(image)
-
-        content_json['images'] = images
-        json_path = os.path.join(path,os.path.basename(path))+'.json'
-
-        with open(json_path, "wb") as outfile:
-            json_str = json.dumps(content_json, ensure_ascii=False,indent = 1).encode('utf8')
-            outfile.write(json_str)
-            #json.dump(content_json, outfile)
+ 
 
         
     
@@ -154,7 +100,7 @@ class Website_generator():
         assert mode in ('standalone-full',None,'')
 
         basedir = (os.path.dirname(os.path.realpath(__file__)))
-        json_dir = os.path.join(basedir,'content')
+        json_dir = os.path.join(basedir,'content2')
 
 
         #---- set output directory for files
@@ -426,7 +372,7 @@ class Website_generator():
 
 
                 image_page_title = ''
-                image_page_title = image.get('city','') + ' '+ image['text'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]  
+                image_page_title = image.get('city','') + ' '+ image['caption'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]  
                 #build html
 
                 html = str()
@@ -435,7 +381,7 @@ class Website_generator():
                     template = template_file.read()
                 html = template.format(
                 image_url = image['url'],
-                caption = image['text'],
+                caption = image['caption'],
                 title = image_page_title,
                 url_left = url_left,
                 url_right = url_right,
@@ -444,7 +390,7 @@ class Website_generator():
                 map_js = map_js,
                 
                 city = image.get('city',''),
-                alt = image['text'],
+                alt = image.get('headline',image.get('caption')),
                 lat=lat,lon=lon,
                 right_link_image = right_link_image,
                 left_link_image = left_link_image,
