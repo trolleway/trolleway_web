@@ -125,11 +125,11 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
 
-            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime, date_add)
-            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_add}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime, date_append)
+            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
-                date_add = today.strftime('%Y-%m-%d'),
+                date_append = today.strftime('%Y-%m-%d'),
                 caption = image['caption'],
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
