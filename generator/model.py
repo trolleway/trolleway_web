@@ -41,10 +41,13 @@ class Model():
     def image2datetime(self,path):
         with open(path, 'rb') as image_file:
             image_exif = Image(image_file)
-            dt=image_exif.get('datetime_original',None)
-            if dt is None:
+
+            dt_str = image_exif.get('datetime_original',None)
+            dt_obj = datetime.strptime(dt_str, '%Y:%m:%d %H:%M:%S')
+
+            if dt_obj is None:
                 return None
-            return parser.parse(dt)
+            return dt_obj
 
 
 
@@ -111,8 +114,9 @@ class Model():
 
                 lat,lon=self.image2latlon(os.path.join(root,filename))
                 photo_datetime = self.image2datetime(os.path.join(root,filename))
+                
 
-                image['wkt_geometry']=wkt.dumps(Point(lon or 0,lat or 0))
+                image['wkt_geometry']=wkt.dumps(Point(lon or 0,lat or 0),rounding_precision=5)
                 image['datetime']=photo_datetime
 
 
@@ -187,7 +191,7 @@ JOIN pages ON photos_pages.pageid = pages.pageid
 ORDER BY pages.uri, photos_pages."order";
     '''
 
-    def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content2')):
+    def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content')):
         cur_pages = self.con.cursor()
         cur_photos = self.con.cursor()
 

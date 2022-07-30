@@ -1,139 +1,161 @@
 {
- "title": "",
+ "title": "Моя велопоездка в Ступино 2021",
  "h1": "",
  "text": "",
- "text_html":"ok",
  "text_en": "",
- "map_center": "55.0067,38.3584",
- "map_zoom": "8",
- "date_mod": "2022-07-13",
+ "map_center": "",
+ "map_zoom": "12",
+ "date_mod": "2022-07-29",
  "images": [
   {
-   "text": "Удачная встреча: тепловоз ТЭМ15-076 на подъездном пути Воскресенского завода минеральных удобрений",
+   "caption": "Удачная встреча: тепловоз ТЭМ15-076 на подъездном пути Воскресенского завода минеральных удобрений",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_01.jpg",
    "city": "Voskresensk"
   },
   {
-   "text": "Удачная встреча: тепловоз ТЭМ15-076 на подъездном пути Воскресенского завода минеральных удобрений",
+   "caption": "Удачная встреча: тепловоз ТЭМ15-076 на подъездном пути Воскресенского завода минеральных удобрений",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_02.jpg",
    "city": "Voskresensk"
   },
   {
-   "text": "Улица с брежневками в Воскресенске",
+   "caption": "Улица с брежневками в Воскресенске",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_03.jpg",
    "city": "Voskresensk"
   },
   {
-   "text": "Магазин на окраине Воскресенска на улице Зелинского в здании АТС",
+   "caption": "Магазин на окраине Воскресенска на улице Зелинского в здании АТС",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_04.jpg",
    "city": "Voskresensk"
   },
   {
-   "text": "Деревня Ратмирово возле Воскресенска",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_05.jpg"
+   "caption": "Деревня Ратмирово возле Воскресенска",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_05.jpg",
+   "city": "Ratmirovo"
   },
   {
-   "text": "Вид Ратчинского парка в жаркую погоду",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_07.jpg"
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_06.jpg",
+   "city": ""
   },
   {
-   "text": "Центральная площадь Ратчино. Монумент колхозникам.",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_08.jpg"
+   "caption": "Вид Ратчинского парка в жаркую погоду",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_07.jpg",
+   "city": "Ratchino"
   },
   {
-   "text": "Пожарный пруд и избы в Ратчино",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_09.jpg"
+   "caption": "Центральная площадь Ратчино. Монумент колхозникам.",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_08.jpg",
+   "city": "Ratchino"
   },
   {
-   "text": "Хорошо сохранёный деревянный дом с наличниками и деревянным забором в селе Ратчино",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_10.jpg"
+   "caption": "Пожарный пруд и избы в Ратчино",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_09.jpg",
+   "city": "Ratchino"
   },
   {
-   "text": "Старая шатровая церковь в селе Пруссы, и продажа молока из автоцистерны.",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_11.jpg"
+   "caption": "Хорошо сохранёный деревянный дом с наличниками и деревянным забором в селе Ратчино",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_10.jpg",
+   "city": "Ratchino"
   },
   {
-   "text": "Вид на село Шкинь в южном направлении с возвышености",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_12.jpg"
+   "caption": "Старая шатровая церковь в селе Пруссы, и продажа молока из автоцистерны.",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_11.jpg",
+   "city": "Prussy"
   },
   {
-   "text": "Двухэтажный дореволюционный купеческий дом в селе Шкинь",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_13.jpg"
+   "caption": "Вид на село Шкинь в южном направлении с возвышености",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_12.jpg",
+   "city": "Shkin"
   },
   {
-   "text": "Электровоз ВЛ10У-865 с грузовым поездом на юге БМО. Снят на переезде между Воскресенском и Малино.",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_14.jpg"
+   "caption": "Двухэтажный дореволюционный купеческий дом в селе Шкинь",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_13.jpg",
+   "city": "Shkin"
   },
   {
-   "text": "Посёлок Алфимово, центр совхоза. Два магазина.",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_15.jpg"
+   "caption": "Электровоз ВЛ10У-865 с грузовым поездом на юге БМО. Снят на переезде между Воскресенском и Малино.",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_14.jpg",
+   "city": ""
   },
   {
-   "text": "Электровоз ВЛ10К-1393 с грузовым поездом на юге БМО. Снят на переезде у станции Малино",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_16.jpg"
+   "caption": "Посёлок Алфимово, центр совхоза. Два магазина.",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_15.jpg",
+   "city": "Alfimovo"
   },
   {
-   "text": "Электровоз ВЛ10-875 с грузовым поездом на линии БМО, станция Яганово.",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_17.jpg"
+   "caption": "Электровоз ВЛ10К-1393 с грузовым поездом на юге БМО. Снят на переезде у станции Малино",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_16.jpg",
+   "city": ""
   },
   {
-   "text": "",
+   "caption": "Электровоз ВЛ10-875 с грузовым поездом на линии БМО, станция Яганово.",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_17.jpg",
+   "city": "Yaganovo station"
+  },
+  {
+   "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_18.jpg",
    "city": "Stupino"
   },
   {
-   "text": "Многоэтажный дом в Северо-Западном микрорайоне.",
+   "caption": "Многоэтажный дом в Северо-Западном микрорайоне.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_19.jpg",
    "city": "Stupino"
   },
   {
-   "text": "Грузовик Nissan Atlas 150 н460хв90",
+   "caption": "Грузовик Nissan Atlas 150 н460хв90",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_20.jpg",
    "city": "Stupino"
   },
   {
-   "text": "Вид улицы Калинина в многоэтажном северо-восточном микрорайоне.",
+   "caption": "Вид улицы Калинина в многоэтажном северо-восточном микрорайоне.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_21.jpg",
    "city": "Stupino"
   },
   {
-   "text": "Пятиэтажные дома на бульваре Победы.",
+   "caption": "Пятиэтажные дома на бульваре Победы.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_22.jpg",
    "city": "Stupino"
   },
   {
-   "text": "",
+   "caption": "Магазин Продукты с видом из середины 90-х, оформлен наклейками на окна. Улица Горького, 18/19",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_23.jpg",
    "city": "Stupino"
   },
   {
-   "text": "Почта в деревянном доме у станции Акри",
+   "caption": "Почта в деревянном доме в посёлке Белопесоцкий",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_24.jpg",
    "city": "Stupino"
   },
   {
-   "text": "Электричка Павелецкого направления на станции Акри. ЭД4М-0421",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_25.jpg"
+   "caption": "Электричка Павелецкого направления на станции Белопесоцкий. ЭД4М-0421",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_25.jpg",
+   "city": "Stupino"
   },
   {
-   "text": "В остаток дня я решил сьездить на несколько станций в противоположную от Москвы сторону, в Ожерелье, что бы ехать после толпы. Водонапорная башня.",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_26.jpg"
+   "caption": "В остаток дня я решил сьездить на несколько станций в противоположную от Москвы сторону, в Ожерелье, что бы ехать после толпы. Водонапорная башня",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_26.jpg",
+   "city": "Ozherelye"
   },
   {
-   "text": "Вид со станции Ожерелье в западном направлении",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_27.jpg"
+   "caption": "Вид со станции Ожерелье в западном направлении",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_27.jpg",
+   "city": "Ozherelye"
   },
   {
-   "text": "Хозяйственный магазин Арсенал в Ожерелье",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_28.jpg"
+   "caption": "Хозяйственный магазин Арсенал",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_28.jpg",
+   "city": "Ozherelye"
   },
   {
-   "text": "Мотоцикл с коляской во дворах пятиэтажек",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_29.jpg"
+   "caption": "Мотоцикл с коляской во дворах пятиэтажек",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_29.jpg",
+   "city": "Ozherelye"
   },
   {
-   "text": "Пассажирский поезд на станции Ожерелье. ЭП2К-232",
-   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_30.jpg"
+   "caption": "Пассажирский поезд на станции Ожерелье. ЭП2К-232",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_30.jpg",
+   "city": "Ozherelye"
   }
  ]
 }

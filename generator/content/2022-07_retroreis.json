@@ -1,111 +1,149 @@
 {
- "title": "Фестиваль Ретрорейс 2022",
+ "title": "Фестиваль ретро-автомобилей Ретрорейс 2022",
  "h1": "Фестиваль Ретрорейс 2022",
  "text": "",
- "text_en": "Photographs of preserved cars and buses from Moscow Retroreis festival.",
- "map_center": "55.7075,37.57",
+ "text_en": "preserved cars and buses from Moscow Retroreis festival",
+ "map_center": "",
  "map_zoom": "12",
- "date_mod": "2022-07-14",
+ "date_mod": "2022-07-30",
  "images": [
   {
-   "text": "",
-   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_044.JPG"
-  },  
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_01.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
   {
-   "text": "ГАЗ-21 к021ет199 на фестивале Ретрорейс",
+   "caption": "ГАЗ-21 к021ет199 на фестивале Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_02.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
-    {
-   "text": "",
-   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_059.JPG",
-   "city": "Moscow"
-  }, 
   {
-   "text": "",
+   "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_03.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "ВАЗ-2103 у214ут799 на фестивале Ретрорейс",
+   "caption": "ВАЗ-2103 у214ут799 на фестивале Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_04.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "",
-   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_077.JPG",
-   "city": "Moscow"
+   "caption": "Победа А700СМ 750. Старт ралли ретро-автомобилей",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_044.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "",
-   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_079_lr.jpg",
-   "city": "Moscow"
-  },
-   {
-   "text": "",
-   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_107.JPG",
-   "city": "Moscow"
-  },
-  {
-   "text": "",
-   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_109.JPG",
-   "city": "Moscow"
-  },
-  {
-   "text": "Автобус ЛиАЗ-677М в677ес50 на подвозе от метро Университет к фестивалю Ретрорейс",
+   "caption": "Автобус ЛиАЗ-677М в677ес50 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_05.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
+   "caption": "Москвич-407 В111РР 97. Старт ралли ретро-автомобилей",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_059.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_06.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_077.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_079_lr.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_08.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛиАЗ-677М в677ес50 на фоне толпы у площадки фестиваля",
+   "caption": "Трамвай 71-623 2644 на кольце метро Октябрьская",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_09.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_107.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_109.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "Трамвай Витязь 31169 на кольце метро Октябрьская",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_11.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс. Снят на телеобьектив на фоне толпы на остановке",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_170.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛАЗ-699Р у793вн797 сзади",
+   "caption": "Вид сзади на уезжающий автобус ЛАЗ-699Р у793вн797",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_178.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛиАЗ-677М в677ес50 на подвозе от метро Университет к фестивалю Ретрорейс",
+   "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_186.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛиАЗ-677М в677ес50 сзади",
+   "caption": "Автобус ЛиАЗ-677М в677ес50 сзади",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_190.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
+   "caption": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_196_crop.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "",
+   "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_200.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛиАЗ-677М в677ес50 на проспекте Вернадского",
+   "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс. Проспект Вернадского, снят на телеобъектив",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_215_ShiftN.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   },
   {
-   "text": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
+   "caption": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_226.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-30"
   }
-
  ]
 }

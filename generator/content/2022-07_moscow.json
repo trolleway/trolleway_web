@@ -2,160 +2,190 @@
  "title": "Поход по востоку Москвы",
  "h1": "Поход по востоку Москвы",
  "text": "",
- "text_en": "Walk on Moscow East",
-
+ "text_en": "Waslk on Moscow East",
+ "map_center": "",
  "map_zoom": "12",
- "date_mod": "2022-07-15",
+ "date_mod": "2022-07-28",
  "images": [
   {
-   "text": "Автомобиль ВАЗ-2103 к763ау750",
+   "caption": "Автомобиль ВАЗ-2103 к763ау750",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_009 vaz-2103.JPG",
-   "city": "Reutov"
+   "city": "Reutov",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Реутовское протезно-ортопедческое предприятие. Здание в Реутово в стиле конструктивизм.",
+   "caption": "Реутовское протезно-ортопедическое предприятие. Здание в Реутово в стиле конструктивизм.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_011.JPG",
-   "city": "Reutov"
+   "city": "Reutov",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Свободный проспект, 19, Новогиреево, Москва. Многоэтажный дом серии П-55 постройки 1998 года",
+   "caption": "Свободный проспект, 19. Многоэтажный дом серии П-55 постройки 1998 года",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_014.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Здание учебного центра Сбербанка в Перово 1996 года. 3-й пр. Перова Поля, 3а, Москва.",
+   "caption": "Здание учебного центра Сбербанка в Перово 1996 года. 3-й пр. Перова Поля, 3а, Москва.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_040_ShiftN_crop.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Здание учебного центра Сбербанка в Перово 1996 года. 3-й пр. Перова Поля, 3а, Москва.",
+   "caption": "Здание учебного центра Сбербанка в Перово 1996 года. 3-й пр. Перова Поля, 3а, Москва.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_041_ShiftN.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_045.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_049.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_052.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_054.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_056.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_058.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_060.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_061.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Подъездные пути от станции Лефортово",
+   "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_063.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Здание НПО Орион 1969 года постройки. Шоссе Энтузиастов, 46, Перово, Москва.",
+   "caption": "Здание НПО Орион 1969 года постройки. Шоссе Энтузиастов, 46",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_065_ShiftN.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Служебный поливомоечный трамвай Tatra T3SU 0124",
+   "caption": "Служебный поливомоечный трамвай Tatra T3SU 0124",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_067 moscow tram 0124.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Служебный поливомоечный трамвай Tatra T3SU 0124",
+   "caption": "Служебный поливомоечный трамвай Tatra T3SU 0124",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_069 moscow tram 0124.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Служебный поливомоечный трамвай Tatra T3SU 0124",
+   "caption": "Служебный поливомоечный трамвай Tatra T3SU 0124",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_075 moscow tram 0124.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Здание Моринформсистема-Агат 1972 года постройки",
+   "caption": "Здание Моринформсистема-Агат 1972 года постройки",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_079.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Депо Москва-Сортировочная на Казанском направление в Москве",
+   "caption": "Депо Москва-Сортировочная на Казанском направление в Москве",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_081_ShiftN.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Здание института МТУСИ 1930-х годов. Здание в Москве в стиле конструктивизм.",
+   "caption": "Здание института МТУСИ 1930-х годов. Здание в Москве в стиле конструктивизм.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_093.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Здание института МТУСИ 1930-х годов. Здание в Москве в стиле конструктивизм.",
+   "caption": "Здание института МТУСИ 1930-х годов. Здание в Москве в стиле конструктивизм.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_094.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Здание института МТУСИ 1930-х годов. Здание в Москве в стиле конструктивизм.",
+   "caption": "Здание института МТУСИ 1930-х годов. Здание в Москве в стиле конструктивизм.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_095.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Дореволюционное здание в кирпичном стиле. 1-й Краснокурсантский пр., 3/5 корпус 5, Москва",
+   "caption": "Дореволюционное здание в кирпичном стиле. 1-й Краснокурсантский пр., 3/5 корпус 5, Москва",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_109.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "(проверить, индексируется ли город) Жилой дом в стиле конструктивизм 1930 года постройки. 2-я Бауманская улица 1 к1",
+   "caption": "(проверить, индексируется ли город) Жилой дом в стиле конструктивизм 1930 года постройки. 2-я Бауманская улица 1 к1",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_129.jpg",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
+   "caption": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_143.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
+   "caption": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_144.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Старый московский дворик. Доброслободская улица, 10.",
+   "caption": "Старый московский дворик. Доброслободская улица, 10.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_150.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Доходный дом О. О. Вильнера 1904 года постройки,  Старая Басманная ул., 12 строение 1, Москва",
+   "caption": "Доходный дом О. О. Вильнера 1904 года постройки,  Старая Басманная ул., 12 строение 1, Москва",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_157.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   },
   {
-   "text": "Многоэтажное здание на улице Маросейка, 12",
+   "caption": "Многоэтажное здание на улице Маросейка, 12",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_169.JPG",
-   "city": "Moscow"
+   "city": "Moscow",
+   "date_append": "2022-07-20"
   }
  ]
 }

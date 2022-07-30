@@ -1,0 +1,35 @@
+{
+ "title": "Дореволюционные кирпичные дома",
+ "h1": "Российские краснокирпичные здания начала XX века",
+ "text": "Фотографии зданий в краснокирпичном стиле",
+ "text_en": "Red brick architecture",
+ "map_center": "",
+ "map_zoom": "12",
+ "date_mod": "",
+ "images": [
+  {
+   "caption": "Дореволюционное здание в кирпичном стиле. 1-й Краснокурсантский пр., 3/5 корпус 5, Москва",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_109.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-20"
+  },
+  {
+   "caption": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_143.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-20"
+  },
+  {
+   "caption": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_144.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-20"
+  },
+  {
+   "caption": "Старый московский дворик. Доброслободская улица, 10.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_150.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-20"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "title": "Ретро-автомобили",
+ "h1": "Фотографии ретро автомобилей",
+ "text": "Страница, куда я складываю отдельные фотографии",
+ "text_en": "",
+ "map_center": "",
+ "map_zoom": "12",
+ "date_mod": "2022-07-23",
+ "images": [
+  {
+   "caption": "Автомобиль ВАЗ-2103 к763ау750",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_009 vaz-2103.JPG",
+   "city": "Reutov",
+   "date_append": "2022-07-20"
+  },
+  {
+   "caption": "Грузовик Nissan Atlas 150 н460хв90",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_20.jpg",
+   "city": "Stupino"
+  },
+  {
+   "caption": "Мотоцикл с коляской во дворах пятиэтажек",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_29.jpg",
+   "city": "Ozherelye"
+  },
+  {
+   "caption": "ГАЗ-21 к021ет199 на фестивале Ретрорейс",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_02.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "ВАЗ-2103 у214ут799 на фестивале Ретрорейс",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_04.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "Победа А700СМ 750. Старт ралли ретро-автомобилей",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_044.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_077.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_079_lr.jpg",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_107.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_109.JPG",
+   "city": "Moscow",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "Фургон Tagaz Hardy. м525ус750 Барановское, округ Воскресенск",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_084.JPG",
+   "city": "Baranovskoe",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_129.JPG",
+   "city": "Usadishe",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_130.JPG",
+   "city": "Usadishe",
+   "date_append": "2022-07-30"
+  },
+  {
+   "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_131.JPG",
+   "city": "Usadishe",
+   "date_append": "2022-07-30"
+  }
+ ]
+}

@@ -100,7 +100,7 @@ class Website_generator():
         assert mode in ('standalone-full',None,'')
 
         basedir = (os.path.dirname(os.path.realpath(__file__)))
-        json_dir = os.path.join(basedir,'content2')
+        json_dir = os.path.join(basedir,'content')
 
 
         #---- set output directory for files
