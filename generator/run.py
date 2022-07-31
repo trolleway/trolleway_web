@@ -415,7 +415,7 @@ class Website_generator():
                     text_file.write(html)
 
                 if not data.get('hide'): 
-                    sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm','priority':'0.4'}
+                    sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm','priority':'0.4', 'image_url':image['url']}
                     if data.get('date_append'):
                         sitemap_page_record['lastmod']=data.get('date_append')
                     else:
@@ -470,7 +470,12 @@ class Website_generator():
         with open(sitemap_path, "w", encoding='utf-8') as text_file:
             out = ''
             for page in pages2sitemap:
-                out += "<url><loc>{url}</loc><lastmod>{lastmod}</lastmod><priority>{priority}</priority></url>\n".format(url=page['loc'],priority=page['priority'],lastmod=page.get('lastmod','no'))
+                if 'image_url' in page:
+                    imgurl='<image:image><image:loc>{url_image}</image:loc></image:image>'.format(url_image=page['image_url'])
+                else:
+                    imgurl = ''
+                out += "<url><loc>{url}</loc>{imgurl}<lastmod>{lastmod}</lastmod><priority>{priority}</priority></url>\n".format(
+                url=page['loc'],imgurl=imgurl,priority=page['priority'],lastmod=page.get('lastmod',''))
 
             out = out.replace('<lastmod></lastmod>','')
             text_file.write(sitemap_template.replace('<!--GENERATED SITEMAP CONTENT FROM PYTHON-->',out))
