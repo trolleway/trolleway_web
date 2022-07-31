@@ -402,8 +402,18 @@ class Website_generator():
                 with open(filename, "w", encoding='utf-8') as text_file:
                     text_file.write(html)
 
-                if not data.get('hide'): pages2sitemap.append({'loc':sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm','priority':'0.4','lastmod':GALLERY_DATE_MOD})
-            if not data.get('hide'):  pages2sitemap.append({'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6','lastmod':GALLERY_DATE_MOD})
+                if not data.get('hide'): 
+                    sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm','priority':'0.4'}
+                    if data.get('date_append'):
+                        sitemap_page_record['lastmod']=data.get('date_append')
+                    else:
+                        sitemap_page_record['lastmod']=GALLERY_DATE_MOD
+                    pages2sitemap.append(sitemap_page_record)
+                    
+            if not data.get('hide'): 
+                sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
+                sitemap_page_record['lastmod']=GALLERY_DATE_MOD
+                pages2sitemap.append(sitemap_page_record)
 
             # ----------- index page
             
@@ -448,8 +458,9 @@ class Website_generator():
         with open(sitemap_path, "w", encoding='utf-8') as text_file:
             out = ''
             for page in pages2sitemap:
-                out += "<url><loc>{url}</loc><lastmod>{lastmod}</lastmod><priority>{priority}</priority></url>\n".format(url=page['loc'],priority=page['priority'],lastmod=page['lastmod'])
+                out += "<url><loc>{url}</loc><lastmod>{lastmod}</lastmod><priority>{priority}</priority></url>\n".format(url=page['loc'],priority=page['priority'],lastmod=page.get('lastmod','no'))
 
+            out = out.replace('<lastmod></lastmod>','')
             text_file.write(sitemap_template.replace('<!--GENERATED SITEMAP CONTENT FROM PYTHON-->',out))
 
 if __name__ == "__main__":
