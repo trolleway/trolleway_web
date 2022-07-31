@@ -168,3 +168,4 @@ tmp_add_page.sql
 generator/.*
 tmp_custom.sql
 tmp_custom.sql
+tmp_custom.sql

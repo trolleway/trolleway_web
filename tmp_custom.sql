@@ -1,133 +1,159 @@
-UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T11:59:14", wkt_geometry="POINT (38.71646 55.40613)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_005.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:01:05", wkt_geometry="POINT (38.71695 55.40730)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_007.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:01:40", wkt_geometry="POINT (38.71716 55.40760)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_009.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:01:56", wkt_geometry="POINT (38.71716 55.40760)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_011.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:05:30", wkt_geometry="POINT (38.71790 55.40959)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_014.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:08:54", wkt_geometry="POINT (38.71909 55.41143)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_017.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:09:07", wkt_geometry="POINT (38.71909 55.41143)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_018.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:09:28", wkt_geometry="POINT (38.71893 55.41148)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_020.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:09:47", wkt_geometry="POINT (38.71879 55.41152)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_021.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:12:22", wkt_geometry="POINT (38.71970 55.41230)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_023.JPG"  ;
- UPDATE photos SET city="Bochevino", sublocation="",datetime="2021-10-09T12:12:23", wkt_geometry="POINT (38.71970 55.41230)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_024.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:32:19", wkt_geometry="POINT (38.72608 55.42124)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_038.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:33:22", wkt_geometry="POINT (38.72569 55.42179)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_041.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:34:08", wkt_geometry="POINT (38.72564 55.42196)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_044.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:35:42", wkt_geometry="POINT (38.72547 55.42203)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_046.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:35:56", wkt_geometry="POINT (38.72547 55.42203)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_048.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:35:58", wkt_geometry="POINT (38.72547 55.42203)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_049.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:36:10", wkt_geometry="POINT (38.72547 55.42203)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_051.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:38:56", wkt_geometry="POINT (38.72563 55.42281)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_053.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:40:51", wkt_geometry="POINT (38.72698 55.42314)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_054.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:43:41", wkt_geometry="POINT (38.72821 55.42392)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_055.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:52:03", wkt_geometry="POINT (38.72835 55.42379)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_060.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:56:03", wkt_geometry="POINT (38.73156 55.42162)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_062.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:56:53", wkt_geometry="POINT (38.73222 55.42105)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_063.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:57:45", wkt_geometry="POINT (38.73260 55.42074)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_070.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T12:58:54", wkt_geometry="POINT (38.73337 55.42019)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_072.JPG"  ;
- UPDATE photos SET city="Medvedevo", sublocation="",datetime="2021-10-09T13:02:09", wkt_geometry="POINT (38.73560 55.41881)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_077.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:17:11", wkt_geometry="POINT (38.75090 55.41116)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_079.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:24:17", wkt_geometry="POINT (38.75269 55.40635)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_082.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:27:05", wkt_geometry="POINT (38.74968 55.40699)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_084.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:27:52", wkt_geometry="POINT (38.74905 55.40709)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_086.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:28:07", wkt_geometry="POINT (38.74905 55.40709)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_088.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:28:16", wkt_geometry="POINT (38.74892 55.40717)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_089.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:30:58", wkt_geometry="POINT (38.74851 55.40721)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_092.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:31:32", wkt_geometry="POINT (38.74796 55.40727)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_093.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:34:28", wkt_geometry="POINT (38.74706 55.40734)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_095.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:43:24", wkt_geometry="POINT (38.74402 55.40749)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_096.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:50:13", wkt_geometry="POINT (38.75202 55.40660)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_101.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:54:18", wkt_geometry="POINT (38.75408 55.40511)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_105.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T13:57:02", wkt_geometry="POINT (38.75407 55.40454)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_108.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T14:01:35", wkt_geometry="POINT (38.75611 55.40427)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_111.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T14:06:51", wkt_geometry="POINT (38.75782 55.40416)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_113.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T14:08:34", wkt_geometry="POINT (38.75789 55.40379)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_114.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T14:10:48", wkt_geometry="POINT (38.75836 55.40285)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_116.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T14:13:51", wkt_geometry="POINT (38.75881 55.40246)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_119.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T14:14:36", wkt_geometry="POINT (38.75888 55.40232)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_120.JPG"  ;
- UPDATE photos SET city="Baranovskoe", sublocation="",datetime="2021-10-09T14:15:18", wkt_geometry="POINT (38.75883 55.40223)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_122.JPG"  ;
- UPDATE photos SET city="Usadishe", sublocation="",datetime="2021-10-09T14:31:13", wkt_geometry="POINT (38.74735 55.39832)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_126.JPG"  ;
- UPDATE photos SET city="Usadishe", sublocation="",datetime="2021-10-09T14:31:48", wkt_geometry="POINT (38.74667 55.39818)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_127.JPG"  ;
- UPDATE photos SET city="Usadishe", sublocation="",datetime="2021-10-09T14:42:17", wkt_geometry="POINT (38.75815 55.39958)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_129.JPG"  ;
- UPDATE photos SET city="Usadishe", sublocation="",datetime="2021-10-09T14:42:26", wkt_geometry="POINT (38.75815 55.39958)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_130.JPG"  ;
- UPDATE photos SET city="Usadishe", sublocation="",datetime="2021-10-09T14:42:35", wkt_geometry="POINT (38.75836 55.39959)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_131.JPG"  ;
- UPDATE photos SET city="Usadishe", sublocation="",datetime="2021-10-09T14:45:49", wkt_geometry="POINT (38.76048 55.40080)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_132.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:18:14", wkt_geometry="POINT (38.67079 55.32134)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_133.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:19:15", wkt_geometry="POINT (38.67193 55.32154)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_137.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:20:44", wkt_geometry="POINT (38.67340 55.32203)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_138.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:22:53", wkt_geometry="POINT (38.67502 55.32243)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_148.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:23:49", wkt_geometry="POINT (38.67632 55.32235)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_149.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:25:25", wkt_geometry="POINT (38.67805 55.32235)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_153.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:25:30", wkt_geometry="POINT (38.67805 55.32235)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_154.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:26:26", wkt_geometry="POINT (38.67918 55.32238)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_156.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:27:17", wkt_geometry="POINT (38.68010 55.32252)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_157.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:28:34", wkt_geometry="POINT (38.68157 55.32263)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_158.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:30:03", wkt_geometry="POINT (38.68150 55.32384)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_159.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:31:29", wkt_geometry="POINT (38.68140 55.32467)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_161.JPG"  ;
- UPDATE photos SET city="Voskresensk", sublocation="",datetime="2021-10-09T17:40:06", wkt_geometry="POINT (38.68606 55.32625)"
-            WHERE hotlink="https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_171.JPG"  ;
+UPDATE photos SET city="Monino", sublocation="",datetime="2013-08-04T14:17:34", wkt_geometry="POINT (38.19836 55.84908)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 001.JPG"  ;
+ UPDATE photos SET city="Monino", sublocation="",datetime="2013-08-04T14:17:39", wkt_geometry="POINT (38.19836 55.84908)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 002.JPG"  ;
+ UPDATE photos SET city="Monino", sublocation="",datetime="2013-08-04T14:21:28", wkt_geometry="POINT (38.19138 55.84950)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 004.JPG"  ;
+ UPDATE photos SET city="Monino", sublocation="",datetime="2013-08-04T14:21:34", wkt_geometry="POINT (38.19138 55.84950)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 006.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:26:56", wkt_geometry="POINT (38.19024 55.85854)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 007.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:26:59", wkt_geometry="POINT (38.19024 55.85854)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 008.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:29:54", wkt_geometry="POINT (38.18999 55.86075)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 009.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:31:35", wkt_geometry="POINT (38.19039 55.86240)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 010.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:36:35", wkt_geometry="POINT (38.18805 55.86238)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 014.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:37:15", wkt_geometry="POINT (38.18780 55.86222)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 015.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:37:52", wkt_geometry="POINT (38.18737 55.86184)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 016.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:38:34", wkt_geometry="POINT (38.18782 55.86167)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 018.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:39:15", wkt_geometry="POINT (38.18863 55.86180)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 019_ShiftN.jpg"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:39:35", wkt_geometry="POINT (38.18855 55.86197)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 021.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:42:16", wkt_geometry="POINT (38.18515 55.86156)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 029_ShiftN.jpg"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:43:52", wkt_geometry="POINT (38.18569 55.86152)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 031_ShiftN.jpg"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:47:19", wkt_geometry="POINT (38.19285 55.86495)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 036.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:49:05", wkt_geometry="POINT (38.19378 55.86541)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 043.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:49:47", wkt_geometry="POINT (38.19450 55.86552)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 044.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:50:38", wkt_geometry="POINT (38.19508 55.86566)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 051.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:51:10", wkt_geometry="POINT (38.19541 55.86538)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 052.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T14:51:14", wkt_geometry="POINT (38.19541 55.86538)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 053.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:00:12", wkt_geometry="POINT (38.20026 55.86567)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 073_ShiftN.jpg"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:01:24", wkt_geometry="POINT (38.20152 55.86608)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 080.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:01:59", wkt_geometry="POINT (38.20135 55.86633)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 083_ShiftN.jpg"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:06:19", wkt_geometry="POINT (38.20020 55.86623)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 102.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:06:40", wkt_geometry="POINT (38.20055 55.86630)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 103.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:10:34", wkt_geometry="POINT (38.20318 55.86592)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 110.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:11:41", wkt_geometry="POINT (38.20337 55.86530)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 113.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:12:36", wkt_geometry="POINT (38.20317 55.86506)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 115.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:16:05", wkt_geometry="POINT (38.19945 55.86685)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 117.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:17:19", wkt_geometry="POINT (38.19997 55.86768)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 123.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:17:38", wkt_geometry="POINT (38.19964 55.86791)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 128.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:18:34", wkt_geometry="POINT (38.20076 55.86829)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 129.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:19:01", wkt_geometry="POINT (38.20051 55.86828)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 133.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:21:06", wkt_geometry="POINT (38.19905 55.86796)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 135.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:24:57", wkt_geometry="POINT (38.20355 55.86961)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 139_ShiftN.jpg"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:25:43", wkt_geometry="POINT (38.20366 55.86992)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 144.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:25:47", wkt_geometry="POINT (38.20366 55.86992)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 145.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:26:12", wkt_geometry="POINT (38.20330 55.87000)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 146.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:28:53", wkt_geometry="POINT (38.20485 55.86861)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 149_ShiftN.jpg"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:29:41", wkt_geometry="POINT (38.20506 55.86852)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 150.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:30:11", wkt_geometry="POINT (38.20520 55.86837)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 151.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:36:57", wkt_geometry="POINT (38.20596 55.87203)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 168.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:39:00", wkt_geometry="POINT (38.20300 55.87253)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 172.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:43:27", wkt_geometry="POINT (38.20075 55.87151)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 185.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:43:35", wkt_geometry="POINT (38.20075 55.87151)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 186.JPG"  ;
+ UPDATE photos SET city="Losino-Petrovsky", sublocation="",datetime="2013-08-04T15:54:52", wkt_geometry="POINT (38.18986 55.86743)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 193.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:43:05", wkt_geometry="POINT (38.05925 55.89580)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 223.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:45:43", wkt_geometry="POINT (38.05326 55.89938)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 224.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:47:35", wkt_geometry="POINT (38.05439 55.89956)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 233.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:57:10", wkt_geometry="POINT (38.05960 55.90214)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 240.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:00:50", wkt_geometry="POINT (38.06094 55.90303)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 243.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:04:17", wkt_geometry="POINT (38.06524 55.90301)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 254.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:06:34", wkt_geometry="POINT (38.06283 55.90221)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 258.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:14:16", wkt_geometry="POINT (38.05862 55.90478)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 275_ShiftN.jpg"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:17:33", wkt_geometry="POINT (38.05834 55.90514)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 279.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:21:02", wkt_geometry="POINT (38.05677 55.90517)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 288.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:22:53", wkt_geometry="POINT (38.05746 55.90466)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 293.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T17:29:25", wkt_geometry="POINT (38.05144 55.90583)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 297.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:42:14", wkt_geometry="POINT (38.02487 55.90956)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 309.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:42:18", wkt_geometry="POINT (38.02487 55.90956)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 310.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:44:25", wkt_geometry="POINT (38.02259 55.90994)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 313.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:44:28", wkt_geometry="POINT (38.02259 55.90994)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 314.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:45:30", wkt_geometry="POINT (38.02251 55.90992)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 315.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:45:38", wkt_geometry="POINT (38.02249 55.90992)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 317.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:46:10", wkt_geometry="POINT (38.02211 55.90995)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 319.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:46:35", wkt_geometry="POINT (38.02203 55.90996)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 320.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:47:09", wkt_geometry="POINT (38.02158 55.90998)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 321.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:47:38", wkt_geometry="POINT (38.02142 55.91008)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 324.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:48:45", wkt_geometry="POINT (38.02059 55.91002)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 325_ShiftN.jpg"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:48:50", wkt_geometry="POINT (38.02059 55.91002)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 326_ShiftN.jpg"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:54:29", wkt_geometry="POINT (38.00978 55.91102)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 331.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T17:54:35", wkt_geometry="POINT (38.00978 55.91102)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 333.JPG"  ;
+ UPDATE photos SET city="Sholkovo", sublocation="",datetime="2013-08-04T18:03:32", wkt_geometry="POINT (38.01281 55.91943)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 336.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:32:37", wkt_geometry="POINT (38.06402 55.89682)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ChME3T-5501 2013-08-04 209.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:51:41", wkt_geometry="POINT (38.05628 55.89978)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ED4M-0372 2013-08-04 238.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:33:07", wkt_geometry="POINT (38.06403 55.89682)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/ED4M-0400 2013-08-04 214.JPG"  ;
+ UPDATE photos SET city="Chkalovsky", sublocation="",datetime="2013-08-04T16:19:28", wkt_geometry="POINT (38.14549 55.85870)"
+            WHERE hotlink="https://trolleway.com/storage/2013/2013-08_shelkovo/VL10U-619 2013-08-04 207.JPG"  ;
  
