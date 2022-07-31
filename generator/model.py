@@ -79,7 +79,16 @@ class Model():
             lon='0'
             return None, None
   
+    def locations2dict(self):
+        cur = self.con.cursor()
 
+        sql = "SELECT name_ru, name_int FROM locations  ;"
+        names = dict()
+        for row in cur.execute(sql):
+            names[row['name_int']]=row['name_ru']
+        
+        return names
+    
     def dir2db(self,path,base_url=''):
 
         today = datetime.today()
@@ -195,6 +204,8 @@ ORDER BY pages.uri, photos_pages."order";
         cur_pages = self.con.cursor()
         cur_photos = self.con.cursor()
 
+        locations = self.locations2dict()
+
         sql = "SELECT COUNT(*) as count FROM pages WHERE hidden=0 ;"
         cur_pages.execute(sql)
         row = cur_pages.fetchone()
@@ -249,10 +260,15 @@ ORDER BY pages.uri, photos_pages."order";
             for row2 in cur_photos.execute(sql):
                 db_photo = dict(row2)
 
+
                 image={   "caption": db_photo['caption'],
-                "url_hotlink": db_photo['hotlink'],
-                "city":  db_photo['city']
+                "url_hotlink": db_photo['hotlink']
                 }
+                city = db_photo.get('city')
+                if city != '':
+                    if city in locations:
+                        city = locations[city]                
+                    image['city']=city
                 
                 if db_photo.get('date_append') is not None:
                     image['date_append'] = db_photo.get('date_append')

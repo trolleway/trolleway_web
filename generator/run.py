@@ -374,6 +374,18 @@ class Website_generator():
                 image_page_title = ''
                 image_page_title = image.get('city','') + ' '+ image['caption'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]  
                 #build html
+                
+                caption = image['caption'].strip()
+                if caption.endswith('.'): caption=caption[0:-1]
+
+                caption_location = caption
+                if 'city' in image:
+                    if image['city'] not in caption_location:
+                        if caption != '':
+                            caption_location = caption_location + ', ' + image['city']
+                        else:
+                            caption_location = image['city']
+                
 
                 html = str()
                 #template = self.template_remove_map(template)
@@ -381,7 +393,7 @@ class Website_generator():
                     template = template_file.read()
                 html = template.format(
                 image_url = image['url'],
-                caption = image['caption'],
+                caption = caption_location,
                 title = image_page_title,
                 url_left = url_left,
                 url_right = url_right,
