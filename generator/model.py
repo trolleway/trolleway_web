@@ -98,6 +98,7 @@ class Model():
             images = list()
             for filename in files:
                 if not filename.lower().endswith('.jpg'): continue
+                if filename.lower().endswith('.t.jpg'): continue
                 temp_path = os.path.normpath(path)
                 path_as_list = temp_path.split(os.sep)
 
@@ -166,12 +167,12 @@ class Model():
         page_url=page_url,
         inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
         date=today.strftime('%Y-%m-%d'))
-        sql += ''' INSERT INTO photos_pages (photoid, pageuri, pageid, inserting_id) SELECT photoid, "{page_url}",0, "{inserting_id}"
+        sql += '''/* INSERT INTO photos_pages (photoid, pageuri, pageid, inserting_id) SELECT photoid, "{page_url}",0, "{inserting_id}"
         FROM photos
         WHERE photos.inserting_id='{inserting_id}'
-        ORDER BY photos.hotlink;\n  '''.format(inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),page_url=page_url,)
-        sql += ''' UPDATE photos_pages SET pageid = (SELECT pageid FROM pages WHERE uri='{page_url}') WHERE pageuri='{page_url}';\n   '''.format(page_url=page_url)
-        sql += ''' UPDATE photos_pages SET pageuri = '';\n   '''
+        ORDER BY photos.hotlink;\n */ '''.format(inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),page_url=page_url,)
+        sql += '''-- UPDATE photos_pages SET pageid = (SELECT pageid FROM pages WHERE uri='{page_url}') WHERE pageuri='{page_url}';\n   '''.format(page_url=page_url)
+        sql += '''-- UPDATE photos_pages SET pageuri = '';\n   '''
 
         #sql+="COMMIT;"
 
