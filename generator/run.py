@@ -12,6 +12,7 @@ import pathlib
 from datetime import datetime
 from iptcinfo3 import IPTCInfo
 
+
 class Website_generator():
 
 
@@ -185,6 +186,7 @@ class Website_generator():
 
             coords_list = list()
             photos4template = list()
+            leaflet_geojson_features = list()
             for image in data['images']:
                 current_image += 1
 
@@ -251,10 +253,13 @@ class Website_generator():
 
                 photo_coord = None
                 photo_coord_osmorg = image.get('coord') or None
+                lat = None
+                lon = None
 
                 if photo_coord_osmorg is not None:
                     photo_coord = photo_coord_osmorg.split('/')[0]+','+photo_coord_osmorg.split('/')[1]
-
+                    lat=photo_coord.split(',')[0]
+                    lon=photo_coord.split(',')[1]
                 # get coordinates from exif
 
                 if photo_coord is not None:
@@ -378,6 +383,7 @@ class Website_generator():
                 photo4template=dict()
                 photo4template['path']=os.path.join(output_directory_path,self.numfill(current_image))
                 photo4template['image_url']=image['url']
+                photo4template['image_url_base']=os.path.join(os.path.dirname(image['url']) , os.path.basename(os.path.splitext(image['url'])[0])
                 photo4template['caption']=caption_location
                 photo4template['title']=image_page_title
                 photo4template['url_left']=url_left
@@ -399,6 +405,7 @@ class Website_generator():
                 with open(template_filepath, encoding='utf-8') as template_file:
                     template = template_file.read()
                 html = template.format_map(photo4template)
+
                 '''
                 html = template.format(
                 image_url = image['url'],
@@ -417,7 +424,8 @@ class Website_generator():
                 left_link_image = left_link_image,
                 google_counter=google_counter,
                 yandex_counter=yandex_counter
-                )'''
+                )
+                '''
 
 
 
@@ -426,12 +434,29 @@ class Website_generator():
                     text_file.write(html)
 
                 if not data.get('hide'):
-                    sitemap_page_record={'loc':photo4template['path']+'.htm','priority':'0.4', 'image_url':photo4template['image_url']}
+                    sitemap_page_record={'loc':photo4template['path']+'.htm','priority':'0.4', 'image_url':photo4template['image_url']+'.jpg'}
                     if data.get('date_append'):
                         sitemap_page_record['lastmod']=data.get('date_append')
                     else:
                         sitemap_page_record['lastmod']=GALLERY_DATE_MOD
                     pages2sitemap.append(sitemap_page_record)
+
+                popup_content = '<a href="{href}"><img src="{thumbnail}"><p>{title}</a>'.format(
+                href=photo4template['path']+'.htm',
+                thumbnail=photo4template['image_url_base']+'.t.webp',
+                title=photo4template['title']
+                )
+                leaflet_geojson_part = {
+            "type": "Feature",
+            "properties": {
+                "popupContent":popup_content
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [photo4template['lat'], photo4template['lon']]
+            }
+            }
+            leaflet_geojson_features.append(leaflet_geojson_part)
 
             if not data.get('hide'):
                 sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
@@ -453,6 +478,16 @@ class Website_generator():
                 text = self.get_body_from_html(html_text_filename)
             else:
                 text = data.get('text','')
+
+            leaflet_geojson = {
+    "type": "FeatureCollection",
+    "features":leaflet_geojson_features
+    }
+            leaflet_geojson_text = 'var photos = '+json.dumps(leaflet_geojson, indent=4, sort_keys=True)+';'
+
+
+
+
 
             thumbnails_body = ''
             current_image = 0
@@ -476,7 +511,8 @@ class Website_generator():
                 city = data.get('city',''),
                 google_counter=google_counter,
                 yandex_counter=yandex_counter,
-                thumbnails_body = thumbnails_body
+                thumbnails_body = thumbnails_body,
+                leaflet_geojson = leaflet_geojson
                 )
 
             html = html.replace('<!--google_counter-->',google_counter)
