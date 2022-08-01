@@ -84,17 +84,17 @@ class Website_generator():
         assert os.path.exists(html_text_filename) , 'not found '+html_text_filename
         with open(html_text_filename, encoding='utf-8') as text_file:
             text = text_file.read()
-        
+
         text = text[text.find('<body>')+6:text.find('</body>')].strip()
         return text
-                    
-                    
+
+
     def coords_list_average(self,coords):
         return None
- 
 
-        
-    
+
+
+
     def generate(self,mode=None):
 
         assert mode in ('standalone-full',None,'')
@@ -182,8 +182,9 @@ class Website_generator():
             current_image = 0
 
             #calculate filenames for prev/next link
-            
+
             coords_list = list()
+            photos4template = list()
             for image in data['images']:
                 current_image += 1
 
@@ -219,9 +220,9 @@ class Website_generator():
                 else:
                     photo_filename = pathlib.Path(image['url']).name
                 photo_local_cache = os.path.join(exif_cache_directory,requests.utils.unquote(photo_filename))
-                
+
                 if not os.path.exists(photo_local_cache):
-                
+
                     image_url_4exif=image.get('url_hotlink',image.get('url'))
                     useragent = ''
                     if 'wikimedia' in image_url_4exif:
@@ -229,23 +230,8 @@ class Website_generator():
                     r = requests.get(image_url_4exif, allow_redirects=True, stream=True,headers = {'User-Agent': useragent})
                     r.raise_for_status()
                     open(photo_local_cache, 'wb').write(r.content)
-                '''
-                    #try:
-                    if 'url_hotlink' in image.keys():
-                        image_url_4exif = urllib.parse.quote(image['url_hotlink'])
-                        image_url_4exif = image['url_hotlink']
-                    else:
-                        image_url_4exif = urllib.parse.quote(image.get('url'))
-                        image_url_4exif = image.get('url')
-                    try:
-                        #urllib.request.urlretrieve(image_url_4exif, photo_local_cache)
-                        r = requests.get(image_url_4exif, allow_redirects=True)
-                        open(photo_local_cache, 'wb').write(r.content)
 
-                    except:
-                        print('cant download ' + image_url_4exif)
-                    '''
-                    
+
                 #copy photo to website dir
 
                 if mode == 'standalone-full':
@@ -292,7 +278,7 @@ class Website_generator():
                             coord.append(round(float(lat), 4))# , round(float(lon), 4))
                             coord.append(round(float(lon), 4))# , round(float(lon), 4))
 
-                            coords_list.append( coord ) 
+                            coords_list.append( coord )
 
                     except:
                         photo_coord='0,0'
@@ -372,9 +358,9 @@ class Website_generator():
 
 
                 image_page_title = ''
-                image_page_title = image.get('city','') + ' '+ image['caption'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]  
+                image_page_title = image.get('city','') + ' '+ image['caption'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]
                 #build html
-                
+
                 caption = image['caption'].strip()
                 if caption.endswith('.'): caption=caption[0:-1]
 
@@ -385,12 +371,35 @@ class Website_generator():
                             caption_location = caption_location + ', ' + image['city']
                         else:
                             caption_location = image['city']
-                
+
 
                 html = str()
                 #template = self.template_remove_map(template)
+                photo4template=dict()
+                photo4template['path']=os.path.join(output_directory_path,self.numfill(current_image))
+                photo4template['image_url']=image['url']
+                photo4template['caption']=caption_location
+                photo4template['title']=image_page_title
+                photo4template['url_left']=url_left
+                photo4template['url_right']=url_right
+                photo4template['rel_left']=rel_left
+                photo4template['rel_right']=rel_right
+                photo4template['map_js']=map_js
+                photo4template['city']=image.get('city','')
+                photo4template['alt']=image.get('headline',image.get('caption')),
+                photo4template['lat']=lat
+                photo4template['lon']=lon
+                photo4template['right_link_image']=right_link_image
+                photo4template['left_link_image']=left_link_image
+                photo4template['google_counter']=google_counter
+                photo4template['yandex_counter']=yandex_counter
+
+                photos4template.append(photo4template)
+
                 with open(template_filepath, encoding='utf-8') as template_file:
                     template = template_file.read()
+                html = template.format_map(photo4template)
+                '''
                 html = template.format(
                 image_url = image['url'],
                 caption = caption_location,
@@ -400,7 +409,7 @@ class Website_generator():
                 rel_left = rel_left,
                 rel_right = rel_right,
                 map_js = map_js,
-                
+
                 city = image.get('city',''),
                 alt = image.get('headline',image.get('caption')),
                 lat=lat,lon=lon,
@@ -408,27 +417,29 @@ class Website_generator():
                 left_link_image = left_link_image,
                 google_counter=google_counter,
                 yandex_counter=yandex_counter
-                )
+                )'''
 
-                filename = os.path.join(output_directory_path,self.numfill(current_image))+'.htm'
+
+
+                filename = photo4template['path'] +'.htm'
                 with open(filename, "w", encoding='utf-8') as text_file:
                     text_file.write(html)
 
-                if not data.get('hide'): 
-                    sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm','priority':'0.4', 'image_url':image['url']}
+                if not data.get('hide'):
+                    sitemap_page_record={'loc':photo4template['path']+'.htm','priority':'0.4', 'image_url':photo4template['image_url']}
                     if data.get('date_append'):
                         sitemap_page_record['lastmod']=data.get('date_append')
                     else:
                         sitemap_page_record['lastmod']=GALLERY_DATE_MOD
                     pages2sitemap.append(sitemap_page_record)
-                    
-            if not data.get('hide'): 
+
+            if not data.get('hide'):
                 sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
                 sitemap_page_record['lastmod']=GALLERY_DATE_MOD
                 pages2sitemap.append(sitemap_page_record)
 
             # ----------- index page
-            
+
             with open(template_index_filepath, encoding='utf-8') as template_file:
                 template = template_file.read()
 
@@ -436,13 +447,26 @@ class Website_generator():
                 content_en = '<div class="en" >'+data['text_en']+'</div>'+"\n"
             else:
                 content_en = "\n"
-            
+
             html_text_filename = os.path.join(json_dir,json_filename).replace('.json','.htm')
             if os.path.exists(html_text_filename):
                 text = self.get_body_from_html(html_text_filename)
             else:
                 text = data.get('text','')
-                    
+
+            thumbnails_body = ''
+            current_image = 0
+            for photo in photos4template:
+                photo_html = '<a href="{photo_page_url}"><img src="{url_thumbnail_jpg}"></a>{caption}</p> '
+                photo_html = photo_html.format(
+                photo_page_url=photo['path']+'.htm',
+                url_thumbnail_jpg=os.path.join(os.path.dirname(photo['image_url']) , os.path.basename(os.path.splitext(photo['image_url'])[0])+'.t.jpg'),
+                caption=photo['caption']
+                )
+                thumbnails_body += photo_html+"\n"
+
+
+
 
             html = template.format(
                 title = data['title'],
@@ -451,7 +475,8 @@ class Website_generator():
                 h1 = data['h1'],
                 city = data.get('city',''),
                 google_counter=google_counter,
-                yandex_counter=yandex_counter
+                yandex_counter=yandex_counter,
+                thumbnails_body = thumbnails_body
                 )
 
             html = html.replace('<!--google_counter-->',google_counter)
