@@ -3,6 +3,11 @@
 <head>
  <meta charset="utf-8">
   <link rel="stylesheet" href="../../texts/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mapnik -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- for flexbox-->
@@ -47,11 +52,13 @@
 
 <h3><span class="gallery_start"><a href="01.htm">Click to open</a></span></h3>
 
+<div id="map" style="width: 100%; height: 600px;"></div>
+  <script>
+{map_js}
+  </script>
+
 {thumbnails_body}
-<hr>
-<code>
-{leaflet_geojson_text}
-</code>
+
 <footer>
 <div id="copyright">
        <a rel="cc:attributionURL" property="dc:title">Page and images</a> by

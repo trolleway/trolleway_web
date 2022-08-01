@@ -55,6 +55,8 @@ def photo_thumbnail(src,dst):
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.jpg')
     cmd = ['convert' ,  src , '-auto-orient' , path_resized]
     subprocess.run(cmd)
+    
+    if (check_exists == False and os.path.isfile(os.path.basename(os.path.splitext(dst)[0])+'.webp') == False):
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.webp')
     cmd = ['convert' ,  src , '-auto-orient' ,

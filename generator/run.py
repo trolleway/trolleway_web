@@ -381,9 +381,11 @@ class Website_generator():
                 html = str()
                 #template = self.template_remove_map(template)
                 photo4template=dict()
-                photo4template['path']=os.path.join(output_directory_path,self.numfill(current_image))
+                photo4template['path']=os.path.join(self.numfill(current_image))
+                photo4template['page_file_local']=os.path.join(output_directory_path,self.numfill(current_image))
+                photo4template['page_url_absolute']=sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm'
                 photo4template['image_url']=image['url']
-                photo4template['image_url_base']=os.path.join(os.path.dirname(image['url']) , os.path.basename(os.path.splitext(image['url'])[0])
+                photo4template['image_url_base']=image['url'].replace('.jpg','')
                 photo4template['caption']=caption_location
                 photo4template['title']=image_page_title
                 photo4template['url_left']=url_left
@@ -399,6 +401,8 @@ class Website_generator():
                 photo4template['left_link_image']=left_link_image
                 photo4template['google_counter']=google_counter
                 photo4template['yandex_counter']=yandex_counter
+                
+
 
                 photos4template.append(photo4template)
 
@@ -429,12 +433,12 @@ class Website_generator():
 
 
 
-                filename = photo4template['path'] +'.htm'
+                filename = photo4template['page_file_local'] +'.htm'
                 with open(filename, "w", encoding='utf-8') as text_file:
                     text_file.write(html)
 
                 if not data.get('hide'):
-                    sitemap_page_record={'loc':photo4template['path']+'.htm','priority':'0.4', 'image_url':photo4template['image_url']+'.jpg'}
+                    sitemap_page_record={'loc':photo4template['page_url_absolute']+'','priority':'0.4', 'image_url':photo4template['image_url']+''}
                     if data.get('date_append'):
                         sitemap_page_record['lastmod']=data.get('date_append')
                     else:
@@ -447,16 +451,16 @@ class Website_generator():
                 title=photo4template['title']
                 )
                 leaflet_geojson_part = {
-            "type": "Feature",
-            "properties": {
-                "popupContent":popup_content
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [photo4template['lat'], photo4template['lon']]
-            }
-            }
-            leaflet_geojson_features.append(leaflet_geojson_part)
+                "type": "Feature",
+                "properties": {
+                    "popupContent":popup_content
+                },
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [photo4template['lon'], photo4template['lat']]
+                }
+                }
+                leaflet_geojson_features.append(leaflet_geojson_part)
 
             if not data.get('hide'):
                 sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
@@ -478,12 +482,60 @@ class Website_generator():
                 text = self.get_body_from_html(html_text_filename)
             else:
                 text = data.get('text','')
+                
+            #---------- map on index page
 
             leaflet_geojson = {
     "type": "FeatureCollection",
     "features":leaflet_geojson_features
     }
             leaflet_geojson_text = 'var photos = '+json.dumps(leaflet_geojson, indent=4, sort_keys=True)+';'
+            
+            map_js = '''
+            
+  // initialize the map
+  var map = L.map('map').setView([37.35, 55.08], 3);
+
+var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+var tiles = OpenStreetMap_DE.addTo(map);
+'''
+            map_js += leaflet_geojson_text
+            map_js += '''
+            
+function onEachFeature(feature, layer) {
+var popupContent = '' ; // make string from variables 
+
+if (feature.properties && feature.properties.popupContent) {
+    popupContent += feature.properties.popupContent;
+}
+
+layer.bindPopup(popupContent,{maxWidth : 800});
+}
+
+//L.geoJson(photos,{onEachFeature: onEachFeature}).addTo(map);
+
+
+var geojsonMarkerOptions = {
+	radius: 8,
+	fillColor: "#ff7800",
+	color: "#000",
+	weight: 1,
+	opacity: 1,
+	fillOpacity: 0.8
+};
+
+L.geoJSON(photos, {
+    onEachFeature: onEachFeature,
+	pointToLayer: function (feature, latlng) {
+		return L.circleMarker(latlng, geojsonMarkerOptions);
+	}
+}).addTo(map);
+
+
+            '''
 
 
 
@@ -492,10 +544,11 @@ class Website_generator():
             thumbnails_body = ''
             current_image = 0
             for photo in photos4template:
-                photo_html = '<a href="{photo_page_url}"><img src="{url_thumbnail_jpg}"></a>{caption}</p> '
+                photo_html = '<a href="{photo_page_url}"><picture><source srcset="{url_thumbnail_webp}" type="image/webp"><img src="{url_thumbnail_jpg}"></picture></a>{caption}</p> '
                 photo_html = photo_html.format(
                 photo_page_url=photo['path']+'.htm',
                 url_thumbnail_jpg=os.path.join(os.path.dirname(photo['image_url']) , os.path.basename(os.path.splitext(photo['image_url'])[0])+'.t.jpg'),
+                url_thumbnail_webp=os.path.join(os.path.dirname(photo['image_url']) , os.path.basename(os.path.splitext(photo['image_url'])[0])+'.t.webp'),
                 caption=photo['caption']
                 )
                 thumbnails_body += photo_html+"\n"
@@ -512,7 +565,7 @@ class Website_generator():
                 google_counter=google_counter,
                 yandex_counter=yandex_counter,
                 thumbnails_body = thumbnails_body,
-                leaflet_geojson = leaflet_geojson
+                map_js = map_js
                 )
 
             html = html.replace('<!--google_counter-->',google_counter)
@@ -533,6 +586,7 @@ class Website_generator():
             for page in pages2sitemap:
                 if 'image_url' in page:
                     imgurl='<image:image><image:loc>{url_image}</image:loc></image:image>'.format(url_image=page['image_url'])
+                    if '.jpg.jpg' in page['image_url']: print(page['image_url'])
                 else:
                     imgurl = ''
                 out += "<url><loc>{url}</loc>{imgurl}<lastmod>{lastmod}</lastmod><priority>{priority}</priority></url>\n".format(
