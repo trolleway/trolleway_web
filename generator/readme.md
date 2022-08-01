@@ -7,11 +7,13 @@ simple python generator of static web photo gallery
 ```
 docker build -f Dockerfile -t trolleway_website:dev .
 cd ..
-docker run --rm -it -v ${PWD}:/opt/website -v c:\trolleway\website-storage\storage\:/opt/storage trolleway_website:dev  /bin/bash
+docker run --rm -it -v ${PWD}:/opt/website -v c:\trolleway\website-storage\storage\:/opt/storage -v c:\trolleway\website-storage\master\:/opt/images_origins  trolleway_website:dev  /bin/bash
 ```
 In container run:
 ```
+time python3 generator/thumbnails.py
 
+time python3 generator/model.py
 time python3 generator/run.py
 ```
 

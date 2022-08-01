@@ -77,4 +77,4 @@ def photo_thumbnail(src,dst):
 
 
 
-thumbnails_create('/home/trolleway/tmp/src','/home/trolleway/tmp/dst')
+thumbnails_create('/opt/images_origins','/opt/storage')
