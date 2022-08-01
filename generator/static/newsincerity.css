@@ -26,16 +26,17 @@ body, html {
 }
 
 .caption span.border {
-  background-color: #111;
+  /*background-color: #111;*/
   color: #fff;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
   padding: 18px;
   font-size: 25px;
   letter-spacing: auto;
+  text-shadow: 0px 0px 3px black;
 }
 @media only screen and (max-width: 600px) {
   .caption span.border {
-    opacity: 1;
+
 	font-size: 15px;
 	padding: inherit;
 	letter-spacing: inherit;
@@ -47,7 +48,7 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
-}  
+}
 
 .leaflet-container {
 	height: 400px;
@@ -64,12 +65,12 @@ h3 {
   width:40%;
   right:0;
   z-index:20;
-  
+
 
 }
 
 #forwardlink img {
-    object-fit:fill;
+  object-fit:fill;
 	height: 100%;
 	float: right;
 	width: 200px;
@@ -115,4 +116,9 @@ align-self: center;
     max-width:100%;
 	object-fit: cover;
 	object-position: center;
+}
+@media only screen and (max-width: 600px) {
+  .stack__element  img {
+    object-fit: contain;
+  }
 }
