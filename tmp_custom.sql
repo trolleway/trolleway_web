@@ -1,231 +1,89 @@
-UPDATE photos SET city="", sublocation="",datetime="2019-04-08T19:05:34", wkt_geometry="POINT (132.17870 43.35291)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Artem city main street 20190408_1671_lr.jpg"  ;
- UPDATE photos SET city="Moscow", sublocation="",datetime="2019-03-23T13:15:54", wkt_geometry="POINT (37.58097 55.77708)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/ChME3-2672 20190323_0004.jpg"  ;
- UPDATE photos SET city="Moscow", sublocation="",datetime="2019-03-23T13:23:35", wkt_geometry="POINT (37.58087 55.77710)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/ED4MKM-0001 20190323_0012.jpg"  ;
- UPDATE photos SET city="Moscow", sublocation="",datetime="2019-03-23T13:22:18", wkt_geometry="POINT (37.58090 55.77708)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/ER2R-7075 20190323_0006.jpg"  ;
- UPDATE photos SET city="", sublocation="",datetime="2019-03-27T13:59:21", wkt_geometry="POINT (131.88700 43.02819)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok  FEFU campus night view  20190327_0175_lr.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:25:26", wkt_geometry="POINT (131.96613 43.25480)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0031.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:27:50", wkt_geometry="POINT (131.96482 43.21759)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0033.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:31:16", wkt_geometry="POINT (131.96511 43.17167)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0034.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:31:32", wkt_geometry="POINT (131.97020 43.17010)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0036.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:34:39", wkt_geometry="POINT (131.99540 43.14788)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0039.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:36:17", wkt_geometry="POINT (131.99665 43.12821)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0041.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:38:08", wkt_geometry="POINT (131.98417 43.10892)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0042.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:39:33", wkt_geometry="POINT (131.98311 43.09349)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0049.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:39:47", wkt_geometry="POINT (131.98061 43.09158)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0055.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:40:01", wkt_geometry="POINT (131.97703 43.08991)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0057.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-24T01:41:06", wkt_geometry="POINT (131.96605 43.07921)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0064.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T13:25:47", wkt_geometry="POINT (131.88849 43.03294)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0073.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T09:30:37", wkt_geometry="POINT (131.89831 43.02506)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0075.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T09:30:47", wkt_geometry="POINT (131.89846 43.02512)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0076.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T09:37:21", wkt_geometry="POINT (131.90281 43.02829)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0078.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T09:38:36", wkt_geometry="POINT (131.90273 43.02860)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0080_ShiftN_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T09:38:40", wkt_geometry="POINT (131.90273 43.02860)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0081.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T09:53:42", wkt_geometry="POINT (131.89351 43.03136)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0082.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-24T10:03:26", wkt_geometry="POINT (131.88994 43.03437)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0083.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:12:25", wkt_geometry="POINT (131.89804 43.09995)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0086.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:12:37", wkt_geometry="POINT (131.89810 43.09993)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0087.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:14:58", wkt_geometry="POINT (131.90014 43.09929)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0088.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:15:18", wkt_geometry="POINT (131.90018 43.09929)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0089.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:15:54", wkt_geometry="POINT (131.90033 43.09928)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0090_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:19:04", wkt_geometry="POINT (131.90275 43.09945)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0092.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:20:44", wkt_geometry="POINT (131.90276 43.10044)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0093.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:25:23", wkt_geometry="POINT (131.90363 43.10052)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0095.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:25:44", wkt_geometry="POINT (131.90363 43.10052)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0097.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:49:08", wkt_geometry="POINT (131.90507 43.09935)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0098.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:50:24", wkt_geometry="POINT (131.90519 43.09841)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0099_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:54:40", wkt_geometry="POINT (131.90635 43.09620)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0100.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:56:11", wkt_geometry="POINT (131.90756 43.09640)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0103.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:56:21", wkt_geometry="POINT (131.90761 43.09635)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0104.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:57:51", wkt_geometry="POINT (131.90658 43.09586)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0106.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:59:51", wkt_geometry="POINT (131.90633 43.09577)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0110.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T12:01:14", wkt_geometry="POINT (131.90584 43.09538)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0116.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T12:02:36", wkt_geometry="POINT (131.90502 43.09560)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0121_ShiftN_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T12:02:52", wkt_geometry="POINT (131.90484 43.09562)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0122.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T12:03:32", wkt_geometry="POINT (131.90465 43.09569)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0127_ShiftN_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T12:07:34", wkt_geometry="POINT (131.90496 43.09378)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0142.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T12:07:54", wkt_geometry="POINT (131.90507 43.09382)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0144.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-26T06:45:18", wkt_geometry="POINT (131.88843 43.02611)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190326_0156.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-26T06:58:19", wkt_geometry="POINT (131.88843 43.02611)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190326_0161.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="FEFU",datetime="2019-03-27T13:33:59", wkt_geometry="POINT (131.89377 43.03105)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190327_0167.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Balyaeva",datetime="2019-03-28T09:51:22", wkt_geometry="POINT (131.94080 43.12810)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0178.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Balyaeva",datetime="2019-03-28T09:52:25", wkt_geometry="POINT (131.94073 43.12801)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0182.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Balyaeva",datetime="2019-03-28T09:53:28", wkt_geometry="POINT (131.94038 43.12773)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0187.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Balyaeva",datetime="2019-03-28T09:53:47", wkt_geometry="POINT (131.94061 43.12770)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0188.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Balyaeva",datetime="2019-03-28T09:54:28", wkt_geometry="POINT (131.94034 43.12748)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0190.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-28T12:26:39", wkt_geometry="POINT (131.87832 43.11776)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0195.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-28T12:27:56", wkt_geometry="POINT (131.87832 43.11772)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0201.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-28T12:29:11", wkt_geometry="POINT (131.87833 43.11770)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0207.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T09:46:50", wkt_geometry="POINT (131.97487 43.09274)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0213.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T09:51:04", wkt_geometry="POINT (131.97688 43.09208)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0219.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T10:01:08", wkt_geometry="POINT (131.97787 43.09060)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0223.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T10:01:29", wkt_geometry="POINT (131.97792 43.09059)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0226.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:08:04", wkt_geometry="POINT (131.89988 43.13350)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0233.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:08:11", wkt_geometry="POINT (131.89989 43.13350)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0235.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:10:27", wkt_geometry="POINT (131.89996 43.13413)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0238.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:16:37", wkt_geometry="POINT (131.89999 43.13522)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0242.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:16:48", wkt_geometry="POINT (131.89999 43.13522)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0244.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:20:06", wkt_geometry="POINT (131.89995 43.13633)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0245.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:35:38", wkt_geometry="POINT (131.90091 43.12909)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0247_ShiftN.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T11:35:50", wkt_geometry="POINT (131.90091 43.12910)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0248.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T12:01:31", wkt_geometry="POINT (131.88912 43.12511)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0251.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T12:18:32", wkt_geometry="POINT (131.89205 43.12168)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0257.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T12:22:10", wkt_geometry="POINT (131.89171 43.12145)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0265_ShiftN.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T12:30:47", wkt_geometry="POINT (131.88949 43.12066)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0267.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-29T12:36:11", wkt_geometry="POINT (131.88777 43.12088)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0268.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T04:46:51", wkt_geometry="POINT (131.89839 43.05706)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0468_ShiftN_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T04:47:07", wkt_geometry="POINT (131.90120 43.05890)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0470_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:10:37", wkt_geometry="POINT (131.93717 43.11107)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0475.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:11:42", wkt_geometry="POINT (131.93701 43.11100)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0479.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:14:46", wkt_geometry="POINT (131.93733 43.11035)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0490.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:33:15", wkt_geometry="POINT (131.89403 43.11446)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0494.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:34:10", wkt_geometry="POINT (131.89354 43.11430)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0497_ShiftN_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:34:27", wkt_geometry="POINT (131.89325 43.11431)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0498.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:47:17", wkt_geometry="POINT (131.89217 43.11399)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0500.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:48:30", wkt_geometry="POINT (131.89236 43.11371)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0503.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:48:49", wkt_geometry="POINT (131.89236 43.11356)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0504.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:52:45", wkt_geometry="POINT (131.89053 43.11313)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0508.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:57:49", wkt_geometry="POINT (131.88721 43.11401)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0514.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:57:52", wkt_geometry="POINT (131.88722 43.11401)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0515.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T06:00:24", wkt_geometry="POINT (131.88621 43.11496)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0516_ShiftN.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T06:04:22", wkt_geometry="POINT (131.88485 43.11579)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0518_ShiftN_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Millionka",datetime="2019-04-02T06:31:15", wkt_geometry="POINT (131.88152 43.11685)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0520.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Millionka",datetime="2019-04-02T06:32:43", wkt_geometry="POINT (131.88210 43.11681)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0525.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Millionka",datetime="2019-04-02T06:33:06", wkt_geometry="POINT (131.88231 43.11681)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0526.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Millionka",datetime="2019-04-02T06:33:53", wkt_geometry="POINT (131.88215 43.11708)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0528.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Millionka",datetime="2019-04-02T06:33:58", wkt_geometry="POINT (131.88219 43.11712)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0529.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Millionka",datetime="2019-04-02T06:51:39", wkt_geometry="POINT (131.88110 43.11763)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0532_ShiftN_crop.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="Millionka",datetime="2019-04-02T06:51:52", wkt_geometry="POINT (131.88109 43.11772)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0534.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T06:57:56", wkt_geometry="POINT (131.88087 43.12116)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0540.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T07:00:19", wkt_geometry="POINT (131.88037 43.12236)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0541_ShiftN.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T07:05:17", wkt_geometry="POINT (131.88352 43.12292)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0543_ShiftN.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-03T05:05:32", wkt_geometry="POINT (0.00000 0.00000)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0558.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-03T05:05:40", wkt_geometry="POINT (0.00000 0.00000)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0559.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-03T05:06:43", wkt_geometry="POINT (0.00000 0.00000)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0570.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-03T05:06:48", wkt_geometry="POINT (0.00000 0.00000)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0571.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-03T05:07:04", wkt_geometry="POINT (0.00000 0.00000)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0574.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-03T05:07:23", wkt_geometry="POINT (132.18249 43.36906)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0577.jpg"  ;
- UPDATE photos SET city="", sublocation="",datetime="2019-03-27T13:57:47", wkt_geometry="POINT (131.88701 43.02819)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok FEFU campus night view 20190327_0173_lr.jpg"  ;
- UPDATE photos SET city="", sublocation="",datetime="2019-03-27T13:37:06", wkt_geometry="POINT (131.89380 43.03103)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok FEFU night view 20190327_0171_lr.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:08:16", wkt_geometry="POINT (131.89671 43.10080)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok Russkiy bridge 20190325_0084.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-03-25T11:08:18", wkt_geometry="POINT (131.89672 43.10080)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok Russkiy bridge 20190325_0085.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:32:28", wkt_geometry="POINT (131.89432 43.11421)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok Svetlanskaya street 20190402_0492.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:12:28", wkt_geometry="POINT (131.93701 43.11100)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 281 20190402_0485.jpg"  ;
- UPDATE photos SET city="Vladivostok", sublocation="",datetime="2019-04-02T05:12:41", wkt_geometry="POINT (131.93701 43.11100)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 281 20190402_0489.jpg"  ;
- UPDATE photos SET city="", sublocation="",datetime="2019-03-29T08:57:46", wkt_geometry="POINT (0.00000 0.00000)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 284 20190329_0212_lr.jpg"  ;
- UPDATE photos SET city="", sublocation="",datetime="2019-03-28T10:05:38", wkt_geometry="POINT (0.00000 0.00000)"
-            WHERE hotlink="https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 314 20190328_0194_lr.jpg"  ;
+UPDATE photos SET city="Moscow", sublocation="",datetime="2005-05-11T16:15:20", wkt_geometry="POINT (37.62118 55.68075)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-563_20050511_365.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2006-08-15T15:58:02", wkt_geometry="POINT (37.64246 55.71628)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-616_20060815_057.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2004-10-28T16:30:37", wkt_geometry="POINT (37.62081 55.70259)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-618_20041028.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-07-07T18:29:08", wkt_geometry="POINT (37.68509 55.63231)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-693_20050707_51.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2006-07-03T15:38:11", wkt_geometry="POINT (37.68510 55.63222)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-709_20060703_243.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2007-07-14T15:09:29", wkt_geometry="POINT (37.57795 55.55001)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-737_20070714_044.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-07-19T17:59:41", wkt_geometry="POINT (37.56709 55.74309)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-738_20050719_046.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-04-28T16:34:08", wkt_geometry="POINT (37.62087 55.68362)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-743_20050428_071.jpg"  ;
+ UPDATE photos SET city="Ramenskoe", sublocation="",datetime="2004-07-12T15:21:59", wkt_geometry="POINT (38.22543 55.56557)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-749_20040712_0001.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-07-20T18:07:55", wkt_geometry="POINT (37.62246 55.66312)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-756_20050720_034.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-08-24T18:24:48", wkt_geometry="POINT (37.67556 55.62385)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-760_20050824_048.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-07-07T16:23:11", wkt_geometry="POINT (37.62363 55.70464)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-768_20050707_11.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-08-21T16:54:22", wkt_geometry="POINT (37.66372 55.57279)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-770_20050821_126.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2006-01-16T13:28:24", wkt_geometry="POINT (37.61614 55.69601)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-771_20060116_056.jpg"  ;
+ UPDATE photos SET city="Vidnoe", sublocation="",datetime="2006-10-02T15:43:28", wkt_geometry="POINT (37.68509 55.54894)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-771_20061002_115.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2007-05-05T17:08:50", wkt_geometry="POINT (37.71497 55.65982)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-778_20070505_081.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2004-08-24T09:59:53", wkt_geometry="POINT (37.65550 55.77386)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-794_20040824_1.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2007-06-10T15:56:35", wkt_geometry="POINT (37.68088 55.62760)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-808_20070610_109.jpg"  ;
+ UPDATE photos SET city="Vidnoe", sublocation="",datetime="2005-08-21T16:22:27", wkt_geometry="POINT (37.66692 55.56732)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-812_20050821_112.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-01-03T16:05:41", wkt_geometry="POINT (37.65469 55.59176)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-817_20050103_197.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-10-20T17:31:08", wkt_geometry="POINT (37.66291 55.75617)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-819_20051020_027.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-08-03T10:49:02", wkt_geometry="POINT (37.68904 55.64000)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-820_20050803_002.jpg"  ;
+ UPDATE photos SET city="Lubertsy", sublocation="",datetime="2005-08-10T16:51:47", wkt_geometry="POINT (37.92391 55.66934)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-828_20050810_121.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-04-11T16:04:26", wkt_geometry="POINT (37.62103 55.68317)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-830_20050411_2.jpg"  ;
+ UPDATE photos SET city="Domodedovo", sublocation="",datetime="2006-08-19T14:54:48", wkt_geometry="POINT (37.77300 55.43980)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-835_20060819_084.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-07-03T18:11:10", wkt_geometry="POINT (37.62683 55.63232)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-841_20050703_126.jpg"  ;
+ UPDATE photos SET city="Ramenskoe", sublocation="",datetime="2004-06-27T10:06:49", wkt_geometry="POINT (38.24110 55.55986)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-843_20040627_013.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2004-07-25T19:34:49", wkt_geometry="POINT (37.70514 55.78121)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-844_20040725_002.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2006-09-02T18:58:59", wkt_geometry="POINT (37.70226 55.73393)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-853_20060902_188.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2006-03-06T13:44:25", wkt_geometry="POINT (37.66117 55.57671)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-858_20060306_035.jpg"  ;
+ UPDATE photos SET city="Ramenskoe", sublocation="",datetime="2005-05-29T13:04:48", wkt_geometry="POINT (38.29661 55.54010)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-864_20050529_385.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-08-06T10:56:27", wkt_geometry="POINT (37.65978 55.76225)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-865_20050806_055.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2007-03-18T16:10:21", wkt_geometry="POINT (37.64452 55.61181)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-868_20070318_147.jpg"  ;
+ UPDATE photos SET city="Zukovsky", sublocation="",datetime="2004-05-30T13:17:46", wkt_geometry="POINT (38.13595 55.60181)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-871_20040530_029.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2004-09-24T18:25:46", wkt_geometry="POINT (37.68995 55.64162)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-889_20040924_007.jpg"  ;
+ UPDATE photos SET city="Kolomna", sublocation="",datetime="2005-08-28T18:28:49", wkt_geometry="POINT (38.78100 55.09948)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-892_20050828_169.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2005-07-08T15:13:19", wkt_geometry="POINT (37.68887 55.64003)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-895_20050708_006.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2006-06-16T16:38:16", wkt_geometry="POINT (37.68936 55.64045)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-901_20060616_067.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2007-07-19T20:06:25", wkt_geometry="POINT (37.70310 55.73322)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-909_20070719_046.jpg"  ;
+ UPDATE photos SET city="Lubertsy", sublocation="",datetime="2005-10-01T16:01:29", wkt_geometry="POINT (37.86859 55.69634)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-911_20051001_044.jpg"  ;
+ UPDATE photos SET city="Zukovsky", sublocation="",datetime="2005-06-04T10:16:47", wkt_geometry="POINT (38.16180 55.59114)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-915_20050604_013.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2007-07-08T15:43:37", wkt_geometry="POINT (37.68666 55.63650)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-922_20070708_044.jpg"  ;
+ UPDATE photos SET city="", sublocation="",datetime="2004-07-12T17:25:05", wkt_geometry="POINT (38.78054 55.38916)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-931_20040712_0059.jpg"  ;
+ UPDATE photos SET city="Moscow", sublocation="",datetime="2006-08-15T15:56:17", wkt_geometry="POINT (37.64262 55.71625)"
+            WHERE hotlink="https://trolleway.com/storage/rail/RZD ChS2/ChS2-943_20060815_053.jpg"  ;
  

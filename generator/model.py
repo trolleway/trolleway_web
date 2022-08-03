@@ -142,6 +142,7 @@ class Model():
         sql = ""
         sql_custom = ""
         values = list()
+        page_url = os.path.basename(root)
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
 
@@ -169,7 +170,7 @@ class Model():
                 sublocation = image.get('sublocation','')
                 )
 
-        page_url = os.path.basename(root)
+        
         sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id,  "source", "order"  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
         page_url=page_url,
         inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
