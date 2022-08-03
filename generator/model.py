@@ -41,9 +41,13 @@ class Model():
     def image2datetime(self,path):
         with open(path, 'rb') as image_file:
             image_exif = Image(image_file)
-
-            dt_str = image_exif.get('datetime_original',None)
-            dt_obj = datetime.strptime(dt_str, '%Y:%m:%d %H:%M:%S')
+            
+            try:
+                dt_str = image_exif.get('datetime_original',None)
+                dt_obj = datetime.strptime(dt_str, '%Y:%m:%d %H:%M:%S')
+            except:
+                dt_obj = None
+            
 
             if dt_obj is None:
                 return None
@@ -99,6 +103,8 @@ class Model():
             for filename in files:
                 if not filename.lower().endswith('.jpg'): continue
                 if filename.lower().endswith('.t.jpg'): continue
+                
+                self.logger.debug(filename)
                 temp_path = os.path.normpath(path)
                 path_as_list = temp_path.split(os.sep)
 

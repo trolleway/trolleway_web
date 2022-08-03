@@ -169,3 +169,5 @@ generator/.*
 tmp_custom.sql
 tmp_custom.sql
 tmp_custom.sql
+parallel.list
+tmp_custom.sql
