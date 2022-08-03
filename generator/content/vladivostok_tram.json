@@ -209,6 +209,66 @@
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.87993 43.10912)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 314 20190328_0194_lr.jpg",
+   "city": "Владивосток",
+   "sublocation": "Луговая улица",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (0.00000 0.00000)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 284 20190329_0212_lr.jpg",
+   "city": "Владивосток",
+   "sublocation": "Луговая улица",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (0.00000 0.00000)"
+  },
+  {
+   "caption": "Проспект Острякова, где проходила линия к трамвайному депо",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0233.jpg",
+   "city": "Владивосток",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (131.89988 43.13350)"
+  },
+  {
+   "caption": "Трамвайное депо на Первой Речке. Проспект Острякова 38",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0245.jpg",
+   "city": "Владивосток",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (131.89995 43.13633)"
+  },
+  {
+   "caption": "Трамвай 71-608К 313 на остановке Луговая Улица",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0475.jpg",
+   "city": "Владивосток",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (131.93717 43.11107)"
+  },
+  {
+   "caption": "Трамвай 71-608К 313 на остановке Луговая Улица",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0479.jpg",
+   "city": "Владивосток",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (131.93701 43.11100)"
+  },
+  {
+   "caption": "Красный трамвай 71-605А 281 Работает с 1990 года",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 281 20190402_0485.jpg",
+   "city": "Владивосток",
+   "sublocation": "Луговая улица",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (131.93701 43.11100)"
+  },
+  {
+   "caption": "Красный трамвай 71-605А 281 сзади. Работает с 1990 года",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 281 20190402_0489.jpg",
+   "city": "Владивосток",
+   "sublocation": "Луговая улица",
+   "date_append": "2022-08-03",
+   "wkt_geometry": "POINT (131.93701 43.11100)"
   }
  ]
 }

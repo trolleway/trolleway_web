@@ -145,14 +145,15 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
 
-            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime, date_append)
-            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime, date_append, pages)
+            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}", "{pages}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
                 caption = image['caption'],
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
+                pages = page_url,
                 city = image.get('city',''),
                 sublocation = image.get('sublocation','')
                 )
@@ -169,7 +170,7 @@ class Model():
                 )
 
         page_url = os.path.basename(root)
-        sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id, source, order  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
+        sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id,  "source", "order"  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
         page_url=page_url,
         inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
         date=today.strftime('%Y-%m-%d'))
