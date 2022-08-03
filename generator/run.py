@@ -134,10 +134,6 @@ class Website_generator():
                 shutil.copy(full_file_name, output_directory)
 
 
-        exif_cache_directory = os.path.join(os.getcwd(), 'exif_cache')
-        if not os.path.isdir(exif_cache_directory):
-            os.mkdir(exif_cache_directory)
-
         assert os.path.isdir(json_dir),'must exists directory "'+json_dir+'"'
 
         json_files = [f for f in os.listdir(json_dir) if os.path.isfile(os.path.join(json_dir, f)) and f.lower().endswith('.json')]
@@ -218,38 +214,6 @@ class Website_generator():
                 else:
                     left_link_image = '''<img class="right_arrow"   alt="Go to previous page" src="../Controls_chapter_previous.svg">'''
 
-
-                # download photo from url to cache dir
-                if 'url_hotlink' in image.keys():
-                    photo_filename = pathlib.Path(image['url_hotlink']).name
-                else:
-                    photo_filename = pathlib.Path(image['url']).name
-                photo_local_cache = os.path.join(exif_cache_directory,requests.utils.unquote(photo_filename))
-
-                if not os.path.exists(photo_local_cache):
-
-                    image_url_4exif=image.get('url_hotlink',image.get('url'))
-                    useragent = ''
-                    if 'wikimedia' in image_url_4exif:
-                        useragent='User-Agent: ArtemSvetlovBot/1.0 (https://github.com/trolleway/trolleway_web/blob/master/generator/run.py; trolleway@yandex.ru) '
-                    r = requests.get(image_url_4exif, allow_redirects=True, stream=True,headers = {'User-Agent': useragent})
-                    r.raise_for_status()
-                    open(photo_local_cache, 'wb').write(r.content)
-
-
-                #copy photo to website dir
-
-                if mode == 'standalone-full':
-                    if 'url_hotlink' not in image.keys():
-                        photo_static_website_path = os.path.join(output_directory_path,photo_filename)
-                        if not os.path.isfile(photo_static_website_path):
-                            try:
-                                shutil.copyfile(photo_local_cache,photo_static_website_path)
-                            except:
-                                self.logger.debug('copy error '+ photo_local_cache)
-                        image['url'] = photo_filename
-                    elif 'url_hotlink' in image.keys():
-                        image['url'] = image['url_hotlink']
 
 
                 # get photo coordinates from json if exists
@@ -341,7 +305,7 @@ class Website_generator():
 <!-- /Yandex.Metrika counter -->
                 '''
 
-
+                image['url'] = image['url_hotlink']
                 image_page_title = ''
                 image_page_title = image.get('city','') + ' '+ image['caption'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]
                 #build html
