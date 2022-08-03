@@ -169,7 +169,7 @@ class Model():
                 )
 
         page_url = os.path.basename(root)
-        sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}' );\n '''.format(
+        sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id, source, order  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
         page_url=page_url,
         inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
         date=today.strftime('%Y-%m-%d'))
@@ -276,9 +276,18 @@ ORDER BY pages.uri, photos_pages."order";
                     if city in locations:
                         city = locations[city]                
                     image['city']=city
+                    
+                sublocation = db_photo.get('sublocation')
+                if sublocation != '':
+                    if sublocation in locations:
+                        sublocation = locations[sublocation]                
+                    image['sublocation']=sublocation
                 
                 if db_photo.get('date_append') is not None:
                     image['date_append'] = db_photo.get('date_append')
+                    
+                if db_photo.get('wkt_geometry') is not None:
+                    image['wkt_geometry'] = db_photo.get('wkt_geometry')
                
                 images.append(image)
             json_content['images']=images

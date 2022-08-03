@@ -12,6 +12,9 @@ import pathlib
 from datetime import datetime
 from iptcinfo3 import IPTCInfo
 
+from shapely import wkt
+from shapely.geometry import Point
+
 
 class Website_generator():
 
@@ -252,43 +255,20 @@ class Website_generator():
                 # get photo coordinates from json if exists
 
                 photo_coord = None
-                photo_coord_osmorg = image.get('coord') or None
+                wkt_geometry = image.get('wkt_geometry') or None
                 lat = None
                 lon = None
 
-                if photo_coord_osmorg is not None:
-                    photo_coord = photo_coord_osmorg.split('/')[0]+','+photo_coord_osmorg.split('/')[1]
-                    lat=photo_coord.split(',')[0]
-                    lon=photo_coord.split(',')[1]
+                if wkt_geometry is not None:
+                    shapely_point = wkt.loads(wkt_geometry)
+                    lat = shapely_point.y
+                    lon = shapely_point.x
+                    photo_coord = str(lat)+','+str(lon)
+
                 # get coordinates from exif
 
-                if photo_coord is not None:
-                    pass
-                else:
-                    photo_coord='0,0'
-                    #TODO: simplify, code taken from already exist script https://github.com/trolleway/photos2map/blob/master/photos2geojson.py
-                    try:
-                        with open(photo_local_cache, 'rb') as image_file:
-                            image_exif = Image(image_file)
-                            lat_dms=image_exif.gps_latitude
-                            lat=self.dms_to_dd(lat_dms[0],lat_dms[1],lat_dms[2])
-                            lon_dms=image_exif.gps_longitude
-                            lon=self.dms_to_dd(lon_dms[0],lon_dms[1],lon_dms[2])
 
-                            photo_coord=str(lat)+','+str(lon)
 
-                            lat = str(round(float(lat), 4))
-                            lon = str(round(float(lon), 4))
-                            coord = list()
-                            coord.append(round(float(lat), 4))# , round(float(lon), 4))
-                            coord.append(round(float(lon), 4))# , round(float(lon), 4))
-
-                            coords_list.append( coord )
-
-                    except:
-                        photo_coord='0,0'
-                        lat='0'
-                        lon='0'
                 # print map
 
 
@@ -370,6 +350,12 @@ class Website_generator():
                 if caption.endswith('.'): caption=caption[0:-1]
 
                 caption_location = caption
+                if 'sublocation' in image:
+                    if image['sublocation'] not in caption_location:
+                        if caption != '':
+                            caption_location = caption_location + ', ' + image['sublocation']
+                        else:
+                            caption_location = image['sublocation']
                 if 'city' in image:
                     if image['city'] not in caption_location:
                         if caption != '':
@@ -394,6 +380,7 @@ class Website_generator():
                 photo4template['rel_right']=rel_right
                 photo4template['map_js']=map_js
                 photo4template['city']=image.get('city','')
+                photo4template['sublocation']=image.get('sublocation','')
                 photo4template['alt']=image.get('headline',image.get('caption')),
                 photo4template['lat']=lat
                 photo4template['lon']=lon
@@ -460,7 +447,8 @@ class Website_generator():
                     "coordinates": [photo4template['lon'], photo4template['lat']]
                 }
                 }
-                leaflet_geojson_features.append(leaflet_geojson_part)
+                if photo4template['lon'] != 0:
+                    leaflet_geojson_features.append(leaflet_geojson_part)
 
             if not data.get('hide'):
                 sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
