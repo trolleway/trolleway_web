@@ -75,6 +75,11 @@ h3 {
 	float: right;
 	width: 200px;
 }
+@media only screen and (orientation:portrait) {
+  #forwardlink img {
+    height: auto;
+  }
+}
 #backwardlink {
   position: absolute;
   float: left;
@@ -91,6 +96,11 @@ h3 {
     object-fit:fill;
 	height: 100%;
 	width: 200px;
+}
+@media only screen and (orientation:portrait) {
+  #backwardlink img {
+    height: auto;
+  }
 }
 
 
@@ -117,7 +127,7 @@ align-self: center;
 	object-fit: cover;
 	object-position: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (orientation:portrait) {
   .stack__element  img {
     object-fit: contain;
   }

@@ -21,7 +21,8 @@
 <figure class="stack__element">
     <div id="backwardlink"><a href="{url_left}" alt="previous image" rel="{rel_left}" >{left_link_image}</a></div>
     <div id="forwardlink"><a href="{url_right}" alt="next image" rel="{rel_right}" >{right_link_image}</a></div>
-<img class="stack__element" src='{image_url}' alt="{alt}">
+	<picture><source srcset="{image_url_base}.webp" type="image/webp"><img class="stack__element" src='{image_url}' alt="{alt}"></picture>
+
 
   <figcaption class="caption">
     <span class="border"  itemprop="abstract">

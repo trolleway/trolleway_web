@@ -4,7 +4,7 @@ import subprocess
 
 
 
-def thumbnails_create(src_dir, dst_dir):
+def thumbnails_create(src_dir, dst_dir, check_exists = False):
     '''
     create thumbnails for tree
     '''
@@ -38,12 +38,13 @@ def thumbnails_create(src_dir, dst_dir):
     pbar = tqdm(total=len(convert_tuples))
 
     for photo in convert_tuples:
-        photo_thumbnail(photo['src'],photo['dst'])
+        tqdm.write("Generate thumbnail for %s" % photo['src'])
+        photo_thumbnail(photo['src'],photo['dst'],check_exists )
 
         pbar.update(1)
     pbar.close()
 
-def photo_thumbnail(src,dst):
+def photo_thumbnail(src,dst,check_exists = False):
 
     '''
      "-define jpeg:size=" for the image being read in.
@@ -53,30 +54,37 @@ def photo_thumbnail(src,dst):
      with an huge image when it isn't needed.
     '''
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.jpg')
-    cmd = ['convert' ,  src , '-auto-orient' , path_resized]
-    subprocess.run(cmd)
-    
-    if (check_exists == False and os.path.isfile(os.path.basename(os.path.splitext(dst)[0])+'.webp') == False):
+    if ( os.path.isfile(path_resized) == False or check_exists == False ):
 
+        cmd = ['convert' ,  src , '-auto-orient' , '-compress', 'JPEG', '-quality', '80', path_resized]
+        subprocess.run(cmd)
+        filesize = os.path.getsize(path_resized)
+        if filesize/(1024*1024) > 3:
+            print(path_resized,filesize)
+        
+    
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.webp')
-    cmd = ['convert' ,  src , '-auto-orient' ,
-    '-define', 'webp:image-hint=photo',
-    '-define', 'webp:near-loseless=90',
-    '-define', 'webp:method=5',
-    '-define', 'webp:thread-level=1',
-    path_resized]
-    subprocess.run(cmd)
+    if ( os.path.isfile(path_resized) == False or check_exists == False ):
+        cmd = ['convert' ,  src , '-auto-orient' ,
+        '-define', 'webp:image-hint=photo',
+        '-define', 'webp:near-loseless=90',
+        '-define', 'webp:method=5',
+        '-define', 'webp:thread-level=1',
+        path_resized]
+        subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.jpg')
-    cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'50' , src , '-auto-orient',
-          '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
-    subprocess.run(cmd)
+    if ( os.path.isfile(path_resized) == False or check_exists == False ):
+        cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'40' , src , '-auto-orient',
+              '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+        subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.webp')
-    cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'50' , src , '-auto-orient',
-          '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
-    subprocess.run(cmd)
+    if ( os.path.isfile(path_resized) == False or check_exists == False ):
+        cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'60' , src , '-auto-orient',
+              '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+        subprocess.run(cmd)
 
 
 
-thumbnails_create('/opt/images_origins','/opt/storage')
+thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True)
