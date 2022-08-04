@@ -55,6 +55,30 @@
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.96143 43.09707)"
+  },
+  {
+   "caption": "Библиотека 95, Полимерная улица",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_04 Perovo library.jpg",
+   "city": "Москва",
+   "sublocation": "Perovo",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.79979 55.74672)"
+  },
+  {
+   "caption": "Комплекс панельных домов на улице Лазо. Перовская улица, 31",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_06 Lazo street Perovo.jpg",
+   "city": "Москва",
+   "sublocation": "Perovo",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.77461 55.74648)"
+  },
+  {
+   "caption": "Торговое здание с кирпичными стенами на Перовской улице",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_07 Perovo shop_ShiftN.jpg",
+   "city": "Москва",
+   "sublocation": "Perovo",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.78412 55.74590)"
   }
  ]
 }

@@ -113,6 +113,66 @@
    "wkt_geometry": "POINT (131.88722 43.11401)"
   },
   {
+   "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_09 Lefortovo Perovo railway.jpg",
+   "city": "Москва",
+   "sublocation": "Perovo",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.76068 55.75268)"
+  },
+  {
+   "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_10 Lefortovo Perovo railway.jpg",
+   "city": "Москва",
+   "sublocation": "Perovo",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.76067 55.75266)"
+  },
+  {
+   "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_11 Lefortovo Perovo railway.jpg",
+   "city": "Москва",
+   "sublocation": "Perovo",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.75466 55.75177)"
+  },
+  {
+   "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_12 Lefortovo Perovo railway.jpg",
+   "city": "Москва",
+   "sublocation": "Perovo",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.75463 55.75177)"
+  },
+  {
+   "caption": "Заброшенный подъездной путь от северного парка станции Бойня через Скотопрогонную улицу",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_13 Boinya station.jpg",
+   "city": "Москва",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.69389 55.72846)"
+  },
+  {
+   "caption": "Станция Бойня",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_14 Boinya station.jpg",
+   "city": "Москва",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.69175 55.72566)"
+  },
+  {
+   "caption": "Станция Бойня",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_15 Boinya station.jpg",
+   "city": "Москва",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.69063 55.72541)"
+  },
+  {
+   "caption": "Подъездной путь Бирюлёво - Видное",
+   "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20210706_22 Zagorie railway.jpg",
+   "city": "Москва",
+   "date_append": "2022-08-04",
+   "wkt_geometry": "POINT (37.69665 55.58675)"
+  },
+  {
    "caption": "Удачная встреча: тепловоз ТЭМ15-076 на подъездном пути Воскресенского завода минеральных удобрений",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_01.jpg",
    "city": "Воскресенск",
