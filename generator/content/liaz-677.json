@@ -1,0 +1,46 @@
+{
+ "title": "Автобусы ЛиАЗ-677М",
+ "h1": "Автобус ЛиАЗ-677М",
+ "text": "Автобусы ЛиАЗ-677М",
+ "text_en": "Main midle-class city bus of 1980-s: LiAZ-677V",
+ "map_center": "",
+ "map_zoom": "12",
+ "date_mod": "2022-08-04",
+ "images": [
+  {
+   "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс. Снят на телеобьектив на фоне толпы на остановке",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_170.jpg",
+   "city": "Москва",
+   "date_append": "2022-07-30",
+   "wkt_geometry": "POINT (37.5442999999999998 55.7077799999999996)"
+  },
+  {
+   "caption": "Вид сзади на уезжающий автобус ЛАЗ-699Р у793вн797",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_178.jpg",
+   "city": "Москва",
+   "date_append": "2022-07-30",
+   "wkt_geometry": "POINT (37.5535599999999974 55.7065100000000015)"
+  },
+  {
+   "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_186.jpg",
+   "city": "Москва",
+   "date_append": "2022-07-30",
+   "wkt_geometry": "POINT (37.5482099999999974 55.7026499999999984)"
+  },
+  {
+   "caption": "Автобус ЛиАЗ-677М в677ес50 сзади",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_190.jpg",
+   "city": "Москва",
+   "date_append": "2022-07-30",
+   "wkt_geometry": "POINT (37.5481899999999982 55.7026499999999984)"
+  },
+  {
+   "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс. Проспект Вернадского, снят на телеобъектив",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_215_ShiftN.jpg",
+   "city": "Москва",
+   "date_append": "2022-07-30",
+   "wkt_geometry": "POINT (37.5454799999999977 55.7003800000000027)"
+  }
+ ]
+}
