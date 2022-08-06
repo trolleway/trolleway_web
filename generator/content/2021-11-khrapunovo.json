@@ -1,0 +1,158 @@
+{
+ "title": "Подъездной путь у станции Храпуново",
+ "h1": "Подъездной путь у станции Храпуново",
+ "text": "Подъездной путь у станции Храпуново",
+ "text_en": "Khrapunovo industrial railway track",
+ "map_center": "",
+ "map_zoom": "12",
+ "date_mod": "2022-08-06",
+ "images": [
+  {
+   "caption": "Станция Храпуново, вид в сторону области",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/khrapunovo station_20211107_01.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34860 55.72097)"
+  },
+  {
+   "caption": "Платформа и касса на станции Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/khrapunovo station_20211107_02.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34860 55.72097)"
+  },
+  {
+   "caption": "Электровоз ВЛ10У-924 с товарным поездом на станции Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/VL10U-924_20211107_03_crop.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35356 55.72086)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_07.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35465 55.72097)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_09.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35384 55.72121)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_10.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35247 55.72152)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_11.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35129 55.72175)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, действующая ветка на север",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_12.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35129 55.72175)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, действующая ветка на север",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_14.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35129 55.72175)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, действующая ветка на север",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_15.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34913 55.72323)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_17.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.35086 55.72175)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_18.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34816 55.72186)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_19.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34790 55.72187)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_20.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34790 55.72187)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_21.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34667 55.72189)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_23.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34561 55.72189)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_26.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34303 55.72202)"
+  },
+  {
+   "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_27.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34303 55.72202)"
+  },
+  {
+   "caption": "Здание Храпуновского инструментального завода",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo town_20211107_29.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.34013 55.72248)"
+  },
+  {
+   "caption": "Посёлок Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo town_20211107_30.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.33990 55.72267)"
+  },
+  {
+   "caption": "Магазин Магнит в посёлке Храпуново",
+   "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo town magnit_20211107_31.jpg",
+   "city": "Храпуново",
+   "date_append": "2022-08-06",
+   "wkt_geometry": "POINT (38.33943 55.72312)"
+  }
+ ]
+}

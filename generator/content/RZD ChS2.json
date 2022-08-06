@@ -108,7 +108,7 @@
   {
    "caption": "Электровоз ЧС2-771 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-771_20061002_115.jpg",
-   "city": "Vidnoe",
+   "city": "Видное",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68509 55.54894)"
   },
@@ -136,7 +136,7 @@
   {
    "caption": "Электровоз ЧС2-812 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-812_20050821_112.jpg",
-   "city": "Vidnoe",
+   "city": "Видное",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.66692 55.56732)"
   },
@@ -178,7 +178,7 @@
   {
    "caption": "Электровоз ЧС2-835 с дальним поездом на Павелецком направлении, станция Домодедово",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-835_20060819_084.jpg",
-   "city": "Domodedovo",
+   "city": "Домодедово",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.77300 55.43980)"
   },
@@ -255,7 +255,7 @@
   {
    "caption": "Электровоз ЧС2-892 с дальним поездом на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-892_20050828_169.jpg",
-   "city": "Kolomna",
+   "city": "Коломна",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.78100 55.09948)"
   },
