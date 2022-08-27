@@ -10,6 +10,8 @@
   {
    "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс. Снят на телеобьектив на фоне толпы на остановке",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_170.jpg",
+   "uri": "I00358",
+   "uri_next": "I00359",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5442999999999998 55.7077799999999996)"
@@ -17,6 +19,9 @@
   {
    "caption": "Вид сзади на уезжающий автобус ЛАЗ-699Р у793вн797",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_178.jpg",
+   "uri": "I00359",
+   "uri_prev": "I00358",
+   "uri_next": "I00360",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5535599999999974 55.7065100000000015)"
@@ -24,6 +29,9 @@
   {
    "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_186.jpg",
+   "uri": "I00360",
+   "uri_prev": "I00359",
+   "uri_next": "I00361",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5482099999999974 55.7026499999999984)"
@@ -31,6 +39,9 @@
   {
    "caption": "Автобус ЛиАЗ-677М в677ес50 сзади",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_190.jpg",
+   "uri": "I00361",
+   "uri_prev": "I00360",
+   "uri_next": "I00364",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5481899999999982 55.7026499999999984)"
@@ -38,6 +49,8 @@
   {
    "caption": "Автобус ЛиАЗ-677М в677ес50 на фестивале Ретрорейс. Проспект Вернадского, снят на телеобъектив",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_215_ShiftN.jpg",
+   "uri": "I00364",
+   "uri_prev": "I00361",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5454799999999977 55.7003800000000027)"

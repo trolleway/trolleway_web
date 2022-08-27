@@ -10,6 +10,8 @@
   {
    "caption": "Двухэтажные жилые дома в посёлке Красный Октябрь",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0755.jpg",
+   "uri": "I00559",
+   "uri_next": "I00560",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20583 55.56750)"
@@ -17,6 +19,9 @@
   {
    "caption": "Двухэтажные жилые дома в посёлке Красный Октябрь",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0756.jpg",
+   "uri": "I00560",
+   "uri_prev": "I00559",
+   "uri_next": "I00561",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20488 55.56821)"
@@ -24,6 +29,9 @@
   {
    "caption": "Конструктивистский жилой дом. Посёлок Красный Октябрь, 36",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0757_ShiftN_crop.jpg",
+   "uri": "I00561",
+   "uri_prev": "I00560",
+   "uri_next": "I00562",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20490 55.57010)"
@@ -31,6 +39,9 @@
   {
    "caption": "Конструктивистский жилой дом. Посёлок Красный Октябрь, 36",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0758.jpg",
+   "uri": "I00562",
+   "uri_prev": "I00561",
+   "uri_next": "I00563",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20458 55.57010)"
@@ -38,6 +49,9 @@
   {
    "caption": "Конструктивистский жилой дом. Посёлок Красный Октябрь, 36",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0759.jpg",
+   "uri": "I00563",
+   "uri_prev": "I00562",
+   "uri_next": "I00564",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20359 55.56995)"
@@ -45,6 +59,9 @@
   {
    "caption": "Конструктивистский дом в посёлке Красный Октябрь, 35",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0760_ShiftN_crop.jpg",
+   "uri": "I00564",
+   "uri_prev": "I00563",
+   "uri_next": "I00565",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20285 55.56990)"
@@ -52,6 +69,9 @@
   {
    "caption": "Конструктивистский дом в посёлке Красный Октябрь, 35",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0761_ShiftN_crop.jpg",
+   "uri": "I00565",
+   "uri_prev": "I00564",
+   "uri_next": "I00566",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20199 55.56974)"
@@ -59,6 +79,9 @@
   {
    "caption": "Конструктивистский дом в посёлке Красный Октябрь, 35",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0762_ShiftN_crop.jpg",
+   "uri": "I00566",
+   "uri_prev": "I00565",
+   "uri_next": "I00567",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20102 55.56944)"
@@ -66,6 +89,9 @@
   {
    "caption": "Советская мозайка на торце дома. Десантная улица, 44",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0763.jpg",
+   "uri": "I00567",
+   "uri_prev": "I00566",
+   "uri_next": "I00568",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.19660 55.56758)"
@@ -73,6 +99,9 @@
   {
    "caption": "Начало стройки жилого комплекса Солнечный. Улица 100-й Свирской Дивизии / Десантная",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0766.jpg",
+   "uri": "I00568",
+   "uri_prev": "I00567",
+   "uri_next": "I00569",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.19669 55.56740)"
@@ -80,6 +109,9 @@
   {
    "caption": "Автобус 2 маршрута ЛиАЗ-5256 на Десантной улице.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0767.jpg",
+   "uri": "I00569",
+   "uri_prev": "I00568",
+   "uri_next": "I00570",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20033 55.56797)"
@@ -87,6 +119,9 @@
   {
    "caption": "Деревянный двухэтажный жилой дом в посёлке Красный Октябрь",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0773.jpg",
+   "uri": "I00570",
+   "uri_prev": "I00569",
+   "uri_next": "I00571",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20210 55.56885)"
@@ -94,6 +129,9 @@
   {
    "caption": "Конструктивистский жилой дом. Посёлок Красный Октябрь, 43",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0775_ShiftN.jpg",
+   "uri": "I00571",
+   "uri_prev": "I00570",
+   "uri_next": "I00572",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20343 55.57099)"
@@ -101,6 +139,9 @@
   {
    "caption": "Конструктивистский жилой дом. Посёлок Красный Октябрь, 43",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0776.jpg",
+   "uri": "I00572",
+   "uri_prev": "I00571",
+   "uri_next": "I00573",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20359 55.57098)"
@@ -108,6 +149,9 @@
   {
    "caption": "Конструктивистский жилой дом со скруглёнными углами. Посёлок Красный Октябрь, 41",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0779.jpg",
+   "uri": "I00573",
+   "uri_prev": "I00572",
+   "uri_next": "I00574",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20501 55.57101)"
@@ -115,6 +159,9 @@
   {
    "caption": "Конструктивистский жилой дом. Посёлок Красный Октябрь, 47",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0780.jpg",
+   "uri": "I00574",
+   "uri_prev": "I00573",
+   "uri_next": "I00575",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20482 55.57121)"
@@ -122,6 +169,9 @@
   {
    "caption": "Конструктивистский жилой дом со скруглёнными углами. Посёлок Красный Октябрь, 41",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0781.jpg",
+   "uri": "I00575",
+   "uri_prev": "I00574",
+   "uri_next": "I00576",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20511 55.57109)"
@@ -129,6 +179,9 @@
   {
    "caption": "Конструктивистский жилой дом со скруглёнными углами. Выглядит очень европейским. Посёлок Красный Октябрь, 41",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0782.jpg",
+   "uri": "I00576",
+   "uri_prev": "I00575",
+   "uri_next": "I00577",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20549 55.57184)"
@@ -136,6 +189,9 @@
   {
    "caption": "Старый Раменский рынок у станции Фабричная. Действовал до середины 1990-х. С конца 2010-х действует продуктовый супермаркет Да и торговля стройматериалами. Навес снесён.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0784.jpg",
+   "uri": "I00577",
+   "uri_prev": "I00576",
+   "uri_next": "I00578",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21297 55.56998)"
@@ -143,6 +199,9 @@
   {
    "caption": "Автобус 2 маршрута на конечной у старого рынка.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0786.jpg",
+   "uri": "I00578",
+   "uri_prev": "I00577",
+   "uri_next": "I00579",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21329 55.56979)"
@@ -150,6 +209,9 @@
   {
    "caption": "Главное здание Раменской фабрики, вид из-за железной дороги",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0787_ShiftN_crop.jpg",
+   "uri": "I00579",
+   "uri_prev": "I00578",
+   "uri_next": "I00580",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21900 55.56764)"
@@ -157,6 +219,9 @@
   {
    "caption": "Раскрашеный дом в Раменском. Бронницкая улица, 13",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0790.jpg",
+   "uri": "I00580",
+   "uri_prev": "I00579",
+   "uri_next": "I00581",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23558 55.56342)"
@@ -164,6 +229,9 @@
   {
    "caption": "Раскрашенные дома в Раменском. Район магазина Антей",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0791.jpg",
+   "uri": "I00581",
+   "uri_prev": "I00580",
+   "uri_next": "I00582",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -171,6 +239,9 @@
   {
    "caption": "Раскрашенные дома в Раменском. Район магазина Антей",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0792.jpg",
+   "uri": "I00582",
+   "uri_prev": "I00581",
+   "uri_next": "I00583",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -178,6 +249,9 @@
   {
    "caption": "Раскрашенные дома в Раменском. Район магазина Антей",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0796.jpg",
+   "uri": "I00583",
+   "uri_prev": "I00582",
+   "uri_next": "I00584",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23460 55.56551)"
@@ -185,6 +259,9 @@
   {
    "caption": "Многоэтажный дом Китайская Стена. Улица Гурьева, 2",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0797_ShiftN_crop.jpg",
+   "uri": "I00584",
+   "uri_prev": "I00583",
+   "uri_next": "I00585",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23466 55.56565)"
@@ -192,6 +269,9 @@
   {
    "caption": "Улица Гурьева, автобусная остановка Военкомат",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0799.jpg",
+   "uri": "I00585",
+   "uri_prev": "I00584",
+   "uri_next": "I00586",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23637 55.56783)"
@@ -199,6 +279,9 @@
   {
    "caption": "Трёхэтажный магазин. Красноармейская улица, 15",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0805.jpg",
+   "uri": "I00586",
+   "uri_prev": "I00585",
+   "uri_next": "I00587",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23784 55.57150)"
@@ -206,6 +289,9 @@
   {
    "caption": "Улица Михалевича, 25",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0812.jpg",
+   "uri": "I00587",
+   "uri_prev": "I00586",
+   "uri_next": "I00588",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23218 55.56722)"
@@ -213,6 +299,9 @@
   {
    "caption": "Раскрашеные дома на улице Михалевича у Макдональдса",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0813_ShiftN.jpg",
+   "uri": "I00588",
+   "uri_prev": "I00587",
+   "uri_next": "I00589",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23105 55.56752)"
@@ -220,6 +309,9 @@
   {
    "caption": "Большой жилой дом. Раменское, улица Михалевича, 3. Вид со двора, где он не оштукатурен",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0816_ShiftN.jpg",
+   "uri": "I00589",
+   "uri_prev": "I00588",
+   "uri_next": "I00590",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22999 55.56837)"
@@ -227,6 +319,9 @@
   {
    "caption": "Большой жилой дом. Раменское, улица Михалевича, 3. Старые сараи во дворе для жильцов",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0817.jpg",
+   "uri": "I00590",
+   "uri_prev": "I00589",
+   "uri_next": "I00591",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22989 55.56838)"
@@ -234,6 +329,9 @@
   {
    "caption": "Большой жилой дом. Раменское, улица Михалевича, 3. Арка",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0818.jpg",
+   "uri": "I00591",
+   "uri_prev": "I00590",
+   "uri_next": "I00592",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22935 55.56811)"
@@ -241,6 +339,9 @@
   {
    "caption": "Большой жилой дом. Раменское, улица Михалевича, 3. Вид главного фасада",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0819.jpg",
+   "uri": "I00592",
+   "uri_prev": "I00591",
+   "uri_next": "I00593",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22953 55.56787)"
@@ -248,6 +349,9 @@
   {
    "caption": "Старая вывеска магазина Консервы",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0820.jpg",
+   "uri": "I00593",
+   "uri_prev": "I00592",
+   "uri_next": "I00594",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22823 55.56804)"
@@ -255,6 +359,9 @@
   {
    "caption": "Фрагмент кирпичного детского городка советской постройки. Разрушен без замены в 2010-х годах.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0821.jpg",
+   "uri": "I00594",
+   "uri_prev": "I00593",
+   "uri_next": "I00595",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22704 55.56882)"
@@ -262,6 +369,9 @@
   {
    "caption": "Торговое здание 2003 года постройки. Красноармейская улица, 4Б",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0823.jpg",
+   "uri": "I00595",
+   "uri_prev": "I00594",
+   "uri_next": "I00596",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22997 55.57113)"
@@ -269,6 +379,9 @@
   {
    "caption": "Долгострой на улице Красноармейской. В 2010-х перед ним будет построен ещё один долгострой",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0824.jpg",
+   "uri": "I00596",
+   "uri_prev": "I00595",
+   "uri_next": "I00597",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.23094 55.57130)"
@@ -276,6 +389,9 @@
   {
    "caption": "Борисоглебское озеро",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0826.jpg",
+   "uri": "I00597",
+   "uri_prev": "I00596",
+   "uri_next": "I00598",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22790 55.57101)"
@@ -283,6 +399,9 @@
   {
    "caption": "Борисоглебское озеро",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0827.jpg",
+   "uri": "I00598",
+   "uri_prev": "I00597",
+   "uri_next": "I00599",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22782 55.57097)"
@@ -290,6 +409,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда, с восточной стороны участка",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0830.jpg",
+   "uri": "I00599",
+   "uri_prev": "I00598",
+   "uri_next": "I00600",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22328 55.56906)"
@@ -297,6 +419,9 @@
   {
    "caption": "Канализационный люк с надписью Раменская Фабрика",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0831.jpg",
+   "uri": "I00600",
+   "uri_prev": "I00599",
+   "uri_next": "I00601",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22307 55.56910)"
@@ -304,6 +429,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0832.jpg",
+   "uri": "I00601",
+   "uri_prev": "I00600",
+   "uri_next": "I00602",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22262 55.56925)"
@@ -311,6 +439,9 @@
   {
    "caption": "Здание администрации фабрики с мраморной табличкой Раменский прядильно-текстильный комбинат Красное знамя",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0833.jpg",
+   "uri": "I00602",
+   "uri_prev": "I00601",
+   "uri_next": "I00603",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22269 55.56921)"
@@ -318,6 +449,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0834.jpg",
+   "uri": "I00603",
+   "uri_prev": "I00602",
+   "uri_next": "I00604",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22275 55.56920)"
@@ -325,6 +459,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0835.jpg",
+   "uri": "I00604",
+   "uri_prev": "I00603",
+   "uri_next": "I00605",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22275 55.56920)"
@@ -332,6 +469,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0836_ShiftN.jpg",
+   "uri": "I00605",
+   "uri_prev": "I00604",
+   "uri_next": "I00606",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22268 55.56920)"
@@ -339,6 +479,9 @@
   {
    "caption": "Раменская фабрика. Детали кирпичных стен.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0837.jpg",
+   "uri": "I00606",
+   "uri_prev": "I00605",
+   "uri_next": "I00607",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22251 55.56912)"
@@ -346,6 +489,9 @@
   {
    "caption": "Главное здание Раменской фабрики, вид через ворота",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0838_ShiftN_crop.jpg",
+   "uri": "I00607",
+   "uri_prev": "I00606",
+   "uri_next": "I00608",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22288 55.56825)"
@@ -353,6 +499,9 @@
   {
    "caption": "Склады на территории Раменской фабрики. Перед ними было 2 железнодорожных пути. Склады снесли в начале 2010-х, обьявляли что на их месте будут строить магазины.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0840.jpg",
+   "uri": "I00608",
+   "uri_prev": "I00607",
+   "uri_next": "I00609",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22030 55.56789)"
@@ -360,6 +509,9 @@
   {
    "caption": "Раменская фабрика, западный угол территории. Склады в правой части снимка позднее были снесены",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0841_ShiftN.jpg",
+   "uri": "I00609",
+   "uri_prev": "I00608",
+   "uri_next": "I00610",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21513 55.56990)"
@@ -367,6 +519,9 @@
   {
    "caption": "Хлебозавод 1870 года незадолго перед закрытием",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0842_ShiftN_crop.jpg",
+   "uri": "I00610",
+   "uri_prev": "I00609",
+   "uri_next": "I00611",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21456 55.57014)"
@@ -374,6 +529,9 @@
   {
    "caption": "Одна из фабричных казарм у платформы Фабричная",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0843_ShiftN_crop.jpg",
+   "uri": "I00611",
+   "uri_prev": "I00610",
+   "uri_next": "I00612",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20973 55.57213)"
@@ -381,6 +539,9 @@
   {
    "caption": "Квартал дореволюционных общежитий Раменской фабрики",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0845.jpg",
+   "uri": "I00612",
+   "uri_prev": "I00611",
+   "uri_next": "I00613",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21291 55.57272)"
@@ -388,6 +549,9 @@
   {
    "caption": "Сушится бельё на верёвке. Квартал дореволюционных общежитий Раменской фабрики",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0846_ShiftN.jpg",
+   "uri": "I00613",
+   "uri_prev": "I00612",
+   "uri_next": "I00614",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21296 55.57274)"
@@ -395,6 +559,9 @@
   {
    "caption": "Фабричная баня. Здание сильно надстроено в 2000-х годах",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0848.jpg",
+   "uri": "I00614",
+   "uri_prev": "I00613",
+   "uri_next": "I00615",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21605 55.57231)"
@@ -402,6 +569,9 @@
   {
    "caption": "Фабричная баня. Здание сильно надстроено в 2000-х годах",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0849_ShiftN_crop.jpg",
+   "uri": "I00615",
+   "uri_prev": "I00614",
+   "uri_next": "I00616",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21522 55.57265)"
@@ -409,6 +579,9 @@
   {
    "caption": "Маленькое двухэтажное здание на улице Чугунова",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0850.jpg",
+   "uri": "I00616",
+   "uri_prev": "I00615",
+   "uri_next": "I00617",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21508 55.57266)"
@@ -416,6 +589,9 @@
   {
    "caption": "Проезд между фабричными общежитиями. Здесь проходила железная дорога к Северному шоссе",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0851.jpg",
+   "uri": "I00617",
+   "uri_prev": "I00616",
+   "uri_next": "I00618",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21332 55.57313)"
@@ -423,6 +599,9 @@
   {
    "caption": "Раменская больница. Колонна №2",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0853.jpg",
+   "uri": "I00618",
+   "uri_prev": "I00617",
+   "uri_next": "I00619",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21333 55.57393)"
@@ -430,6 +609,9 @@
   {
    "caption": "Участок на углу улицы Чугунова, где будет построен многоэтажный дом и Burger King",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0856.jpg",
+   "uri": "I00619",
+   "uri_prev": "I00618",
+   "uri_next": "I00620",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20732 55.57767)"
@@ -437,6 +619,9 @@
   {
    "caption": "Раскрашенные дома в Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0857_ShiftN_crop.jpg",
+   "uri": "I00620",
+   "uri_prev": "I00619",
+   "uri_next": "I00621",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20690 55.57771)"
@@ -444,6 +629,9 @@
   {
    "caption": "Долгострой на улице Чугунова. Здания в кадре были снесены, в начале 2010-х на этом участке строился торговый центр, но тоже не достроен",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0858.jpg",
+   "uri": "I00621",
+   "uri_prev": "I00620",
+   "uri_next": "I00622",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20625 55.57796)"
@@ -451,6 +639,9 @@
   {
    "caption": "Долгострой на улице Чугунова. Здания в кадре были снесены, в начале 2010-х на этом участке строился торговый центр, но тоже не достроен",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0859.jpg",
+   "uri": "I00622",
+   "uri_prev": "I00621",
+   "uri_next": "I00623",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20490 55.57885)"
@@ -458,6 +649,9 @@
   {
    "caption": "Двухэтажные жилые дома на улице Чугунова, позднее снесёные.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0861_ShiftN_crop.jpg",
+   "uri": "I00623",
+   "uri_prev": "I00622",
+   "uri_next": "I00624",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20446 55.57896)"
@@ -465,6 +659,9 @@
   {
    "caption": "Дом с парусником. Улица Чугунова, 24",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0863.jpg",
+   "uri": "I00624",
+   "uri_prev": "I00623",
+   "uri_next": "I00625",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20319 55.57983)"
@@ -472,6 +669,9 @@
   {
    "caption": "Улица Чугунова, 24",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0864.jpg",
+   "uri": "I00625",
+   "uri_prev": "I00624",
+   "uri_next": "I00626",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20369 55.58011)"
@@ -479,6 +679,9 @@
   {
    "caption": "Улица Чугунова, 24",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0865.jpg",
+   "uri": "I00626",
+   "uri_prev": "I00625",
+   "uri_next": "I00627",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20384 55.58025)"
@@ -486,6 +689,9 @@
   {
    "caption": "Улица Чугунова, 24",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0865_ShiftN.jpg",
+   "uri": "I00627",
+   "uri_prev": "I00626",
+   "uri_next": "I00628",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20384 55.58025)"
@@ -493,6 +699,9 @@
   {
    "caption": "Раскрашеные дома в микрорайоне Холодово. Улица Чугунова, 26",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0867.jpg",
+   "uri": "I00628",
+   "uri_prev": "I00627",
+   "uri_next": "I00629",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20403 55.58027)"
@@ -500,6 +709,9 @@
   {
    "caption": "Дом с парусником. Улица Чугунова, 24",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0869_ShiftN_crop.jpg",
+   "uri": "I00629",
+   "uri_prev": "I00628",
+   "uri_next": "I00630",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20320 55.58048)"
@@ -507,6 +719,9 @@
   {
    "caption": "Раскрашеные дома в микрорайоне Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0871.jpg",
+   "uri": "I00630",
+   "uri_prev": "I00629",
+   "uri_next": "I00631",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20306 55.58096)"
@@ -514,6 +729,9 @@
   {
    "caption": "Раскрашеные дома в микрорайоне Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0872.jpg",
+   "uri": "I00631",
+   "uri_prev": "I00630",
+   "uri_next": "I00632",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -521,6 +739,9 @@
   {
    "caption": "Раскрашеные дома в микрорайоне Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0874.jpg",
+   "uri": "I00632",
+   "uri_prev": "I00631",
+   "uri_next": "I00633",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -528,6 +749,9 @@
   {
    "caption": "Раскрашеные дома в микрорайоне Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0875.jpg",
+   "uri": "I00633",
+   "uri_prev": "I00632",
+   "uri_next": "I00634",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -535,6 +759,9 @@
   {
    "caption": "Район Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0879_ShiftN.jpg",
+   "uri": "I00634",
+   "uri_prev": "I00633",
+   "uri_next": "I00635",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20404 55.58536)"
@@ -542,6 +769,9 @@
   {
    "caption": "Автобус ЛиАЗ-5256 стоит в лучах осеннего солнца",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0880.jpg",
+   "uri": "I00635",
+   "uri_prev": "I00634",
+   "uri_next": "I00636",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20558 55.58498)"
@@ -549,6 +779,9 @@
   {
    "caption": "Раменское. Газель на остановке 3-й квартал, район Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0882.jpg",
+   "uri": "I00636",
+   "uri_prev": "I00635",
+   "uri_next": "I00637",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21065 55.58826)"
@@ -556,6 +789,9 @@
   {
    "caption": "Магазин Валентина-3. Коммунистическая, 19",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0885_ShiftN_crop.jpg",
+   "uri": "I00637",
+   "uri_prev": "I00636",
+   "uri_next": "I00638",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21135 55.58782)"
@@ -563,6 +799,9 @@
   {
    "caption": "Разобранный подъездной путь в Раменском, пересекающий улицу Левашова и Северное шоссе",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0886.jpg",
+   "uri": "I00638",
+   "uri_prev": "I00637",
+   "uri_next": "I00639",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21012 55.58238)"
@@ -570,6 +809,9 @@
   {
    "caption": "Разобранный подъездной путь в Раменском, пересекающий улицу Левашова и Северное шоссе",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0887.jpg",
+   "uri": "I00639",
+   "uri_prev": "I00638",
+   "uri_next": "I00640",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21000 55.58235)"
@@ -577,6 +819,9 @@
   {
    "caption": "Начало строительства жилого комплекса Раменский",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0888.jpg",
+   "uri": "I00640",
+   "uri_prev": "I00639",
+   "uri_next": "I00641",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21230 55.58121)"
@@ -584,6 +829,9 @@
   {
    "caption": "Начало строительства жилого комплекса Раменский",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0890.jpg",
+   "uri": "I00641",
+   "uri_prev": "I00640",
+   "uri_next": "I00642",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21301 55.57952)"
@@ -591,6 +839,8 @@
   {
    "caption": "Начало строительства жилого комплекса Раменский",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0891.jpg",
+   "uri": "I00642",
+   "uri_prev": "I00641",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21481 55.57798)"

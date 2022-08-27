@@ -10,6 +10,8 @@
   {
    "caption": "Долгострой регбийного стадиона в Монино. Фото 2013, он достроен в 2019.",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 001.jpg",
+   "uri": "I00480",
+   "uri_next": "I00481",
    "city": "Монино",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19836 55.84908)"
@@ -17,6 +19,9 @@
   {
    "caption": "Трибуна строящегося регбийного стадиона",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 002.jpg",
+   "uri": "I00481",
+   "uri_prev": "I00480",
+   "uri_next": "I00482",
    "city": "Монино",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19836 55.84908)"
@@ -24,6 +29,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 004.jpg",
+   "uri": "I00482",
+   "uri_prev": "I00481",
+   "uri_next": "I00483",
    "city": "Монино",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19138 55.84950)"
@@ -31,6 +39,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 006.jpg",
+   "uri": "I00483",
+   "uri_prev": "I00482",
+   "uri_next": "I00484",
    "city": "Монино",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19138 55.84950)"
@@ -38,6 +49,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 007.jpg",
+   "uri": "I00484",
+   "uri_prev": "I00483",
+   "uri_next": "I00485",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19024 55.85854)"
@@ -45,6 +59,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 008.jpg",
+   "uri": "I00485",
+   "uri_prev": "I00484",
+   "uri_next": "I00486",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19024 55.85854)"
@@ -52,6 +69,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 009.jpg",
+   "uri": "I00486",
+   "uri_prev": "I00485",
+   "uri_next": "I00487",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18999 55.86075)"
@@ -59,6 +79,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 010.jpg",
+   "uri": "I00487",
+   "uri_prev": "I00486",
+   "uri_next": "I00488",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19039 55.86240)"
@@ -66,6 +89,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Улица Лесная, 1",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 014.jpg",
+   "uri": "I00488",
+   "uri_prev": "I00487",
+   "uri_next": "I00489",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18805 55.86238)"
@@ -73,6 +99,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Улица Лесная, 1",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 015.jpg",
+   "uri": "I00489",
+   "uri_prev": "I00488",
+   "uri_next": "I00490",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18780 55.86222)"
@@ -80,6 +109,9 @@
   {
    "caption": "Дореволюционное здание на фабричной территории",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 016.jpg",
+   "uri": "I00490",
+   "uri_prev": "I00489",
+   "uri_next": "I00491",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18737 55.86184)"
@@ -87,6 +119,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Лесная улица, 1. Вид с юга",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 018.jpg",
+   "uri": "I00491",
+   "uri_prev": "I00490",
+   "uri_next": "I00492",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18782 55.86167)"
@@ -94,6 +129,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Лесная улица, 1. Вид с востока",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 019_ShiftN.jpg",
+   "uri": "I00492",
+   "uri_prev": "I00491",
+   "uri_next": "I00493",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18863 55.86180)"
@@ -101,6 +139,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Лесная улица, 1. Вид с востока",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 021.jpg",
+   "uri": "I00493",
+   "uri_prev": "I00492",
+   "uri_next": "I00494",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18855 55.86197)"
@@ -108,6 +149,9 @@
   {
    "caption": "Маленький дореволюционный многоквартирный жилой дом. Лесная 6",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 029_ShiftN.jpg",
+   "uri": "I00494",
+   "uri_prev": "I00493",
+   "uri_next": "I00495",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18515 55.86156)"
@@ -115,6 +159,9 @@
   {
    "caption": "Маленький дореволюционный многоквартирный жилой дом. Лесная 6",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 031_ShiftN.jpg",
+   "uri": "I00495",
+   "uri_prev": "I00494",
+   "uri_next": "I00496",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18569 55.86152)"
@@ -122,6 +169,9 @@
   {
    "caption": "Типовые кирпичные многоквартирные дома. 1930 год (2gis) Улица Пушкина, 13",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 036.jpg",
+   "uri": "I00496",
+   "uri_prev": "I00495",
+   "uri_next": "I00497",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19285 55.86495)"
@@ -129,6 +179,9 @@
   {
    "caption": "Типовой многоквартирный дом. 1929 год.  Улица Пушкина, 11",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 043.jpg",
+   "uri": "I00497",
+   "uri_prev": "I00496",
+   "uri_next": "I00498",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19378 55.86541)"
@@ -136,6 +189,9 @@
   {
    "caption": "Типовой многоквартирный дом. 1929 год.  Улица Пушкина, 11",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 044.jpg",
+   "uri": "I00498",
+   "uri_prev": "I00497",
+   "uri_next": "I00499",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19450 55.86552)"
@@ -143,6 +199,9 @@
   {
    "caption": "Типовой многоквартирный дом. 1929 год.  Улица Пушкина, 11",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 051.jpg",
+   "uri": "I00499",
+   "uri_prev": "I00498",
+   "uri_next": "I00500",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19508 55.86566)"
@@ -150,6 +209,9 @@
   {
    "caption": "Типовой многоквартирный дом. 1929 год.  Улица Пушкина, 11",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 052.jpg",
+   "uri": "I00500",
+   "uri_prev": "I00499",
+   "uri_next": "I00501",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19541 55.86538)"
@@ -157,6 +219,9 @@
   {
    "caption": "Типовые кирпичные многоквартирные дома. Улица Пушкина",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 053.jpg",
+   "uri": "I00501",
+   "uri_prev": "I00500",
+   "uri_next": "I00502",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19541 55.86538)"
@@ -164,6 +229,9 @@
   {
    "caption": "Типовые кирпичные многоквартирные дома. Улица Кирова",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 073_ShiftN.jpg",
+   "uri": "I00502",
+   "uri_prev": "I00501",
+   "uri_next": "I00503",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20026 55.86567)"
@@ -171,6 +239,9 @@
   {
    "caption": "Типовые кирпичные многоквартирные дома. Улица Кирова",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 080.jpg",
+   "uri": "I00503",
+   "uri_prev": "I00502",
+   "uri_next": "I00504",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20152 55.86608)"
@@ -178,6 +249,9 @@
   {
    "caption": "Типовые кирпичные многоквартирные дома. Улица Кирова",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 083_ShiftN.jpg",
+   "uri": "I00504",
+   "uri_prev": "I00503",
+   "uri_next": "I00505",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20135 55.86633)"
@@ -185,6 +259,9 @@
   {
    "caption": "Типовые кирпичные многоквартирные дома. Улица Суворова",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 102.jpg",
+   "uri": "I00505",
+   "uri_prev": "I00504",
+   "uri_next": "I00506",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20020 55.86623)"
@@ -192,6 +269,9 @@
   {
    "caption": "Типовые кирпичные многоквартирные дома. Улица Суворова, 8",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 103.jpg",
+   "uri": "I00506",
+   "uri_prev": "I00505",
+   "uri_next": "I00507",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20055 55.86630)"
@@ -199,6 +279,9 @@
   {
    "caption": "Общежитие Лондон в Лосино-Петровском, улица Кирова, 5",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 110.jpg",
+   "uri": "I00507",
+   "uri_prev": "I00506",
+   "uri_next": "I00508",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20318 55.86592)"
@@ -206,6 +289,9 @@
   {
    "caption": "Общежитие Лондон в Лосино-Петровском, улица Кирова, 5",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 113.jpg",
+   "uri": "I00508",
+   "uri_prev": "I00507",
+   "uri_next": "I00509",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20337 55.86530)"
@@ -213,6 +299,9 @@
   {
    "caption": "Здание на территории фабрики в Лосино-Петровском",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 115.jpg",
+   "uri": "I00509",
+   "uri_prev": "I00508",
+   "uri_next": "I00510",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20317 55.86506)"
@@ -220,6 +309,9 @@
   {
    "caption": "Типовые конструктивистские многоквартирные жилые дома в Лосино-Петровском",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 117.jpg",
+   "uri": "I00510",
+   "uri_prev": "I00509",
+   "uri_next": "I00511",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19945 55.86685)"
@@ -227,6 +319,9 @@
   {
    "caption": "Типовые конструктивистские многоквартирные жилые дома в Лосино-Петровском. Угол Г-образного дома со двора",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 123.jpg",
+   "uri": "I00511",
+   "uri_prev": "I00510",
+   "uri_next": "I00512",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19997 55.86768)"
@@ -234,6 +329,9 @@
   {
    "caption": "Типовые конструктивистские многоквартирные жилые дома в Лосино-Петровском. Угол Г-образного дома со двора",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 128.jpg",
+   "uri": "I00512",
+   "uri_prev": "I00511",
+   "uri_next": "I00513",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19964 55.86791)"
@@ -241,6 +339,9 @@
   {
    "caption": "Типовые конструктивистские многоквартирные жилые дома в Лосино-Петровском",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 129.jpg",
+   "uri": "I00513",
+   "uri_prev": "I00512",
+   "uri_next": "I00514",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20076 55.86829)"
@@ -248,6 +349,9 @@
   {
    "caption": "Типовые конструктивистские многоквартирные жилые дома в Лосино-Петровском",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 133.jpg",
+   "uri": "I00514",
+   "uri_prev": "I00513",
+   "uri_next": "I00515",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20051 55.86828)"
@@ -255,6 +359,9 @@
   {
    "caption": "Типовые конструктивистские многоквартирные жилые дома в Лосино-Петровском. Угол Г-образного дома снаружи",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 135.jpg",
+   "uri": "I00515",
+   "uri_prev": "I00514",
+   "uri_next": "I00516",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19905 55.86796)"
@@ -262,6 +369,9 @@
   {
    "caption": "Дом культуры Октябрь",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 139_ShiftN.jpg",
+   "uri": "I00516",
+   "uri_prev": "I00515",
+   "uri_next": "I00517",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20355 55.86961)"
@@ -269,6 +379,9 @@
   {
    "caption": "Старые двери дома культуры Октябрь",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 144.jpg",
+   "uri": "I00517",
+   "uri_prev": "I00516",
+   "uri_next": "I00518",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20366 55.86992)"
@@ -276,6 +389,9 @@
   {
    "caption": "Барельеф у дома культуры Октябрь\\",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 145.jpg",
+   "uri": "I00518",
+   "uri_prev": "I00517",
+   "uri_next": "I00519",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20366 55.86992)"
@@ -283,6 +399,9 @@
   {
    "caption": "Барельеф у дома культуры Октябрь\\",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 146.jpg",
+   "uri": "I00519",
+   "uri_prev": "I00518",
+   "uri_next": "I00520",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20330 55.87000)"
@@ -290,6 +409,9 @@
   {
    "caption": "Торговая пристройка к многоэтажному дому улица Ленина 4",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 149_ShiftN.jpg",
+   "uri": "I00520",
+   "uri_prev": "I00519",
+   "uri_next": "I00521",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20485 55.86861)"
@@ -297,6 +419,9 @@
   {
    "caption": "Торговая пристройка к многоэтажному дому улица Ленина 4",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 150.jpg",
+   "uri": "I00521",
+   "uri_prev": "I00520",
+   "uri_next": "I00522",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20506 55.86852)"
@@ -304,6 +429,9 @@
   {
    "caption": "Один из нескольких монолитных 16-этажных домов 1978-1980 годов в Лосино-Петровском, больше я таких нигде не видел",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 151.jpg",
+   "uri": "I00522",
+   "uri_prev": "I00521",
+   "uri_next": "I00523",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20520 55.86837)"
@@ -311,6 +439,9 @@
   {
    "caption": "Один из нескольких монолитных 16-этажных домов 1978-1980 годов в Лосино-Петровском, больше я таких нигде не видел",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 168.jpg",
+   "uri": "I00523",
+   "uri_prev": "I00522",
+   "uri_next": "I00524",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20596 55.87203)"
@@ -318,6 +449,9 @@
   {
    "caption": "Центр посёлка Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 172.jpg",
+   "uri": "I00524",
+   "uri_prev": "I00523",
+   "uri_next": "I00525",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20300 55.87253)"
@@ -325,6 +459,9 @@
   {
    "caption": "Автобус 26 маршрута в центре посёлка Лосино-Петровский. ЛиАЗ-5256",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 185.jpg",
+   "uri": "I00525",
+   "uri_prev": "I00524",
+   "uri_next": "I00526",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20075 55.87151)"
@@ -332,6 +469,9 @@
   {
    "caption": "Автобус 26 маршрута в центре посёлка Лосино-Петровский. ЛиАЗ-5256",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 186.jpg",
+   "uri": "I00526",
+   "uri_prev": "I00525",
+   "uri_next": "I00527",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20075 55.87151)"
@@ -339,6 +479,9 @@
   {
    "caption": "Универсам Гросфуд. Улица Горького, 25",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 193.jpg",
+   "uri": "I00527",
+   "uri_prev": "I00526",
+   "uri_next": "I00558",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18986 55.86743)"
@@ -346,6 +489,9 @@
   {
    "caption": "Электровоз ВЛ10У-619 на Монинской ветке в лесу",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/VL10U-619 2013-08-04 207.jpg",
+   "uri": "I00558",
+   "uri_prev": "I00527",
+   "uri_next": "I00555",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.14549 55.85870)"
@@ -353,6 +499,9 @@
   {
    "caption": "Тепловоз ЧМЭ3Т-5501 на станции Чкаловская",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ChME3T-5501 2013-08-04 209.jpg",
+   "uri": "I00555",
+   "uri_prev": "I00558",
+   "uri_next": "I00557",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.06402 55.89682)"
@@ -360,6 +509,9 @@
   {
    "caption": "Электричка Рекс Ярославского направления на станции Чкаловская. ЭД4М-0400",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ED4M-0400 2013-08-04 214.jpg",
+   "uri": "I00557",
+   "uri_prev": "I00555",
+   "uri_next": "I00528",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.06403 55.89682)"
@@ -367,6 +519,9 @@
   {
    "caption": "Заброшенное кафе из 1990-х годов Рандеву у проходной Чкаловского аэродрома",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 223.jpg",
+   "uri": "I00528",
+   "uri_prev": "I00557",
+   "uri_next": "I00529",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05925 55.89580)"
@@ -374,6 +529,9 @@
   {
    "caption": "Самолёт-памятник Су-7Б лежит на земле для переноса из-за стройки моста через железную дорогу",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 224.jpg",
+   "uri": "I00529",
+   "uri_prev": "I00528",
+   "uri_next": "I00530",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05326 55.89938)"
@@ -381,6 +539,9 @@
   {
    "caption": "Самолёт-памятник Су-7Б лежит на земле для переноса из-за стройки моста через железную дорогу",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 233.jpg",
+   "uri": "I00530",
+   "uri_prev": "I00529",
+   "uri_next": "I00556",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05439 55.89956)"
@@ -388,6 +549,9 @@
   {
    "caption": "Электричка Ярославского направления у платформы Чкаловская",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ED4M-0372 2013-08-04 238.jpg",
+   "uri": "I00556",
+   "uri_prev": "I00530",
+   "uri_next": "I00531",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05628 55.89978)"
@@ -395,6 +559,9 @@
   {
    "caption": "Типовой конструктивистский многоквартирный дом из силикатного кирпича. Институтская, 20",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 240.jpg",
+   "uri": "I00531",
+   "uri_prev": "I00556",
+   "uri_next": "I00532",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05960 55.90214)"
@@ -402,6 +569,9 @@
   {
    "caption": "Типовой конструктивистский многоквартирный дом из силикатного кирпича. Институтская, 22",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 243.jpg",
+   "uri": "I00532",
+   "uri_prev": "I00531",
+   "uri_next": "I00533",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.06094 55.90303)"
@@ -409,6 +579,9 @@
   {
    "caption": "Обдирный многоквартирный дом",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 254.jpg",
+   "uri": "I00533",
+   "uri_prev": "I00532",
+   "uri_next": "I00534",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.06524 55.90301)"
@@ -416,6 +589,9 @@
   {
    "caption": "Типовой конструктивистский многоквартирный дом из силикатного кирпича. Институтская, 26",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 258.jpg",
+   "uri": "I00534",
+   "uri_prev": "I00533",
+   "uri_next": "I00535",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.06283 55.90221)"
@@ -423,6 +599,9 @@
   {
    "caption": "Одиночный, нетиповой конструктивистский жилой дом с розовой штукатуркой. Улица Ленина, 2",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 275_ShiftN.jpg",
+   "uri": "I00535",
+   "uri_prev": "I00534",
+   "uri_next": "I00536",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05862 55.90478)"
@@ -430,6 +609,9 @@
   {
    "caption": "Одиночный, нетиповой конструктивистский жилой дом с розовой штукатуркой. Улица Ленина, 2",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 279.jpg",
+   "uri": "I00536",
+   "uri_prev": "I00535",
+   "uri_next": "I00537",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05834 55.90514)"
@@ -437,6 +619,9 @@
   {
    "caption": "Одиночный, нетиповой конструктивистский жилой дом с розовой штукатуркой. Улица Ленина, 2",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 288.jpg",
+   "uri": "I00537",
+   "uri_prev": "I00536",
+   "uri_next": "I00538",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05677 55.90517)"
@@ -444,6 +629,9 @@
   {
    "caption": "Одиночный, нетиповой конструктивистский жилой дом с розовой штукатуркой. Улица Ленина, 2",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 293.jpg",
+   "uri": "I00538",
+   "uri_prev": "I00537",
+   "uri_next": "I00539",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05746 55.90466)"
@@ -451,6 +639,9 @@
   {
    "caption": "Многоэтажные дома в посёлке Чкаловский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 297.jpg",
+   "uri": "I00539",
+   "uri_prev": "I00538",
+   "uri_next": "I00540",
    "city": "Чкаловский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.05144 55.90583)"
@@ -458,6 +649,9 @@
   {
    "caption": "Подъездной путь от станции Щёлково на завод Агрохим",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 309.jpg",
+   "uri": "I00540",
+   "uri_prev": "I00539",
+   "uri_next": "I00541",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02487 55.90956)"
@@ -465,6 +659,9 @@
   {
    "caption": "Щёлково, Заводская улица 22. Здание выглядит на начало 1930-х.",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 310.jpg",
+   "uri": "I00541",
+   "uri_prev": "I00540",
+   "uri_next": "I00542",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02487 55.90956)"
@@ -472,6 +669,9 @@
   {
    "caption": "Посёлок шлакоблочных домов на Заводской улице",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 313.jpg",
+   "uri": "I00542",
+   "uri_prev": "I00541",
+   "uri_next": "I00543",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02259 55.90994)"
@@ -479,6 +679,9 @@
   {
    "caption": "Посёлок шлакоблочных домов на Заводской улице",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 314.jpg",
+   "uri": "I00543",
+   "uri_prev": "I00542",
+   "uri_next": "I00544",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02259 55.90994)"
@@ -486,6 +689,9 @@
   {
    "caption": "Посёлок шлакоблочных домов на Заводской улице",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 315.jpg",
+   "uri": "I00544",
+   "uri_prev": "I00543",
+   "uri_next": "I00545",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02251 55.90992)"
@@ -493,6 +699,9 @@
   {
    "caption": "Шлакоблочный жилой дом. Заводская улица, 3",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 317.jpg",
+   "uri": "I00545",
+   "uri_prev": "I00544",
+   "uri_next": "I00546",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02249 55.90992)"
@@ -500,6 +709,9 @@
   {
    "caption": "Шлакоблочный жилой дом. Заводская улица, 7",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 319.jpg",
+   "uri": "I00546",
+   "uri_prev": "I00545",
+   "uri_next": "I00547",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02211 55.90995)"
@@ -507,6 +719,9 @@
   {
    "caption": "Шлакоблочный жилой дом. Заводская улица, 7",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 320.jpg",
+   "uri": "I00547",
+   "uri_prev": "I00546",
+   "uri_next": "I00548",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02203 55.90996)"
@@ -514,6 +729,9 @@
   {
    "caption": "Посёлок шлакоблочных домов на Заводской улице",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 321.jpg",
+   "uri": "I00548",
+   "uri_prev": "I00547",
+   "uri_next": "I00549",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02158 55.90998)"
@@ -521,6 +739,9 @@
   {
    "caption": "Шлакоблочный дом с поздней железобетонно-кирпичной надстройкой. Позднее уколхожено.",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 324.jpg",
+   "uri": "I00549",
+   "uri_prev": "I00548",
+   "uri_next": "I00550",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02142 55.91008)"
@@ -528,6 +749,9 @@
   {
    "caption": "Авангардная пожарная часть в Щёлково. Навершие башни позднее снесено. Заводская 9А",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 325_ShiftN.jpg",
+   "uri": "I00550",
+   "uri_prev": "I00549",
+   "uri_next": "I00551",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02059 55.91002)"
@@ -535,6 +759,9 @@
   {
    "caption": "Авангардная пожарная часть в Щёлково. Навершие башни позднее снесено. Заводская 9А",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 326_ShiftN.jpg",
+   "uri": "I00551",
+   "uri_prev": "I00550",
+   "uri_next": "I00552",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02059 55.91002)"
@@ -542,6 +769,9 @@
   {
    "caption": "Депо промышленной железной дороги в Щёлково",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 331.jpg",
+   "uri": "I00552",
+   "uri_prev": "I00551",
+   "uri_next": "I00553",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.00978 55.91102)"
@@ -549,6 +779,9 @@
   {
    "caption": "Тепловоз ТГМ6А-2099 в депо промышленной железной дороги в Щёлково",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 333.jpg",
+   "uri": "I00553",
+   "uri_prev": "I00552",
+   "uri_next": "I00554",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.00978 55.91102)"
@@ -556,6 +789,8 @@
   {
    "caption": "Рабочая окраина Соболёвка. Здание позднее снесено",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 336.jpg",
+   "uri": "I00554",
+   "uri_prev": "I00553",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.01281 55.91943)"

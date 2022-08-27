@@ -208,7 +208,10 @@ FROM photos_pages JOIN photos ON photos_pages.photoid=photos.photoid
 JOIN pages ON photos_pages.pageid = pages.pageid
 ORDER BY pages.uri, photos_pages."order";
     '''
-
+    
+    def id2uri(self,inp):
+        return 'I'+str(int(inp)).zfill(5)
+        
     def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content')):
         cur_pages = self.con.cursor()
         cur_photos = self.con.cursor()
@@ -222,12 +225,16 @@ ORDER BY pages.uri, photos_pages."order";
         pbar = tqdm(total=count)
         
         sql = "SELECT * FROM pages WHERE hidden=0 ;"
+        
+
         for row in cur_pages.execute(sql):
+            
             
             db_page = dict(row)
             json_path = os.path.join(path,db_page['uri'])+'.json'
 
-            json_content={ "title": db_page['title'],
+            json_content={
+            "title": db_page['title'],
  "h1": db_page['ha'] or '',
  "text": db_page['text'] or '',
  "text_en": db_page['text_en'] or '',
@@ -265,7 +272,12 @@ ORDER BY pages.uri, photos_pages."order";
                            
                 sql = sql.format(uri=db_page['uri'])
                 
-                
+            uris = list()
+            for row2 in cur_photos.execute(sql):
+                db_photo = dict(row2)
+                uris.append(self.id2uri(db_photo['photoid']))
+            
+            counter = 0
             for row2 in cur_photos.execute(sql):
                 db_photo = dict(row2)
 
@@ -273,6 +285,12 @@ ORDER BY pages.uri, photos_pages."order";
                 image={   "caption": db_photo['caption'],
                 "url_hotlink": db_photo['hotlink']
                 }
+                image['uri']=uris[counter]
+                if counter > 0:
+                    image['uri_prev']=uris[counter-1]
+                if counter < len(uris)-1:
+                    image['uri_next']=uris[counter+1]
+                
                 city = db_photo.get('city')
                 if city != '':
                     if city in locations:
@@ -292,6 +310,7 @@ ORDER BY pages.uri, photos_pages."order";
                     image['wkt_geometry'] = db_photo.get('wkt_geometry')
                
                 images.append(image)
+                counter = counter + 1
             json_content['images']=images
 
             with open(json_path, "wb") as outfile:

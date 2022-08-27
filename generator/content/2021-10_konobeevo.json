@@ -10,6 +10,8 @@
   {
    "caption": "Главная улица. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_005.jpg",
+   "uri": "I00366",
+   "uri_next": "I00367",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71646 55.40613)"
@@ -17,6 +19,9 @@
   {
    "caption": "Деревянные дома с наличниками. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_007.jpg",
+   "uri": "I00367",
+   "uri_prev": "I00366",
+   "uri_next": "I00368",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71695 55.40730)"
@@ -24,6 +29,9 @@
   {
    "caption": "Деревянные дома с наличниками. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_009.jpg",
+   "uri": "I00368",
+   "uri_prev": "I00367",
+   "uri_next": "I00369",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71716 55.40760)"
@@ -31,6 +39,9 @@
   {
    "caption": "Деревянные дома с наличниками. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_011.jpg",
+   "uri": "I00369",
+   "uri_prev": "I00368",
+   "uri_next": "I00370",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71716 55.40760)"
@@ -38,6 +49,9 @@
   {
    "caption": "Деревянные дома с наличниками. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_014.jpg",
+   "uri": "I00370",
+   "uri_prev": "I00369",
+   "uri_next": "I00371",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71790 55.40959)"
@@ -45,6 +59,9 @@
   {
    "caption": "Кирпичный амбар. Нашёл его случайно, когда ездил на велосипеде. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_017.jpg",
+   "uri": "I00371",
+   "uri_prev": "I00370",
+   "uri_next": "I00372",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71909 55.41143)"
@@ -52,6 +69,9 @@
   {
    "caption": "Кирпичный амбар. Нашёл его случайно, когда ездил на велосипеде. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_018.jpg",
+   "uri": "I00372",
+   "uri_prev": "I00371",
+   "uri_next": "I00373",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71909 55.41143)"
@@ -59,6 +79,9 @@
   {
    "caption": "Железная дверь в кирпичном амбаре. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_020.jpg",
+   "uri": "I00373",
+   "uri_prev": "I00372",
+   "uri_next": "I00374",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71893 55.41148)"
@@ -66,6 +89,9 @@
   {
    "caption": "Кирпичный амбар. Нашёл его случайно, когда ездил на велосипеде. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_021.jpg",
+   "uri": "I00374",
+   "uri_prev": "I00373",
+   "uri_next": "I00375",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71879 55.41152)"
@@ -73,6 +99,9 @@
   {
    "caption": "Деревянные наличники. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_023.jpg",
+   "uri": "I00375",
+   "uri_prev": "I00374",
+   "uri_next": "I00376",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71970 55.41230)"
@@ -80,6 +109,9 @@
   {
    "caption": "Деревянные наличники. Деревня Бочёвино, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_024.jpg",
+   "uri": "I00376",
+   "uri_prev": "I00375",
+   "uri_next": "I00377",
    "city": "Bochevino",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.71970 55.41230)"
@@ -87,6 +119,9 @@
   {
    "caption": "Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_038.jpg",
+   "uri": "I00377",
+   "uri_prev": "I00376",
+   "uri_next": "I00378",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72608 55.42124)"
@@ -94,6 +129,9 @@
   {
    "caption": "Дом с резными наличниками. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_041.jpg",
+   "uri": "I00378",
+   "uri_prev": "I00377",
+   "uri_next": "I00379",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72569 55.42179)"
@@ -101,6 +139,9 @@
   {
    "caption": "Колодец с журавлём. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_044.jpg",
+   "uri": "I00379",
+   "uri_prev": "I00378",
+   "uri_next": "I00380",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72564 55.42196)"
@@ -108,6 +149,9 @@
   {
    "caption": "Колодец с журавлём. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_046.jpg",
+   "uri": "I00380",
+   "uri_prev": "I00379",
+   "uri_next": "I00381",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72547 55.42203)"
@@ -115,6 +159,9 @@
   {
    "caption": "Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_048.jpg",
+   "uri": "I00381",
+   "uri_prev": "I00380",
+   "uri_next": "I00382",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72547 55.42203)"
@@ -122,6 +169,9 @@
   {
    "caption": "Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_049.jpg",
+   "uri": "I00382",
+   "uri_prev": "I00381",
+   "uri_next": "I00383",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72547 55.42203)"
@@ -129,6 +179,9 @@
   {
    "caption": "Колодец с журавлём. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_051.jpg",
+   "uri": "I00383",
+   "uri_prev": "I00382",
+   "uri_next": "I00384",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72547 55.42203)"
@@ -136,6 +189,9 @@
   {
    "caption": "Дома у пожарного пруда. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_053.jpg",
+   "uri": "I00384",
+   "uri_prev": "I00383",
+   "uri_next": "I00385",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72563 55.42281)"
@@ -143,6 +199,9 @@
   {
    "caption": "Дома у пожарного пруда. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_054.jpg",
+   "uri": "I00385",
+   "uri_prev": "I00384",
+   "uri_next": "I00386",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72698 55.42314)"
@@ -150,6 +209,9 @@
   {
    "caption": "Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_055.jpg",
+   "uri": "I00386",
+   "uri_prev": "I00385",
+   "uri_next": "I00387",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72821 55.42392)"
@@ -157,6 +219,9 @@
   {
    "caption": "Дом с маленьким чердаком и резными наличниками. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_060.jpg",
+   "uri": "I00387",
+   "uri_prev": "I00386",
+   "uri_next": "I00388",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.72835 55.42379)"
@@ -164,6 +229,9 @@
   {
    "caption": "Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_062.jpg",
+   "uri": "I00388",
+   "uri_prev": "I00387",
+   "uri_next": "I00389",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.73156 55.42162)"
@@ -171,6 +239,9 @@
   {
    "caption": "Дом с резными наличниками. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_063.jpg",
+   "uri": "I00389",
+   "uri_prev": "I00388",
+   "uri_next": "I00390",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.73222 55.42105)"
@@ -178,6 +249,9 @@
   {
    "caption": "Дом с резными наличниками. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_070.jpg",
+   "uri": "I00390",
+   "uri_prev": "I00389",
+   "uri_next": "I00391",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.73260 55.42074)"
@@ -185,6 +259,9 @@
   {
    "caption": "Дом с резными наличниками. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_072.jpg",
+   "uri": "I00391",
+   "uri_prev": "I00390",
+   "uri_next": "I00392",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.73337 55.42019)"
@@ -192,6 +269,9 @@
   {
    "caption": "Дом с резными наличниками. Деревня Медведево, округ Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_077.jpg",
+   "uri": "I00392",
+   "uri_prev": "I00391",
+   "uri_next": "I00393",
    "city": "Medvedevo",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.73560 55.41881)"
@@ -199,6 +279,9 @@
   {
    "caption": "Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_079.jpg",
+   "uri": "I00393",
+   "uri_prev": "I00392",
+   "uri_next": "I00394",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75090 55.41116)"
@@ -206,6 +289,9 @@
   {
    "caption": "Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_082.jpg",
+   "uri": "I00394",
+   "uri_prev": "I00393",
+   "uri_next": "I00395",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75269 55.40635)"
@@ -213,6 +299,9 @@
   {
    "caption": "Фургон Tagaz Hardy. м525ус750 Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_084.jpg",
+   "uri": "I00395",
+   "uri_prev": "I00394",
+   "uri_next": "I00396",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74968 55.40699)"
@@ -220,6 +309,9 @@
   {
    "caption": "Колодец с журавлём. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_086.jpg",
+   "uri": "I00396",
+   "uri_prev": "I00395",
+   "uri_next": "I00397",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74905 55.40709)"
@@ -227,6 +319,9 @@
   {
    "caption": "Колодец с журавлём. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_088.jpg",
+   "uri": "I00397",
+   "uri_prev": "I00396",
+   "uri_next": "I00398",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74905 55.40709)"
@@ -234,6 +329,9 @@
   {
    "caption": "Ведро. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_089.jpg",
+   "uri": "I00398",
+   "uri_prev": "I00397",
+   "uri_next": "I00399",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74892 55.40717)"
@@ -241,6 +339,9 @@
   {
    "caption": "Дом с резными наличниками. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_092.jpg",
+   "uri": "I00399",
+   "uri_prev": "I00398",
+   "uri_next": "I00400",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74851 55.40721)"
@@ -248,6 +349,9 @@
   {
    "caption": "Дом с резными наличниками. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_093.jpg",
+   "uri": "I00400",
+   "uri_prev": "I00399",
+   "uri_next": "I00401",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74796 55.40727)"
@@ -255,6 +359,9 @@
   {
    "caption": "Дом с резными наличниками. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_095.jpg",
+   "uri": "I00401",
+   "uri_prev": "I00400",
+   "uri_next": "I00402",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74706 55.40734)"
@@ -262,6 +369,9 @@
   {
    "caption": "Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_096.jpg",
+   "uri": "I00402",
+   "uri_prev": "I00401",
+   "uri_next": "I00403",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74402 55.40749)"
@@ -269,6 +379,9 @@
   {
    "caption": "Дом с резными наличниками. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_101.jpg",
+   "uri": "I00403",
+   "uri_prev": "I00402",
+   "uri_next": "I00404",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75202 55.40660)"
@@ -276,6 +389,9 @@
   {
    "caption": "Панельные трёхэтажные дома. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_105.jpg",
+   "uri": "I00404",
+   "uri_prev": "I00403",
+   "uri_next": "I00405",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75408 55.40511)"
@@ -283,6 +399,9 @@
   {
    "caption": "Бывшая ткацкая фабрика Вперёд. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_108.jpg",
+   "uri": "I00405",
+   "uri_prev": "I00404",
+   "uri_next": "I00406",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75407 55.40454)"
@@ -290,6 +409,9 @@
   {
    "caption": "Бывшая ткацкая фабрика Вперёд. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_111.jpg",
+   "uri": "I00406",
+   "uri_prev": "I00405",
+   "uri_next": "I00407",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75611 55.40427)"
@@ -297,6 +419,9 @@
   {
    "caption": "Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_113.jpg",
+   "uri": "I00407",
+   "uri_prev": "I00406",
+   "uri_next": "I00408",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75782 55.40416)"
@@ -304,6 +429,9 @@
   {
    "caption": "Бывшая ткацкая фабрика Вперёд. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_114.jpg",
+   "uri": "I00408",
+   "uri_prev": "I00407",
+   "uri_next": "I00409",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75789 55.40379)"
@@ -311,6 +439,9 @@
   {
    "caption": "Кирпичное здание амбулатории. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_116.jpg",
+   "uri": "I00409",
+   "uri_prev": "I00408",
+   "uri_next": "I00410",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75836 55.40285)"
@@ -318,6 +449,9 @@
   {
    "caption": "Кирпичное здание амбулатории. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_119.jpg",
+   "uri": "I00410",
+   "uri_prev": "I00409",
+   "uri_next": "I00411",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75881 55.40246)"
@@ -325,6 +459,9 @@
   {
    "caption": "Кирпичное здание амбулатории. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_120.jpg",
+   "uri": "I00411",
+   "uri_prev": "I00410",
+   "uri_next": "I00412",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75888 55.40232)"
@@ -332,6 +469,9 @@
   {
    "caption": "Кирпичное здание амбулатории. Село Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_122.jpg",
+   "uri": "I00412",
+   "uri_prev": "I00411",
+   "uri_next": "I00413",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75883 55.40223)"
@@ -339,6 +479,9 @@
   {
    "caption": "Дома с резными наличниками. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_126.jpg",
+   "uri": "I00413",
+   "uri_prev": "I00412",
+   "uri_next": "I00414",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74735 55.39832)"
@@ -346,6 +489,9 @@
   {
    "caption": "Дома с резными наличниками. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_127.jpg",
+   "uri": "I00414",
+   "uri_prev": "I00413",
+   "uri_next": "I00415",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74667 55.39818)"
@@ -353,6 +499,9 @@
   {
    "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_129.jpg",
+   "uri": "I00415",
+   "uri_prev": "I00414",
+   "uri_next": "I00416",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75815 55.39958)"
@@ -360,6 +509,9 @@
   {
    "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_130.jpg",
+   "uri": "I00416",
+   "uri_prev": "I00415",
+   "uri_next": "I00417",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75815 55.39958)"
@@ -367,6 +519,9 @@
   {
    "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_131.jpg",
+   "uri": "I00417",
+   "uri_prev": "I00416",
+   "uri_next": "I00418",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75836 55.39959)"
@@ -374,6 +529,9 @@
   {
    "caption": "Табло системы контроля расписания автобусов Мострансавто. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_132.jpg",
+   "uri": "I00418",
+   "uri_prev": "I00417",
+   "uri_next": "I00419",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.76048 55.40080)"
@@ -381,6 +539,9 @@
   {
    "caption": "Торговый центр Маркет",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_133.jpg",
+   "uri": "I00419",
+   "uri_prev": "I00418",
+   "uri_next": "I00420",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67079 55.32134)"
@@ -388,6 +549,9 @@
   {
    "caption": "Угловой дом на центральной площади Воскресенска",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_137.jpg",
+   "uri": "I00420",
+   "uri_prev": "I00419",
+   "uri_next": "I00421",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67193 55.32154)"
@@ -395,6 +559,9 @@
   {
    "caption": "Угловой дом на центральной площади Воскресенска",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_138.jpg",
+   "uri": "I00421",
+   "uri_prev": "I00420",
+   "uri_next": "I00422",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67340 55.32203)"
@@ -402,6 +569,9 @@
   {
    "caption": "Главная улица Воскресенска - Октябрьская",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_148.jpg",
+   "uri": "I00422",
+   "uri_prev": "I00421",
+   "uri_next": "I00423",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67502 55.32243)"
@@ -409,6 +579,9 @@
   {
    "caption": "Обьявления о турах на осень 2011 года. Воскресенск.",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_149.jpg",
+   "uri": "I00423",
+   "uri_prev": "I00422",
+   "uri_next": "I00424",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67632 55.32235)"
@@ -416,6 +589,9 @@
   {
    "caption": "Главная улица Воскресенска - Октябрьская",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_153.jpg",
+   "uri": "I00424",
+   "uri_prev": "I00423",
+   "uri_next": "I00425",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67805 55.32235)"
@@ -423,6 +599,9 @@
   {
    "caption": "Главная улица Воскресенска - Октябрьская",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_154.jpg",
+   "uri": "I00425",
+   "uri_prev": "I00424",
+   "uri_next": "I00426",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67805 55.32235)"
@@ -430,6 +609,9 @@
   {
    "caption": "Дом конца 1990-х годов в центре Воскресенска",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_156.jpg",
+   "uri": "I00426",
+   "uri_prev": "I00425",
+   "uri_next": "I00427",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.67918 55.32238)"
@@ -437,6 +619,9 @@
   {
    "caption": "Дом начала 1930-х годов в центре Воскресенска",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_157.jpg",
+   "uri": "I00427",
+   "uri_prev": "I00426",
+   "uri_next": "I00428",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.68010 55.32252)"
@@ -444,6 +629,9 @@
   {
    "caption": "Оживлённый тротуар на Советской улице в Воскресенске",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_158.jpg",
+   "uri": "I00428",
+   "uri_prev": "I00427",
+   "uri_next": "I00429",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.68157 55.32263)"
@@ -451,6 +639,9 @@
   {
    "caption": "Жилой дом конца 1920-х годов в Воскресенске",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_159.jpg",
+   "uri": "I00429",
+   "uri_prev": "I00428",
+   "uri_next": "I00430",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.68150 55.32384)"
@@ -458,6 +649,9 @@
   {
    "caption": "Жилой дом конца 1920-х годов в Воскресенске",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_161.jpg",
+   "uri": "I00430",
+   "uri_prev": "I00429",
+   "uri_next": "I00431",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.68140 55.32467)"
@@ -465,6 +659,8 @@
   {
    "caption": "Станция 88 км в Воскресенске. Электричка из Москвы ЭД4М-0283",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_171.jpg",
+   "uri": "I00431",
+   "uri_prev": "I00430",
    "city": "Воскресенск",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.68606 55.32625)"

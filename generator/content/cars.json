@@ -10,6 +10,8 @@
   {
    "caption": "Автомобиль ВАЗ-2103 к763ау750",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_009 vaz-2103.jpg",
+   "uri": "I00283",
+   "uri_next": "I00332",
    "city": "Реутов",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.8562399999999997 55.7562500000000014)"
@@ -17,18 +19,27 @@
   {
    "caption": "Грузовик Nissan Atlas 150 н460хв90",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_20.jpg",
+   "uri": "I00332",
+   "uri_prev": "I00283",
+   "uri_next": "I00341",
    "city": "Ступино",
    "wkt_geometry": "POINT (38.0684100000000001 54.8919700000000006)"
   },
   {
    "caption": "Мотоцикл с коляской во дворах пятиэтажек",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210815_29.jpg",
+   "uri": "I00341",
+   "uri_prev": "I00332",
+   "uri_next": "I00344",
    "city": "Ожерелье",
    "wkt_geometry": "POINT (38.2538399999999967 54.7903200000000012)"
   },
   {
    "caption": "ГАЗ-21 к021ет199 на фестивале Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_02.jpg",
+   "uri": "I00344",
+   "uri_prev": "I00341",
+   "uri_next": "I00346",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5358500000000035 55.7068900000000014)"
@@ -36,6 +47,9 @@
   {
    "caption": "ВАЗ-2103 у214ут799 на фестивале Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_04.jpg",
+   "uri": "I00346",
+   "uri_prev": "I00344",
+   "uri_next": "I00347",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5392599999999987 55.7085200000000000)"
@@ -43,6 +57,9 @@
   {
    "caption": "Победа А700СМ 750. Старт ралли ретро-автомобилей",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_044.jpg",
+   "uri": "I00347",
+   "uri_prev": "I00346",
+   "uri_next": "I00351",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5391400000000033 55.7083099999999973)"
@@ -50,6 +67,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_077.jpg",
+   "uri": "I00351",
+   "uri_prev": "I00347",
+   "uri_next": "I00352",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5391600000000025 55.7083500000000029)"
@@ -57,6 +77,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_079_lr.jpg",
+   "uri": "I00352",
+   "uri_prev": "I00351",
+   "uri_next": "I00355",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (0.0000000000000000 0.0000000000000000)"
@@ -64,6 +87,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_107.jpg",
+   "uri": "I00355",
+   "uri_prev": "I00352",
+   "uri_next": "I00356",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5366199999999992 55.7068599999999989)"
@@ -71,6 +97,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_109.jpg",
+   "uri": "I00356",
+   "uri_prev": "I00355",
+   "uri_next": "I00395",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5366199999999992 55.7068599999999989)"
@@ -78,6 +107,9 @@
   {
    "caption": "Фургон Tagaz Hardy. м525ус750 Барановское, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_084.jpg",
+   "uri": "I00395",
+   "uri_prev": "I00356",
+   "uri_next": "I00415",
    "city": "Baranovskoe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.74968 55.40699)"
@@ -85,6 +117,9 @@
   {
    "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_129.jpg",
+   "uri": "I00415",
+   "uri_prev": "I00395",
+   "uri_next": "I00416",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75815 55.39958)"
@@ -92,6 +127,9 @@
   {
    "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_130.jpg",
+   "uri": "I00416",
+   "uri_prev": "I00415",
+   "uri_next": "I00417",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75815 55.39958)"
@@ -99,6 +137,9 @@
   {
    "caption": "УАЗ-головастик  УАЗ-452Д. Деревня Усадище, округ Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-10_konobeevo/20211009_131.jpg",
+   "uri": "I00417",
+   "uri_prev": "I00416",
+   "uri_next": "I00636",
    "city": "Usadishe",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (38.75836 55.39959)"
@@ -106,6 +147,9 @@
   {
    "caption": "Раменское. Газель на остановке 3-й квартал, район Холодово",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0882.jpg",
+   "uri": "I00636",
+   "uri_prev": "I00417",
+   "uri_next": "I00708",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21065 55.58826)"
@@ -113,6 +157,8 @@
   {
    "caption": "Москвич-412",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_034802_406.jpg",
+   "uri": "I00708",
+   "uri_prev": "I00636",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.93887 43.12732)"

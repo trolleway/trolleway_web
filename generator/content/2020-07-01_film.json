@@ -10,6 +10,8 @@
   {
    "caption": "Заброшенная сортировочная горка станции Москва-Казанская-Сортировочная",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200701_01_abandoned_station.jpg",
+   "uri": "I00931",
+   "uri_next": "I00932",
    "city": "Москва",
    "sublocation": "Sokolinaya Gora",
    "date_append": "2022-08-04",
@@ -18,6 +20,9 @@
   {
    "caption": "Тепловоз ЧМЭ3Т-5075, станция Москва-Сортировочная-Казанская",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200701_02 CHME3T.jpg",
+   "uri": "I00932",
+   "uri_prev": "I00931",
+   "uri_next": "I00933",
    "city": "Москва",
    "sublocation": "Sokolinaya Gora",
    "date_append": "2022-08-04",
@@ -26,6 +31,9 @@
   {
    "caption": "Тепловоз ЧМЭ3, станция Москва-Сортировочная-Казанская",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200701_03 ChME3.jpg",
+   "uri": "I00933",
+   "uri_prev": "I00932",
+   "uri_next": "I00934",
    "city": "Москва",
    "sublocation": "Sokolinaya Gora",
    "date_append": "2022-08-04",
@@ -34,6 +42,9 @@
   {
    "caption": "Библиотека 95, Полимерная улица",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_04 Perovo library.jpg",
+   "uri": "I00934",
+   "uri_prev": "I00933",
+   "uri_next": "I00935",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -42,6 +53,9 @@
   {
    "caption": "Комплекс панельных домов на улице Лазо. Перовская улица, 31",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_06 Lazo street Perovo.jpg",
+   "uri": "I00935",
+   "uri_prev": "I00934",
+   "uri_next": "I00936",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -50,6 +64,9 @@
   {
    "caption": "Торговое здание с кирпичными стенами на Перовской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_07 Perovo shop_ShiftN.jpg",
+   "uri": "I00936",
+   "uri_prev": "I00935",
+   "uri_next": "I00937",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -58,6 +75,9 @@
   {
    "caption": "Троллейбус ТролЗа-5265 9195. Перовская улица",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_08 Moscow trolleybus perovo .jpg",
+   "uri": "I00937",
+   "uri_prev": "I00936",
+   "uri_next": "I00938",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -66,6 +86,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_09 Lefortovo Perovo railway.jpg",
+   "uri": "I00938",
+   "uri_prev": "I00937",
+   "uri_next": "I00939",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -74,6 +97,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_10 Lefortovo Perovo railway.jpg",
+   "uri": "I00939",
+   "uri_prev": "I00938",
+   "uri_next": "I00940",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -82,6 +108,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_11 Lefortovo Perovo railway.jpg",
+   "uri": "I00940",
+   "uri_prev": "I00939",
+   "uri_next": "I00941",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -90,6 +119,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_12 Lefortovo Perovo railway.jpg",
+   "uri": "I00941",
+   "uri_prev": "I00940",
+   "uri_next": "I00942",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -98,6 +130,9 @@
   {
    "caption": "Заброшенный подъездной путь от северного парка станции Бойня через Скотопрогонную улицу",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_13 Boinya station.jpg",
+   "uri": "I00942",
+   "uri_prev": "I00941",
+   "uri_next": "I00943",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69389 55.72846)"
@@ -105,6 +140,9 @@
   {
    "caption": "Станция Бойня",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_14 Boinya station.jpg",
+   "uri": "I00943",
+   "uri_prev": "I00942",
+   "uri_next": "I00944",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69175 55.72566)"
@@ -112,6 +150,9 @@
   {
    "caption": "Станция Бойня",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_15 Boinya station.jpg",
+   "uri": "I00944",
+   "uri_prev": "I00943",
+   "uri_next": "I00945",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69063 55.72541)"
@@ -119,6 +160,9 @@
   {
    "caption": "Бауманская улица",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_16 Baumanskaya street.jpg",
+   "uri": "I00945",
+   "uri_prev": "I00944",
+   "uri_next": "I00946",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -127,6 +171,9 @@
   {
    "caption": "Троллейбус на Спартаковской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_17 Bakuninskaya street.jpg",
+   "uri": "I00946",
+   "uri_prev": "I00945",
+   "uri_next": "I00947",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -135,6 +182,9 @@
   {
    "caption": "Москва, троллейбус Мегаполис 9355 на Бакунинской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_18 Bakuninskaya street.jpg",
+   "uri": "I00947",
+   "uri_prev": "I00946",
+   "uri_next": "I00948",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -143,6 +193,9 @@
   {
    "caption": "Троллейбус ТролЗа-5265 Мегаполис 9192 на Спартаковской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_19 Bakuninskaya street.jpg",
+   "uri": "I00948",
+   "uri_prev": "I00947",
+   "uri_next": "I00949",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -151,6 +204,9 @@
   {
    "caption": "Троллейбус 22 маршрута ТролЗа-5265 9107 на Новорязанской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_25 Novoryazanskaya street.jpg",
+   "uri": "I00949",
+   "uri_prev": "I00948",
+   "uri_next": "I00950",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -159,6 +215,9 @@
   {
    "caption": "Троллейбус 22 маршрута ТролЗа-5265 9107 на Новорязанской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_26 Novoryazanskaya street.jpg",
+   "uri": "I00950",
+   "uri_prev": "I00949",
+   "uri_next": "I00951",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -167,6 +226,9 @@
   {
    "caption": "1-й Басманный переулок",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_27.jpg",
+   "uri": "I00951",
+   "uri_prev": "I00950",
+   "uri_next": "I00952",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -175,6 +237,9 @@
   {
    "caption": "Автобус маршрута Т24 ЛиАЗ-5292 на Новой Басманной улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_28.jpg",
+   "uri": "I00952",
+   "uri_prev": "I00951",
+   "uri_next": "I00953",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -183,6 +248,9 @@
   {
    "caption": "Гастроферма",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_29.jpg",
+   "uri": "I00953",
+   "uri_prev": "I00952",
+   "uri_next": "I00954",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -191,6 +259,9 @@
   {
    "caption": "Гастроферма",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_30.jpg",
+   "uri": "I00954",
+   "uri_prev": "I00953",
+   "uri_next": "I00955",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -199,6 +270,9 @@
   {
    "caption": "Гастроферма",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_31.jpg",
+   "uri": "I00955",
+   "uri_prev": "I00954",
+   "uri_next": "I00956",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -207,6 +281,9 @@
   {
    "caption": "Ольховская улица",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_32.jpg",
+   "uri": "I00956",
+   "uri_prev": "I00955",
+   "uri_next": "I00957",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -215,6 +292,9 @@
   {
    "caption": "Музейные автобусы Ikarus-280 и Ikarus-415 в бывшем 2 троллейбусном парке",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_33.jpg",
+   "uri": "I00957",
+   "uri_prev": "I00956",
+   "uri_next": "I00958",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -223,6 +303,9 @@
   {
    "caption": "Троллейбус 22 маршрута ТролЗа-5265 №9351 на Новорязанской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_34 Novoryazanskaya street.jpg",
+   "uri": "I00958",
+   "uri_prev": "I00957",
+   "uri_next": "I00959",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -231,6 +314,9 @@
   {
    "caption": "Троллейбус едет с 22 маршрута в Новокосинский парк по Новой Басманной улице. ТролЗа-5265 9320",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_35.jpg",
+   "uri": "I00959",
+   "uri_prev": "I00958",
+   "uri_next": "I00960",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -239,6 +325,9 @@
   {
    "caption": "Троллейбус едет с 22 маршрута в Новокосинский парк по Новой Басманной улице. ТролЗа-5265 9320",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200706_36.jpg",
+   "uri": "I00960",
+   "uri_prev": "I00959",
+   "uri_next": "I00961",
    "city": "Москва",
    "sublocation": "Baumanskaya",
    "date_append": "2022-08-04",
@@ -247,6 +336,9 @@
   {
    "caption": "Марьинский Парк",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20210706_20 Marino.jpg",
+   "uri": "I00961",
+   "uri_prev": "I00960",
+   "uri_next": "I00962",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.78273 55.65079)"
@@ -254,6 +346,9 @@
   {
    "caption": "Марьинский парк",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20210706_21 Marino.jpg",
+   "uri": "I00962",
+   "uri_prev": "I00961",
+   "uri_next": "I00963",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.71990 55.64136)"
@@ -261,6 +356,9 @@
   {
    "caption": "Подъездной путь Бирюлёво - Видное",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20210706_22 Zagorie railway.jpg",
+   "uri": "I00963",
+   "uri_prev": "I00962",
+   "uri_next": "I00964",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69665 55.58675)"
@@ -268,6 +366,9 @@
   {
    "caption": "Нижний Царицынский пруд",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20210706_23 Tsaritsino pond.jpg",
+   "uri": "I00964",
+   "uri_prev": "I00963",
+   "uri_next": "I00965",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.68734 55.62927)"
@@ -275,6 +376,8 @@
   {
    "caption": "Курский вокзал",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20210706_24 Kursky station.jpg",
+   "uri": "I00965",
+   "uri_prev": "I00964",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.66074 55.76086)"

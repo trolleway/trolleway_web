@@ -10,6 +10,8 @@
   {
    "caption": "Свободный проспект, 19. Многоэтажный дом серии П-55 постройки 1998 года",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_014.jpg",
+   "uri": "I00285",
+   "uri_next": "I00297",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.8203600000000009 55.7586000000000013)"
@@ -17,6 +19,9 @@
   {
    "caption": "Здание НПО Орион 1969 года постройки. Шоссе Энтузиастов, 46",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_065_ShiftN.jpg",
+   "uri": "I00297",
+   "uri_prev": "I00285",
+   "uri_next": "I00301",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-07-20",
@@ -25,6 +30,9 @@
   {
    "caption": "Здание Моринформсистема-Агат 1972 года постройки",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_079.jpg",
+   "uri": "I00301",
+   "uri_prev": "I00297",
+   "uri_next": "I00316",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7411200000000022 55.7567000000000021)"
@@ -32,12 +40,18 @@
   {
    "caption": "Магазин на окраине Воскресенска на улице Зелинского в здании АТС",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_04.jpg",
+   "uri": "I00316",
+   "uri_prev": "I00301",
+   "uri_next": "I00520",
    "city": "Воскресенск",
    "wkt_geometry": "POINT (38.6555400000000020 55.3099899999999991)"
   },
   {
    "caption": "Торговая пристройка к многоэтажному дому улица Ленина 4",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 149_ShiftN.jpg",
+   "uri": "I00520",
+   "uri_prev": "I00316",
+   "uri_next": "I00521",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20485 55.86861)"
@@ -45,6 +59,9 @@
   {
    "caption": "Торговая пристройка к многоэтажному дому улица Ленина 4",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 150.jpg",
+   "uri": "I00521",
+   "uri_prev": "I00520",
+   "uri_next": "I00699",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20506 55.86852)"
@@ -52,6 +69,9 @@
   {
    "caption": "Вид с юга на многоэтажки по улице Нейбута",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_030326_364.jpg",
+   "uri": "I00699",
+   "uri_prev": "I00521",
+   "uri_next": "I00934",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.96143 43.09707)"
@@ -59,6 +79,9 @@
   {
    "caption": "Библиотека 95, Полимерная улица",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_04 Perovo library.jpg",
+   "uri": "I00934",
+   "uri_prev": "I00699",
+   "uri_next": "I00935",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -67,6 +90,9 @@
   {
    "caption": "Комплекс панельных домов на улице Лазо. Перовская улица, 31",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_06 Lazo street Perovo.jpg",
+   "uri": "I00935",
+   "uri_prev": "I00934",
+   "uri_next": "I00936",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -75,6 +101,8 @@
   {
    "caption": "Торговое здание с кирпичными стенами на Перовской улице",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_07 Perovo shop_ShiftN.jpg",
+   "uri": "I00936",
+   "uri_prev": "I00935",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",

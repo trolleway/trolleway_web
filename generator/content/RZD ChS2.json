@@ -10,6 +10,8 @@
   {
    "caption": "Электровоз ЧС2-563 идёт двойной тягой с поездом Укрзализниции Луганск-Москва на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-563_20050511_365.jpg",
+   "uri": "I00887",
+   "uri_next": "I00888",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.62118 55.68075)"
@@ -17,6 +19,9 @@
   {
    "caption": "Электровоз ЧС2-616 в депо Москва-Павелецкая",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-616_20060815_057.jpg",
+   "uri": "I00888",
+   "uri_prev": "I00887",
+   "uri_next": "I00889",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.64246 55.71628)"
@@ -24,6 +29,9 @@
   {
    "caption": "Электровоз ЧС2-618 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-618_20041028.jpg",
+   "uri": "I00889",
+   "uri_prev": "I00888",
+   "uri_next": "I00890",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.62081 55.70259)"
@@ -31,6 +39,9 @@
   {
    "caption": "Электровоз ЧС2-693 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-693_20050707_51.jpg",
+   "uri": "I00890",
+   "uri_prev": "I00889",
+   "uri_next": "I00891",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68509 55.63231)"
@@ -38,6 +49,9 @@
   {
    "caption": "Электровоз ЧС2-709 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-709_20060703_243.jpg",
+   "uri": "I00891",
+   "uri_prev": "I00890",
+   "uri_next": "I00892",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68510 55.63222)"
@@ -45,6 +59,9 @@
   {
    "caption": "Электровоз ЧС2-737 с дальним поездом на Курском направлении, станция Бутово",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-737_20070714_044.jpg",
+   "uri": "I00892",
+   "uri_prev": "I00891",
+   "uri_next": "I00893",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.57795 55.55001)"
@@ -52,6 +69,9 @@
   {
    "caption": "Электровоз ЧС2-738 с дальним поездом на Киевском вокзале",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-738_20050719_046.jpg",
+   "uri": "I00893",
+   "uri_prev": "I00892",
+   "uri_next": "I00894",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.56709 55.74309)"
@@ -59,6 +79,9 @@
   {
    "caption": "Электровоз ЧС2-743 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-743_20050428_071.jpg",
+   "uri": "I00894",
+   "uri_prev": "I00893",
+   "uri_next": "I00895",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.62087 55.68362)"
@@ -66,6 +89,9 @@
   {
    "caption": "Электровоз ЧС2-749 с дальним поездом на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-749_20040712_0001.jpg",
+   "uri": "I00895",
+   "uri_prev": "I00894",
+   "uri_next": "I00896",
    "city": "Раменское",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.22543 55.56557)"
@@ -73,6 +99,9 @@
   {
    "caption": "Электровоз ЧС2-756 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-756_20050720_034.jpg",
+   "uri": "I00896",
+   "uri_prev": "I00895",
+   "uri_next": "I00897",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.62246 55.66312)"
@@ -80,6 +109,9 @@
   {
    "caption": "Электровоз ЧС2-760 на Курском направлении, Каспийская улица без заборов",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-760_20050824_048.jpg",
+   "uri": "I00897",
+   "uri_prev": "I00896",
+   "uri_next": "I00898",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.67556 55.62385)"
@@ -87,6 +119,9 @@
   {
    "caption": "Электровоз ЧС2-768 с дальним поездом Укрзализниции на Павелецком направлении. Платформа ЗИЛ",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-768_20050707_11.jpg",
+   "uri": "I00898",
+   "uri_prev": "I00897",
+   "uri_next": "I00899",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.62363 55.70464)"
@@ -94,6 +129,9 @@
   {
    "caption": "Электровоз ЧС2-770 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-770_20050821_126.jpg",
+   "uri": "I00899",
+   "uri_prev": "I00898",
+   "uri_next": "I00900",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.66372 55.57279)"
@@ -101,6 +139,9 @@
   {
    "caption": "Электровоз ЧС2-771 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-771_20060116_056.jpg",
+   "uri": "I00900",
+   "uri_prev": "I00899",
+   "uri_next": "I00901",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.61614 55.69601)"
@@ -108,6 +149,9 @@
   {
    "caption": "Электровоз ЧС2-771 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-771_20061002_115.jpg",
+   "uri": "I00901",
+   "uri_prev": "I00900",
+   "uri_next": "I00902",
    "city": "Видное",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68509 55.54894)"
@@ -115,6 +159,9 @@
   {
    "caption": "Электровоз ЧС2-778 с дальним поездом на Курском направлении, станция Перерва",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-778_20070505_081.jpg",
+   "uri": "I00902",
+   "uri_prev": "I00901",
+   "uri_next": "I00903",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.71497 55.65982)"
@@ -122,6 +169,9 @@
   {
    "caption": "Электровоз ЧС2-794 на Казанском вокзале",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-794_20040824_1.jpg",
+   "uri": "I00903",
+   "uri_prev": "I00902",
+   "uri_next": "I00904",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.65550 55.77386)"
@@ -129,6 +179,9 @@
   {
    "caption": "Электровоз ЧС2-808 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-808_20070610_109.jpg",
+   "uri": "I00904",
+   "uri_prev": "I00903",
+   "uri_next": "I00905",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68088 55.62760)"
@@ -136,6 +189,9 @@
   {
    "caption": "Электровоз ЧС2-812 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-812_20050821_112.jpg",
+   "uri": "I00905",
+   "uri_prev": "I00904",
+   "uri_next": "I00906",
    "city": "Видное",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.66692 55.56732)"
@@ -143,6 +199,9 @@
   {
    "caption": "Электровоз ЧС2-817 идёт двойной тягой, два сцепленых электровоза на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-817_20050103_197.jpg",
+   "uri": "I00906",
+   "uri_prev": "I00905",
+   "uri_next": "I00907",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.65469 55.59176)"
@@ -150,6 +209,9 @@
   {
    "caption": "Электровоз ЧС2-819 с дальним поездом на Курском направлении, Курский вокзал",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-819_20051020_027.jpg",
+   "uri": "I00907",
+   "uri_prev": "I00906",
+   "uri_next": "I00908",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.66291 55.75617)"
@@ -157,6 +219,9 @@
   {
    "caption": "Электровоз ЧС2-820 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-820_20050803_002.jpg",
+   "uri": "I00908",
+   "uri_prev": "I00907",
+   "uri_next": "I00909",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68904 55.64000)"
@@ -164,6 +229,9 @@
   {
    "caption": "Электровоз ЧС2-828 с дальним поездом на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-828_20050810_121.jpg",
+   "uri": "I00909",
+   "uri_prev": "I00908",
+   "uri_next": "I00910",
    "city": "Lubertsy",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.92391 55.66934)"
@@ -171,6 +239,9 @@
   {
    "caption": "Электровоз ЧС2-830 с дальним поездом на Павелецком направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-830_20050411_2.jpg",
+   "uri": "I00910",
+   "uri_prev": "I00909",
+   "uri_next": "I00911",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.62103 55.68317)"
@@ -178,6 +249,9 @@
   {
    "caption": "Электровоз ЧС2-835 с дальним поездом на Павелецком направлении, станция Домодедово",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-835_20060819_084.jpg",
+   "uri": "I00911",
+   "uri_prev": "I00910",
+   "uri_next": "I00912",
    "city": "Домодедово",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.77300 55.43980)"
@@ -185,6 +259,9 @@
   {
    "caption": "Электровоз ЧС2-841 с дальним поездом на Павелецком направлении, станция Чертаново",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-841_20050703_126.jpg",
+   "uri": "I00912",
+   "uri_prev": "I00911",
+   "uri_next": "I00913",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.62683 55.63232)"
@@ -192,6 +269,9 @@
   {
    "caption": "Электровоз ЧС2-843 с дальним поездом на Казанском направлении, платформа 47 километр",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-843_20040627_013.jpg",
+   "uri": "I00913",
+   "uri_prev": "I00912",
+   "uri_next": "I00914",
    "city": "Раменское",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.24110 55.55986)"
@@ -199,6 +279,9 @@
   {
    "caption": "Электровоз ЧС2-844 с дальним поездом из зелёных вагонов на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-844_20040725_002.jpg",
+   "uri": "I00914",
+   "uri_prev": "I00913",
+   "uri_next": "I00915",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.70514 55.78121)"
@@ -206,6 +289,9 @@
   {
    "caption": "Электровоз ЧС2-853 с дальним поездом Укрзализниции на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-853_20060902_188.jpg",
+   "uri": "I00915",
+   "uri_prev": "I00914",
+   "uri_next": "I00916",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.70226 55.73393)"
@@ -213,6 +299,9 @@
   {
    "caption": "Электровоз ЧС2-858 с дальним поездом на Павелецком направлении, Бирюлёво",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-858_20060306_035.jpg",
+   "uri": "I00916",
+   "uri_prev": "I00915",
+   "uri_next": "I00917",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.66117 55.57671)"
@@ -220,6 +309,9 @@
   {
    "caption": "Электровоз ЧС2-864 с дальним поездом на Казанском направлении, платформа Совхоз",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-864_20050529_385.jpg",
+   "uri": "I00917",
+   "uri_prev": "I00916",
+   "uri_next": "I00918",
    "city": "Раменское",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.29661 55.54010)"
@@ -227,6 +319,9 @@
   {
    "caption": "Электровоз ЧС2-865 с дальним поездом на Курском направлении, Курский вокзал",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-865_20050806_055.jpg",
+   "uri": "I00918",
+   "uri_prev": "I00917",
+   "uri_next": "I00919",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.65978 55.76225)"
@@ -234,6 +329,9 @@
   {
    "caption": "Электровоз ЧС2-868 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-868_20070318_147.jpg",
+   "uri": "I00919",
+   "uri_prev": "I00918",
+   "uri_next": "I00920",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.64452 55.61181)"
@@ -241,6 +339,9 @@
   {
    "caption": "Электровоз ЧС2-871 с дальним поездом на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-871_20040530_029.jpg",
+   "uri": "I00920",
+   "uri_prev": "I00919",
+   "uri_next": "I00921",
    "city": "Zukovsky",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.13595 55.60181)"
@@ -248,6 +349,9 @@
   {
    "caption": "Электровоз ЧС2-889 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-889_20040924_007.jpg",
+   "uri": "I00921",
+   "uri_prev": "I00920",
+   "uri_next": "I00922",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68995 55.64162)"
@@ -255,6 +359,9 @@
   {
    "caption": "Электровоз ЧС2-892 с дальним поездом на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-892_20050828_169.jpg",
+   "uri": "I00922",
+   "uri_prev": "I00921",
+   "uri_next": "I00923",
    "city": "Коломна",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.78100 55.09948)"
@@ -262,6 +369,9 @@
   {
    "caption": "Электровоз ЧС2-895 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-895_20050708_006.jpg",
+   "uri": "I00923",
+   "uri_prev": "I00922",
+   "uri_next": "I00924",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68887 55.64003)"
@@ -269,6 +379,9 @@
   {
    "caption": "Электровоз ЧС2-901 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-901_20060616_067.jpg",
+   "uri": "I00924",
+   "uri_prev": "I00923",
+   "uri_next": "I00925",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68936 55.64045)"
@@ -276,6 +389,9 @@
   {
    "caption": "Электровоз ЧС2-909 с дальним поездом на Курском направлении, станция Калитники",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-909_20070719_046.jpg",
+   "uri": "I00925",
+   "uri_prev": "I00924",
+   "uri_next": "I00926",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.70310 55.73322)"
@@ -283,6 +399,9 @@
   {
    "caption": "Электровоз ЧС2-911 с путеизмерителем на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-911_20051001_044.jpg",
+   "uri": "I00926",
+   "uri_prev": "I00925",
+   "uri_next": "I00927",
    "city": "Lubertsy",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.86859 55.69634)"
@@ -290,6 +409,9 @@
   {
    "caption": "Электровоз ЧС2-915 с дальним поездом на Казанском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-915_20050604_013.jpg",
+   "uri": "I00927",
+   "uri_prev": "I00926",
+   "uri_next": "I00928",
    "city": "Zukovsky",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.16180 55.59114)"
@@ -297,6 +419,9 @@
   {
    "caption": "Электровоз ЧС2-922 с дальним поездом на Курском направлении",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-922_20070708_044.jpg",
+   "uri": "I00928",
+   "uri_prev": "I00927",
+   "uri_next": "I00929",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.68666 55.63650)"
@@ -304,12 +429,17 @@
   {
    "caption": "Электровоз ЧС2-931 с дальним поездом на БМО, едет с поездом в обход Москвы, Куровская - Воскресенск",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-931_20040712_0059.jpg",
+   "uri": "I00929",
+   "uri_prev": "I00928",
+   "uri_next": "I00930",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (38.78054 55.38916)"
   },
   {
    "caption": "Электровоз ЧС2-943 с дальним поездом на Павелецком направлении, станция Москва-Товарная",
    "url_hotlink": "https://trolleway.com/storage/rail/RZD ChS2/ChS2-943_20060815_053.jpg",
+   "uri": "I00930",
+   "uri_prev": "I00929",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.64262 55.71625)"

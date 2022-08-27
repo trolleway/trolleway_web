@@ -10,6 +10,8 @@
   {
    "caption": "Дореволюционное здание в кирпичном стиле. 1-й Краснокурсантский пр., 3/5 корпус 5, Москва",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_109.jpg",
+   "uri": "I00306",
+   "uri_next": "I00308",
    "city": "Москва",
    "sublocation": "Lefortovo",
    "date_append": "2022-07-20",
@@ -18,6 +20,9 @@
   {
    "caption": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_143.jpg",
+   "uri": "I00308",
+   "uri_prev": "I00306",
+   "uri_next": "I00309",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.6757199999999983 55.7682900000000004)"
@@ -25,6 +30,9 @@
   {
    "caption": "Дореволюционный кирпичный дом. Аптекарский переулок, 5, Москва.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_144.jpg",
+   "uri": "I00309",
+   "uri_prev": "I00308",
+   "uri_next": "I00310",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.6750699999999981 55.7682399999999987)"
@@ -32,6 +40,9 @@
   {
    "caption": "Старый московский дворик. Доброслободская улица, 10.",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_150.jpg",
+   "uri": "I00310",
+   "uri_prev": "I00309",
+   "uri_next": "I00488",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.6733199999999968 55.7672400000000010)"
@@ -39,6 +50,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Улица Лесная, 1",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 014.jpg",
+   "uri": "I00488",
+   "uri_prev": "I00310",
+   "uri_next": "I00489",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18805 55.86238)"
@@ -46,6 +60,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Улица Лесная, 1",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 015.jpg",
+   "uri": "I00489",
+   "uri_prev": "I00488",
+   "uri_next": "I00491",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18780 55.86222)"
@@ -53,6 +70,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Лесная улица, 1. Вид с юга",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 018.jpg",
+   "uri": "I00491",
+   "uri_prev": "I00489",
+   "uri_next": "I00492",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18782 55.86167)"
@@ -60,6 +80,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Лесная улица, 1. Вид с востока",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 019_ShiftN.jpg",
+   "uri": "I00492",
+   "uri_prev": "I00491",
+   "uri_next": "I00493",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18863 55.86180)"
@@ -67,6 +90,9 @@
   {
    "caption": "Дореволюционное фабричное общежитие. Лесная улица, 1. Вид с востока",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 021.jpg",
+   "uri": "I00493",
+   "uri_prev": "I00492",
+   "uri_next": "I00494",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18855 55.86197)"
@@ -74,6 +100,9 @@
   {
    "caption": "Маленький дореволюционный многоквартирный жилой дом. Лесная 6",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 029_ShiftN.jpg",
+   "uri": "I00494",
+   "uri_prev": "I00493",
+   "uri_next": "I00495",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18515 55.86156)"
@@ -81,6 +110,9 @@
   {
    "caption": "Маленький дореволюционный многоквартирный жилой дом. Лесная 6",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 031_ShiftN.jpg",
+   "uri": "I00495",
+   "uri_prev": "I00494",
+   "uri_next": "I00507",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18569 55.86152)"
@@ -88,6 +120,9 @@
   {
    "caption": "Общежитие Лондон в Лосино-Петровском, улица Кирова, 5",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 110.jpg",
+   "uri": "I00507",
+   "uri_prev": "I00495",
+   "uri_next": "I00508",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20318 55.86592)"
@@ -95,6 +130,9 @@
   {
    "caption": "Общежитие Лондон в Лосино-Петровском, улица Кирова, 5",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 113.jpg",
+   "uri": "I00508",
+   "uri_prev": "I00507",
+   "uri_next": "I00579",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.20337 55.86530)"
@@ -102,6 +140,9 @@
   {
    "caption": "Главное здание Раменской фабрики, вид из-за железной дороги",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0787_ShiftN_crop.jpg",
+   "uri": "I00579",
+   "uri_prev": "I00508",
+   "uri_next": "I00599",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21900 55.56764)"
@@ -109,6 +150,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда, с восточной стороны участка",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0830.jpg",
+   "uri": "I00599",
+   "uri_prev": "I00579",
+   "uri_next": "I00600",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22328 55.56906)"
@@ -116,6 +160,9 @@
   {
    "caption": "Канализационный люк с надписью Раменская Фабрика",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0831.jpg",
+   "uri": "I00600",
+   "uri_prev": "I00599",
+   "uri_next": "I00601",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22307 55.56910)"
@@ -123,6 +170,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0832.jpg",
+   "uri": "I00601",
+   "uri_prev": "I00600",
+   "uri_next": "I00602",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22262 55.56925)"
@@ -130,6 +180,9 @@
   {
    "caption": "Здание администрации фабрики с мраморной табличкой Раменский прядильно-текстильный комбинат Красное знамя",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0833.jpg",
+   "uri": "I00602",
+   "uri_prev": "I00601",
+   "uri_next": "I00603",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22269 55.56921)"
@@ -137,6 +190,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0834.jpg",
+   "uri": "I00603",
+   "uri_prev": "I00602",
+   "uri_next": "I00604",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22275 55.56920)"
@@ -144,6 +200,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0835.jpg",
+   "uri": "I00604",
+   "uri_prev": "I00603",
+   "uri_next": "I00605",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22275 55.56920)"
@@ -151,6 +210,9 @@
   {
    "caption": "Вид на ансамбль зданий Раменской фабрики от главного вьезда",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0836_ShiftN.jpg",
+   "uri": "I00605",
+   "uri_prev": "I00604",
+   "uri_next": "I00606",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22268 55.56920)"
@@ -158,6 +220,9 @@
   {
    "caption": "Раменская фабрика. Детали кирпичных стен.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0837.jpg",
+   "uri": "I00606",
+   "uri_prev": "I00605",
+   "uri_next": "I00607",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22251 55.56912)"
@@ -165,6 +230,9 @@
   {
    "caption": "Главное здание Раменской фабрики, вид через ворота",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0838_ShiftN_crop.jpg",
+   "uri": "I00607",
+   "uri_prev": "I00606",
+   "uri_next": "I00608",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22288 55.56825)"
@@ -172,6 +240,9 @@
   {
    "caption": "Склады на территории Раменской фабрики. Перед ними было 2 железнодорожных пути. Склады снесли в начале 2010-х, обьявляли что на их месте будут строить магазины.",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0840.jpg",
+   "uri": "I00608",
+   "uri_prev": "I00607",
+   "uri_next": "I00609",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.22030 55.56789)"
@@ -179,6 +250,9 @@
   {
    "caption": "Раменская фабрика, западный угол территории. Склады в правой части снимка позднее были снесены",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0841_ShiftN.jpg",
+   "uri": "I00609",
+   "uri_prev": "I00608",
+   "uri_next": "I00610",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21513 55.56990)"
@@ -186,6 +260,9 @@
   {
    "caption": "Хлебозавод 1870 года незадолго перед закрытием",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0842_ShiftN_crop.jpg",
+   "uri": "I00610",
+   "uri_prev": "I00609",
+   "uri_next": "I00612",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21456 55.57014)"
@@ -193,6 +270,9 @@
   {
    "caption": "Квартал дореволюционных общежитий Раменской фабрики",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0845.jpg",
+   "uri": "I00612",
+   "uri_prev": "I00610",
+   "uri_next": "I00613",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21291 55.57272)"
@@ -200,6 +280,9 @@
   {
    "caption": "Сушится бельё на верёвке. Квартал дореволюционных общежитий Раменской фабрики",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0846_ShiftN.jpg",
+   "uri": "I00613",
+   "uri_prev": "I00612",
+   "uri_next": "I00614",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21296 55.57274)"
@@ -207,6 +290,9 @@
   {
    "caption": "Фабричная баня. Здание сильно надстроено в 2000-х годах",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0848.jpg",
+   "uri": "I00614",
+   "uri_prev": "I00613",
+   "uri_next": "I00615",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21605 55.57231)"
@@ -214,6 +300,9 @@
   {
    "caption": "Фабричная баня. Здание сильно надстроено в 2000-х годах",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0849_ShiftN_crop.jpg",
+   "uri": "I00615",
+   "uri_prev": "I00614",
+   "uri_next": "I00617",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21522 55.57265)"
@@ -221,6 +310,9 @@
   {
    "caption": "Проезд между фабричными общежитиями. Здесь проходила железная дорога к Северному шоссе",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0851.jpg",
+   "uri": "I00617",
+   "uri_prev": "I00615",
+   "uri_next": "I00688",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21332 55.57313)"
@@ -228,6 +320,9 @@
   {
    "caption": "Дом на наклонной улице. Горная, 31",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_0004.jpg",
+   "uri": "I00688",
+   "uri_prev": "I00617",
+   "uri_next": "I00689",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.92132 43.11253)"
@@ -235,6 +330,9 @@
   {
    "caption": "Владивосток, Светланская, 161. Офис FarPost.ru",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_0005.jpg",
+   "uri": "I00689",
+   "uri_prev": "I00688",
+   "uri_next": "I00690",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.92090 43.11247)"
@@ -242,6 +340,9 @@
   {
    "caption": "Дореволюционный дом в стиле Модерн. Светланская улица, 61",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_0006.jpg",
+   "uri": "I00690",
+   "uri_prev": "I00689",
+   "uri_next": "I00723",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89532 43.11380)"
@@ -249,6 +350,9 @@
   {
    "caption": "Кирпичный дом улица Карла Либкнехта, 1",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_045630_486.jpg",
+   "uri": "I00723",
+   "uri_prev": "I00690",
+   "uri_next": "I00724",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.92131 43.11246)"
@@ -256,6 +360,9 @@
   {
    "caption": "Кирпичный дом, улица Карла Либкнехта, 10",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_045910_511.jpg",
+   "uri": "I00724",
+   "uri_prev": "I00723",
+   "uri_next": "I00725",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.92134 43.11319)"
@@ -263,6 +370,9 @@
   {
    "caption": "Кирпичный дом, улица Карла Либкнехта, 10",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_045932_516.jpg",
+   "uri": "I00725",
+   "uri_prev": "I00724",
+   "uri_next": "I00726",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.92134 43.11337)"
@@ -270,6 +380,8 @@
   {
    "caption": "Кирпичный дом. Улица Светланская, 61",
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_050432_552.jpg",
+   "uri": "I00726",
+   "uri_prev": "I00725",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.92098 43.11272)"

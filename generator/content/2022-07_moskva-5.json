@@ -10,6 +10,8 @@
   {
    "caption": "ГАЗ-21 к021ет199 на фестивале Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_02.jpg",
+   "uri": "I00344",
+   "uri_next": "I00345",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5358500000000035 55.7068900000000014)"
@@ -17,6 +19,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_03.jpg",
+   "uri": "I00345",
+   "uri_prev": "I00344",
+   "uri_next": "I00348",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5392599999999987 55.7085200000000000)"
@@ -24,6 +29,9 @@
   {
    "caption": "Автобус ЛиАЗ-677М в677ес50 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_05.jpg",
+   "uri": "I00348",
+   "uri_prev": "I00345",
+   "uri_next": "I00350",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5437399999999997 55.7080199999999977)"
@@ -31,6 +39,9 @@
   {
    "caption": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_06.jpg",
+   "uri": "I00350",
+   "uri_prev": "I00348",
+   "uri_next": "I00353",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5437399999999997 55.7080199999999977)"
@@ -38,6 +49,9 @@
   {
    "caption": "Автобус ЛАЗ-699Р у793вн797 на подвозе от метро Университет к фестивалю Ретрорейс",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_08.jpg",
+   "uri": "I00353",
+   "uri_prev": "I00350",
+   "uri_next": "I00354",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5436899999999980 55.7079299999999975)"
@@ -45,6 +59,9 @@
   {
    "caption": "Трамвай 71-623 2644 на кольце метро Октябрьская",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_09.jpg",
+   "uri": "I00354",
+   "uri_prev": "I00353",
+   "uri_next": "I00343",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.6120500000000035 55.7273199999999989)"
@@ -52,6 +69,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_01.jpg",
+   "uri": "I00343",
+   "uri_prev": "I00354",
+   "uri_next": "I00357",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.5358500000000035 55.7068900000000014)"
@@ -59,6 +79,8 @@
   {
    "caption": "Трамвай Витязь 31169 на кольце метро Октябрьская",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_retroreis/20220709_11.jpg",
+   "uri": "I00357",
+   "uri_prev": "I00343",
    "city": "Москва",
    "date_append": "2022-07-30",
    "wkt_geometry": "POINT (37.6121899999999982 55.7273599999999973)"

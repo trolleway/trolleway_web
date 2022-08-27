@@ -190,13 +190,13 @@ class Website_generator():
                 current_image += 1
 
                 if current_image < count_images:
-                    url_right = self.numfill(current_image+1)+'.htm'
+                    url_right = image.get('uri_next')+'.htm'
                     rel_right = 'next'
                 else:
                     url_right = 'index.htm'
                     rel_right = 'up'
                 if current_image > 1:
-                    url_left = self.numfill(current_image-1)+'.htm'
+                    url_left = image.get('uri_prev')+'.htm'
                     rel_left = 'prev'
                 else:
                     url_left = 'index.htm'
@@ -331,9 +331,9 @@ class Website_generator():
                 html = str()
                 #template = self.template_remove_map(template)
                 photo4template=dict()
-                photo4template['path']=os.path.join(self.numfill(current_image))
-                photo4template['page_file_local']=os.path.join(output_directory_path,self.numfill(current_image))
-                photo4template['page_url_absolute']=sitemap_base_url+output_directory_name+'/'+self.numfill(current_image)+'.htm'
+                photo4template['page_file_local']=os.path.join(output_directory_path,image['uri'])
+                photo4template['page_url_absolute']=sitemap_base_url+output_directory_name+'/'+image['uri']+'.htm'
+                photo4template['uri']=image['uri']
                 photo4template['image_url']=image['url']
                 photo4template['image_url_base']=image['url'].replace('.jpg','')
                 photo4template['caption']=caption_location
@@ -397,7 +397,7 @@ class Website_generator():
                     pages2sitemap.append(sitemap_page_record)
 
                 popup_content = '<a href="{href}"><img src="{thumbnail}"><p>{title}</a>'.format(
-                href=photo4template['path']+'.htm',
+                href=photo4template['uri']+'.htm',
                 thumbnail=photo4template['image_url_base']+'.t.webp',
                 title=photo4template['title']
                 )
@@ -498,7 +498,7 @@ L.geoJSON(photos, {
             for photo in photos4template:
                 photo_html = '<a href="{photo_page_url}"><picture><source srcset="{url_thumbnail_webp}" type="image/webp"><img src="{url_thumbnail_jpg}"></picture></a>{caption}</p> '
                 photo_html = photo_html.format(
-                photo_page_url=photo['path']+'.htm',
+                photo_page_url=photo['uri']+'.htm',
                 url_thumbnail_jpg=os.path.join(os.path.dirname(photo['image_url']) , os.path.basename(os.path.splitext(photo['image_url'])[0])+'.t.jpg'),
                 url_thumbnail_webp=os.path.join(os.path.dirname(photo['image_url']) , os.path.basename(os.path.splitext(photo['image_url'])[0])+'.t.webp'),
                 caption=photo['caption']

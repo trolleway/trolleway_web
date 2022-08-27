@@ -10,6 +10,8 @@
   {
    "caption": "Тепловоз ЧМЭ3-2672 на Белорусском вокзале",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/ChME3-2672 20190323_0004.jpg",
+   "uri": "I00773",
+   "uri_next": "I00775",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.58097 55.77708)"
@@ -17,6 +19,9 @@
   {
    "caption": "ЭР2Р-7075 на Белорусском вокзале",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/ER2R-7075 20190323_0006.jpg",
+   "uri": "I00775",
+   "uri_prev": "I00773",
+   "uri_next": "I00774",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.58090 55.77708)"
@@ -24,6 +29,9 @@
   {
    "caption": "ЭД4МКМ-0001 Аэроэкспресс на Белорусском вокзале",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/ED4MKM-0001 20190323_0012.jpg",
+   "uri": "I00774",
+   "uri_prev": "I00775",
+   "uri_next": "I00777",
    "city": "Москва",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (37.58087 55.77710)"
@@ -31,6 +39,9 @@
   {
    "caption": "Мост Де-Фриз - Седанка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0031.jpg",
+   "uri": "I00777",
+   "uri_prev": "I00774",
+   "uri_next": "I00778",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.96613 43.25480)"
@@ -38,6 +49,9 @@
   {
    "caption": "Восточный обход Владивостока. Снимал с переднего сиденья такси",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0033.jpg",
+   "uri": "I00778",
+   "uri_prev": "I00777",
+   "uri_next": "I00779",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.96482 43.21759)"
@@ -45,6 +59,9 @@
   {
    "caption": "Восточный обход Владивостока. Снимал с переднего сиденья такси",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0034.jpg",
+   "uri": "I00779",
+   "uri_prev": "I00778",
+   "uri_next": "I00780",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.96511 43.17167)"
@@ -52,6 +69,9 @@
   {
    "caption": "Восточный обход Владивостока. Снимал с переднего сиденья такси",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0036.jpg",
+   "uri": "I00780",
+   "uri_prev": "I00779",
+   "uri_next": "I00781",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.97020 43.17010)"
@@ -59,6 +79,9 @@
   {
    "caption": "Восточный обход Владивостока. Снимал с переднего сиденья такси",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0039.jpg",
+   "uri": "I00781",
+   "uri_prev": "I00780",
+   "uri_next": "I00782",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.99540 43.14788)"
@@ -66,6 +89,9 @@
   {
    "caption": "Восточный обход Владивостока. Справа видна одна из многочисленных горных дорог царского времени",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0041.jpg",
+   "uri": "I00782",
+   "uri_prev": "I00781",
+   "uri_next": "I00783",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.99665 43.12821)"
@@ -73,6 +99,9 @@
   {
    "caption": "Вид на Владивосток с восточной окраины, район ТЭЦ-2",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0042.jpg",
+   "uri": "I00783",
+   "uri_prev": "I00782",
+   "uri_next": "I00784",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.98417 43.10892)"
@@ -80,6 +109,9 @@
   {
    "caption": "Восточный обход Владивостока. Снимал с переднего сиденья такси",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0049.jpg",
+   "uri": "I00784",
+   "uri_prev": "I00783",
+   "uri_next": "I00785",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.98311 43.09349)"
@@ -87,6 +119,9 @@
   {
    "caption": "Восточный обход Владивостока. Снимал с переднего сиденья такси",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0055.jpg",
+   "uri": "I00785",
+   "uri_prev": "I00784",
+   "uri_next": "I00786",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.98061 43.09158)"
@@ -94,6 +129,9 @@
   {
    "caption": "Восточный обход Владивостока. Район улицы Добровольского",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0057.jpg",
+   "uri": "I00786",
+   "uri_prev": "I00785",
+   "uri_next": "I00787",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.97703 43.08991)"
@@ -101,6 +139,9 @@
   {
    "caption": "Восточный обход Владивостока. Бухта Патрокл",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0064.jpg",
+   "uri": "I00787",
+   "uri_prev": "I00786",
+   "uri_next": "I00789",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.96605 43.07921)"
@@ -108,6 +149,9 @@
   {
    "caption": "ДВФУ, студенческие общежития",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0075.jpg",
+   "uri": "I00789",
+   "uri_prev": "I00787",
+   "uri_next": "I00790",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -116,6 +160,9 @@
   {
    "caption": "ДВФУ",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0076.jpg",
+   "uri": "I00790",
+   "uri_prev": "I00789",
+   "uri_next": "I00791",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -124,6 +171,9 @@
   {
    "caption": "ДВФУ",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0078.jpg",
+   "uri": "I00791",
+   "uri_prev": "I00790",
+   "uri_next": "I00792",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -132,6 +182,9 @@
   {
    "caption": "Студенческие общежития ДВФУ, вид с восточной части",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0080_ShiftN_crop.jpg",
+   "uri": "I00792",
+   "uri_prev": "I00791",
+   "uri_next": "I00793",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -140,6 +193,9 @@
   {
    "caption": "Набережная кампуса ДВФУ, бухта Аякс",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0081.jpg",
+   "uri": "I00793",
+   "uri_prev": "I00792",
+   "uri_next": "I00794",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -148,6 +204,9 @@
   {
    "caption": "Море у кампуса ДВФУ",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0082.jpg",
+   "uri": "I00794",
+   "uri_prev": "I00793",
+   "uri_next": "I00795",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -156,6 +215,9 @@
   {
    "caption": "Старое здание, сохранившееся со времён воинской части на территории ДВФУ",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0083.jpg",
+   "uri": "I00795",
+   "uri_prev": "I00794",
+   "uri_next": "I00788",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -164,6 +226,9 @@
   {
    "caption": "Ночной вид кампуса ДВФУ",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190324_0073.jpg",
+   "uri": "I00788",
+   "uri_prev": "I00795",
+   "uri_next": "I00880",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -172,6 +237,9 @@
   {
    "caption": "Вид на Золотой мост с южной стороны на закате",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok Russkiy bridge 20190325_0084.jpg",
+   "uri": "I00880",
+   "uri_prev": "I00788",
+   "uri_next": "I00881",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89671 43.10080)"
@@ -179,6 +247,9 @@
   {
    "caption": "Вид на Золотой мост с южной стороны на закате",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok Russkiy bridge 20190325_0085.jpg",
+   "uri": "I00881",
+   "uri_prev": "I00880",
+   "uri_next": "I00796",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89672 43.10080)"
@@ -186,6 +257,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0086.jpg",
+   "uri": "I00796",
+   "uri_prev": "I00881",
+   "uri_next": "I00797",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89804 43.09995)"
@@ -193,6 +267,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0087.jpg",
+   "uri": "I00797",
+   "uri_prev": "I00796",
+   "uri_next": "I00798",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89810 43.09993)"
@@ -200,6 +277,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0088.jpg",
+   "uri": "I00798",
+   "uri_prev": "I00797",
+   "uri_next": "I00799",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90014 43.09929)"
@@ -207,6 +287,9 @@
   {
    "caption": "Фастовская улица",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0089.jpg",
+   "uri": "I00799",
+   "uri_prev": "I00798",
+   "uri_next": "I00800",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90018 43.09929)"
@@ -214,6 +297,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0090_crop.jpg",
+   "uri": "I00800",
+   "uri_prev": "I00799",
+   "uri_next": "I00801",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90033 43.09928)"
@@ -221,6 +307,9 @@
   {
    "caption": "Надпись на торце дома 1990 Мир Дружба 渤建 ДМП Плавзавод Е. Никишин. Фастовская улица, 2",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0092.jpg",
+   "uri": "I00801",
+   "uri_prev": "I00800",
+   "uri_next": "I00802",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90275 43.09945)"
@@ -228,6 +317,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0093.jpg",
+   "uri": "I00802",
+   "uri_prev": "I00801",
+   "uri_next": "I00803",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90276 43.10044)"
@@ -235,6 +327,9 @@
   {
    "caption": "Вид на бухту Золотой Рог из торгового центра Черёмушки",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0095.jpg",
+   "uri": "I00803",
+   "uri_prev": "I00802",
+   "uri_next": "I00804",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90363 43.10052)"
@@ -242,6 +337,9 @@
   {
    "caption": "Вид на центр Владивостока и Золотой Мост из торгового центра Черёмушки",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0097.jpg",
+   "uri": "I00804",
+   "uri_prev": "I00803",
+   "uri_next": "I00805",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90363 43.10052)"
@@ -249,6 +347,9 @@
   {
    "caption": "Входы с земли в подъезд на второй этаж. Чемёмуховая улица, 20",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0098.jpg",
+   "uri": "I00805",
+   "uri_prev": "I00804",
+   "uri_next": "I00806",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90507 43.09935)"
@@ -256,6 +357,9 @@
   {
    "caption": "Nissan",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0099_crop.jpg",
+   "uri": "I00806",
+   "uri_prev": "I00805",
+   "uri_next": "I00807",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90519 43.09841)"
@@ -263,6 +367,9 @@
   {
    "caption": "Toyota",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0100.jpg",
+   "uri": "I00807",
+   "uri_prev": "I00806",
+   "uri_next": "I00808",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90635 43.09620)"
@@ -270,6 +377,9 @@
   {
    "caption": "Mazda",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0103.jpg",
+   "uri": "I00808",
+   "uri_prev": "I00807",
+   "uri_next": "I00809",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90756 43.09640)"
@@ -277,6 +387,9 @@
   {
    "caption": "Mazda",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0104.jpg",
+   "uri": "I00809",
+   "uri_prev": "I00808",
+   "uri_next": "I00810",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90761 43.09635)"
@@ -284,6 +397,9 @@
   {
    "caption": "Бухта Диомид",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0106.jpg",
+   "uri": "I00810",
+   "uri_prev": "I00809",
+   "uri_next": "I00811",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90658 43.09586)"
@@ -291,6 +407,9 @@
   {
    "caption": "Бухта Диомид",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0110.jpg",
+   "uri": "I00811",
+   "uri_prev": "I00810",
+   "uri_next": "I00812",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90633 43.09577)"
@@ -298,6 +417,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0116.jpg",
+   "uri": "I00812",
+   "uri_prev": "I00811",
+   "uri_next": "I00813",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90584 43.09538)"
@@ -305,6 +427,9 @@
   {
    "caption": "Краснокирпичное здание. Гульбиновича, 3",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0121_ShiftN_crop.jpg",
+   "uri": "I00813",
+   "uri_prev": "I00812",
+   "uri_next": "I00814",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90502 43.09560)"
@@ -312,6 +437,9 @@
   {
    "caption": "Краснокирпичное здание. Гульбиновича, 3",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0122.jpg",
+   "uri": "I00814",
+   "uri_prev": "I00813",
+   "uri_next": "I00815",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90484 43.09562)"
@@ -319,6 +447,9 @@
   {
    "caption": "Краснокирпичное здание. Гульбиновича, 3",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0127_ShiftN_crop.jpg",
+   "uri": "I00815",
+   "uri_prev": "I00814",
+   "uri_next": "I00816",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90465 43.09569)"
@@ -326,6 +457,9 @@
   {
    "caption": "Toyota Crown",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0142.jpg",
+   "uri": "I00816",
+   "uri_prev": "I00815",
+   "uri_next": "I00817",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90496 43.09378)"
@@ -333,6 +467,9 @@
   {
    "caption": "Toyota Crown",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190325_0144.jpg",
+   "uri": "I00817",
+   "uri_prev": "I00816",
+   "uri_next": "I00818",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90507 43.09382)"
@@ -340,6 +477,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190326_0156.jpg",
+   "uri": "I00818",
+   "uri_prev": "I00817",
+   "uri_next": "I00819",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -348,6 +488,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190326_0161.jpg",
+   "uri": "I00819",
+   "uri_prev": "I00818",
+   "uri_next": "I00820",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -356,6 +499,9 @@
   {
    "caption": "Русский мост ночью",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190327_0167.jpg",
+   "uri": "I00820",
+   "uri_prev": "I00819",
+   "uri_next": "I00879",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -364,6 +510,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok FEFU night view 20190327_0171_lr.jpg",
+   "uri": "I00879",
+   "uri_prev": "I00820",
+   "uri_next": "I00878",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89380 43.03103)"
@@ -371,6 +520,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok FEFU campus night view 20190327_0173_lr.jpg",
+   "uri": "I00878",
+   "uri_prev": "I00879",
+   "uri_next": "I00776",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88701 43.02819)"
@@ -378,6 +530,9 @@
   {
    "caption": "Ночной вид кампуса ДВФУ",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok  FEFU campus night view  20190327_0175_lr.jpg",
+   "uri": "I00776",
+   "uri_prev": "I00878",
+   "uri_next": "I00821",
    "city": "Владивосток",
    "sublocation": "ДВФУ",
    "date_append": "2022-08-03",
@@ -386,6 +541,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0178.jpg",
+   "uri": "I00821",
+   "uri_prev": "I00776",
+   "uri_next": "I00822",
    "city": "Владивосток",
    "sublocation": "Balyaeva",
    "date_append": "2022-08-03",
@@ -394,6 +552,9 @@
   {
    "caption": "Лестницы",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0182.jpg",
+   "uri": "I00822",
+   "uri_prev": "I00821",
+   "uri_next": "I00823",
    "city": "Владивосток",
    "sublocation": "Balyaeva",
    "date_append": "2022-08-03",
@@ -402,6 +563,9 @@
   {
    "caption": "Неадекватные лестницы",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0187.jpg",
+   "uri": "I00823",
+   "uri_prev": "I00822",
+   "uri_next": "I00824",
    "city": "Владивосток",
    "sublocation": "Balyaeva",
    "date_append": "2022-08-03",
@@ -410,6 +574,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0188.jpg",
+   "uri": "I00824",
+   "uri_prev": "I00823",
+   "uri_next": "I00825",
    "city": "Владивосток",
    "sublocation": "Balyaeva",
    "date_append": "2022-08-03",
@@ -418,6 +585,9 @@
   {
    "caption": "Придорожная торговля с лотков",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0190.jpg",
+   "uri": "I00825",
+   "uri_prev": "I00824",
+   "uri_next": "I00886",
    "city": "Владивосток",
    "sublocation": "Balyaeva",
    "date_append": "2022-08-03",
@@ -426,6 +596,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 314 20190328_0194_lr.jpg",
+   "uri": "I00886",
+   "uri_prev": "I00825",
+   "uri_next": "I00826",
    "city": "Владивосток",
    "sublocation": "Луговая улица",
    "date_append": "2022-08-03",
@@ -434,6 +607,9 @@
   {
    "caption": "Амурский Залив, вид из центра города в западном направлении на закат",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0195.jpg",
+   "uri": "I00826",
+   "uri_prev": "I00886",
+   "uri_next": "I00827",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.87832 43.11776)"
@@ -441,6 +617,9 @@
   {
    "caption": "Амурский Залив, вид из центра города в западном направлении на закат",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0201.jpg",
+   "uri": "I00827",
+   "uri_prev": "I00826",
+   "uri_next": "I00828",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.87832 43.11772)"
@@ -448,6 +627,9 @@
   {
    "caption": "Амурский Залив, вид из центра города в западном направлении на закат",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190328_0207.jpg",
+   "uri": "I00828",
+   "uri_prev": "I00827",
+   "uri_next": "I00885",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.87833 43.11770)"
@@ -455,6 +637,9 @@
   {
    "caption": "",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 284 20190329_0212_lr.jpg",
+   "uri": "I00885",
+   "uri_prev": "I00828",
+   "uri_next": "I00829",
    "city": "Владивосток",
    "sublocation": "Луговая улица",
    "date_append": "2022-08-03",
@@ -463,6 +648,9 @@
   {
    "caption": "Многоэтажные дома на берегу моря. Улица Добровольского",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0213.jpg",
+   "uri": "I00829",
+   "uri_prev": "I00885",
+   "uri_next": "I00830",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.97487 43.09274)"
@@ -470,6 +658,9 @@
   {
    "caption": "Многоэтажные дома на берегу моря. Улица Добровольского",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0219.jpg",
+   "uri": "I00830",
+   "uri_prev": "I00829",
+   "uri_next": "I00831",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.97688 43.09208)"
@@ -477,6 +668,9 @@
   {
    "caption": "Многоэтажные дома на берегу моря. Улица Добровольского",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0223.jpg",
+   "uri": "I00831",
+   "uri_prev": "I00830",
+   "uri_next": "I00832",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.97787 43.09060)"
@@ -484,6 +678,9 @@
   {
    "caption": "Многоэтажные дома на берегу моря. Улица Добровольского",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0226.jpg",
+   "uri": "I00832",
+   "uri_prev": "I00831",
+   "uri_next": "I00833",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.97792 43.09059)"
@@ -491,6 +688,9 @@
   {
    "caption": "Проспект Острякова, где проходила линия к трамвайному депо",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0233.jpg",
+   "uri": "I00833",
+   "uri_prev": "I00832",
+   "uri_next": "I00834",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89988 43.13350)"
@@ -498,6 +698,9 @@
   {
    "caption": "Жилое здание постройки 1906 года Проспект Острякова, 24",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0235.jpg",
+   "uri": "I00834",
+   "uri_prev": "I00833",
+   "uri_next": "I00835",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89989 43.13350)"
@@ -505,6 +708,9 @@
   {
    "caption": "Проспект Острякова, вид на берег моря",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0238.jpg",
+   "uri": "I00835",
+   "uri_prev": "I00834",
+   "uri_next": "I00836",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89996 43.13413)"
@@ -512,6 +718,9 @@
   {
    "caption": "Дом Промстройинвест 1999 года, Амурская 82",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0242.jpg",
+   "uri": "I00836",
+   "uri_prev": "I00835",
+   "uri_next": "I00837",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89999 43.13522)"
@@ -519,6 +728,9 @@
   {
    "caption": "Кирпичное здание Амурская 55",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0244.jpg",
+   "uri": "I00837",
+   "uri_prev": "I00836",
+   "uri_next": "I00838",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89999 43.13522)"
@@ -526,6 +738,9 @@
   {
    "caption": "Трамвайное депо на Первой Речке. Проспект Острякова 38",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0245.jpg",
+   "uri": "I00838",
+   "uri_prev": "I00837",
+   "uri_next": "I00839",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89995 43.13633)"
@@ -533,6 +748,9 @@
   {
    "caption": "Пятиэтажка проспект Острякова, 3",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0247_ShiftN.jpg",
+   "uri": "I00839",
+   "uri_prev": "I00838",
+   "uri_next": "I00840",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90091 43.12909)"
@@ -540,6 +758,9 @@
   {
    "caption": "Пятиэтажка 1970 года, проспект Красного Знамени 35",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0248.jpg",
+   "uri": "I00840",
+   "uri_prev": "I00839",
+   "uri_next": "I00841",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90091 43.12910)"
@@ -547,6 +768,9 @@
   {
    "caption": "Высокое здание, местная архитектурная доминанта. Октябрьская 8",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0251.jpg",
+   "uri": "I00841",
+   "uri_prev": "I00840",
+   "uri_next": "I00842",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88912 43.12511)"
@@ -554,6 +778,9 @@
   {
    "caption": "Историческое здание. Улица Уборевича, 36",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0257.jpg",
+   "uri": "I00842",
+   "uri_prev": "I00841",
+   "uri_next": "I00843",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89205 43.12168)"
@@ -561,6 +788,9 @@
   {
    "caption": "Вид на закат",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0265_ShiftN.jpg",
+   "uri": "I00843",
+   "uri_prev": "I00842",
+   "uri_next": "I00844",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89171 43.12145)"
@@ -568,6 +798,9 @@
   {
    "caption": "Лестница. Пологая, 65а",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0267.jpg",
+   "uri": "I00844",
+   "uri_prev": "I00843",
+   "uri_next": "I00845",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88949 43.12066)"
@@ -575,6 +808,9 @@
   {
    "caption": "Здание в стиле модерн. Доходный дом Л.Ш. Скидельского. Океанский проспект, 30",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190329_0268.jpg",
+   "uri": "I00845",
+   "uri_prev": "I00844",
+   "uri_next": "I00846",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88777 43.12088)"
@@ -582,6 +818,9 @@
   {
    "caption": "Вид на сухогрузы на рейде у Владивостока из автобуса на остров Русский",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0468_ShiftN_crop.jpg",
+   "uri": "I00846",
+   "uri_prev": "I00845",
+   "uri_next": "I00847",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89839 43.05706)"
@@ -589,6 +828,9 @@
   {
    "caption": "Вид на Владивосток из автобуса на Русском мосту",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0470_crop.jpg",
+   "uri": "I00847",
+   "uri_prev": "I00846",
+   "uri_next": "I00848",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.90120 43.05890)"
@@ -596,6 +838,9 @@
   {
    "caption": "Трамвай 71-608К 313 на остановке Луговая Улица",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0475.jpg",
+   "uri": "I00848",
+   "uri_prev": "I00847",
+   "uri_next": "I00849",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.93717 43.11107)"
@@ -603,6 +848,9 @@
   {
    "caption": "Трамвай 71-608К 313 на остановке Луговая Улица",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0479.jpg",
+   "uri": "I00849",
+   "uri_prev": "I00848",
+   "uri_next": "I00883",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.93701 43.11100)"
@@ -610,6 +858,9 @@
   {
    "caption": "Красный трамвай 71-605А 281 Работает с 1990 года",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 281 20190402_0485.jpg",
+   "uri": "I00883",
+   "uri_prev": "I00849",
+   "uri_next": "I00884",
    "city": "Владивосток",
    "sublocation": "Луговая улица",
    "date_append": "2022-08-03",
@@ -618,6 +869,9 @@
   {
    "caption": "Красный трамвай 71-605А 281 сзади. Работает с 1990 года",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok tram 281 20190402_0489.jpg",
+   "uri": "I00884",
+   "uri_prev": "I00883",
+   "uri_next": "I00850",
    "city": "Владивосток",
    "sublocation": "Луговая улица",
    "date_append": "2022-08-03",
@@ -626,6 +880,9 @@
   {
    "caption": "Корейская реклама инфоцыганина в корейском автобусе",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0490.jpg",
+   "uri": "I00850",
+   "uri_prev": "I00884",
+   "uri_next": "I00882",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.93733 43.11035)"
@@ -633,6 +890,9 @@
   {
    "caption": "Светланская улица в сторону центра",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok Svetlanskaya street 20190402_0492.jpg",
+   "uri": "I00882",
+   "uri_prev": "I00850",
+   "uri_next": "I00851",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89432 43.11421)"
@@ -640,6 +900,9 @@
   {
    "caption": "Узкий двор. Светланская 55",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0494.jpg",
+   "uri": "I00851",
+   "uri_prev": "I00882",
+   "uri_next": "I00852",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89403 43.11446)"
@@ -647,6 +910,9 @@
   {
    "caption": "Модерновое здание президиума ДВО РАН, построено в 1910 как доходный дом. Светланская улица, 50",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0497_ShiftN_crop.jpg",
+   "uri": "I00852",
+   "uri_prev": "I00851",
+   "uri_next": "I00853",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89354 43.11430)"
@@ -654,6 +920,9 @@
   {
    "caption": "Модерновое здание президиума ДВО РАН, построено в 1910 как доходный дом. Светланская улица, 50",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0498.jpg",
+   "uri": "I00853",
+   "uri_prev": "I00852",
+   "uri_next": "I00854",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89325 43.11431)"
@@ -661,6 +930,9 @@
   {
    "caption": "Триумфальная арка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0500.jpg",
+   "uri": "I00854",
+   "uri_prev": "I00853",
+   "uri_next": "I00855",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89217 43.11399)"
@@ -668,6 +940,9 @@
   {
    "caption": "Модерновая пристройка к зданию музея города",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0503.jpg",
+   "uri": "I00855",
+   "uri_prev": "I00854",
+   "uri_next": "I00856",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89236 43.11371)"
@@ -675,6 +950,9 @@
   {
    "caption": "Модерновая пристройка к зданию музея города",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0504.jpg",
+   "uri": "I00856",
+   "uri_prev": "I00855",
+   "uri_next": "I00857",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89236 43.11356)"
@@ -682,6 +960,9 @@
   {
    "caption": "Неиспользуемая, но сохраняемая ветка Владивосток - Луговая по Корабельной Набережной",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0508.jpg",
+   "uri": "I00857",
+   "uri_prev": "I00856",
+   "uri_next": "I00858",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89053 43.11313)"
@@ -689,6 +970,9 @@
   {
    "caption": "Неиспользуемая, но сохраняемая ветка Владивосток - Луговая по Корабельной Набережной",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0514.jpg",
+   "uri": "I00858",
+   "uri_prev": "I00857",
+   "uri_next": "I00859",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88721 43.11401)"
@@ -696,6 +980,9 @@
   {
    "caption": "Неиспользуемая, но сохраняемая ветка Владивосток - Луговая по Корабельной Набережной",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0515.jpg",
+   "uri": "I00859",
+   "uri_prev": "I00858",
+   "uri_next": "I00860",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88722 43.11401)"
@@ -703,6 +990,9 @@
   {
    "caption": "Площадь Победы у городской администрации",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0516_ShiftN.jpg",
+   "uri": "I00860",
+   "uri_prev": "I00859",
+   "uri_next": "I00861",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88621 43.11496)"
@@ -710,6 +1000,9 @@
   {
    "caption": "Светланская улица 23",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0518_ShiftN_crop.jpg",
+   "uri": "I00861",
+   "uri_prev": "I00860",
+   "uri_next": "I00862",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88485 43.11579)"
@@ -717,6 +1010,9 @@
   {
    "caption": "Квартал Миллионка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0520.jpg",
+   "uri": "I00862",
+   "uri_prev": "I00861",
+   "uri_next": "I00863",
    "city": "Владивосток",
    "sublocation": "Миллионка",
    "date_append": "2022-08-03",
@@ -725,6 +1021,9 @@
   {
    "caption": "Квартал Миллионка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0525.jpg",
+   "uri": "I00863",
+   "uri_prev": "I00862",
+   "uri_next": "I00864",
    "city": "Владивосток",
    "sublocation": "Миллионка",
    "date_append": "2022-08-03",
@@ -733,6 +1032,9 @@
   {
    "caption": "Квартал Миллионка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0526.jpg",
+   "uri": "I00864",
+   "uri_prev": "I00863",
+   "uri_next": "I00865",
    "city": "Владивосток",
    "sublocation": "Миллионка",
    "date_append": "2022-08-03",
@@ -741,6 +1043,9 @@
   {
    "caption": "Квартал Миллионка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0528.jpg",
+   "uri": "I00865",
+   "uri_prev": "I00864",
+   "uri_next": "I00866",
    "city": "Владивосток",
    "sublocation": "Миллионка",
    "date_append": "2022-08-03",
@@ -749,6 +1054,9 @@
   {
    "caption": "Квартал Миллионка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0529.jpg",
+   "uri": "I00866",
+   "uri_prev": "I00865",
+   "uri_next": "I00867",
    "city": "Владивосток",
    "sublocation": "Миллионка",
    "date_append": "2022-08-03",
@@ -757,6 +1065,9 @@
   {
    "caption": "Квартал Миллионка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0532_ShiftN_crop.jpg",
+   "uri": "I00867",
+   "uri_prev": "I00866",
+   "uri_next": "I00868",
    "city": "Владивосток",
    "sublocation": "Миллионка",
    "date_append": "2022-08-03",
@@ -765,6 +1076,9 @@
   {
    "caption": "Квартал Миллионка",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0534.jpg",
+   "uri": "I00868",
+   "uri_prev": "I00867",
+   "uri_next": "I00869",
    "city": "Владивосток",
    "sublocation": "Миллионка",
    "date_append": "2022-08-03",
@@ -773,6 +1087,9 @@
   {
    "caption": "Транссиб в центре Владивостока, Пограничная улица",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0540.jpg",
+   "uri": "I00869",
+   "uri_prev": "I00868",
+   "uri_next": "I00870",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88087 43.12116)"
@@ -780,6 +1097,9 @@
   {
    "caption": "Пологая улица, 18, 1918 года",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0541_ShiftN.jpg",
+   "uri": "I00870",
+   "uri_prev": "I00869",
+   "uri_next": "I00871",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88037 43.12236)"
@@ -787,6 +1107,9 @@
   {
    "caption": "Заброшенный дом улица Прапорщика Комарова, 10",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0543_ShiftN.jpg",
+   "uri": "I00871",
+   "uri_prev": "I00870",
+   "uri_next": "I00872",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88352 43.12292)"
@@ -794,6 +1117,9 @@
   {
    "caption": "Аэропорт Кневичи, старый неиспользуемый терминал и лётное поле местных линий",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0558.jpg",
+   "uri": "I00872",
+   "uri_prev": "I00871",
+   "uri_next": "I00873",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -801,6 +1127,9 @@
   {
    "caption": "Аэропорт Кневичи, старый неиспользуемый терминал и лётное поле местных линий",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0559.jpg",
+   "uri": "I00873",
+   "uri_prev": "I00872",
+   "uri_next": "I00874",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -808,6 +1137,9 @@
   {
    "caption": "Аэропорт Кневичи, старый неиспользуемый терминал и лётное поле местных линий",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0570.jpg",
+   "uri": "I00874",
+   "uri_prev": "I00873",
+   "uri_next": "I00875",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -815,6 +1147,9 @@
   {
    "caption": "Аэропорт Кневичи, старый неиспользуемый терминал и лётное поле местных линий",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0571.jpg",
+   "uri": "I00875",
+   "uri_prev": "I00874",
+   "uri_next": "I00876",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -822,6 +1157,9 @@
   {
    "caption": "Железнодорожная ветка Артём - Аэропорт Кневичи",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0574.jpg",
+   "uri": "I00876",
+   "uri_prev": "I00875",
+   "uri_next": "I00877",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (0.00000 0.00000)"
@@ -829,6 +1167,9 @@
   {
    "caption": "Станция Артём-Приморский 1",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190403_0577.jpg",
+   "uri": "I00877",
+   "uri_prev": "I00876",
+   "uri_next": "I00772",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (132.18249 43.36906)"
@@ -836,6 +1177,8 @@
   {
    "caption": "Вид на главную улицу города Артём из гостиницы. Остановился в ней на 1 ночь, пересаживался с самолёта из Токио на самолёт в Москву",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Artem city main street 20190408_1671_lr.jpg",
+   "uri": "I00772",
+   "uri_prev": "I00877",
    "city": "Артём",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (132.17870 43.35291)"

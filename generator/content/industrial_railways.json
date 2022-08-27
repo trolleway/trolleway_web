@@ -10,6 +10,8 @@
   {
    "caption": "Проезд между фабричными общежитиями. Здесь проходила железная дорога к Северному шоссе",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0851.jpg",
+   "uri": "I00617",
+   "uri_next": "I00638",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21332 55.57313)"
@@ -17,6 +19,9 @@
   {
    "caption": "Разобранный подъездной путь в Раменском, пересекающий улицу Левашова и Северное шоссе",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0886.jpg",
+   "uri": "I00638",
+   "uri_prev": "I00617",
+   "uri_next": "I00639",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21012 55.58238)"
@@ -24,6 +29,9 @@
   {
    "caption": "Разобранный подъездной путь в Раменском, пересекающий улицу Левашова и Северное шоссе",
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0887.jpg",
+   "uri": "I00639",
+   "uri_prev": "I00638",
+   "uri_next": "I00482",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.21000 55.58235)"
@@ -31,6 +39,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 004.jpg",
+   "uri": "I00482",
+   "uri_prev": "I00639",
+   "uri_next": "I00483",
    "city": "Монино",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19138 55.84950)"
@@ -38,6 +49,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 006.jpg",
+   "uri": "I00483",
+   "uri_prev": "I00482",
+   "uri_next": "I00484",
    "city": "Монино",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19138 55.84950)"
@@ -45,6 +59,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 007.jpg",
+   "uri": "I00484",
+   "uri_prev": "I00483",
+   "uri_next": "I00485",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19024 55.85854)"
@@ -52,6 +69,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 008.jpg",
+   "uri": "I00485",
+   "uri_prev": "I00484",
+   "uri_next": "I00486",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19024 55.85854)"
@@ -59,6 +79,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 009.jpg",
+   "uri": "I00486",
+   "uri_prev": "I00485",
+   "uri_next": "I00487",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.18999 55.86075)"
@@ -66,6 +89,9 @@
   {
    "caption": "Подъездной путь Монино - Лосино-Петровский",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 010.jpg",
+   "uri": "I00487",
+   "uri_prev": "I00486",
+   "uri_next": "I00540",
    "city": "Лосино-Петровский",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.19039 55.86240)"
@@ -73,6 +99,9 @@
   {
    "caption": "Подъездной путь от станции Щёлково на завод Агрохим",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 309.jpg",
+   "uri": "I00540",
+   "uri_prev": "I00487",
+   "uri_next": "I00552",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.02487 55.90956)"
@@ -80,6 +109,9 @@
   {
    "caption": "Депо промышленной железной дороги в Щёлково",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 331.jpg",
+   "uri": "I00552",
+   "uri_prev": "I00540",
+   "uri_next": "I00553",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.00978 55.91102)"
@@ -87,6 +119,9 @@
   {
    "caption": "Тепловоз ТГМ6А-2099 в депо промышленной железной дороги в Щёлково",
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 333.jpg",
+   "uri": "I00553",
+   "uri_prev": "I00552",
+   "uri_next": "I00857",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.00978 55.91102)"
@@ -94,6 +129,9 @@
   {
    "caption": "Неиспользуемая, но сохраняемая ветка Владивосток - Луговая по Корабельной Набережной",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0508.jpg",
+   "uri": "I00857",
+   "uri_prev": "I00553",
+   "uri_next": "I00858",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.89053 43.11313)"
@@ -101,6 +139,9 @@
   {
    "caption": "Неиспользуемая, но сохраняемая ветка Владивосток - Луговая по Корабельной Набережной",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0514.jpg",
+   "uri": "I00858",
+   "uri_prev": "I00857",
+   "uri_next": "I00859",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88721 43.11401)"
@@ -108,6 +149,9 @@
   {
    "caption": "Неиспользуемая, но сохраняемая ветка Владивосток - Луговая по Корабельной Набережной",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0515.jpg",
+   "uri": "I00859",
+   "uri_prev": "I00858",
+   "uri_next": "I00938",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.88722 43.11401)"
@@ -115,6 +159,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_09 Lefortovo Perovo railway.jpg",
+   "uri": "I00938",
+   "uri_prev": "I00859",
+   "uri_next": "I00939",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -123,6 +170,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_10 Lefortovo Perovo railway.jpg",
+   "uri": "I00939",
+   "uri_prev": "I00938",
+   "uri_next": "I00940",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -131,6 +181,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_11 Lefortovo Perovo railway.jpg",
+   "uri": "I00940",
+   "uri_prev": "I00939",
+   "uri_next": "I00941",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -139,6 +192,9 @@
   {
    "caption": "Подъездной путь от станции Лефортово на 2-й проезд Перова Поля",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_12 Lefortovo Perovo railway.jpg",
+   "uri": "I00941",
+   "uri_prev": "I00940",
+   "uri_next": "I00942",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
@@ -147,6 +203,9 @@
   {
    "caption": "Заброшенный подъездной путь от северного парка станции Бойня через Скотопрогонную улицу",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_13 Boinya station.jpg",
+   "uri": "I00942",
+   "uri_prev": "I00941",
+   "uri_next": "I00943",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69389 55.72846)"
@@ -154,6 +213,9 @@
   {
    "caption": "Станция Бойня",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_14 Boinya station.jpg",
+   "uri": "I00943",
+   "uri_prev": "I00942",
+   "uri_next": "I00944",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69175 55.72566)"
@@ -161,6 +223,9 @@
   {
    "caption": "Станция Бойня",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200704_15 Boinya station.jpg",
+   "uri": "I00944",
+   "uri_prev": "I00943",
+   "uri_next": "I00963",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69063 55.72541)"
@@ -168,6 +233,9 @@
   {
    "caption": "Подъездной путь Бирюлёво - Видное",
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20210706_22 Zagorie railway.jpg",
+   "uri": "I00963",
+   "uri_prev": "I00944",
+   "uri_next": "I00313",
    "city": "Москва",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.69665 55.58675)"
@@ -175,18 +243,27 @@
   {
    "caption": "Удачная встреча: тепловоз ТЭМ15-076 на подъездном пути Воскресенского завода минеральных удобрений",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_01.jpg",
+   "uri": "I00313",
+   "uri_prev": "I00963",
+   "uri_next": "I00314",
    "city": "Воскресенск",
    "wkt_geometry": "POINT (38.6890700000000010 55.3132599999999996)"
   },
   {
    "caption": "Удачная встреча: тепловоз ТЭМ15-076 на подъездном пути Воскресенского завода минеральных удобрений",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-08_stupino/20210814_02.jpg",
+   "uri": "I00314",
+   "uri_prev": "I00313",
+   "uri_next": "I00966",
    "city": "Воскресенск",
    "wkt_geometry": "POINT (38.6890500000000017 55.3134099999999975)"
   },
   {
    "caption": "Подъездной путь у станции Храпуново",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_07.jpg",
+   "uri": "I00966",
+   "uri_prev": "I00314",
+   "uri_next": "I00967",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.35465 55.72097)"
@@ -194,6 +271,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_09.jpg",
+   "uri": "I00967",
+   "uri_prev": "I00966",
+   "uri_next": "I00968",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.35384 55.72121)"
@@ -201,6 +281,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_10.jpg",
+   "uri": "I00968",
+   "uri_prev": "I00967",
+   "uri_next": "I00969",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.35247 55.72152)"
@@ -208,6 +291,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_11.jpg",
+   "uri": "I00969",
+   "uri_prev": "I00968",
+   "uri_next": "I00970",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.35129 55.72175)"
@@ -215,6 +301,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, действующая ветка на север",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_12.jpg",
+   "uri": "I00970",
+   "uri_prev": "I00969",
+   "uri_next": "I00971",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.35129 55.72175)"
@@ -222,6 +311,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, действующая ветка на север",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_14.jpg",
+   "uri": "I00971",
+   "uri_prev": "I00970",
+   "uri_next": "I00972",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.35129 55.72175)"
@@ -229,6 +321,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, действующая ветка на север",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_15.jpg",
+   "uri": "I00972",
+   "uri_prev": "I00971",
+   "uri_next": "I00973",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34913 55.72323)"
@@ -236,6 +331,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_17.jpg",
+   "uri": "I00973",
+   "uri_prev": "I00972",
+   "uri_next": "I00974",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.35086 55.72175)"
@@ -243,6 +341,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_18.jpg",
+   "uri": "I00974",
+   "uri_prev": "I00973",
+   "uri_next": "I00975",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34816 55.72186)"
@@ -250,6 +351,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_19.jpg",
+   "uri": "I00975",
+   "uri_prev": "I00974",
+   "uri_next": "I00976",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34790 55.72187)"
@@ -257,6 +361,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_20.jpg",
+   "uri": "I00976",
+   "uri_prev": "I00975",
+   "uri_next": "I00977",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34790 55.72187)"
@@ -264,6 +371,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_21.jpg",
+   "uri": "I00977",
+   "uri_prev": "I00976",
+   "uri_next": "I00978",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34667 55.72189)"
@@ -271,6 +381,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_23.jpg",
+   "uri": "I00978",
+   "uri_prev": "I00977",
+   "uri_next": "I00979",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34561 55.72189)"
@@ -278,6 +391,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_26.jpg",
+   "uri": "I00979",
+   "uri_prev": "I00978",
+   "uri_next": "I00980",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34303 55.72202)"
@@ -285,6 +401,9 @@
   {
    "caption": "Подъездной путь у станции Храпуново, заброшенная ветка на запад",
    "url_hotlink": "https://trolleway.com/storage/2021/2021-11-khrapunovo/Khrapunovo industrial railway_20211107_27.jpg",
+   "uri": "I00980",
+   "uri_prev": "I00979",
+   "uri_next": "I00288",
    "city": "Храпуново",
    "date_append": "2022-08-06",
    "wkt_geometry": "POINT (38.34303 55.72202)"
@@ -292,6 +411,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_045.jpg",
+   "uri": "I00288",
+   "uri_prev": "I00980",
+   "uri_next": "I00289",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7665799999999976 55.7533900000000031)"
@@ -299,6 +421,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_049.jpg",
+   "uri": "I00289",
+   "uri_prev": "I00288",
+   "uri_next": "I00290",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7636800000000008 55.7534199999999984)"
@@ -306,6 +431,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_052.jpg",
+   "uri": "I00290",
+   "uri_prev": "I00289",
+   "uri_next": "I00291",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7634499999999989 55.7533200000000022)"
@@ -313,6 +441,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_054.jpg",
+   "uri": "I00291",
+   "uri_prev": "I00290",
+   "uri_next": "I00292",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7625299999999982 55.7530300000000025)"
@@ -320,6 +451,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_056.jpg",
+   "uri": "I00292",
+   "uri_prev": "I00291",
+   "uri_next": "I00293",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7611699999999999 55.7527699999999982)"
@@ -327,6 +461,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_058.jpg",
+   "uri": "I00293",
+   "uri_prev": "I00292",
+   "uri_next": "I00294",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7603700000000018 55.7526500000000027)"
@@ -334,6 +471,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_060.jpg",
+   "uri": "I00294",
+   "uri_prev": "I00293",
+   "uri_next": "I00295",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7583399999999969 55.7522400000000005)"
@@ -341,6 +481,9 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_061.jpg",
+   "uri": "I00295",
+   "uri_prev": "I00294",
+   "uri_next": "I00296",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7561099999999996 55.7518400000000014)"
@@ -348,6 +491,8 @@
   {
    "caption": "Подъездные пути от станции Лефортово",
    "url_hotlink": "https://trolleway.com/storage/2022/2022-07_moscow/20220703_063.jpg",
+   "uri": "I00296",
+   "uri_prev": "I00295",
    "city": "Москва",
    "date_append": "2022-07-20",
    "wkt_geometry": "POINT (37.7549500000000009 55.7518000000000029)"
