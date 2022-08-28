@@ -1,0 +1,289 @@
+{
+ "title": "2022-08-28",
+ "h1": "",
+ "text": "",
+ "text_en": "",
+ "map_center": "",
+ "map_zoom": "12",
+ "date_mod": "2022-08-28",
+ "images": [
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7080.jpg",
+   "uri": "I00989",
+   "uri_next": "I00990",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Аэропорт Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.71757 46.88783)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7083.jpg",
+   "uri": "I00990",
+   "uri_prev": "I00989",
+   "uri_next": "I00991",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Аэропорт Южно-Сахалинск",
+   "objectname": "Недостроенный новый терминал",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.72233 46.88558)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7085.jpg",
+   "uri": "I00991",
+   "uri_prev": "I00990",
+   "uri_next": "I00992",
+   "city": "Южно-Сахалинск",
+   "objectname": "Старое здание неизвестной датировки. Соседствует с японским зданием военного пресс-центра.",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.73890 46.95947)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7086.jpg",
+   "uri": "I00992",
+   "uri_prev": "I00991",
+   "uri_next": "I00993",
+   "city": "Южно-Сахалинск",
+   "objectname": "Здание театра в Южно-Сахалинске",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.73890 46.95934)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7087.jpg",
+   "uri": "I00993",
+   "uri_prev": "I00992",
+   "uri_next": "I00994",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.73983 46.95944)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7088.jpg",
+   "uri": "I00994",
+   "uri_prev": "I00993",
+   "uri_next": "I00995",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.74043 46.95958)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7092.jpg",
+   "uri": "I00995",
+   "uri_prev": "I00994",
+   "uri_next": "I00996",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Сахалинский областной краеведческий музей",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.74426 46.95974)"
+  },
+  {
+   "caption": "Вид одной из главных улиц - Коммунистического проспекта",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7093.jpg",
+   "uri": "I00996",
+   "uri_prev": "I00995",
+   "uri_next": "I00997",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.74495 46.95972)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7094.jpg",
+   "uri": "I00997",
+   "uri_prev": "I00996",
+   "uri_next": "I00998",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Сахалинский областной краеведческий музей",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.74433 46.95962)"
+  },
+  {
+   "caption": "Вид одной из главных улиц - Коммунистического проспекта",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7097.jpg",
+   "uri": "I00998",
+   "uri_prev": "I00997",
+   "uri_next": "I00999",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.74748 46.95991)"
+  },
+  {
+   "caption": "Вид одной из главных улиц - Коммунистического проспекта",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7100.jpg",
+   "uri": "I00999",
+   "uri_prev": "I00998",
+   "uri_next": "I01000",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.74858 46.96000)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7101.jpg",
+   "uri": "I01000",
+   "uri_prev": "I00999",
+   "uri_next": "I01001",
+   "city": "Южно-Сахалинск",
+   "objectname": "Японский бизнес-центр и консульств",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.75048 46.96020)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7106.jpg",
+   "uri": "I01001",
+   "uri_prev": "I01000",
+   "uri_next": "I01002",
+   "city": "Южно-Сахалинск",
+   "objectname": "Площадь с вечным огнём",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.75589 46.96082)"
+  },
+  {
+   "caption": "Вид одной из главных улиц - Коммунистического проспекта",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7111.jpg",
+   "uri": "I01002",
+   "uri_prev": "I01001",
+   "uri_next": "I01003",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.75617 46.96082)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7114.jpg",
+   "uri": "I01003",
+   "uri_prev": "I01002",
+   "uri_next": "I01004",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.75743 46.95393)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7116.jpg",
+   "uri": "I01004",
+   "uri_prev": "I01003",
+   "uri_next": "I01005",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.76146 46.95377)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7118.jpg",
+   "uri": "I01005",
+   "uri_prev": "I01004",
+   "uri_next": "I01006",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.76261 46.95356)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7121.jpg",
+   "uri": "I01006",
+   "uri_prev": "I01005",
+   "uri_next": "I01007",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.76410 46.95335)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7123.jpg",
+   "uri": "I01007",
+   "uri_prev": "I01006",
+   "uri_next": "I01008",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.76561 46.95356)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7125.jpg",
+   "uri": "I01008",
+   "uri_prev": "I01007",
+   "uri_next": "I01009",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.77475 46.95484)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7128.jpg",
+   "uri": "I01009",
+   "uri_prev": "I01008",
+   "uri_next": "I01010",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.78117 46.95560)"
+  },
+  {
+   "caption": "Вид на Южно-Сахалинск с первой площадки горнолыжного комплекса Горный Воздух. Можно было поднятся выше, но в этот час гора была скрыта облаком.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7129.jpg",
+   "uri": "I01010",
+   "uri_prev": "I01009",
+   "uri_next": "I01011",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.78116 46.95529)"
+  },
+  {
+   "caption": "Канатная дорога спортивного комплекса Горный Воздух уходит в гору, покрытую облаком.",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7133.jpg",
+   "uri": "I01011",
+   "uri_prev": "I01010",
+   "uri_next": "I01012",
+   "city": "Южно-Сахалинск",
+   "sublocation": "Горный Воздух",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.78148 46.95608)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7142.jpg",
+   "uri": "I01012",
+   "uri_prev": "I01011",
+   "uri_next": "I01013",
+   "city": "Южно-Сахалинск",
+   "objectname": "Площадь Победы",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.76079 46.95280)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7145.jpg",
+   "uri": "I01013",
+   "uri_prev": "I01012",
+   "uri_next": "I01014",
+   "city": "Южно-Сахалинск",
+   "objectname": "Продовольственный магазин Столичный",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.75819 46.95236)"
+  },
+  {
+   "caption": "Один из городских проспектов",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7147.jpg",
+   "uri": "I01014",
+   "uri_prev": "I01013",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-08-28",
+   "wkt_geometry": "POINT (142.75687 46.95162)"
+  }
+ ]
+}

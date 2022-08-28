@@ -314,18 +314,30 @@ class Website_generator():
                 if caption.endswith('.'): caption=caption[0:-1]
 
                 caption_location = caption
+                
+                if 'objectname' in image:
+                    if image['objectname'] is not None and image['objectname'] not in caption_location:
+                        if caption_location != '':
+                            caption_location = caption_location + ', ' + image['objectname']
+                        else:
+                            caption_location = image['objectname']
+
+                    
                 if 'sublocation' in image:
                     if image['sublocation'] not in caption_location:
-                        if caption != '':
+                        if caption_location != '':
                             caption_location = caption_location + ', ' + image['sublocation']
                         else:
                             caption_location = image['sublocation']
+                            
                 if 'city' in image:
                     if image['city'] not in caption_location:
-                        if caption != '':
+                        if caption_location != '':
                             caption_location = caption_location + ', ' + image['city']
                         else:
                             caption_location = image['city']
+                            
+                caption_location = caption_location.replace('.,','.')
 
 
                 html = str()
@@ -336,6 +348,8 @@ class Website_generator():
                 photo4template['uri']=image['uri']
                 photo4template['image_url']=image['url']
                 photo4template['image_url_base']=image['url'].replace('.jpg','')
+                photo4template['thumbnail']=photo4template['image_url_base']+'.t.webp'
+                photo4template['thumbnail_jpg']=photo4template['image_url_base']+'.t.jpg'
                 photo4template['caption']=caption_location
                 photo4template['title']=image_page_title
                 photo4template['url_left']=url_left
@@ -360,29 +374,6 @@ class Website_generator():
                 with open(template_filepath, encoding='utf-8') as template_file:
                     template = template_file.read()
                 html = template.format_map(photo4template)
-
-                '''
-                html = template.format(
-                image_url = image['url'],
-                caption = caption_location,
-                title = image_page_title,
-                url_left = url_left,
-                url_right = url_right,
-                rel_left = rel_left,
-                rel_right = rel_right,
-                map_js = map_js,
-
-                city = image.get('city',''),
-                alt = image.get('headline',image.get('caption')),
-                lat=lat,lon=lon,
-                right_link_image = right_link_image,
-                left_link_image = left_link_image,
-                google_counter=google_counter,
-                yandex_counter=yandex_counter
-                )
-                '''
-
-
 
                 filename = photo4template['page_file_local'] +'.htm'
                 with open(filename, "w", encoding='utf-8') as text_file:

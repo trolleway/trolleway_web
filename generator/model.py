@@ -103,6 +103,7 @@ class Model():
             for filename in files:
                 if not filename.lower().endswith('.jpg'): continue
                 if filename.lower().endswith('.t.jpg'): continue
+                print(os.path.join(root,filename))
                 
                 self.logger.debug(filename)
                 temp_path = os.path.normpath(path)
@@ -113,12 +114,19 @@ class Model():
                 info = IPTCInfo(os.path.join(root,filename), force=True)
                 city = None
                 sublocation = None
+                objectname = None
+                
+
 
                 if info['city'] is not None:
                     city = info['city'].decode('UTF-8')
                 if info['sub-location'] is not None:
                     sublocation = info['sub-location'].decode('UTF-8')
-                    
+                if info['object name'] is not None:
+                    try:
+                        objectname = info['object name'].decode('UTF-8')
+                    except:
+                        objectname = '[error read object name from IPTC tags]'
                 caption = info['caption/abstract']
                 if caption is not None:
                     caption = caption.decode('UTF-8')
@@ -134,6 +142,7 @@ class Model():
 
                 image['wkt_geometry']=wkt.dumps(Point(lon or 0,lat or 0),rounding_precision=5)
                 image['datetime']=photo_datetime
+                if objectname is not None:  image['objectname']=objectname
 
 
                 images.append(image)
@@ -143,11 +152,12 @@ class Model():
         sql_custom = ""
         values = list()
         page_url = os.path.basename(root)
+
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
 
-            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation,inserting_id, wkt_geometry, datetime, date_append, pages)
-            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}", "{pages}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation, objectname, inserting_id, wkt_geometry, datetime, date_append, pages)
+            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}", "{pages}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
@@ -156,8 +166,10 @@ class Model():
                 wkt_geometry = image['wkt_geometry'],
                 pages = page_url,
                 city = image.get('city',''),
-                sublocation = image.get('sublocation','')
+                sublocation = image.get('sublocation',''),
+                objectname = image.get('objectname','')
                 )
+
             sql += tmpstr
             
             sql_custom += '''UPDATE photos SET city="{city}", sublocation="{sublocation}",datetime="{datetime}", wkt_geometry="{wkt_geometry}"
@@ -302,6 +314,12 @@ ORDER BY pages.uri, photos_pages."order";
                     if sublocation in locations:
                         sublocation = locations[sublocation]                
                     image['sublocation']=sublocation
+                    
+                objectname = db_photo.get('objectname')
+                if objectname != '' and objectname is not None:
+                    if objectname in locations:
+                        objectname = locations[objectname]                
+                    image['objectname']=objectname
                 
                 if db_photo.get('date_append') is not None:
                     image['date_append'] = db_photo.get('date_append')
