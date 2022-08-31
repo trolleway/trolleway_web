@@ -338,6 +338,17 @@ class Website_generator():
                             caption_location = image['city']
                             
                 caption_location = caption_location.replace('.,','.')
+                
+                if 'film' in image:
+                    film = '<span>Снято на плёнку '+image.get('film')+'</span> '
+                else:
+                    film = ''                
+                if 'lens' in image:
+                    lens = '<span>Обьектив '+image.get('lens')+'</span> '
+                else:
+                    lens = ''
+                    
+                tech_info = film+lens
 
 
                 html = str()
@@ -359,6 +370,7 @@ class Website_generator():
                 photo4template['map_js']=map_js
                 photo4template['city']=image.get('city','')
                 photo4template['sublocation']=image.get('sublocation','')
+                photo4template['tech_info']=tech_info
                 photo4template['alt']=image.get('headline',image.get('caption')),
                 photo4template['lat']=lat
                 photo4template['lon']=lon

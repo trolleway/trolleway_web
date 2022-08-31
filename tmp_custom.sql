@@ -1,53 +1,79 @@
-UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Yuzhno-Sakhalinsk airport",datetime="2022-08-07T07:07:22", wkt_geometry="POINT (142.71757 46.88783)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7080.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Yuzhno-Sakhalinsk airport",datetime="2022-08-07T07:15:22", wkt_geometry="POINT (142.72233 46.88558)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7083.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T08:40:53", wkt_geometry="POINT (142.73890 46.95947)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7085.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T08:41:13", wkt_geometry="POINT (142.73890 46.95934)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7086.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T08:42:10", wkt_geometry="POINT (142.73983 46.95944)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7087.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T08:42:54", wkt_geometry="POINT (142.74043 46.95958)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7088.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Sakhalin Regional Museum",datetime="2022-08-07T08:47:24", wkt_geometry="POINT (142.74426 46.95974)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7092.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T08:49:00", wkt_geometry="POINT (142.74495 46.95972)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7093.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Sakhalin Regional Museum",datetime="2022-08-07T08:49:46", wkt_geometry="POINT (142.74433 46.95962)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7094.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T08:57:31", wkt_geometry="POINT (142.74748 46.95991)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7097.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T09:00:12", wkt_geometry="POINT (142.74858 46.96000)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7100.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T09:02:05", wkt_geometry="POINT (142.75048 46.96020)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7101.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T09:08:28", wkt_geometry="POINT (142.75589 46.96082)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7106.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T10:26:44", wkt_geometry="POINT (142.75617 46.96082)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7111.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:37:29", wkt_geometry="POINT (142.75743 46.95393)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7114.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:42:12", wkt_geometry="POINT (142.76146 46.95377)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7116.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:44:14", wkt_geometry="POINT (142.76261 46.95356)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7118.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:51:12", wkt_geometry="POINT (142.76410 46.95335)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7121.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:51:43", wkt_geometry="POINT (142.76561 46.95356)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7123.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:54:55", wkt_geometry="POINT (142.77475 46.95484)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7125.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:58:17", wkt_geometry="POINT (142.78117 46.95560)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7128.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T10:59:51", wkt_geometry="POINT (142.78116 46.95529)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7129.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="Gorny Vozduh (Mountain Air) ski ",datetime="2022-08-07T11:45:24", wkt_geometry="POINT (142.78148 46.95608)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7133.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T12:07:05", wkt_geometry="POINT (142.76079 46.95280)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7142.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T12:11:54", wkt_geometry="POINT (142.75819 46.95236)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7145.jpg"  ;
- UPDATE photos SET city="Yuzhno-Sakhalinsk", sublocation="",datetime="2022-08-07T12:18:40", wkt_geometry="POINT (142.75687 46.95162)"
-            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-sakhalin/IMGP7147.jpg"  ;
+UPDATE photos SET city="Vladivostok", sublocation="",datetime="2022-08-20T13:30:27", wkt_geometry="POINT (131.88481 43.11707)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_001.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="",datetime="2022-08-20T13:35:27", wkt_geometry="POINT (131.88376 43.11618)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_002.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="",datetime="2022-08-20T13:40:27", wkt_geometry="POINT (131.88387 43.11614)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_003.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T14:04:27", wkt_geometry="POINT (131.87984 43.11336)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_004.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T14:30:27", wkt_geometry="POINT (131.87959 43.11228)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_005.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T15:20:27", wkt_geometry="POINT (131.87371 43.10849)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_006.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T15:30:27", wkt_geometry="POINT (131.87219 43.10704)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_007.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T15:40:27", wkt_geometry="POINT (131.86972 43.10580)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_008.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T15:40:27", wkt_geometry="POINT (131.86962 43.10576)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_009.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T15:50:27", wkt_geometry="POINT (131.86271 43.10449)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_010_Vladivostok beach.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T17:11:27", wkt_geometry="POINT (131.86175 43.10028)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_011.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T17:20:27", wkt_geometry="POINT (131.86175 43.10028)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_012.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T17:30:27", wkt_geometry="POINT (131.86099 43.09811)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_013.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T17:37:27", wkt_geometry="POINT (131.86128 43.09662)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_014_vladivostok_station.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T18:24:27", wkt_geometry="POINT (131.85714 43.08455)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_015.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Egresheld",datetime="2022-08-20T18:28:27", wkt_geometry="POINT (131.85714 43.08455)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_016.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Krestovaya hill",datetime="2022-08-20T19:28:27", wkt_geometry="POINT (131.86809 43.09483)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_017.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Krestovaya hill",datetime="2022-08-20T20:15:27", wkt_geometry="POINT (131.86809 43.09483)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_018.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Krestovaya hill",datetime="2022-08-20T20:42:27", wkt_geometry="POINT (131.86809 43.09483)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_019.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Krestovaya hill",datetime="2022-08-20T20:43:27", wkt_geometry="POINT (131.86809 43.09483)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220820_020.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Russkiy island",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.88693 42.97211)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_021.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87154 42.94583)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_022.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87250 42.94574)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_023.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87385 42.94618)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_024.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87448 42.94783)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_025.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87472 42.94863)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_026.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87700 42.95754)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_027.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87734 42.95895)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_028.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="Tobizin cape",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87884 42.96034)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_029.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87472 43.12303)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_030.jpg"  ;
+ UPDATE photos SET city="Vladivostok", sublocation="",datetime="2022-08-21T11:46:45", wkt_geometry="POINT (131.87635 43.11977)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220821_031.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.97966 43.80147)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_032.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.97968 43.80143)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_033.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.97059 43.80069)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_034.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.96247 43.80012)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_035.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.95177 43.80080)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_036.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.95192 43.79784)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_037_ShiftN.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.95145 43.79684)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_038_ussurisk.jpg"  ;
+ UPDATE photos SET city="Ussurisk", sublocation="",datetime="2022-08-22T11:45:22", wkt_geometry="POINT (131.94731 43.79576)"
+            WHERE hotlink="https://trolleway.com/storage/2022/2022-08-20_vvo_silbera50/20220822_039.jpg"  ;
  

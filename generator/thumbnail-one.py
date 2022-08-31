@@ -33,6 +33,19 @@ def photo_thumbnail(src,dst,overwrite = False):
 
             cmd = ['convert' ,  src , '-auto-orient' , '-compress', 'JPEG', '-quality', '80', path_resized]
             subprocess.run(cmd)
+    #apply exif tags from sidecar file if exist
+    src_file_basepart = os.path.splitext(src)[0]
+    if os.path.isfile(src_file_basepart + 'xmp'):
+        cmd = ['exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xml', '-all:all' , path_resized]
+        
+        subprocess.run(cmd)
+        # exiftool -all:all -o /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xmp /opt/images_origins/2022/test/20220820_010.tif
+        # exiftool -tagsfromfile /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xmp -all:all -xmp  /opt/storage/2022/2022-08-20_vvo_silbera50/20220820_010.jpg
+        
+        
+        # exiftool -charset utf8  -all:all -X /opt/images_origins/2022/test/20220820_010.tif >  /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xml
+        # exiftool  -charset utf8   -tagsfromfile /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xml -all:all  /opt/storage/2022/2022-08-20_vvo_silbera50/20220820_010.jpg
+
 
 
 

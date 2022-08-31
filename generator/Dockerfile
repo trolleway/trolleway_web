@@ -13,7 +13,7 @@ RUN echo 'trolleway:user' | chpasswd
 
 RUN apt-get update && apt-get install --no-install-recommends -y python3-pip time imagemagick parallel
 RUN pip3 install exif iptcinfo3 requests shapely python-dateutil tqdm
-
+RUN apt-get install -y exiftool
 
 #add to sudoers
 RUN apt-get install -y apt-utils

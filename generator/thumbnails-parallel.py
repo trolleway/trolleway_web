@@ -9,7 +9,7 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False):
     create thumbnails for tree
     '''
 
-    accepted_exts = ['.jpg','.jpeg','.tif','.tiff']
+    accepted_exts = ['.jpg','.jpeg','.tif','.tiff','.webp']
     assert os.path.isdir(src_dir)
     if not os.path.isdir(dst_dir):
         os.makedirs(dst_dir)

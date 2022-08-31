@@ -18,12 +18,24 @@ run sql in sqlite
 
 Generate html:
 ```
-time python3 generator/model.py
-time python3 generator/run.py
+time python3 generator/model.py && time python3 generator/run.py
 ```
 
-## Detailed process
+## Handle tiff and webp sources
 
+Convert any uncompressed file to loseless webp + metadata files
+```
+SRC=/opt/images_origins/2022/2022-08-20_vvo_silbera50_src
+DST=/opt/images_origins/2022/2022-08-20_vvo_silbera50
+mkdir $DST
+mogrify -format webp -define webp:lossless=true -path $DST $SRC/*.tif 
+
+
+parallel "exiftool -charset utf8 -json -all:all -X {} >  {.}.json" ::: $SRC/*.tif
+mv $SRC/*.xml $DST
+
+
+```
 
 ### run.py
 

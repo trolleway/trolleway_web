@@ -326,6 +326,13 @@ ORDER BY pages.uri, photos_pages."order";
                     
                 if db_photo.get('wkt_geometry') is not None:
                     image['wkt_geometry'] = db_photo.get('wkt_geometry')
+                    
+                if db_photo.get('lens') is not None:
+                    image['lens'] = db_photo.get('lens')
+                if db_photo.get('film') is not None:
+                    image['film'] = db_photo.get('film')
+                if db_photo.get('camera') is not None:
+                    image['camera'] = db_photo.get('camera')
                
                 images.append(image)
                 counter = counter + 1
