@@ -431,9 +431,83 @@
    "url_hotlink": "https://trolleway.com/storage/2010/2010-10_ramenskoe/_20101017_0782.jpg",
    "uri": "I00576",
    "uri_prev": "I00575",
+   "uri_next": "I01093",
    "city": "Раменское",
    "date_append": "2022-08-01",
    "wkt_geometry": "POINT (38.20549 55.57184)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-11-mihnevo/mihnevo_20191104_007.jpg",
+   "uri": "I01093",
+   "uri_prev": "I00576",
+   "uri_next": "I01094",
+   "city": "Михнево",
+   "objectname": "Конструктивистский дом",
+   "date_append": "2022-09-05",
+   "wkt_geometry": "POINT (37.94809 55.11902)",
+   "lens": "7artisans 7.5mm F2.8 Fish-eye",
+   "camera": "Olympus OM-D E-M10"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-11-mihnevo/mihnevo_20191104_009.jpg",
+   "uri": "I01094",
+   "uri_prev": "I01093",
+   "uri_next": "I01106",
+   "city": "Михнево",
+   "objectname": "Конструктивистский дом",
+   "date_append": "2022-09-05",
+   "wkt_geometry": "POINT (37.94761 55.11898)",
+   "lens": "7artisans 7.5mm F2.8 Fish-eye",
+   "camera": "Olympus OM-D E-M10"
+  },
+  {
+   "caption": "Конструктивистский дом. Улица Андропова, 51.",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-11-stupino/stupino_20191104_040.jpg",
+   "uri": "I01106",
+   "uri_prev": "I01094",
+   "uri_next": "I01107",
+   "city": "Ступино",
+   "date_append": "2022-09-05",
+   "wkt_geometry": "POINT (38.07237 54.88716)",
+   "lens": "7artisans 7.5mm F2.8 Fish-eye",
+   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+  },
+  {
+   "caption": "Конструктивистский дом. Улица Андропова, 51.",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-11-stupino/stupino_20191104_042.jpg",
+   "uri": "I01107",
+   "uri_prev": "I01106",
+   "uri_next": "I01109",
+   "city": "Ступино",
+   "date_append": "2022-09-05",
+   "wkt_geometry": "POINT (38.07309 54.88714)",
+   "lens": "7artisans 7.5mm F2.8 Fish-eye",
+   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+  },
+  {
+   "caption": "Пост-конструктивистский жилой дом. Улица Андропова, 45.",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-11-stupino/stupino_20191104_045.jpg",
+   "uri": "I01109",
+   "uri_prev": "I01107",
+   "uri_next": "I01110",
+   "city": "Ступино",
+   "date_append": "2022-09-05",
+   "wkt_geometry": "POINT (38.07518 54.88704)",
+   "lens": "7artisans 7.5mm F2.8 Fish-eye",
+   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+  },
+  {
+   "caption": "Пост-конструктивистский жилой дом. Улица Андропова, 45.",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-11-stupino/stupino_20191104_046.jpg",
+   "uri": "I01110",
+   "uri_prev": "I01109",
+   "city": "Ступино",
+   "date_append": "2022-09-05",
+   "wkt_geometry": "POINT (38.07602 54.88693)",
+   "lens": "7artisans 7.5mm F2.8 Fish-eye",
+   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
   }
  ]
 }

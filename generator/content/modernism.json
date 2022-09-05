@@ -103,10 +103,23 @@
    "url_hotlink": "https://trolleway.com/storage/2020/2020-07-01_film/20200703_07 Perovo shop_ShiftN.jpg",
    "uri": "I00936",
    "uri_prev": "I00935",
+   "uri_next": "I01111",
    "city": "Москва",
    "sublocation": "Perovo",
    "date_append": "2022-08-04",
    "wkt_geometry": "POINT (37.78412 55.74590)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2019/2019-11-stupino/stupino_20191104_048.jpg",
+   "uri": "I01111",
+   "uri_prev": "I00936",
+   "city": "Ступино",
+   "objectname": "Стена зала в здании администрации города Ступино",
+   "date_append": "2022-09-05",
+   "wkt_geometry": "POINT (38.07576 54.88642)",
+   "lens": "7artisans 7.5mm F2.8 Fish-eye",
+   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
   }
  ]
 }
