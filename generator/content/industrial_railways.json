@@ -121,16 +121,26 @@
    "url_hotlink": "https://trolleway.com/storage/2013/2013-08_shelkovo/ 2013-08-04 333.jpg",
    "uri": "I00553",
    "uri_prev": "I00552",
-   "uri_next": "I00857",
+   "uri_next": "I01175",
    "city": "Щёлково",
    "date_append": "2022-07-31",
    "wkt_geometry": "POINT (38.00978 55.91102)"
   },
   {
+   "caption": "Промышленная железная дорога широкой колеи в Алапаевске",
+   "url_hotlink": "https://trolleway.com/storage/2014/2014-05-alapaevsk-city/_20140502_00108.jpg",
+   "uri": "I01175",
+   "uri_prev": "I00553",
+   "uri_next": "I00857",
+   "city": "Алапаевск",
+   "date_append": "2022-09-09",
+   "wkt_geometry": "POINT (61.68839 57.84707)"
+  },
+  {
    "caption": "Неиспользуемая, но сохраняемая ветка Владивосток - Луговая по Корабельной Набережной",
    "url_hotlink": "https://trolleway.com/storage/2019/2019-04_vladivostok/Vladivostok 20190402_0508.jpg",
    "uri": "I00857",
-   "uri_prev": "I00553",
+   "uri_prev": "I01175",
    "uri_next": "I00858",
    "city": "Владивосток",
    "date_append": "2022-08-03",

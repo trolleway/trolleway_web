@@ -7,7 +7,9 @@ if __name__ == "__main__":
     #processor = Website_generator()
     #processor.json_from_dir('/opt/storage/2022/2022-07_moscow','https://trolleway.com/storage')
     model = Model()
-    model.dir2db('/opt/storage/2019/2019-11-stupino','https://trolleway.com/storage')
+    model.dir2db('/opt/storage/2014/2014-05-alapaevsk-railway','https://trolleway.com/storage')
+    #model.dir2db('/opt/storage/2014/2014-05-alapaevsk-city','https://trolleway.com/storage')
+    #model.dir2db('/opt/storage/2019/2019-11-stupino','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2019/2019-11-mihnevo','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2022/2022-08-15_vvo_silbera50_nikon_coolscan','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2022/2022-08-20_vvo_silbera50','https://trolleway.com/storage')
@@ -21,3 +23,11 @@ if __name__ == "__main__":
     #model.dir2db('/opt/storage/2013/2013-08_shelkovo','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2021/2021-10_konobeevo','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2022/2022-07_moscow','https://trolleway.com/storage')
+    
+    
+    
+    '''
+    Alapaevsk narrow gauge railway is most lenght and vitable narrow gauge railway in Russia. Railway server three distant villages, instead of just carry wood like others industrial narrow gauge lines. 
+    Railway build in Urals industrial region for delivery charcoal to small iron foundrys in Alapaevsk town. In 1920-s railway switched to carry wood from taiga forest.
+    Passenger train on whole line runs at night. Photos made during a railway tour provided by <a href="poezdnaprokat.ru">Poezd Naprokat</a>
+    '''

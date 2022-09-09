@@ -56,6 +56,7 @@ def photo_thumbnail(src,dst,overwrite = False):
         '-define', 'webp:near-loseless=90',
         '-define', 'webp:method=5',
         '-define', 'webp:thread-level=1',
+        '-unsharp', '0.5x0.5+0.5+0.008',
         path_resized]
         subprocess.run(cmd)
 

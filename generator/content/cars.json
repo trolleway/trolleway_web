@@ -159,9 +159,39 @@
    "url_hotlink": "https://trolleway.com/storage/2018/2018-07_vladivostok/Vladivostok 20180713_034802_406.jpg",
    "uri": "I00708",
    "uri_prev": "I00636",
+   "uri_next": "I01195",
    "city": "Владивосток",
    "date_append": "2022-08-03",
    "wkt_geometry": "POINT (131.93887 43.12732)"
+  },
+  {
+   "caption": "Карьерный грузовик БЕЛАЗ пересекает шоссе у города Реж.",
+   "url_hotlink": "https://trolleway.com/storage/2014/2014-05-alapaevsk-city/_20140503_01162.jpg",
+   "uri": "I01195",
+   "uri_prev": "I00708",
+   "uri_next": "I01196",
+   "city": "Алапаевск",
+   "date_append": "2022-09-09",
+   "wkt_geometry": "POINT (61.47651 57.39678)"
+  },
+  {
+   "caption": "Карьерный грузовик БЕЛАЗ пересекает шоссе у города Реж.",
+   "url_hotlink": "https://trolleway.com/storage/2014/2014-05-alapaevsk-city/_20140503_01165.jpg",
+   "uri": "I01196",
+   "uri_prev": "I01195",
+   "uri_next": "I01410",
+   "city": "Алапаевск",
+   "date_append": "2022-09-09",
+   "wkt_geometry": "POINT (61.47638 57.39656)"
+  },
+  {
+   "caption": "УАЗ-головастик и ВАЗ-2106 на заправке",
+   "url_hotlink": "https://trolleway.com/storage/2014/2014-05-alapaevsk-railway/_20140503_00915.jpg",
+   "uri": "I01410",
+   "uri_prev": "I01196",
+   "city": "Верхняя Синячиха",
+   "date_append": "2022-09-09",
+   "wkt_geometry": "POINT (61.67233 57.98985)"
   }
  ]
 }
