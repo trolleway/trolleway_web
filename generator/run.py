@@ -307,10 +307,12 @@ class Website_generator():
 
                 image['url'] = image['url_hotlink']
                 image_page_title = ''
-                image_page_title = image.get('city','') + ' '+ image['caption'] +' ' + os.path.splitext(os.path.basename(image['url']))[0]
+                image_page_title = image.get('city','') or '' + ' '+ image.get('caption','') or '' +' ' + os.path.splitext(os.path.basename(image['url']))[0]
                 #build html
 
-                caption = image['caption'].strip()
+                caption = image.get('caption','')
+                caption = caption or ''
+                caption = caption.strip()
                 if caption.endswith('.'): caption=caption[0:-1]
 
                 caption_location = caption
@@ -348,7 +350,8 @@ class Website_generator():
                 else:
                     lens = ''
                     
-                tech_info = film+lens
+                tech_info = ', '.join([film,lens])
+                tech_info = tech_info.replace(' ,',',')
 
 
                 html = str()
@@ -371,7 +374,7 @@ class Website_generator():
                 photo4template['city']=image.get('city','')
                 photo4template['sublocation']=image.get('sublocation','')
                 photo4template['tech_info']=tech_info
-                photo4template['alt']=image.get('headline',image.get('caption')),
+                photo4template['alt']=image.get('caption',image.get('objectname',''))
                 photo4template['lat']=lat
                 photo4template['lon']=lon
                 photo4template['right_link_image']=right_link_image
@@ -379,7 +382,8 @@ class Website_generator():
                 photo4template['google_counter']=google_counter
                 photo4template['yandex_counter']=yandex_counter
                 
-
+                if photo4template['city'] != '': photo4template['city']+='.'
+                if photo4template['sublocation'] != '': photo4template['sublocation']+='.'
 
                 photos4template.append(photo4template)
 

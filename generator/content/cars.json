@@ -189,9 +189,52 @@
    "url_hotlink": "https://trolleway.com/storage/2014/2014-05-alapaevsk-railway/_20140503_00915.jpg",
    "uri": "I01410",
    "uri_prev": "I01196",
+   "uri_next": "I01468",
    "city": "Верхняя Синячиха",
    "date_append": "2022-09-09",
    "wkt_geometry": "POINT (61.67233 57.98985)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2022/2022-08-07-sakhalin/20220808-110.jpg",
+   "uri": "I01468",
+   "uri_prev": "I01410",
+   "uri_next": "I01570",
+   "city": "Южно-Сахалинск",
+   "date_append": "2022-09-27",
+   "wkt_geometry": "POINT (142.72717 46.96410)",
+   "lens": "Industar-61 l/z",
+   "film": "Silberra 100"
+  },
+  {
+   "caption": "ГАЗ-66",
+   "url_hotlink": "https://trolleway.com/storage/2012/2012-07-liaz677m/_20120707_154cnvt42.jpg",
+   "uri": "I01570",
+   "uri_prev": "I01468",
+   "uri_next": "I01575",
+   "sublocation": "Leonovo",
+   "date_append": "2022-09-30",
+   "wkt_geometry": "POINT (38.70064 55.43688)"
+  },
+  {
+   "caption": "",
+   "url_hotlink": "https://trolleway.com/storage/2012/2012-07-liaz677m/_20120707_170cnvt51.jpg",
+   "uri": "I01575",
+   "uri_prev": "I01570",
+   "uri_next": "I01596",
+   "objectname": "Мотоцикл с коляской на шоссе",
+   "date_append": "2022-09-30",
+   "wkt_geometry": "POINT (38.66469 55.43583)"
+  },
+  {
+   "caption": null,
+   "url_hotlink": "https://trolleway.com/storage/2012/2012-07-liaz677m/_20120707_250.jpg",
+   "uri": "I01596",
+   "uri_prev": "I01575",
+   "city": "Москва",
+   "sublocation": "Aviamotornaya",
+   "date_append": "2022-09-30",
+   "wkt_geometry": "POINT (37.71296 55.75399)"
   }
  ]
 }
