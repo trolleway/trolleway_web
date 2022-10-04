@@ -229,6 +229,25 @@ ORDER BY pages.uri, photos_pages."order";
         cur_photos = self.con.cursor()
 
         locations = self.locations2dict()
+        
+        sql = '''
+        DROP VIEW  IF EXISTS view_photos;
+        CREATE VIEW view_photos AS SELECT 
+photos.photoid ,
+photos.hotlink ,
+photos.caption ,
+COALESCE(locations_city.name_ru, photos.city) AS city ,
+COALESCE(locations_sublocation.name_ru, photos.sublocation) AS sublocation ,
+photos.inserting_id ,
+photos.wkt_geometry ,
+photos.datetime ,
+photos.tags ,
+photos.pages ,
+photos.date_append
+FROM photos 
+LEFT OUTER JOIN locations locations_city ON locations_city.name_int = photos.city 
+LEFT JOIN locations locations_sublocation ON locations_sublocation.name_int = photos.sublocation
+        '''
 
         sql = "SELECT COUNT(*) as count FROM pages WHERE hidden=0 ;"
         cur_pages.execute(sql)
