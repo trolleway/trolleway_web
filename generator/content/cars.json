@@ -202,9 +202,7 @@
    "uri_next": "I01570",
    "city": "Южно-Сахалинск",
    "date_append": "2022-09-27",
-   "wkt_geometry": "POINT (142.72717 46.96410)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 100"
+   "wkt_geometry": "POINT (142.72717 46.96410)"
   },
   {
    "caption": "ГАЗ-66",
@@ -222,7 +220,6 @@
    "uri": "I01575",
    "uri_prev": "I01570",
    "uri_next": "I01596",
-   "objectname": "Мотоцикл с коляской на шоссе",
    "date_append": "2022-09-30",
    "wkt_geometry": "POINT (38.66469 55.43583)"
   },

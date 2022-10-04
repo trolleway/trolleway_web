@@ -15,9 +15,7 @@
    "city": "Хабаровск",
    "sublocation": "Амурский бульвар",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (135.06539 48.48581)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (135.06539 48.48581)"
   },
   {
    "caption": "",
@@ -27,11 +25,8 @@
    "uri_next": "I01056",
    "city": "Хабаровск",
    "sublocation": "Амурский бульвар",
-   "objectname": "Трамвай 71-623 128 1 маршрута",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (135.06521 48.48588)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (135.06521 48.48588)"
   },
   {
    "caption": "",
@@ -41,11 +36,8 @@
    "uri_next": "I01057",
    "city": "Хабаровск",
    "sublocation": "Амурский бульвар",
-   "objectname": "Трамвай РВЗ-6М2 340 сзади",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (135.06560 48.48629)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (135.06560 48.48629)"
   },
   {
    "caption": "",
@@ -55,11 +47,8 @@
    "uri_next": "I01058",
    "city": "Хабаровск",
    "sublocation": "Амурский бульвар",
-   "objectname": "Трамвай РВЗ-6М2 157 жёлтого цвета на 5",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (135.06567 48.48641)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (135.06567 48.48641)"
   },
   {
    "caption": "",
@@ -68,11 +57,8 @@
    "uri_prev": "I01057",
    "uri_next": "I01059",
    "city": "Находка",
-   "objectname": "Электровоз 3ЭС5К с грузовым поездом",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.85456 42.78076)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.85456 42.78076)"
   },
   {
    "caption": "",
@@ -82,11 +68,8 @@
    "uri_next": "I01060",
    "city": "Находка",
    "sublocation": "Мыс Астафьева",
-   "objectname": "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¸Ñ‡ÐºÐ° Ð­Ð”9Ðœ-0211 ",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.89516 42.79713)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.89516 42.79713)"
   },
   {
    "caption": "",
@@ -96,11 +79,8 @@
    "uri_next": "I01061",
    "city": "Находка",
    "sublocation": "Мыс Астафьева",
-   "objectname": "Ð­Ð»ÐµÐºÑ‚Ñ€Ð¸Ñ‡ÐºÐ° Ð­Ð”9Ðœ-0211 ",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.89517 42.79710)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.89517 42.79710)"
   },
   {
    "caption": "Вечерний вид на порт Находка с одной из множества смотровых площадок",
@@ -111,9 +91,7 @@
    "city": "Находка",
    "sublocation": "Порт Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.88969 42.81731)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.88969 42.81731)"
   },
   {
    "caption": "Вечерний вид на порт Находка с одной из множества смотровых площадок",
@@ -124,9 +102,7 @@
    "city": "Находка",
    "sublocation": "Порт Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.88962 42.81725)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.88962 42.81725)"
   },
   {
    "caption": "Вечерний вид на порт Находка с одной из множества смотровых площадок",
@@ -137,9 +113,7 @@
    "city": "Находка",
    "sublocation": "Порт Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.88956 42.81722)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.88956 42.81722)"
   },
   {
    "caption": "Вечерний вид на северную часть горы Находка со скалами Брат и Сестра",
@@ -150,9 +124,7 @@
    "city": "Находка",
    "sublocation": "Порт Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.88978 42.81732)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.88978 42.81732)"
   },
   {
    "caption": "Вечерний вид на порт Находка с одной из множества смотровых площадок",
@@ -163,9 +135,7 @@
    "city": "Находка",
    "sublocation": "Порт Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.88973 42.81731)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.88973 42.81731)"
   },
   {
    "caption": "",
@@ -175,9 +145,7 @@
    "uri_next": "I01067",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.89591 42.82915)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.89591 42.82915)"
   },
   {
    "caption": "",
@@ -187,9 +155,7 @@
    "uri_next": "I01068",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.89583 42.82910)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.89583 42.82910)"
   },
   {
    "caption": "В Находке необычно много гостиниц, эта самая крутая для 2006 года, но сейчас выглядит старомодно",
@@ -198,11 +164,8 @@
    "uri_prev": "I01067",
    "uri_next": "I01069",
    "city": "Находка",
-   "objectname": "Отель Горизонт",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.85090 42.78000)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.85090 42.78000)"
   },
   {
    "caption": "Утренний вид на северную часть горы Находка со скалами Брат и Сестра",
@@ -212,9 +175,7 @@
    "uri_next": "I01070",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90411 42.79124)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90411 42.79124)"
   },
   {
    "caption": "",
@@ -223,11 +184,8 @@
    "uri_prev": "I01069",
    "uri_next": "I01071",
    "city": "Находка",
-   "objectname": "Пляж Лесной",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90427 42.78862)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90427 42.78862)"
   },
   {
    "caption": "",
@@ -236,11 +194,8 @@
    "uri_prev": "I01070",
    "uri_next": "I01072",
    "city": "Находка",
-   "objectname": "Пляж Лесной",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90414 42.78866)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90414 42.78866)"
   },
   {
    "caption": "Вид на горы с дороги на пляж Лесной",
@@ -250,9 +205,7 @@
    "uri_next": "I01073",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90439 42.78882)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90439 42.78882)"
   },
   {
    "caption": "Тропинка под гору в зелёном лесу. Сканер Nikon Coolscan 9000",
@@ -262,9 +215,7 @@
    "uri_next": "I01074",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90659 42.79000)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90659 42.79000)"
   },
   {
    "caption": "",
@@ -273,11 +224,8 @@
    "uri_prev": "I01073",
    "uri_next": "I01075",
    "city": "Находка",
-   "objectname": "Скала Бахирева",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90696 42.78986)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90696 42.78986)"
   },
   {
    "caption": "",
@@ -286,11 +234,8 @@
    "uri_prev": "I01074",
    "uri_next": "I01076",
    "city": "Находка",
-   "objectname": "Залив Находка, вид в западном напра",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90615 42.78989)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90615 42.78989)"
   },
   {
    "caption": "Вид на бухту и центр города Находка, посреди находится ковш где конечная дальнего поезда Тихоокеанская и был пассажирский порт",
@@ -300,9 +245,7 @@
    "uri_next": "I01077",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90269 42.79712)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90269 42.79712)"
   },
   {
    "caption": "Суда на рейде в заливе Находка",
@@ -312,9 +255,7 @@
    "uri_next": "I01078",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.90980 42.80309)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.90980 42.80309)"
   },
   {
    "caption": "Бухта Прозрачная",
@@ -324,9 +265,7 @@
    "uri_next": "I01079",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.81312 42.78034)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.81312 42.78034)"
   },
   {
    "caption": "Морской пляж Рица",
@@ -336,9 +275,7 @@
    "uri_next": "I01080",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.81346 42.78048)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.81346 42.78048)"
   },
   {
    "caption": "Озеро Рица - пруд устроенный в 1960-х годах для купания, но сейчас не используемый",
@@ -348,9 +285,7 @@
    "uri_next": "I01081",
    "city": "Находка",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.81355 42.78024)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.81355 42.78024)"
   },
   {
    "caption": "",
@@ -361,9 +296,7 @@
    "city": "Находка",
    "sublocation": "станция Тихоокеанская",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.88000 42.80864)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.88000 42.80864)"
   },
   {
    "caption": "Электровоз ЭП1-319 с вагонами дополнительного поезда Тихоокеанская - Хабаровск, который на главном ходу в Уссурийске цепляют к поезду Владивосток - Москва",
@@ -374,9 +307,7 @@
    "city": "Находка",
    "sublocation": "станция Тихоокеанская",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.87987 42.80889)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.87987 42.80889)"
   },
   {
    "caption": "Дальний поезд Тихоокеанская - Хабаровск",
@@ -387,9 +318,7 @@
    "city": "Находка",
    "sublocation": "станция Тихоокеанская",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (132.87962 42.80911)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (132.87962 42.80911)"
   },
   {
    "caption": "Вечерний вид центра Владивостока с горы",
@@ -399,9 +328,7 @@
    "uri_next": "I01085",
    "city": "Владивосток",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (131.87982 43.11534)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87982 43.11534)"
   },
   {
    "caption": "Вечерний вид центра Владивостока с горы",
@@ -411,9 +338,7 @@
    "uri_next": "I01086",
    "city": "Владивосток",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (131.87982 43.11534)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87982 43.11534)"
   },
   {
    "caption": "Вечерний вид центра Владивостока с горы",
@@ -423,9 +348,7 @@
    "uri_next": "I01087",
    "city": "Владивосток",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (131.87982 43.11534)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87982 43.11534)"
   },
   {
    "caption": "Ночной вид Золотого моста",
@@ -435,9 +358,7 @@
    "uri_next": "I01088",
    "city": "Владивосток",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (131.89869 43.11274)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.89869 43.11274)"
   },
   {
    "caption": "Ночной вид бухты Золотой Рог",
@@ -447,9 +368,7 @@
    "uri_next": "I01089",
    "city": "Владивосток",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (131.90198 43.11303)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.90198 43.11303)"
   },
   {
    "caption": "Ночной вид Владивостока со Второй Речки из окна гостиницы Томь",
@@ -460,9 +379,7 @@
    "city": "Владивосток",
    "sublocation": "Vtoraya Rechka",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (131.90353 43.16614)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.90353 43.16614)"
   },
   {
    "caption": "Владивостокский троллейбус 11 маршрута, ВМЗ-5298.01 258",
@@ -473,9 +390,7 @@
    "city": "Владивосток",
    "sublocation": "Vtoraya Rechka",
    "date_append": "2022-09-02",
-   "wkt_geometry": "POINT (131.91568 43.16776)",
-   "lens": "Industar-61 l/z\tcolor negative\tSilberra 50",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.91568 43.16776)"
   },
   {
    "caption": "",
@@ -484,11 +399,8 @@
    "uri_prev": "I01090",
    "uri_next": "I01016",
    "city": "Владивосток",
-   "objectname": "Улица в центре Владивостока, целиком отданная под автомобильную стоянку",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.88481 43.11707)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.88481 43.11707)"
   },
   {
    "caption": "Светланская - главная улица Владивостока",
@@ -498,9 +410,7 @@
    "uri_next": "I01017",
    "city": "Владивосток",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.88376 43.11618)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.88376 43.11618)"
   },
   {
    "caption": "Проход в центре города у заглублённой железной дороги",
@@ -510,9 +420,7 @@
    "uri_next": "I01018",
    "city": "Владивосток",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.88387 43.11614)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.88387 43.11614)"
   },
   {
    "caption": "Автомобиль Porsche 911 (996) к115кн125",
@@ -523,9 +431,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87984 43.11336)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87984 43.11336)"
   },
   {
    "caption": "Улица, идущая от вокзала на запад",
@@ -536,9 +442,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87959 43.11228)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87959 43.11228)"
   },
   {
    "caption": "Пешеходная набережная в районе Эгрешельд",
@@ -549,9 +453,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87371 43.10849)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87371 43.10849)"
   },
   {
    "caption": "Набережная и стоянка прокатных самокатов",
@@ -562,9 +464,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87219 43.10704)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87219 43.10704)"
   },
   {
    "caption": "Вид с юга на главную набережную часть Владивостока",
@@ -575,9 +475,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86972 43.10580)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86972 43.10580)"
   },
   {
    "caption": "",
@@ -588,9 +486,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86962 43.10576)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86962 43.10576)"
   },
   {
    "caption": "Вид с юга на центр Владивостока. Снято с мыса Купера.",
@@ -601,9 +497,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86271 43.10449)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86271 43.10449)"
   },
   {
    "caption": "Железнодорожный тупик, гавань Приморской железной дороги",
@@ -614,9 +508,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86175 43.10028)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86175 43.10028)"
   },
   {
    "caption": "",
@@ -626,11 +518,8 @@
    "uri_next": "I01027",
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
-   "objectname": "Амурский залив, Японское море",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86175 43.10028)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86175 43.10028)"
   },
   {
    "caption": "",
@@ -640,11 +529,8 @@
    "uri_next": "I01028",
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
-   "objectname": "Железнодорожный тупик, гавань Прим",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86099 43.09811)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86099 43.09811)"
   },
   {
    "caption": "Южная часть станции Владивосток. Она кажется маленькой для такой важной линии Транссиб, но оказывается что товарные поезда распределяются по десятку разных портов вокруг Владивостока",
@@ -655,9 +541,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86128 43.09662)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86128 43.09662)"
   },
   {
    "caption": "Вид на мост на остров Русский в восточном направлении на закате",
@@ -668,9 +552,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.85714 43.08455)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.85714 43.08455)"
   },
   {
    "caption": "Корейский паром Eastern Dream, который с августа 2022 снова стал ходить по транспортной линии Владивосток - Донхэ",
@@ -681,9 +563,7 @@
    "city": "Владивосток",
    "sublocation": "Эгрешельд",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.85714 43.08455)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.85714 43.08455)"
   },
   {
    "caption": "Вид с Крестовой сопки на Владивосток вечером",
@@ -694,9 +574,7 @@
    "city": "Владивосток",
    "sublocation": "Krestovaya hill",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86809 43.09483)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86809 43.09483)"
   },
   {
    "caption": "Вид с Крестовой сопки на Владивосток во время захода солнца",
@@ -707,9 +585,7 @@
    "city": "Владивосток",
    "sublocation": "Krestovaya hill",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86809 43.09483)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86809 43.09483)"
   },
   {
    "caption": "Вид с сопки Крестовой на запад, Амурский залив и горную цепь.",
@@ -720,9 +596,7 @@
    "city": "Владивосток",
    "sublocation": "Krestovaya hill",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86809 43.09483)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86809 43.09483)"
   },
   {
    "caption": "Вид с Крестовой сопки на Владивосток после заката",
@@ -733,9 +607,7 @@
    "city": "Владивосток",
    "sublocation": "Krestovaya hill",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.86809 43.09483)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.86809 43.09483)"
   },
   {
    "caption": "Грунтовая дорога на мыс Тобизина",
@@ -746,9 +618,7 @@
    "city": "Владивосток",
    "sublocation": "Russkiy island",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.88693 42.97211)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.88693 42.97211)"
   },
   {
    "caption": "Южная оконечность острова Русский, пляж на камнях",
@@ -759,9 +629,7 @@
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87154 42.94583)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87154 42.94583)"
   },
   {
    "caption": "Остров Шкота и другие мелкие острова к югу от Владивостока. Вид на запад.",
@@ -772,9 +640,7 @@
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87250 42.94574)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87250 42.94574)"
   },
   {
    "caption": "Разные мысы на южной оконечности острова Русский. Вид на север.",
@@ -785,9 +651,7 @@
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87385 42.94618)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87385 42.94618)"
   },
   {
    "caption": "Каменный обрыв.",
@@ -798,9 +662,7 @@
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87448 42.94783)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87448 42.94783)"
   },
   {
    "caption": "",
@@ -811,9 +673,7 @@
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87472 42.94863)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87472 42.94863)"
   },
   {
    "caption": "",
@@ -823,11 +683,8 @@
    "uri_next": "I01042",
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
-   "objectname": "Мыс Шмидта, Мыс Вятлина",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87700 42.95754)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87700 42.95754)"
   },
   {
    "caption": "Вид южного берега острова Русский в западную сторону",
@@ -838,9 +695,7 @@
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87734 42.95895)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87734 42.95895)"
   },
   {
    "caption": "",
@@ -850,11 +705,8 @@
    "uri_next": "I01044",
    "city": "Владивосток",
    "sublocation": "Tobizin cape",
-   "objectname": "Мыс Шмидта, Мыс Вятлина",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87884 42.96034)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87884 42.96034)"
   },
   {
    "caption": "Амурский залив у центральной набережной Владивостока перед закатом",
@@ -864,9 +716,7 @@
    "uri_next": "I01045",
    "city": "Владивосток",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87472 43.12303)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87472 43.12303)"
   },
   {
    "caption": "Гавань в центре Владивостока на закате",
@@ -876,9 +726,7 @@
    "uri_next": "I01046",
    "city": "Владивосток",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.87635 43.11977)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.87635 43.11977)"
   },
   {
    "caption": "Кольцо перед вокзалом",
@@ -888,9 +736,7 @@
    "uri_next": "I01047",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.97968 43.80143)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.97968 43.80143)"
   },
   {
    "caption": "Река в Уссурийске",
@@ -900,9 +746,7 @@
    "uri_next": "I01048",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.97059 43.80069)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.97059 43.80069)"
   },
   {
    "caption": "Автобус н923тр125",
@@ -912,9 +756,7 @@
    "uri_next": "I01049",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.96247 43.80012)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.96247 43.80012)"
   },
   {
    "caption": "Дом где жил писатель Астафьев",
@@ -924,9 +766,7 @@
    "uri_next": "I01050",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.95177 43.80080)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.95177 43.80080)"
   },
   {
    "caption": "Центральная площадь Уссурийска",
@@ -936,9 +776,7 @@
    "uri_next": "I01051",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.95192 43.79784)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.95192 43.79784)"
   },
   {
    "caption": "Кирпичный дом",
@@ -948,9 +786,7 @@
    "uri_next": "I01052",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.95145 43.79684)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.95145 43.79684)"
   },
   {
    "caption": "Здание первой электростанции",
@@ -960,9 +796,7 @@
    "uri_next": "I01053",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.94731 43.79576)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.94731 43.79576)"
   },
   {
    "caption": "Автобус Hyundai AeroSpace LS м043ов125 102 маршрут. Ходит от вокзала на север, на китайрынок",
@@ -971,9 +805,7 @@
    "uri_prev": "I01052",
    "city": "Уссурийск",
    "date_append": "2022-08-31",
-   "wkt_geometry": "POINT (131.97966 43.80147)",
-   "lens": "Industar-61 l/z",
-   "film": "Silberra 50"
+   "wkt_geometry": "POINT (131.97966 43.80147)"
   }
  ]
 }

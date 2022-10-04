@@ -243,11 +243,14 @@ photos.wkt_geometry ,
 photos.datetime ,
 photos.tags ,
 photos.pages ,
-photos.date_append
+photos.date_append,
+licenses.code AS license_code
 FROM photos 
 LEFT OUTER JOIN locations locations_city ON locations_city.name_int = photos.city 
-LEFT JOIN locations locations_sublocation ON locations_sublocation.name_int = photos.sublocation
+LEFT OUTER JOIN locations locations_sublocation ON locations_sublocation.name_int = photos.sublocation
+LEFT JOIN licenses ON licenses.id = photos.license;
         '''
+        cur_photos.executescript(sql)
 
         sql = "SELECT COUNT(*) as count FROM pages WHERE hidden=0 ;"
         cur_pages.execute(sql)
@@ -276,7 +279,7 @@ LEFT JOIN locations locations_sublocation ON locations_sublocation.name_int = ph
 
             if db_page.get('source','') in ('','photos_pages'):
                 sql = '''SELECT photos.*
-                FROM photos
+                FROM view_photos photos
                 JOIN photos_pages ON photos.photoid=photos_pages.photoid
                 JOIN pages ON pages.pageid=photos_pages.pageid
                 WHERE photos_pages.pageid={pageid}
@@ -284,7 +287,7 @@ LEFT JOIN locations locations_sublocation ON locations_sublocation.name_int = ph
                 '''.format(pageid=int(db_page['pageid']))
             elif  db_page.get('source','') == 'photos':
                 sql = '''SELECT photos.*
-                FROM photos   WHERE photos.pages LIKE "%{uri}%"'''
+                FROM view_photos photos   WHERE photos.pages LIKE "%{uri}%"'''
                 
                 if db_page.get('order','')=='dates':
                     sql += 'ORDER BY photos.datetime'
@@ -294,7 +297,7 @@ LEFT JOIN locations locations_sublocation ON locations_sublocation.name_int = ph
                 sql = sql.format(uri=db_page['uri'])
             elif  db_page.get('source','') == 'tags':
                 sql = '''SELECT photos.*
-                FROM photos   WHERE photos.tags LIKE "%{uri}%"'''
+                FROM view_photos photos   WHERE photos.tags LIKE "%{uri}%"'''
                 
                 if db_page.get('order','')=='dates':
                     sql += 'ORDER BY photos.datetime'
@@ -345,6 +348,9 @@ LEFT JOIN locations locations_sublocation ON locations_sublocation.name_int = ph
                     
                 if db_photo.get('wkt_geometry') is not None:
                     image['wkt_geometry'] = db_photo.get('wkt_geometry')
+                    
+                if db_photo.get('license_code') != 'cc-by':
+                    image['license'] = db_photo.get('license_code')  
                     
                 if db_photo.get('lens') is not None:
                     image['lens'] = db_photo.get('lens')

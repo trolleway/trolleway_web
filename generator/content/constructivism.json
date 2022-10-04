@@ -443,11 +443,8 @@
    "uri_prev": "I00576",
    "uri_next": "I01094",
    "city": "Михнево",
-   "objectname": "Конструктивистский дом",
    "date_append": "2022-09-05",
-   "wkt_geometry": "POINT (37.94809 55.11902)",
-   "lens": "7artisans 7.5mm F2.8 Fish-eye",
-   "camera": "Olympus OM-D E-M10"
+   "wkt_geometry": "POINT (37.94809 55.11902)"
   },
   {
    "caption": "",
@@ -456,11 +453,8 @@
    "uri_prev": "I01093",
    "uri_next": "I01106",
    "city": "Михнево",
-   "objectname": "Конструктивистский дом",
    "date_append": "2022-09-05",
-   "wkt_geometry": "POINT (37.94761 55.11898)",
-   "lens": "7artisans 7.5mm F2.8 Fish-eye",
-   "camera": "Olympus OM-D E-M10"
+   "wkt_geometry": "POINT (37.94761 55.11898)"
   },
   {
    "caption": "Конструктивистский дом. Улица Андропова, 51.",
@@ -470,9 +464,7 @@
    "uri_next": "I01107",
    "city": "Ступино",
    "date_append": "2022-09-05",
-   "wkt_geometry": "POINT (38.07237 54.88716)",
-   "lens": "7artisans 7.5mm F2.8 Fish-eye",
-   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+   "wkt_geometry": "POINT (38.07237 54.88716)"
   },
   {
    "caption": "Конструктивистский дом. Улица Андропова, 51.",
@@ -482,9 +474,7 @@
    "uri_next": "I01109",
    "city": "Ступино",
    "date_append": "2022-09-05",
-   "wkt_geometry": "POINT (38.07309 54.88714)",
-   "lens": "7artisans 7.5mm F2.8 Fish-eye",
-   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+   "wkt_geometry": "POINT (38.07309 54.88714)"
   },
   {
    "caption": "Пост-конструктивистский жилой дом. Улица Андропова, 45.",
@@ -494,9 +484,7 @@
    "uri_next": "I01110",
    "city": "Ступино",
    "date_append": "2022-09-05",
-   "wkt_geometry": "POINT (38.07518 54.88704)",
-   "lens": "7artisans 7.5mm F2.8 Fish-eye",
-   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+   "wkt_geometry": "POINT (38.07518 54.88704)"
   },
   {
    "caption": "Пост-конструктивистский жилой дом. Улица Андропова, 45.",
@@ -505,9 +493,7 @@
    "uri_prev": "I01109",
    "city": "Ступино",
    "date_append": "2022-09-05",
-   "wkt_geometry": "POINT (38.07602 54.88693)",
-   "lens": "7artisans 7.5mm F2.8 Fish-eye",
-   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+   "wkt_geometry": "POINT (38.07602 54.88693)"
   }
  ]
 }

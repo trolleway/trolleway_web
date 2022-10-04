@@ -115,11 +115,8 @@
    "uri": "I01111",
    "uri_prev": "I00936",
    "city": "Ступино",
-   "objectname": "Стена зала в здании администрации города Ступино",
    "date_append": "2022-09-05",
-   "wkt_geometry": "POINT (38.07576 54.88642)",
-   "lens": "7artisans 7.5mm F2.8 Fish-eye",
-   "camera": "Olympus OM-D E-M10\t7artisans 7.5mm F2.8 Fish-eye"
+   "wkt_geometry": "POINT (38.07576 54.88642)"
   }
  ]
 }

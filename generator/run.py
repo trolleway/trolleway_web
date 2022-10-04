@@ -352,6 +352,15 @@ class Website_generator():
                     
                 tech_info = ', '.join([film,lens])
                 tech_info = tech_info.replace(' ,',',')
+                
+                licenses_footer = dict()
+                licenses_footer['cc-by']='''       <a rel="cc:attributionURL" property="dc:title">Photo</a> by
+       <a rel="dc:creator" href=""
+       property="cc:attributionName">Artem Svetlov</a> is licensed to the public under 
+       the <a rel="license"
+       href="https://creativecommons.org/licenses/by/4.0/">Creative
+       Commons Attribution 4.0 License</a>. '''
+                licenses_footer['unknown author'] = '''author unknown'''
 
 
                 html = str()
@@ -381,6 +390,9 @@ class Website_generator():
                 photo4template['left_link_image']=left_link_image
                 photo4template['google_counter']=google_counter
                 photo4template['yandex_counter']=yandex_counter
+                photo4template['license_footer']=licenses_footer[image.get('license','cc-by')]
+                photo4template['license']=image.get('license') #for index
+                
                 
                 if photo4template['city'] != '': photo4template['city']+='.'
                 if photo4template['sublocation'] != '': photo4template['sublocation']+='.'
@@ -502,6 +514,17 @@ L.geoJSON(photos, {
 
             thumbnails_body = ''
             current_image = 0
+            
+            licenses_footer = dict()
+            licenses_footer['cc-by']='''       <a rel="cc:attributionURL" property="dc:title">Page and images</a> by
+       <a rel="dc:creator" href=""
+       property="cc:attributionName">Artem Svetlov</a> is licensed to the public under
+       the <a rel="license"
+       href="https://creativecommons.org/licenses/by/4.0/">Creative
+       Commons Attribution 4.0 License</a>.'''
+            licenses_footer['mixed'] = ''' '''            
+            
+            is_all_licenses_same = True
             for photo in photos4template:
                 photo_html = '<a href="{photo_page_url}"><picture><source srcset="{url_thumbnail_webp}" type="image/webp"><img src="{url_thumbnail_jpg}"></picture></a>{caption}</p> '
                 photo_html = photo_html.format(
@@ -511,10 +534,14 @@ L.geoJSON(photos, {
                 caption=photo['caption']
                 )
                 thumbnails_body += photo_html+"\n"
+                
+                if photo['license'] is not None: 
+                    is_all_licenses_same = False
 
-
-
-
+            if is_all_licenses_same:
+                license_footer = licenses_footer['cc-by']
+            else:
+                license_footer = licenses_footer['mixed']
             html = template.format(
                 title = data['title'],
                 text = text,
@@ -524,7 +551,8 @@ L.geoJSON(photos, {
                 google_counter=google_counter,
                 yandex_counter=yandex_counter,
                 thumbnails_body = thumbnails_body,
-                map_js = map_js
+                map_js = map_js,
+                license_footer = license_footer
                 )
 
             html = html.replace('<!--google_counter-->',google_counter)
