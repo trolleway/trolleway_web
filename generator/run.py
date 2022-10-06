@@ -98,7 +98,9 @@ class Website_generator():
 
 
 
-
+    def generate_pages_list(self):
+        
+        
     def generate(self,mode=None):
 
         assert mode in ('standalone-full',None,'')
@@ -374,6 +376,7 @@ class Website_generator():
                 photo4template['thumbnail']=photo4template['image_url_base']+'.t.webp'
                 photo4template['thumbnail_jpg']=photo4template['image_url_base']+'.t.jpg'
                 photo4template['caption']=caption_location
+                photo4template['caption_en']=photo4template['caption_en']
                 photo4template['title']=image_page_title
                 photo4template['url_left']=url_left
                 photo4template['url_right']=url_right
@@ -437,6 +440,9 @@ class Website_generator():
                 sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
                 sitemap_page_record['lastmod']=GALLERY_DATE_MOD
                 pages2sitemap.append(sitemap_page_record)
+                
+            
+
 
             # ----------- index page
 

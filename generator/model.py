@@ -244,6 +244,7 @@ photos.datetime ,
 photos.tags ,
 photos.pages ,
 photos.date_append,
+photos.caption_en,
 licenses.code AS license_code
 FROM photos 
 LEFT OUTER JOIN locations locations_city ON locations_city.name_int = photos.city 
@@ -352,6 +353,8 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                 if db_photo.get('license_code') != 'cc-by':
                     image['license'] = db_photo.get('license_code')  
                     
+                if db_photo.get('caption_en') is not None:
+                    image['caption_en'] = db_photo.get('caption_en')
                 if db_photo.get('lens') is not None:
                     image['lens'] = db_photo.get('lens')
                 if db_photo.get('film') is not None:
