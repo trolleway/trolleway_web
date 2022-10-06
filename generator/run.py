@@ -21,8 +21,11 @@ class Website_generator():
 
     logging.basicConfig(level=logging.DEBUG,format='%(asctime)s %(levelname)-8s %(message)s',datefmt='%Y-%m-%d %H:%M:%S')
     logger = logging.getLogger(__name__)
-    def __init__(self):
-        pass
+    sitemap_base_url = ''
+    
+    
+    def __init__(self, sitemap_base_url = 'https://trolleway.com/reports/'):
+        self.sitemap_base_url = sitemap_base_url
 
     def numfill(self,value):
         return str(value).zfill(2)
@@ -99,28 +102,18 @@ class Website_generator():
 
 
     def generate_pages_list(self):
+        pass
         
         
-    def generate(self,mode=None):
-
-        assert mode in ('standalone-full',None,'')
+    def generate(self):
 
         basedir = (os.path.dirname(os.path.realpath(__file__)))
         json_dir = os.path.join(basedir,'content')
 
 
         #---- set output directory for files
-        if mode is None:
-            output_directory = os.path.join(os.getcwd(), ".."+os.sep,'texts','t')
-        if mode == 'standalone-full':
-            output_directory = os.path.join(basedir,'..','html','reports')
-            if not os.path.isdir(output_directory): os.makedirs(output_directory)
-
-
-        if mode is None:
-            sitemap_base_url = 'https://trolleway.github.io/texts/t/'
-        if mode == 'standalone-full':
-            sitemap_base_url = 'https://trolleway.com/reports/'
+        output_directory = os.path.join(basedir,'..','html','reports')
+        if not os.path.isdir(output_directory): os.makedirs(output_directory)
 
         sitemap_path_manual = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'sitemap_manual.xml') #, ".."+os.sep
         sitemap_path = os.path.join(basedir,'..','html','sitemap.xml')
@@ -369,14 +362,14 @@ class Website_generator():
                 #template = self.template_remove_map(template)
                 photo4template=dict()
                 photo4template['page_file_local']=os.path.join(output_directory_path,image['uri'])
-                photo4template['page_url_absolute']=sitemap_base_url+output_directory_name+'/'+image['uri']+'.htm'
+                photo4template['page_url_absolute']=self.sitemap_base_url+output_directory_name+'/'+image['uri']+'.htm'
                 photo4template['uri']=image['uri']
                 photo4template['image_url']=image['url']
                 photo4template['image_url_base']=image['url'].replace('.jpg','')
                 photo4template['thumbnail']=photo4template['image_url_base']+'.t.webp'
                 photo4template['thumbnail_jpg']=photo4template['image_url_base']+'.t.jpg'
                 photo4template['caption']=caption_location
-                photo4template['caption_en']=photo4template['caption_en']
+                photo4template['caption_en']=image.get('caption_en','')
                 photo4template['title']=image_page_title
                 photo4template['url_left']=url_left
                 photo4template['url_right']=url_right
@@ -437,7 +430,7 @@ class Website_generator():
                     leaflet_geojson_features.append(leaflet_geojson_part)
 
             if not data.get('hide'):
-                sitemap_page_record={'loc':sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
+                sitemap_page_record={'loc':self.sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
                 sitemap_page_record['lastmod']=GALLERY_DATE_MOD
                 pages2sitemap.append(sitemap_page_record)
                 
@@ -589,6 +582,6 @@ L.geoJSON(photos, {
             text_file.write(sitemap_template.replace('<!--GENERATED SITEMAP CONTENT FROM PYTHON-->',out))
 
 if __name__ == "__main__":
-    processor = Website_generator()
+    processor = Website_generator(sitemap_base_url = 'https://trolleway.com/reports/')
     #processor.generate()
-    processor.generate(mode='standalone-full')
+    processor.generate()
