@@ -254,7 +254,8 @@ ORDER BY pages.uri, photos_pages."order";
             pages.text_en AS title_en
             FROM pages
             WHERE hidden=0 AND
-            page_group = {page_group};
+            page_group = {page_group}
+            ORDER BY date_sort;
             '''.format(page_group=row['id'])
             for page in cur_pages.execute(sql):
                 page_data = dict()
