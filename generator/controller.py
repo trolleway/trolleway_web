@@ -103,15 +103,52 @@ class Website_generator():
 
 
 
+    def generate_pages_list_content(self):
+
+        json_filename = os.path.join(self.json_dir,'_pages_index.json')
+        assert os.path.isfile(json_filename),'must exists file "'+json_filename+'"'
+        try:
+            with open(json_filename, encoding='utf-8') as json_file:
+                data = json.load(json_file)
+
+        except Exception as e:
+
+            print('error open json '+os.path.join(self.json_dir,json_filename))
+            print(e)
+
+        assert data is not None
+        
+        table = '<table id="pages">'
+        for group in data['groups']:
+            table += '<tr><td colspan="2">'+"\n"
+            table += '<p lang="ru">'+group['name']+'</p>'
+            table += '<p lang="en">'+group['name_en']+'</p>'
+            table += '</td></tr>'+"\n"
+            for page in group['pages']:
+                table += '<tr>'+"\n"
+                table += '<td><a lang="ru" href="{uri}/index.htm">{text_ru}</a></td>'.format(uri=page['uri'],text_ru=page['title'])+"\n"
+                table += '<td><span lang="en">{text_en}</a></td>'.format(uri=page['uri'],text_en=page['title_en'])+"\n"
+                table += '</tr>'+"\n"
+        
+        table += '</table>'
+        
+        return table
+
     def generate_pages_list(self):
-        assert os.path.isdir(self.json_dir),'must exists directory "'+self.json_dir+'"'
-
-        json_files = [f for f in os.listdir(self.json_dir) if os.path.isfile(os.path.join(self.json_dir, f)) and f.lower().endswith('.json')]
-        assert len(json_files)>0,'must be find some .json files in '+self.json_dir
-
-
-        for json_filename in json_files:
-            pass
+        content = self.generate_pages_list_content()
+        
+        template_filepath = os.path.join(self.basedir, 'gallery.list.template.htm')
+        assert os.path.exists(template_filepath), 'must exist file '+template_filepath
+        with open(template_filepath, encoding='utf-8') as template_file:
+            template = template_file.read()
+            
+        html = template.replace('{content}', content)
+        
+        output_directory = os.path.join(self.basedir,'..','html','reports')
+        filename = os.path.join(output_directory,'index.htm')
+        with open(filename, "w", encoding='utf-8') as text_file:
+            text_file.write(html)
+            
         
         
     def generate(self):
@@ -139,7 +176,7 @@ class Website_generator():
 
         assert os.path.isdir(self.json_dir),'must exists directory "'+self.json_dir+'"'
 
-        json_files = [f for f in os.listdir(self.json_dir) if os.path.isfile(os.path.join(self.json_dir, f)) and f.lower().endswith('.json')]
+        json_files = [f for f in os.listdir(self.json_dir) if os.path.isfile(os.path.join(self.json_dir, f)) and f.lower().endswith('.json') and not f.startswith('_')]
         assert len(json_files)>0,'must be find some .json files in '+self.json_dir
 
         #generate article for each json
@@ -528,7 +565,9 @@ L.geoJSON(photos, {
        the <a rel="license"
        href="https://creativecommons.org/licenses/by/4.0/">Creative
        Commons Attribution 4.0 License</a>.'''
-            licenses_footer['mixed'] = ''' '''            
+            licenses_footer['mixed'] = ''' ''' 
+
+            gallery_start_uri = photos4template[0]['uri']+'.htm'
             
             is_all_licenses_same = True
             for photo in photos4template:
@@ -558,6 +597,7 @@ L.geoJSON(photos, {
                 yandex_counter=yandex_counter,
                 thumbnails_body = thumbnails_body,
                 map_js = map_js,
+                gallery_start_uri=gallery_start_uri,
                 license_footer = license_footer
                 )
 
@@ -590,5 +630,5 @@ L.geoJSON(photos, {
 
 if __name__ == "__main__":
     processor = Website_generator(sitemap_base_url = 'https://trolleway.com/reports/')
-    #processor.generate()
+    processor.generate_pages_list()
     processor.generate()

@@ -264,7 +264,7 @@ ORDER BY pages.uri, photos_pages."order";
                 group_data['pages'].append(page_data)
             pages_data['groups'].append(group_data)
         
-        json_path = os.path.join(path,'pages_index')+'.json'
+        json_path = os.path.join(path,'_pages_index')+'.json'
         with open(json_path, "wb") as outfile:
             json_str = json.dumps(pages_data, ensure_ascii=False,indent = 1).encode('utf8')
             outfile.write(json_str)
