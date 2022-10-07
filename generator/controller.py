@@ -26,6 +26,8 @@ class Website_generator():
     
     def __init__(self, sitemap_base_url = 'https://trolleway.com/reports/'):
         self.sitemap_base_url = sitemap_base_url
+        self.basedir = (os.path.dirname(os.path.realpath(__file__)))
+        self.json_dir = os.path.join(self.basedir,'content')
 
     def numfill(self,value):
         return str(value).zfill(2)
@@ -102,26 +104,32 @@ class Website_generator():
 
 
     def generate_pages_list(self):
-        pass
+        assert os.path.isdir(self.json_dir),'must exists directory "'+self.json_dir+'"'
+
+        json_files = [f for f in os.listdir(self.json_dir) if os.path.isfile(os.path.join(self.json_dir, f)) and f.lower().endswith('.json')]
+        assert len(json_files)>0,'must be find some .json files in '+self.json_dir
+
+
+        for json_filename in json_files:
+            pass
         
         
     def generate(self):
 
-        basedir = (os.path.dirname(os.path.realpath(__file__)))
-        json_dir = os.path.join(basedir,'content')
+
 
 
         #---- set output directory for files
-        output_directory = os.path.join(basedir,'..','html','reports')
+        output_directory = os.path.join(self.basedir,'..','html','reports')
         if not os.path.isdir(output_directory): os.makedirs(output_directory)
 
         sitemap_path_manual = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'sitemap_manual.xml') #, ".."+os.sep
-        sitemap_path = os.path.join(basedir,'..','html','sitemap.xml')
+        sitemap_path = os.path.join(self.basedir,'..','html','sitemap.xml')
         assert os.path.isfile(sitemap_path_manual),'not found file '+sitemap_path_manual
         pages2sitemap=[]
 
         #---- copy static files
-        src = os.path.join(basedir,'static')
+        src = os.path.join(self.basedir,'static')
         src_files = os.listdir(src)
         for file_name in src_files:
             full_file_name = os.path.join(src, file_name)
@@ -129,21 +137,20 @@ class Website_generator():
                 shutil.copy(full_file_name, output_directory)
 
 
-        assert os.path.isdir(json_dir),'must exists directory "'+json_dir+'"'
+        assert os.path.isdir(self.json_dir),'must exists directory "'+self.json_dir+'"'
 
-        json_files = [f for f in os.listdir(json_dir) if os.path.isfile(os.path.join(json_dir, f)) and f.lower().endswith('.json')]
-        assert len(json_files)>0,'must be find some .json files in '+json_dir
+        json_files = [f for f in os.listdir(self.json_dir) if os.path.isfile(os.path.join(self.json_dir, f)) and f.lower().endswith('.json')]
+        assert len(json_files)>0,'must be find some .json files in '+self.json_dir
 
-        self.logger.info(" ".join(json_files))
         #generate article for each json
         for json_filename in json_files:
-            with open(os.path.join(json_dir,json_filename), encoding='utf-8') as json_file:
+            with open(os.path.join(self.json_dir,json_filename), encoding='utf-8') as json_file:
                 self.logger.debug(json_filename)
                 try:
                     data = json.load(json_file)
                 except Exception as e:
 
-                    print('error open json '+os.path.join(json_dir,json_filename))
+                    print('error open json '+os.path.join(self.json_dir,json_filename))
                     print(e)
                     print()
                     continue
@@ -164,13 +171,13 @@ class Website_generator():
 
             assert os.path.isdir(output_directory_path), 'must exist directory '+output_directory_path
 
-            template_filepath = os.path.join(basedir, 'gallery.template.htm')
+            template_filepath = os.path.join(self.basedir, 'gallery.template.htm')
             assert os.path.exists(template_filepath), 'must exist file '+template_filepath
             with open(template_filepath, encoding='utf-8') as template_file:
                 template = template_file.read()
             assert '{image_url}' in template
 
-            template_index_filepath = os.path.join(basedir, 'gallery.index.template.htm')
+            template_index_filepath = os.path.join(self.basedir, 'gallery.index.template.htm')
             assert os.path.exists(template_index_filepath), 'must exist file '+template_index_filepath
 
             count_images = len(data['images'])
@@ -447,7 +454,7 @@ class Website_generator():
             else:
                 content_en = "\n"
 
-            html_text_filename = os.path.join(json_dir,json_filename).replace('.json','.htm')
+            html_text_filename = os.path.join(self.json_dir,json_filename).replace('.json','.htm')
             if os.path.exists(html_text_filename):
                 text = self.get_body_from_html(html_text_filename)
             else:

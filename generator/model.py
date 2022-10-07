@@ -224,6 +224,52 @@ ORDER BY pages.uri, photos_pages."order";
     def id2uri(self,inp):
         return 'I'+str(int(inp)).zfill(5)
         
+    def pages_index_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content')):
+        cur_pages = self.con.cursor()
+        cur_groups = self.con.cursor()
+        
+        pages_data = dict()
+        pages_data['groups']=list()
+        
+        sql = '''
+        SELECT 
+        pages_groups.id,
+        pages_groups.name,
+        pages_groups.name_en
+        FROM
+        pages_groups
+        ORDER BY "order";
+        
+        '''
+        for row in cur_groups.execute(sql):
+            group_data = dict()
+            group_data['name'] = row['name']
+            group_data['name_en'] = row['name_en']
+            group_data['pages']=list()
+            sql = '''
+            SELECT
+            pages.pageid,
+            pages.uri,
+            pages.title,
+            pages.text_en AS title_en
+            FROM pages
+            WHERE hidden=0 AND
+            page_group = {page_group};
+            '''.format(page_group=row['id'])
+            for page in cur_pages.execute(sql):
+                page_data = dict()
+                page_data['uri'] = page['uri']
+                page_data['title'] = page['title']
+                page_data['title_en'] = page['title_en']
+                group_data['pages'].append(page_data)
+            pages_data['groups'].append(group_data)
+        
+        json_path = os.path.join(path,'pages_index')+'.json'
+        with open(json_path, "wb") as outfile:
+            json_str = json.dumps(pages_data, ensure_ascii=False,indent = 1).encode('utf8')
+            outfile.write(json_str)
+        
+        
     def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content')):
         cur_pages = self.con.cursor()
         cur_photos = self.con.cursor()
@@ -381,3 +427,4 @@ LEFT JOIN licenses ON licenses.id = photos.license;
 if __name__ == "__main__":
     model = Model()
     model.db2gallery_jsons()
+    model.pages_index_jsons()

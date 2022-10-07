@@ -19,7 +19,7 @@ run sql in sqlite
 
 Generate html:
 ```
-time python3 generator/model.py && time python3 generator/run.py
+time python3 generator/model.py && time python3 generator/controller.py
 ```
 
 ## Handle tiff and webp sources
@@ -38,7 +38,7 @@ mv $SRC/*.xml $DST
 
 ```
 
-### run.py
+### controller.py
 
 * read json files from generator/content/
 * generate index.htm for each gallery
