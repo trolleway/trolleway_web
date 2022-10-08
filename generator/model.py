@@ -283,6 +283,7 @@ ORDER BY pages.uri, photos_pages."order";
 photos.photoid ,
 photos.hotlink ,
 photos.caption ,
+photos.objectname ,
 COALESCE(locations_city.name_ru, photos.city) AS city ,
 COALESCE(locations_sublocation.name_ru, photos.sublocation) AS sublocation ,
 photos.inserting_id ,
