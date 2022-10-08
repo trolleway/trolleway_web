@@ -26,7 +26,7 @@ def photo_thumbnail(src,dst,overwrite = False):
     '''
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.jpg')
-    if is_small_image:
+    if is_small_image and src.lower().endswith('.jpg'):
         shutil.copyfile(src,path_resized)
     else:
         if ( os.path.isfile(path_resized) == False or overwrite ):
@@ -48,17 +48,19 @@ def photo_thumbnail(src,dst,overwrite = False):
 
 
 
-
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.webp')
-    if ( os.path.isfile(path_resized) == False or overwrite ):
-        cmd = ['convert' ,  src , '-auto-orient' ,
-        '-define', 'webp:image-hint=photo',
-        '-define', 'webp:near-loseless=90',
-        '-define', 'webp:method=5',
-        '-define', 'webp:thread-level=1',
-        '-unsharp', '0.5x0.5+0.5+0.008',
-        path_resized]
-        subprocess.run(cmd)
+    if src.lower().endswith('.webp'):
+        shutil.copy(src,path_resized)
+    else:
+        if ( os.path.isfile(path_resized) == False or overwrite ):
+            cmd = ['convert' ,  src , '-auto-orient' ,
+            '-define', 'webp:image-hint=photo',
+            '-define', 'webp:near-loseless=90',
+            '-define', 'webp:method=5',
+            '-define', 'webp:thread-level=1',
+            '-unsharp', '0.5x0.5+0.5+0.008',
+            path_resized]
+            subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.jpg')
     if ( os.path.isfile(path_resized) == False or overwrite ):

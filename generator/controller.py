@@ -28,6 +28,7 @@ class Website_generator():
         self.sitemap_base_url = sitemap_base_url
         self.basedir = (os.path.dirname(os.path.realpath(__file__)))
         self.json_dir = os.path.join(self.basedir,'content')
+        self.texts_dir = os.path.join(self.basedir,'texts')
 
     def numfill(self,value):
         return str(value).zfill(2)
@@ -491,7 +492,7 @@ class Website_generator():
             else:
                 content_en = "\n"
 
-            html_text_filename = os.path.join(self.json_dir,json_filename).replace('.json','.htm')
+            html_text_filename = os.path.join(self.texts_dir,json_filename).replace('.json','.htm')
             if os.path.exists(html_text_filename):
                 text = self.get_body_from_html(html_text_filename)
             else:
