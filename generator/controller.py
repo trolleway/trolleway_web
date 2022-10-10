@@ -492,11 +492,28 @@ class Website_generator():
             else:
                 content_en = "\n"
 
-            html_text_filename = os.path.join(self.texts_dir,json_filename).replace('.json','.htm')
+            #html_text_filename = os.path.join(self.texts_dir,json_filename).replace('.json','.htm')
+            #if os.path.exists(html_text_filename):
+            #    text = self.get_body_from_html(html_text_filename)
+            #else:
+            #    text = data.get('text','')
+                
+            html_text_filename = os.path.join(self.texts_dir,json_filename.replace('.json',''),'HEADER.htm')
             if os.path.exists(html_text_filename):
                 text = self.get_body_from_html(html_text_filename)
+                #---------- copy images for header
+                src = os.path.join(self.texts_dir,json_filename.replace('.json',''))
+                dst = output_directory_path
+                print(src)
+                print(dst)
+                files=os.listdir(src)
+                for fname in files:
+                    if fname=='HEADER.htm':
+                        continue
+                    shutil.copy2(os.path.join(src,fname), dst)
             else:
                 text = data.get('text','')
+            
                 
             #---------- map on index page
 
