@@ -151,7 +151,14 @@ class Website_generator():
             text_file.write(html)
             
         
-        
+    def drop_html_tags(self,raw_html):
+        import re
+        # as per recommendation from @freylis, compile once only
+        CLEANR = re.compile('<.*?>') 
+
+        cleantext = re.sub(CLEANR, '', raw_html)
+        return cleantext
+
     def generate(self):
 
 
@@ -504,8 +511,6 @@ class Website_generator():
                 #---------- copy images for header
                 src = os.path.join(self.texts_dir,json_filename.replace('.json',''))
                 dst = output_directory_path
-                print(src)
-                print(dst)
                 files=os.listdir(src)
                 for fname in files:
                     if fname=='HEADER.htm':
@@ -619,7 +624,8 @@ L.geoJSON(photos, {
                 thumbnails_body = thumbnails_body,
                 map_js = map_js,
                 gallery_start_uri=gallery_start_uri,
-                license_footer = license_footer
+                license_footer = license_footer,
+                description=self.drop_html_tags(text),
                 )
 
             html = html.replace('<!--google_counter-->',google_counter)
