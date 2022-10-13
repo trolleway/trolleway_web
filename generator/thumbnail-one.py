@@ -30,8 +30,10 @@ def photo_thumbnail(src,dst,overwrite = False):
         shutil.copyfile(src,path_resized)
     else:
         if ( os.path.isfile(path_resized) == False or overwrite ):
-
-            cmd = ['convert' ,  src , '-auto-orient' , '-compress', 'JPEG', '-quality', '80', path_resized]
+            if not args.squash: 
+                cmd = ['convert', src , '-auto-orient' , '-compress', 'JPEG', '-quality', '80', path_resized]
+            else:
+                cmd = ['convert', src , '-auto-orient' , '-compress', 'JPEG', '-quality', '70', path_resized]
             subprocess.run(cmd)
     #apply exif tags from sidecar file if exist
     src_file_basepart = os.path.splitext(src)[0]
@@ -53,25 +55,42 @@ def photo_thumbnail(src,dst,overwrite = False):
         shutil.copy(src,path_resized)
     else:
         if ( os.path.isfile(path_resized) == False or overwrite ):
-            cmd = ['convert' ,  src , '-auto-orient' ,
-            '-define', 'webp:image-hint=photo',
-            '-define', 'webp:near-loseless=90',
-            '-define', 'webp:method=5',
-            '-define', 'webp:thread-level=1',
-            '-unsharp', '0.5x0.5+0.5+0.008',
-            path_resized]
+            if not args.squash: 
+                cmd = ['convert' ,  src , '-auto-orient' ,
+                '-define', 'webp:image-hint=photo',
+                '-define', 'webp:near-loseless=90',
+                '-define', 'webp:method=5',
+                '-define', 'webp:thread-level=1',
+                '-unsharp', '0.5x0.5+0.5+0.008',
+                path_resized]
+            else:
+                cmd = ['convert' ,  src , '-auto-orient' ,
+                '-define', 'webp:image-hint=photo',
+                '-quality','82',
+                #'-define', 'webp:near-loseless=70',
+                '-define', 'webp:method=5',
+                '-define', 'webp:thread-level=1',
+                '-unsharp', '0.5x0.5+0.5+0.008',
+                path_resized]
+            
             subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.jpg')
     if ( os.path.isfile(path_resized) == False or overwrite ):
-        cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'35' , src , '-auto-orient',
-              '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+        if not args.squash:
+            cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'35' , src , '-auto-orient',
+                  '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+        else:
+            cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'30' , src , '-auto-orient',
+                  '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
         subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.webp')
     if ( os.path.isfile(path_resized) == False or overwrite ):
-        cmd = ['convert' , '-quality' ,'70',  src , '-auto-orient',
-              '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+        if not args.squash:
+            cmd = ['convert' , '-quality' ,'70',  src , '-auto-orient', '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+        else:    
+            cmd = ['convert' , '-quality' ,'65',  src , '-auto-orient', '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
         subprocess.run(cmd)
 
 #-define', 'webp:near-loseless=60'
@@ -81,6 +100,8 @@ parser.add_argument('src')
 parser.add_argument('dst')
 parser.add_argument('--overwrite', required=False,  action='store_true')
 parser.add_argument('--no-overwrite', dest='overwrite', required=False,  action='store_false')
+parser.add_argument('--squash', required=False,  action='store_true')
+parser.add_argument('--no-squash', dest='squash', required=False,  action='store_false')
 parser.set_defaults(overwrite=False)
 
 args = parser.parse_args()

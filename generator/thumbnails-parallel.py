@@ -2,9 +2,11 @@ import os, shutil
 from tqdm import tqdm
 import subprocess
 
+import argparse
 
 
-def thumbnails_create(src_dir, dst_dir, check_exists = False):
+
+def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False):
     '''
     create thumbnails for tree
     '''
@@ -43,7 +45,7 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False):
     with open("parallel.list", "w") as text_file:
         text_file.write(arguments_list_text)
 
-    cmd = '''parallel --eta --bar  --colsep ';' python3 '''+os.path.join(os.path.dirname(os.path.realpath(__file__)),'thumbnail-one.py')+ ''' {1} {2} --no-overwrite :::: < parallel.list'''
+    cmd = '''parallel --eta --bar  --colsep ';' python3 '''+os.path.join(os.path.dirname(os.path.realpath(__file__)),'thumbnail-one.py')+ ''' {1} {2} --no-overwrite  :::: < parallel.list'''
 
     os.system(cmd)
     '''
@@ -53,8 +55,14 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False):
 
     '''
 
+parser = argparse.ArgumentParser(description='Compress all picture for website')
 
+parser.add_argument('--squash', required=False,  action='store_true')
+parser.add_argument('--no-squash', dest='squash', required=False,  action='store_false')
+
+
+args = parser.parse_args()
 
 #thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True)
 #thumbnails_create('/home/trolleway/VirtualBoxShared/website-expose-transfer','/media/trolleway/UBUNTU 22_0/thumbnails',check_exists = True)
-thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True)
+thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True, )
