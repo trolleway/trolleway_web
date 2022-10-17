@@ -34,6 +34,11 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False):
             dst = os.path.join(dirpath.replace(src_dir,dst_dir),file)
 
             convert_tuples.append({'src':src,'dst':dst})
+            
+    if squash:
+        squash_key = '--squash'
+    else:
+        squash_key = ''
 
 
 
@@ -45,15 +50,10 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False):
     with open("parallel.list", "w") as text_file:
         text_file.write(arguments_list_text)
 
-    cmd = '''parallel --eta --bar  --colsep ';' python3 '''+os.path.join(os.path.dirname(os.path.realpath(__file__)),'thumbnail-one.py')+ ''' {1} {2} --no-overwrite  :::: < parallel.list'''
+    cmd = '''parallel --eta --bar  --colsep ';' python3 '''+os.path.join(os.path.dirname(os.path.realpath(__file__)),'thumbnail-one.py')+ ''' {1} {2} --no-overwrite '''+squash_key+'''  :::: < parallel.list'''
 
     os.system(cmd)
-    '''
 
-
-
-
-    '''
 
 parser = argparse.ArgumentParser(description='Compress all picture for website')
 
@@ -65,4 +65,4 @@ args = parser.parse_args()
 
 #thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True)
 #thumbnails_create('/home/trolleway/VirtualBoxShared/website-expose-transfer','/media/trolleway/UBUNTU 22_0/thumbnails',check_exists = True)
-thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True, )
+thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True,squash = args.squash )

@@ -126,10 +126,13 @@ class Model():
                     try:
                         objectname = info['object name'].decode('UTF-8')
                     except:
-                        objectname = '[error read object name from IPTC tags]'
+                        objectname = info['object name'].decode('CP1251')
                 caption = info['caption/abstract']
                 if caption is not None:
-                    caption = caption.decode('UTF-8')
+                    try:
+                        caption = caption.decode('UTF-8')
+                    except:
+                        caption = caption.decode('CP1251')
                 else:
                     caption = ''
                 image = {'caption':caption,'url_hotlink':url}
@@ -143,6 +146,8 @@ class Model():
                 image['wkt_geometry']=wkt.dumps(Point(lon or 0,lat or 0),rounding_precision=5)
                 image['datetime']=photo_datetime
                 if objectname is not None:  image['objectname']=objectname
+                
+                
 
 
                 images.append(image)
@@ -155,19 +160,19 @@ class Model():
 
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
-
+            
             tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation, objectname, inserting_id, wkt_geometry, datetime, date_append, pages)
             VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}", "{pages}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
-                caption = image['caption'],
+                caption = image['caption'].replace('"','""'),
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
                 pages = page_url,
                 city = image.get('city',''),
                 sublocation = image.get('sublocation',''),
-                objectname = image.get('objectname','')
+                objectname = image.get('objectname','').replace('"','""')
                 )
 
             sql += tmpstr
