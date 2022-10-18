@@ -368,10 +368,8 @@ LEFT JOIN licenses ON licenses.id = photos.license;
             counter = 0
             for row2 in cur_photos.execute(sql):
                 db_photo = dict(row2)
-
-
-                image={   "caption": db_photo['caption'],
-                "url_hotlink": db_photo['hotlink']
+                
+                image={  "url_hotlink": db_photo['hotlink']
                 }
                 image['uri']=uris[counter]
                 if counter > 0:
@@ -379,6 +377,7 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                 if counter < len(uris)-1:
                     image['uri_next']=uris[counter+1]
                 
+                if db_photo.get('caption'): image['caption'] = db_photo.get('caption')
                 city = db_photo.get('city')
                 if city != '':
                     if city in locations:
