@@ -413,6 +413,8 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['film'] = db_photo.get('film')
                 if db_photo.get('camera') is not None:
                     image['camera'] = db_photo.get('camera')
+                if db_photo.get('datetime') is not None:
+                    image['datetime'] = db_photo.get('datetime')
                
                 images.append(image)
                 counter = counter + 1

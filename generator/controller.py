@@ -14,6 +14,7 @@ from iptcinfo3 import IPTCInfo
 
 from shapely import wkt
 from shapely.geometry import Point
+from datetime import datetime
 
 
 class Website_generator():
@@ -158,6 +159,16 @@ class Website_generator():
 
         cleantext = re.sub(CLEANR, '', raw_html)
         return cleantext
+    def process_datetime_trolleway(self,textdate):
+        if textdate == '': return ''
+        textdate = textdate[0:10]
+        photodateobj = datetime.strptime(textdate, '%Y-%m-%d')
+        today = datetime.today()
+        delta  = today-photodateobj
+        if delta.days > (365*9):
+            return textdate
+        else:
+            return ''
 
     def generate(self):
 
@@ -408,8 +419,7 @@ class Website_generator():
        href="https://creativecommons.org/licenses/by/4.0/">Creative
        Commons Attribution 4.0 License</a>. '''
                 licenses_footer['unknown author'] = '''author unknown'''
-
-
+                
                 html = str()
                 #template = self.template_remove_map(template)
                 photo4template=dict()
@@ -429,6 +439,7 @@ class Website_generator():
                 photo4template['rel_right']=rel_right
                 photo4template['map_js']=map_js
                 photo4template['city']=image.get('city','')
+                photo4template['datetime']=self.process_datetime_trolleway(image.get('datetime',''))
                 photo4template['sublocation']=image.get('sublocation','')
                 photo4template['tech_info']=tech_info
                 photo4template['alt']=image.get('caption',image.get('objectname',''))
@@ -608,6 +619,8 @@ L.geoJSON(photos, {
                 
                 if photo['license'] is not None: 
                     is_all_licenses_same = False
+            datetime = data.get('datetime','')
+            datetime = datetime[0:10]
 
             if is_all_licenses_same:
                 license_footer = licenses_footer['cc-by']
@@ -619,6 +632,7 @@ L.geoJSON(photos, {
                 content_en = content_en,
                 h1 = data['h1'],
                 city = data.get('city',''),
+                datetime = datetime,
                 google_counter=google_counter,
                 yandex_counter=yandex_counter,
                 thumbnails_body = thumbnails_body,
