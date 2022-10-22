@@ -605,9 +605,9 @@ L.geoJSON(photos, {
             
             is_all_licenses_same = True
             for photo in photos4template:
-                photo_html = '<p class="photo"><a href="{photo_page_url}"><picture><source srcset="{url_thumbnail_webp}" type="image/webp"><img src="{url_thumbnail_jpg}"></picture></a><span lang="ru" class="photo_index_caption_ru">{caption}</span>'
+                photo_html = '<p class="photo"><figure><a href="{photo_page_url}"><picture><source srcset="{url_thumbnail_webp}" type="image/webp"><img src="{url_thumbnail_jpg}"></picture></a><figcaption><span lang="ru" class="photo_index_caption_ru">{caption}</span>'
                 if photo.get('caption_en'): photo_html += '<span lang="en" class="photo_index_caption_en">{caption_en}</span>'
-                photo_html+="</p>"
+                photo_html+="</figcaption></figure></p>"
                 photo_html = photo_html.format(
                 photo_page_url=photo['uri']+'.htm',
                 url_thumbnail_jpg=os.path.join(os.path.dirname(photo['image_url']) , os.path.basename(os.path.splitext(photo['image_url'])[0])+'.t.jpg'),
