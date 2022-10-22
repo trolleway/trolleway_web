@@ -12,9 +12,13 @@ def photo_thumbnail(src,dst,overwrite = False):
 
     # small photos from old cameras do not recompressed, just copied instead
     is_small_image = False
+    keep_original_file = False
     filesize = os.path.getsize(src)
     if filesize/(1024*1024) < 1.5:
         is_small_image = True
+        
+    if 'ORIGINALFILE' in src:
+        keep_original_file = True
 
 
     '''
@@ -26,7 +30,7 @@ def photo_thumbnail(src,dst,overwrite = False):
     '''
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.jpg')
-    if is_small_image and src.lower().endswith('.jpg'):
+    if (is_small_image or keep_original_file) and src.lower().endswith('.jpg'):
         shutil.copyfile(src,path_resized)
     else:
         if ( os.path.isfile(path_resized) == False or overwrite ):
@@ -38,21 +42,15 @@ def photo_thumbnail(src,dst,overwrite = False):
     #apply exif tags from sidecar file if exist
     src_file_basepart = os.path.splitext(src)[0]
     if os.path.isfile(src_file_basepart + 'xmp'):
-        cmd = ['exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xml', '-all:all' , path_resized]
-        
+        cmd = ['exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xml', '-all:all' , path_resized]        
         subprocess.run(cmd)
-        # exiftool -all:all -o /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xmp /opt/images_origins/2022/test/20220820_010.tif
-        # exiftool -tagsfromfile /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xmp -all:all -xmp  /opt/storage/2022/2022-08-20_vvo_silbera50/20220820_010.jpg
-        
-        
-        # exiftool -charset utf8  -all:all -X /opt/images_origins/2022/test/20220820_010.tif >  /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xml
-        # exiftool  -charset utf8   -tagsfromfile /opt/images_origins/2022/2022-08-20_vvo_silbera50/20220820_010.xml -all:all  /opt/storage/2022/2022-08-20_vvo_silbera50/20220820_010.jpg
-
-
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.webp')
     if src.lower().endswith('.webp'):
         shutil.copy(src,path_resized)
+    elif keep_original_file:
+        pass 
+        #no create webp
     else:
         if ( os.path.isfile(path_resized) == False or overwrite ):
             if not args.squash: 
@@ -95,7 +93,7 @@ def photo_thumbnail(src,dst,overwrite = False):
 
 #-define', 'webp:near-loseless=60'
 
-parser = argparse.ArgumentParser(description='Compress one picture for website')
+parser = argparse.ArgumentParser(description='Compress one picture for website. Keys in filenames: ORIGINALFILE: copy jpeg, do not create webp')
 parser.add_argument('src')
 parser.add_argument('dst')
 parser.add_argument('--overwrite', required=False,  action='store_true')

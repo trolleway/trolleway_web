@@ -430,6 +430,10 @@ class Website_generator():
                 photo4template['image_url_base']=image['url'].replace('.jpg','')
                 photo4template['thumbnail']=photo4template['image_url_base']+'.t.webp'
                 photo4template['thumbnail_jpg']=photo4template['image_url_base']+'.t.jpg'
+                if 'ORIGINALFILE' not in image['url']:
+                    photo4template['source_srcset']='<source srcset="{image_url_base}.webp" type="image/webp">'.format(image_url_base=photo4template['image_url_base']) 
+                else:
+                    photo4template['source_srcset']=''
                 photo4template['caption']=caption_location
                 photo4template['caption_en']=image.get('caption_en','')
                 photo4template['title']=image_page_title
