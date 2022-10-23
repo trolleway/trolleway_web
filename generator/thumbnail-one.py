@@ -13,12 +13,16 @@ def photo_thumbnail(src,dst,overwrite = False):
     # small photos from old cameras do not recompressed, just copied instead
     is_small_image = False
     keep_original_file = False
+    aspect_ratio_version = False
+    
     filesize = os.path.getsize(src)
     if filesize/(1024*1024) < 1.5:
         is_small_image = True
         
     if 'ORIGINALFILE' in src:
         keep_original_file = True
+    if 'ar169' in src or 'arvert' in src:
+        aspect_ratio_version = True
 
 
     '''
@@ -32,6 +36,9 @@ def photo_thumbnail(src,dst,overwrite = False):
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.jpg')
     if (is_small_image or keep_original_file) and src.lower().endswith('.jpg'):
         shutil.copyfile(src,path_resized)
+    elif aspect_ratio_version:
+        pass 
+        #not create jpg
     else:
         if ( os.path.isfile(path_resized) == False or overwrite ):
             if not args.squash: 
@@ -72,28 +79,39 @@ def photo_thumbnail(src,dst,overwrite = False):
                 path_resized]
             
             subprocess.run(cmd)
+            if os.path.getsize(path_resized)>1024*1024*3:
+                cmd = ['convert' ,  src , '-auto-orient' ,
+                '-define', 'webp:image-hint=photo',
+                '-quality','82',
+                '-define', 'webp:method=5',
+                '-define', 'webp:thread-level=1',
+                '-unsharp', '0.5x0.5+0.5+0.008',
+                path_resized]
+            
+                subprocess.run(cmd)                
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.jpg')
-    if ( os.path.isfile(path_resized) == False or overwrite ):
-        if not args.squash:
-            cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'35' , src , '-auto-orient',
-                  '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
-        else:
-            cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'30' , src , '-auto-orient',
-                  '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
-        subprocess.run(cmd)
+    if not aspect_ratio_version:
+        if ( os.path.isfile(path_resized) == False or overwrite ):
+            if not args.squash:
+                cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'35' , src , '-auto-orient',
+                      '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+            else:
+                cmd = ['convert' , '-define', 'jpeg:size=800x800' , '-quality' ,'30' , src , '-auto-orient',
+                      '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+            subprocess.run(cmd)
 
-    path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.webp')
-    if ( os.path.isfile(path_resized) == False or overwrite ):
-        if not args.squash:
-            cmd = ['convert' , '-quality' ,'70',  src , '-auto-orient', '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
-        else:    
-            cmd = ['convert' , '-quality' ,'65',  src , '-auto-orient', '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
-        subprocess.run(cmd)
+        path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.webp')
+        if ( os.path.isfile(path_resized) == False or overwrite ):
+            if not args.squash:
+                cmd = ['convert' , '-quality' ,'70',  src , '-auto-orient', '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+            else:    
+                cmd = ['convert' , '-quality' ,'65',  src , '-auto-orient', '-thumbnail', '500x500' ,  '-unsharp', '0x.5' , path_resized]
+            subprocess.run(cmd)
 
 #-define', 'webp:near-loseless=60'
 
-parser = argparse.ArgumentParser(description='Compress one picture for website. Keys in filenames: ORIGINALFILE: copy jpeg, do not create webp')
+parser = argparse.ArgumentParser(description="Compress one picture for website. \n Keys in filenames: \n - ORIGINALFILE: copy jpeg, do not create webp \n - arvert: \n - ar169: ")
 parser.add_argument('src')
 parser.add_argument('dst')
 parser.add_argument('--overwrite', required=False,  action='store_true')

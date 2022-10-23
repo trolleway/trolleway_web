@@ -103,7 +103,9 @@ class Model():
             for filename in files:
                 if not filename.lower().endswith('.jpg'): continue
                 if filename.lower().endswith('.t.jpg'): continue
-                print(os.path.join(root,filename))
+                if 'ar169' in filename: continue
+                if 'arvert' in filename: continue
+                filepath = os.path.join(root,filename)
                 
                 self.logger.debug(filename)
                 temp_path = os.path.normpath(path)
@@ -147,7 +149,14 @@ class Model():
                 image['datetime']=photo_datetime
                 if objectname is not None:  image['objectname']=objectname
                 
-                
+                if os.path.exists(filepath.replace('.jpg','_ar169.webp')):
+                    image['has_ar169']=1
+                else:
+                    image['has_ar169']=0
+                if os.path.exists(filepath.replace('.jpg','_arvert.webp')):
+                    image['has_arvert']=1
+                else:
+                    image['has_arvert']=0               
 
 
                 images.append(image)
@@ -161,8 +170,8 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
             
-            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation, objectname, inserting_id, wkt_geometry, datetime, date_append, pages)
-            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}", "{pages}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation, objectname, inserting_id, wkt_geometry, datetime, date_append, pages, has_ar169, has_arvert)
+            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert} );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
@@ -172,6 +181,8 @@ class Model():
                 pages = page_url,
                 city = image.get('city',''),
                 sublocation = image.get('sublocation',''),
+                has_ar169 = image.get('has_ar169'),
+                has_arvert = image.get('has_arvert'),
                 objectname = image.get('objectname','').replace('"','""')
                 )
 
@@ -298,6 +309,8 @@ photos.tags ,
 photos.pages ,
 photos.date_append,
 photos.caption_en,
+photos.has_ar169,
+photos.has_arvert,
 licenses.code AS license_code
 FROM photos 
 LEFT OUTER JOIN locations locations_city ON locations_city.name_int = photos.city 
@@ -415,6 +428,10 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['camera'] = db_photo.get('camera')
                 if db_photo.get('datetime') is not None:
                     image['datetime'] = db_photo.get('datetime')
+                if db_photo.get('has_ar169',0) is not None and db_photo.get('has_ar169',0)>0 :
+                    image['ar169'] = True
+                if db_photo.get('has_arvert',0)  is not None and db_photo.get('has_arvert',0)>0 :
+                    image['arvert'] = True
                
                 images.append(image)
                 counter = counter + 1

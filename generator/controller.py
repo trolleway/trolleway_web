@@ -430,10 +430,6 @@ class Website_generator():
                 photo4template['image_url_base']=image['url'].replace('.jpg','')
                 photo4template['thumbnail']=photo4template['image_url_base']+'.t.webp'
                 photo4template['thumbnail_jpg']=photo4template['image_url_base']+'.t.jpg'
-                if 'ORIGINALFILE' not in image['url']:
-                    photo4template['source_srcset']='<source srcset="{image_url_base}.webp" type="image/webp">'.format(image_url_base=photo4template['image_url_base']) 
-                else:
-                    photo4template['source_srcset']=''
                 photo4template['caption']=caption_location
                 photo4template['caption_en']=image.get('caption_en','')
                 photo4template['title']=image_page_title
@@ -446,7 +442,7 @@ class Website_generator():
                 photo4template['datetime']=self.process_datetime_trolleway(image.get('datetime',''))
                 photo4template['sublocation']=image.get('sublocation','')
                 photo4template['tech_info']=tech_info
-                photo4template['alt']=image.get('caption',image.get('objectname',''))
+                photo4template['alt']=image.get('objectname','')
                 photo4template['lat']=lat
                 photo4template['lon']=lon
                 photo4template['right_link_image']=right_link_image
@@ -455,12 +451,31 @@ class Website_generator():
                 photo4template['yandex_counter']=yandex_counter
                 photo4template['license_footer']=licenses_footer[image.get('license','cc-by')]
                 photo4template['license']=image.get('license') #for index
+                photo4template['source_srcset']=''
+                
+                if image.get('ar169'):
+                    photo4template['source_srcset']+='<source srcset="{image_url_base}_ar169.webp" media="(min-aspect-ratio: 3/4)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
+                if image.get('arvert'):
+                    photo4template['source_srcset']+='<source srcset="{image_url_base}_arvert.webp" media="(max-aspect-ratio: 2/1)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
+                    
+                if 'ORIGINALFILE' not in image['url']:
+                    photo4template['source_srcset']+='<source srcset="{image_url_base}.webp" type="image/webp">'.format(image_url_base=photo4template['image_url_base']) +"\n"
+                else:
+                    photo4template['source_srcset']=''
                 
                 
                 if photo4template['city'] != '': photo4template['city']+='.'
                 if photo4template['sublocation'] != '': photo4template['sublocation']+='.'
 
                 photos4template.append(photo4template)
+                '''
+                	<picture>
+	<source srcset="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008_ar169.webp" media="(min-aspect-ratio: 15/9)" type="image/webp">
+	<source srcset="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008_arvert.webp" media="(max-aspect-ratio: 2/1)" type="image/webp">  
+	<source srcset="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008.webp" type="image/webp"> 
+	<img class="stack__element" src="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008.jpg" alt="">
+	</picture>
+                '''
 
                 with open(template_filepath, encoding='utf-8') as template_file:
                     template = template_file.read()
