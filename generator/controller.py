@@ -364,9 +364,6 @@ class Website_generator():
                 '''
 
                 image['url'] = image['url_hotlink']
-                image_page_title = ''
-                image_page_title = image.get('city','') or '' + ' '+ image.get('caption','') or '' +' ' + os.path.splitext(os.path.basename(image['url']))[0]
-                #build html
 
                 caption = image.get('caption','')
                 caption = caption or ''
@@ -432,7 +429,7 @@ class Website_generator():
                 photo4template['thumbnail_jpg']=photo4template['image_url_base']+'.t.jpg'
                 photo4template['caption']=caption_location
                 photo4template['caption_en']=image.get('caption_en','')
-                photo4template['title']=image_page_title
+                photo4template['title']=caption_location
                 photo4template['url_left']=url_left
                 photo4template['url_right']=url_right
                 photo4template['rel_left']=rel_left
@@ -454,12 +451,12 @@ class Website_generator():
                 photo4template['source_srcset']=''
                 
                 if image.get('ar169'):
-                    photo4template['source_srcset']+='<source srcset="{image_url_base}_ar169.webp" media="(min-aspect-ratio: 3/4)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
+                    photo4template['source_srcset']+='<source srcset="{image_url_base}_ar169.webp" media="(min-aspect-ratio: 16/9)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
                 if image.get('arvert'):
-                    photo4template['source_srcset']+='<source srcset="{image_url_base}_arvert.webp" media="(max-aspect-ratio: 2/1)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
+                    photo4template['source_srcset']+='<source srcset="{image_url_base}_arvert.webp" media="(max-aspect-ratio: 1/1)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
                     
                 if 'ORIGINALFILE' not in image['url']:
-                    photo4template['source_srcset']+='<source srcset="{image_url_base}.webp" type="image/webp">'.format(image_url_base=photo4template['image_url_base']) +"\n"
+                    photo4template['source_srcset']+='<source srcset="{image_url_base}.webp"  media="(min-aspect-ratio: 1/1)" type="image/webp">'.format(image_url_base=photo4template['image_url_base']) +"\n"
                 else:
                     photo4template['source_srcset']=''
                 
@@ -500,13 +497,8 @@ class Website_generator():
                 )
                 leaflet_geojson_part = {
                 "type": "Feature",
-                "properties": {
-                    "popupContent":popup_content
-                },
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [photo4template['lon'], photo4template['lat']]
-                }
+                "properties": {"popupContent":popup_content},
+                "geometry": { "type": "Point", "coordinates": [photo4template['lon'], photo4template['lat']]}
                 }
                 if photo4template['lon'] != 0:
                     leaflet_geojson_features.append(leaflet_geojson_part)
@@ -556,7 +548,7 @@ class Website_generator():
     "type": "FeatureCollection",
     "features":leaflet_geojson_features
     }
-            leaflet_geojson_text = 'var photos = '+json.dumps(leaflet_geojson, indent=4, sort_keys=True)+';'
+            leaflet_geojson_text = 'var photos = '+json.dumps(leaflet_geojson, indent=None, sort_keys=True)+';'
             
             map_js = '''
             
