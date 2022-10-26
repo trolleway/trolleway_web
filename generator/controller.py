@@ -362,6 +362,8 @@ class Website_generator():
 <noscript><div><img src="https://mc.yandex.ru/watch/55429573" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
                 '''
+                
+
 
                 image['url'] = image['url_hotlink']
 
@@ -464,15 +466,14 @@ class Website_generator():
                 if photo4template['city'] != '': photo4template['city']+='.'
                 if photo4template['sublocation'] != '': photo4template['sublocation']+='.'
 
+                schema_org_js = '''<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"ImageObject","contentUrl":"{contentUrl}","license":"https:\/\/creativecommons.org\/licenses\/by\/4.0","acquireLicensePage":"{page_url}"}</script>'''
+                schema_org_js=schema_org_js.replace('{contentUrl}',photo4template['image_url'])
+                schema_org_js=schema_org_js.replace('{page_url}',photo4template['page_url_absolute'].replace('/','\/'))
+                photo4template['schema_org_js'] = schema_org_js
+                
                 photos4template.append(photo4template)
-                '''
-                	<picture>
-	<source srcset="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008_ar169.webp" media="(min-aspect-ratio: 15/9)" type="image/webp">
-	<source srcset="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008_arvert.webp" media="(max-aspect-ratio: 2/1)" type="image/webp">  
-	<source srcset="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008.webp" type="image/webp"> 
-	<img class="stack__element" src="https://trolleway.com/storage/2018/2018-12_novosibirsk/20181217_0008.jpg" alt="">
-	</picture>
-                '''
+                #----------- end of photo page content
+
 
                 with open(template_filepath, encoding='utf-8') as template_file:
                     template = template_file.read()
@@ -483,12 +484,13 @@ class Website_generator():
                     text_file.write(html)
 
                 if not data.get('hide'):
-                    sitemap_page_record={'loc':photo4template['page_url_absolute']+'','priority':'0.4', 'image_url':photo4template['image_url']+''}
+                    sitemap_page_record={'loc':photo4template['page_url_absolute']+'', 'image_url':photo4template['image_url']+''} #'priority':'0.4',
                     if data.get('date_append'):
                         sitemap_page_record['lastmod']=data.get('date_append')
                     else:
                         sitemap_page_record['lastmod']=GALLERY_DATE_MOD
                     pages2sitemap.append(sitemap_page_record)
+                    
 
                 popup_content = '<a href="{href}"><img src="{thumbnail}"><p>{title}</a>'.format(
                 href=photo4template['uri']+'.htm',
@@ -574,9 +576,6 @@ if (feature.properties && feature.properties.popupContent) {
 layer.bindPopup(popupContent,{maxWidth : 800});
 }
 
-//L.geoJson(photos,{onEachFeature: onEachFeature}).addTo(map);
-
-
 var geojsonMarkerOptions = {
 	radius: 8,
 	fillColor: "#ff7800",
@@ -586,13 +585,14 @@ var geojsonMarkerOptions = {
 	fillOpacity: 0.8
 };
 
-L.geoJSON(photos, {
+var layer_photos = L.geoJSON(photos, {
     onEachFeature: onEachFeature,
 	pointToLayer: function (feature, latlng) {
 		return L.circleMarker(latlng, geojsonMarkerOptions);
 	}
-}).addTo(map);
-
+})
+layer_photos.addTo(map);
+map.fitBounds(layer_photos.getBounds());
 
             '''
 
@@ -674,8 +674,8 @@ L.geoJSON(photos, {
                     if '.jpg.jpg' in page['image_url']: print(page['image_url'])
                 else:
                     imgurl = ''
-                out += "<url><loc>{url}</loc>{imgurl}<lastmod>{lastmod}</lastmod><priority>{priority}</priority></url>\n".format(
-                url=page['loc'],imgurl=imgurl,priority=page['priority'],lastmod=page.get('lastmod',''))
+                out += "<url><loc>{url}</loc>{imgurl}<lastmod>{lastmod}</lastmod></url>\n".format(
+                url=page['loc'],imgurl=imgurl,lastmod=page.get('lastmod',''))
 
             out = out.replace('<lastmod></lastmod>','')
             text_file.write(sitemap_template.replace('<!--GENERATED SITEMAP CONTENT FROM PYTHON-->',out))
