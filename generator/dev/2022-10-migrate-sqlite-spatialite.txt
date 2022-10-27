@@ -13,4 +13,4 @@ spatialite web.spatialite.sqlite
 
 
 SELECT AddGeometryColumn('photos', 'geom',  4326, 'POINT', 'XY');
-UPDATE photos SET geom = ST_GeomFromText(wkt_geometry);
+UPDATE photos SET geom = ST_GeomFromText(wkt_geometry,4326);

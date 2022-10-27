@@ -466,7 +466,7 @@ class Website_generator():
                 if photo4template['city'] != '': photo4template['city']+='.'
                 if photo4template['sublocation'] != '': photo4template['sublocation']+='.'
 
-                schema_org_js = '''<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"ImageObject","contentUrl":"{contentUrl}","license":"https:\/\/creativecommons.org\/licenses\/by\/4.0","acquireLicensePage":"{page_url}, 
+                schema_org_js = '''<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"ImageObject","contentUrl":"{contentUrl}","license":"https:\/\/creativecommons.org\/licenses\/by\/4.0","acquireLicensePage":"{page_url}", 
                 "creator": {"@type": "Person","name": "Artem Svetlov"},
                 "contentLocation": {"@type": "Place", "geo": {    "@type": "GeoCoordinates",    "latitude": "{lat}",    "longitude": "{lon}"  }}"}</script>'''
                 schema_org_js=schema_org_js.replace('{contentUrl}',photo4template['image_url'])
