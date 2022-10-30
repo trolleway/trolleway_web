@@ -382,7 +382,7 @@ class Website_generator():
                             caption_location = image['objectname']
 
                     
-                if 'sublocation' in image:
+                if 'sublocation' in image and image['sublocation'] is not None:
                     if image['sublocation'] not in caption_location:
                         if caption_location != '':
                             caption_location = caption_location + ', ' + image['sublocation']
@@ -464,6 +464,7 @@ class Website_generator():
                 
                 
                 if photo4template['city'] != '': photo4template['city']+='.'
+                assert photo4template['sublocation'] is not None, photo4template
                 if photo4template['sublocation'] != '': photo4template['sublocation']+='.'
 
                 schema_org_js = '''<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"ImageObject","contentUrl":"{contentUrl}","license":"https:\/\/creativecommons.org\/licenses\/by\/4.0","acquireLicensePage":"{page_url}", 
@@ -489,10 +490,11 @@ class Website_generator():
 
                 if not data.get('hide'):
                     sitemap_page_record={'loc':photo4template['page_url_absolute']+'', 'image_url':photo4template['image_url']+''} #'priority':'0.4',
-                    if data.get('date_append'):
-                        sitemap_page_record['lastmod']=data.get('date_append')
-                    else:
-                        sitemap_page_record['lastmod']=GALLERY_DATE_MOD
+                    #if data.get('update_timestamp'):
+                    #    sitemap_page_record['lastmod']=data.get('update_timestamp')[0:10]
+                    #else:
+                    #    sitemap_page_record['lastmod']=data.get('date_append')
+                    sitemap_page_record['lastmod']=data.get('date_append')
                     pages2sitemap.append(sitemap_page_record)
                     
 

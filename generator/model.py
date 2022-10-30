@@ -391,14 +391,14 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['uri_next']=uris[counter+1]
                 
                 if db_photo.get('caption'): image['caption'] = db_photo.get('caption')
-                city = db_photo.get('city')
-                if city != '':
+                city = db_photo.get('city','')
+                if city != '' and city is not None:
                     if city in locations:
                         city = locations[city]                
                     image['city']=city
                     
-                sublocation = db_photo.get('sublocation')
-                if sublocation != '':
+                sublocation = db_photo.get('sublocation','')
+                if sublocation != '' and sublocation is not None:
                     if sublocation in locations:
                         sublocation = locations[sublocation]                
                     image['sublocation']=sublocation
@@ -432,6 +432,9 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['ar169'] = True
                 if db_photo.get('has_arvert',0)  is not None and db_photo.get('has_arvert',0)>0 :
                     image['arvert'] = True
+                if db_photo.get('update_timestamp') is not None:
+                    image['update_timestamp'] = db_photo.get('update_timestamp')                    
+                    
                
                 images.append(image)
                 counter = counter + 1
