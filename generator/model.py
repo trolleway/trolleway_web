@@ -63,6 +63,7 @@ class Model():
                 lat=self.dms_to_dd(lat_dms[0],lat_dms[1],lat_dms[2])
                 lon_dms=image_exif.gps_longitude
                 lon=self.dms_to_dd(lon_dms[0],lon_dms[1],lon_dms[2])
+                
 
                 photo_coord=str(lat)+','+str(lon)
 
@@ -72,16 +73,22 @@ class Model():
                 coord = list()
                 coord.append(round(float(lat), 5))# , round(float(lon), 4))
                 coord.append(round(float(lon), 5))# , round(float(lon), 4))
+        
+                direction = None
+                if 'gps_img_direction' in image_exif.list_all():
+                    try:
+                        direction=round(float(image_exif.gps_img_direction))
+                    except:
+                        direction = None
 
-
-                return  round(float(lat), 5), round(float(lon), 5)
+                return  round(float(lat), 5), round(float(lon), 5), direction
 
         except:
 
             photo_coord='0,0'
             lat='0'
             lon='0'
-            return None, None
+            return None, None, None
   
     def locations2dict(self):
         cur = self.con.cursor()
@@ -141,11 +148,12 @@ class Model():
                 if city is not None: image['city']=city
                 if sublocation is not None: image['sublocation']=sublocation
 
-                lat,lon=self.image2latlon(os.path.join(root,filename))
+                lat,lon,direction=self.image2latlon(os.path.join(root,filename))
                 photo_datetime = self.image2datetime(os.path.join(root,filename))
                 
 
                 image['wkt_geometry']=wkt.dumps(Point(lon or 0,lat or 0),rounding_precision=5)
+                image['direction'] = direction or 'Null'
                 image['datetime']=photo_datetime
                 if objectname is not None:  image['objectname']=objectname
                 
@@ -170,8 +178,8 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
             
-            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation, objectname, inserting_id, wkt_geometry, datetime, date_append, pages, has_ar169, has_arvert)
-            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}", "{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert} );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert)
+            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert} );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
@@ -183,6 +191,7 @@ class Model():
                 sublocation = image.get('sublocation',''),
                 has_ar169 = image.get('has_ar169'),
                 has_arvert = image.get('has_arvert'),
+                direction = image.get('direction'),
                 objectname = image.get('objectname','').replace('"','""')
                 )
 
@@ -218,10 +227,10 @@ class Model():
             caption_file.write(sql)
         self.logger.info('sql saved to '+sql_file)
         
-        sql_file = "tmp_custom.sql"
-        with open(sql_file, "w") as caption_file:
-            caption_file.write(sql_custom)
-        self.logger.info('sql saved to '+sql_file)
+        #sql_file = "tmp_custom.sql"
+        #with open(sql_file, "w") as caption_file:
+        #    caption_file.write(sql_custom)
+        #self.logger.info('sql saved to '+sql_file)
 
         return
 
