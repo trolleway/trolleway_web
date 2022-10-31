@@ -1,7 +1,7 @@
-apt install sqlite3
+apt install sqlite3 spatialite-bin
 sqlite3 web.sqlite
 
-.output dev/dump.sqlite
+.output dev/dump.sql
 .dump
 .exit
 
@@ -9,8 +9,13 @@ create spatialite 5.0.1
 
 
 spatialite web.spatialite.sqlite
-.read dump.sqlite UTF-8
+.read dump.sql UTF-8
+.exit
 
+# tables used by website still with WKT. New tables will with WKB geometry will be added in QGIS and call in queryes
 
+Manual add geometry column 
 SELECT AddGeometryColumn('photos', 'geom',  4326, 'POINT', 'XY');
 UPDATE photos SET geom = ST_GeomFromText(wkt_geometry,4326);
+
+but DBeaver not read geometry from WKB format
