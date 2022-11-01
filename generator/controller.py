@@ -407,8 +407,11 @@ class Website_generator():
                 else:
                     lens = ''
                     
+                #dirty generation of caption, but quick to implement
+                tech_info = ''
                 tech_info = ', '.join([film,lens])
                 tech_info = tech_info.replace(' ,',',')
+                if tech_info == ', ': tech_info = ''
                 
                 licenses_footer = dict()
                 licenses_footer['cc-by']='''       <a rel="cc:attributionURL" property="dc:title">Photo</a> by

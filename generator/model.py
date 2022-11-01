@@ -221,7 +221,6 @@ class Model():
 
         #sql+="COMMIT;"
 
-        print(sql)
         sql_file = "tmp_add_page.sql"
         with open(sql_file, "w") as caption_file:
             caption_file.write(sql)
@@ -311,6 +310,8 @@ photos.caption ,
 photos.objectname ,
 COALESCE(locations_city.name_ru, photos.city) AS city ,
 COALESCE(locations_sublocation.name_ru, photos.sublocation) AS sublocation ,
+photos.city AS city_int,
+photos.sublocation AS sublocation_int,
 photos.inserting_id ,
 photos.wkt_geometry ,
 photos.datetime ,
@@ -390,6 +391,7 @@ LEFT JOIN licenses ON licenses.id = photos.license;
             counter = 0
             for row2 in cur_photos.execute(sql):
                 db_photo = dict(row2)
+                assert 'city_int' in db_photo
                 
                 image={  "url_hotlink": db_photo['hotlink']
                 }
@@ -428,7 +430,10 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['license'] = db_photo.get('license_code')  
                     
                 if db_photo.get('caption_en') is not None:
-                    image['caption_en'] = db_photo.get('caption_en')
+                    image['caption_en'] = (db_photo.get('caption_en') or '') + ' '+(db_photo.get('city_int') or '') + ' '+(db_photo.get('sublocation_int') or '')
+
+                    
+
                 if db_photo.get('lens') is not None:
                     image['lens'] = db_photo.get('lens')
                 if db_photo.get('film') is not None:
