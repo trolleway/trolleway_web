@@ -7,7 +7,8 @@ if __name__ == "__main__":
     #processor = Website_generator()
     #processor.json_from_dir('/opt/storage/2022/2022-07_moscow','https://trolleway.com/storage')
     model = Model()
-    model.dir2db('/opt/storage/2022/2022-08-14-habarovsk','https://trolleway.com/storage')
+    model.dir2db('/opt/storage/2022/2022-08-23-vladivostok','https://trolleway.com/storage')
+    #model.dir2db('/opt/storage/2022/2022-08-14-habarovsk','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2022/2022-08-11-sakhalin','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2006/2006-04-ikarus-280','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2003/2003-03-tatrat7','https://trolleway.com/storage')
@@ -42,9 +43,3 @@ if __name__ == "__main__":
     #model.dir2db('/opt/storage/2022/2022-07_moscow','https://trolleway.com/storage')
     
     
-    
-    '''
-    Alapaevsk narrow gauge railway is most lenght and vitable narrow gauge railway in Russia. Railway server three distant villages, instead of just carry wood like others industrial narrow gauge lines. 
-    Railway build in Urals industrial region for delivery charcoal to small iron foundrys in Alapaevsk town. In 1920-s railway switched to carry wood from taiga forest.
-    Passenger train on whole line runs at night. Photos made during a railway tour provided by <a href="poezdnaprokat.ru">Poezd Naprokat</a>
-    '''
