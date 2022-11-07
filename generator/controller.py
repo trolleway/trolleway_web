@@ -434,7 +434,7 @@ class Website_generator():
                 photo4template['thumbnail_jpg']=photo4template['image_url_base']+'.t.jpg'
                 photo4template['caption']=caption_location
                 photo4template['caption_en']=image.get('caption_en','')
-                photo4template['title']=caption_location
+                photo4template['title']=image.get('title') or caption_location
                 photo4template['url_left']=url_left
                 photo4template['url_right']=url_right
                 photo4template['rel_left']=rel_left

@@ -14,6 +14,10 @@ from exif import Image
 from datetime import datetime
 from dateutil import parser
 from tqdm import tqdm
+import copy
+import pprint
+
+
 
 class Model():
 
@@ -294,6 +298,32 @@ ORDER BY pages.uri, photos_pages."order";
             json_str = json.dumps(pages_data, ensure_ascii=False,indent = 1).encode('utf8')
             outfile.write(json_str)
         
+    def make_location_string(self,db_photo):
+        
+        if db_photo['city'] is None and db_photo['sublocation'] is None: return None
+        if db_photo['sublocation'] is not None:
+            out = db_photo['sublocation']
+            
+    def direction2text(self,direction,mode='reverse'):
+        name=None
+        direction = int(direction)
+        if mode=='reverse':
+            direction = direction-180
+            if direction<0: direction=direction+360
+        if direction > (45*1-(45/2)) and direction < (45*1+(45/2)): name = 'северо-восток'
+        if direction > (45*2-(45/2)) and direction < (45*2+(45/2)): name = 'восток'
+        if direction > (45*3-(45/2)) and direction < (45*3+(45/2)): name = 'юго-восток'
+        if direction > (45*4-(45/2)) and direction < (45*4+(45/2)): name = 'юг'
+        if direction > (45*5-(45/2)) and direction < (45*5+(45/2)): name = 'юго-запад'
+        if direction > (45*6-(45/2)) and direction < (45*6+(45/2)): name = 'запад'
+        if direction > (45*7-(45/2)) and direction < (45*7+(45/2)): name = 'северо-запад'
+        if direction > (45*7+(45/2)) or direction < (45*1-(45/2)): name = 'север'
+        
+        if mode=='reverse':
+            name = name+'а'
+        
+        return name
+        
         
     def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content')):
         cur_pages = self.con.cursor()
@@ -306,17 +336,19 @@ ORDER BY pages.uri, photos_pages."order";
         CREATE VIEW view_photos AS SELECT 
 photos.photoid ,
 photos.hotlink ,
-photos.caption ,
-photos.objectname ,
+NULLIF(photos.caption,'') AS caption ,
+NULLIF(photos.objectname,'') AS objectname ,
 COALESCE(locations_city.name_ru, photos.city) AS city ,
 COALESCE(locations_sublocation.name_ru, photos.sublocation) AS sublocation ,
 photos.city AS city_int,
 photos.sublocation AS sublocation_int,
 photos.inserting_id ,
 photos.wkt_geometry ,
+NULLIF(photos.direction,'') AS direction,
+NULLIF(photos.direction_inout,0) AS direction_inout,
 photos.datetime ,
-photos.tags ,
-photos.pages ,
+NULLIF(photos.tags,'') AS tags ,
+NULLIF(photos.pages,'') AS pages ,
 photos.date_append,
 photos.caption_en,
 photos.has_ar169,
@@ -383,10 +415,128 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                            
                 sql = sql.format(uri=db_page['uri'])
                 
+            #list of urls for prev/next links    
             uris = list()
             for row2 in cur_photos.execute(sql):
                 db_photo = dict(row2)
                 uris.append(self.id2uri(db_photo['photoid']))
+                
+            #make unique html title in python
+            title_calc_list = list()
+            new_titles_dict = dict()
+            for row2 in cur_photos.execute(sql):
+                db_photo = dict(row2)
+                
+                title = db_photo['objectname'] or db_photo['caption'] or ''
+                if '.' in title:
+                    title = title.split('.')[0]
+                
+                if db_photo['sublocation'] is not None:
+                    if db_photo['sublocation'] not in title:
+                        if title != '':
+                            title += ', '+db_photo['sublocation']
+                        else:
+                            title = db_photo['sublocation']  
+                            
+                if db_photo['city'] is not None:
+                    if db_photo['city'] not in title:
+                        if title != '':
+                            title += ', '+db_photo['city']
+                        else:
+                            title = db_photo['city']   
+                title += ', фото '+db_photo['datetime'][0:4]+' года'
+
+                title = title.replace('.,','.')
+                title_calc_dict =  copy.deepcopy(db_photo)
+                title_calc_dict['title']=title
+                title_calc_list.append(title_calc_dict)
+                new_titles_dict[db_photo['photoid']]=title
+            #detect same titles and upgrade it to unique for SEO experiment
+            photos = list()
+            for row2 in cur_photos.execute(sql):
+                photos.append(dict(row2))
+                
+            
+            dublicated_titles_clusters = dict()
+            for photoid in new_titles_dict:
+                if new_titles_dict[photoid] not in dublicated_titles_clusters:
+                    dublicated_titles_clusters[new_titles_dict[photoid]]=[photoid]
+                else:
+                    dublicated_titles_clusters[new_titles_dict[photoid]].append(photoid)
+
+
+            for key in dublicated_titles_clusters:
+                if len(dublicated_titles_clusters[key]) == 1:
+                    continue
+                #print(key,dublicated_titles_clusters[key])
+                
+                #add direction text if exist
+                for photoid in dublicated_titles_clusters[key]:
+                    for db_photo in photos:
+                        if db_photo['photoid']==photoid:
+                            if db_photo['direction'] is not None:
+                                if db_photo['direction_inout'] == 1:
+                                    new_title = key + ', вид на '+self.direction2text(int(db_photo['direction']),mode='to')
+                                else:
+                                    new_title = key + ', вид c '+self.direction2text(int(db_photo['direction']),mode='reverse')
+                                new_titles_dict[photoid]=new_title
+            if len(new_titles_dict)>0:
+                print('----- newnames ')
+                print(new_titles_dict)
+            print()
+              
+
+            #add <s>frist</s> <s>last</s> frist diffirencing part of filename
+            dublicated_titles_clusters = dict()
+            for photoid in new_titles_dict:
+                if new_titles_dict[photoid] not in dublicated_titles_clusters:
+                    dublicated_titles_clusters[new_titles_dict[photoid]]=[photoid]
+                else:
+                    dublicated_titles_clusters[new_titles_dict[photoid]].append(photoid)
+            
+            new_suffixes=dict()
+            for key in dublicated_titles_clusters:
+                if len(dublicated_titles_clusters[key]) == 1:
+                    continue
+                print(key,dublicated_titles_clusters[key])
+                cleaned_filenames = list()
+                for photoid in dublicated_titles_clusters[key]:
+                    for db_photo in photos:
+                        if db_photo['photoid']==photoid:
+                            uri=db_photo['hotlink']
+                            filename=uri.replace('_','-').replace('-ORIGINALFILE','').replace('-ar169','').replace('-arvert','').split('/')[-1].split('.')[0]
+                            filename=filename.strip('-')
+                            print(filename)
+                            cleaned_filenames.append(filename)
+                counter = 0
+                for photoid in dublicated_titles_clusters[key]:
+                    filename_current = cleaned_filenames[counter]
+                    if counter<len(cleaned_filenames)-1:
+                        filename_other = cleaned_filenames[counter+1]
+                    else:
+                        filename_other = cleaned_filenames[counter-1]
+                    fla=filename_current.split('-')
+                    flb=filename_other.split('-')
+
+                    for partnum in range(len(fla)):
+                        if (partnum <  len(flb)-1) and (fla[partnum]==flb[partnum]):
+                            continue
+                        else:
+                            unique_filename_part = fla[partnum]
+                    new_suffixes[photoid]=unique_filename_part
+                        
+                    
+                    counter=counter+1
+                    new_titles_dict[photoid]+=' '+unique_filename_part
+            print(new_suffixes)
+            
+            if len(new_titles_dict)>0:
+                print('----- newnames stage2 ')
+                pp = pprint.PrettyPrinter(indent=1)
+                pp.pprint(new_titles_dict)
+            print()           
+
+
             
             counter = 0
             for row2 in cur_photos.execute(sql):
@@ -396,6 +546,9 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                 image={  "url_hotlink": db_photo['hotlink']
                 }
                 image['uri']=uris[counter]
+                image['title']=new_titles_dict[db_photo['photoid']]
+                if db_photo['tags'] is not None:
+                    image['title'] += ': '+db_page['title']
                 if counter > 0:
                     image['uri_prev']=uris[counter-1]
                 if counter < len(uris)-1:
