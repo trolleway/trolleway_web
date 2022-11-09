@@ -48,8 +48,9 @@ def photo_thumbnail(src,dst,overwrite = False):
             subprocess.run(cmd)
     #apply exif tags from sidecar file if exist
     src_file_basepart = os.path.splitext(src)[0]
-    if os.path.isfile(src_file_basepart + 'xmp'):
-        cmd = ['exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xml', '-all:all' , path_resized]        
+    if os.path.isfile(src_file_basepart + '.xmp'):
+        cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
+        print(cmd)
         subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.webp')
@@ -88,7 +89,13 @@ def photo_thumbnail(src,dst,overwrite = False):
                 '-unsharp', '0.5x0.5+0.5+0.008',
                 path_resized]
             
-                subprocess.run(cmd)                
+                subprocess.run(cmd) 
+
+        #add metadata to webp. prorably not work due not implementation in exiftool
+        if os.path.isfile(src_file_basepart + '.xmp'):
+            cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
+            print(cmd)
+            subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.jpg')
     if not aspect_ratio_version:

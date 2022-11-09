@@ -497,7 +497,8 @@ class Website_generator():
                     #    sitemap_page_record['lastmod']=data.get('update_timestamp')[0:10]
                     #else:
                     #    sitemap_page_record['lastmod']=data.get('date_append')
-                    sitemap_page_record['lastmod']=data.get('date_append')
+                    
+                    #sitemap_page_record['lastmod']=data.get('date_append')
                     pages2sitemap.append(sitemap_page_record)
                     
 
