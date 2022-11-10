@@ -46,13 +46,15 @@ def photo_thumbnail(src,dst,overwrite = False):
             else:
                 cmd = ['convert', src , '-auto-orient' , '-compress', 'JPEG', '-quality', '70', path_resized]
             subprocess.run(cmd)
-    #apply exif tags from sidecar file if exist
-    src_file_basepart = os.path.splitext(src)[0]
-    if os.path.isfile(src_file_basepart + '.xmp'):
-        cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
-        print(cmd)
-        subprocess.run(cmd)
-
+            #add author
+            cmd = ['/opt/exiftool/exiftool', '-artist=Artem Svetlov', '-overwrite_original',  path_resized]      
+            subprocess.run(cmd)    
+            #apply exif tags from sidecar file if exist
+            src_file_basepart = os.path.splitext(src)[0]
+            if os.path.isfile(src_file_basepart + '.xmp'):
+                cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
+                subprocess.run(cmd)
+    
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.webp')
     if src.lower().endswith('.webp'):
         shutil.copy(src,path_resized)
@@ -91,11 +93,16 @@ def photo_thumbnail(src,dst,overwrite = False):
             
                 subprocess.run(cmd) 
 
-        #add metadata to webp. prorably not work due not implementation in exiftool
-        if os.path.isfile(src_file_basepart + '.xmp'):
-            cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
-            print(cmd)
-            subprocess.run(cmd)
+            #add metadata to webp. required exiftool 12
+            #add author
+            cmd = ['/opt/exiftool/exiftool', '-artist=Artem Svetlov', '-overwrite_original',  path_resized]      
+            subprocess.run(cmd)  
+            
+            src_file_basepart = os.path.splitext(src)[0]
+            if os.path.isfile(src_file_basepart + '.xmp'):
+                cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
+                print(cmd)
+                subprocess.run(cmd)
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.jpg')
     if not aspect_ratio_version:
