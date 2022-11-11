@@ -346,6 +346,7 @@ photos.inserting_id ,
 photos.wkt_geometry ,
 NULLIF(photos.direction,'') AS direction,
 NULLIF(photos.direction_inout,0) AS direction_inout,
+NULLIF(photos.print_direction,0) AS print_direction,
 photos.datetime ,
 NULLIF(photos.tags,'') AS tags ,
 NULLIF(photos.pages,'') AS pages ,
@@ -480,10 +481,7 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                                 else:
                                     new_title = key + ', вид c '+self.direction2text(int(db_photo['direction']),mode='reverse')
                                 new_titles_dict[photoid]=new_title
-            if len(new_titles_dict)>0:
-                print('----- newnames ')
-                print(new_titles_dict)
-            print()
+
               
 
             #add <s>frist</s> <s>last</s> frist diffirencing part of filename
@@ -528,13 +526,7 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     
                     counter=counter+1
                     new_titles_dict[photoid]+=' '+unique_filename_part
-            print(new_suffixes)
-            
-            if len(new_titles_dict)>0:
-                print('----- newnames stage2 ')
-                pp = pprint.PrettyPrinter(indent=1)
-                pp.pprint(new_titles_dict)
-            print()           
+ 
 
 
             
@@ -555,6 +547,8 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['uri_next']=uris[counter+1]
                 
                 if db_photo.get('caption'): image['caption'] = db_photo.get('caption')
+                
+                    
                 city = db_photo.get('city','')
                 if city != '' and city is not None:
                     if city in locations:
@@ -573,6 +567,16 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                         objectname = locations[objectname]                
                     image['objectname']=objectname
                 
+                if db_photo.get('print_direction')==1:
+                    if db_photo['direction'] is not None:
+                        if db_photo['direction_inout'] == 1:
+                            append =  ', вид на '+self.direction2text(int(db_photo['direction']),mode='to')
+                        else:
+                            append =  ', вид c '+self.direction2text(int(db_photo['direction']),mode='reverse')
+                        if db_photo.get('caption'): 
+                            image['caption'] += append
+                        elif image['objectname'] is not None:
+                            image['objectname'] += append
                 if db_photo.get('date_append') is not None:
                     image['date_append'] = db_photo.get('date_append')
                     
