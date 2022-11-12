@@ -575,7 +575,7 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                             append =  ', вид c '+self.direction2text(int(db_photo['direction']),mode='reverse')
                         if db_photo.get('caption'): 
                             image['caption'] += append
-                        elif image['objectname'] is not None:
+                        elif 'objectname' in image and image['objectname'] is not None:
                             image['objectname'] += append
                 if db_photo.get('date_append') is not None:
                     image['date_append'] = db_photo.get('date_append')
