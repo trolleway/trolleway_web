@@ -493,10 +493,8 @@ class Website_generator():
 
                 if not data.get('hide'):
                     sitemap_page_record={'loc':photo4template['page_url_absolute']+'', 'image_url':photo4template['image_url']+''} #'priority':'0.4',
-                    #if data.get('update_timestamp'):
-                    #    sitemap_page_record['lastmod']=data.get('update_timestamp')[0:10]
-                    #else:
-                    #    sitemap_page_record['lastmod']=data.get('date_append')
+                    if image.get('sitemap_lastmod'):
+                        sitemap_page_record['lastmod']=image.get('sitemap_lastmod')
                     
                     #sitemap_page_record['lastmod']=data.get('date_append')
                     pages2sitemap.append(sitemap_page_record)
@@ -681,7 +679,7 @@ map.fitBounds(layer_photos.getBounds());
             for page in pages2sitemap:
                 if 'image_url' in page:
                     imgurl='<image:image><image:loc>{url_image}</image:loc></image:image>'.format(url_image=page['image_url'])
-                    if '.jpg.jpg' in page['image_url']: print(page['image_url'])
+                    if '.jpg.jpg' in page['image_url']: print('invalid image hotlink: ',page['image_url'])
                 else:
                     imgurl = ''
                 out += "<url><loc>{url}</loc>{imgurl}<lastmod>{lastmod}</lastmod></url>\n".format(

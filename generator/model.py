@@ -348,6 +348,7 @@ NULLIF(photos.direction,'') AS direction,
 NULLIF(photos.direction_inout,0) AS direction_inout,
 NULLIF(photos.print_direction,0) AS print_direction,
 photos.datetime ,
+case when COALESCE(substr(photos.update_timestamp,0,11),substr(photos.date_append,0,11),NULL) > '2022-11-10' THEN COALESCE(substr(photos.update_timestamp,0,11),substr(photos.date_append,0,11),NULL) ELSE NULL END AS sitemap_lastmod,
 NULLIF(photos.tags,'') AS tags ,
 NULLIF(photos.pages,'') AS pages ,
 photos.date_append,
@@ -603,8 +604,8 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['ar169'] = True
                 if db_photo.get('has_arvert',0)  is not None and db_photo.get('has_arvert',0)>0 :
                     image['arvert'] = True
-                if db_photo.get('update_timestamp') is not None:
-                    image['update_timestamp'] = db_photo.get('update_timestamp')                    
+                if db_photo.get('sitemap_lastmod') is not None:
+                    image['sitemap_lastmod'] = db_photo.get('sitemap_lastmod')                    
                     
                
                 images.append(image)
