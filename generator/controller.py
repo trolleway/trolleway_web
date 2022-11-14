@@ -53,11 +53,9 @@ class Website_generator():
     <link href="../newsincerity.css" rel="stylesheet">
     <style>
     .bgimg-1 {bgimg}
-
     </style>
     </head>
     <body>
-
     <div class="bgimg-1">
     <div id="backwardlink"><a href="{url_left}" rel="{rel_left}" ><img src="../transparent.gif"></a></div>
     <div id="forwardlink"><a href="{url_right}" rel="{rel_right}" ><img src="../transparent.gif">{right_frist_image}</a></div>
@@ -67,7 +65,6 @@ class Website_generator():
         </span><br>
       </div>
     </div>
-
     <footer>
     <div id="map" style="width: 100%; height: 400px;"></div>
     <div id="copyright">
@@ -86,8 +83,6 @@ class Website_generator():
     </footer>
     </body>
     </html>
-
-
         '''
         return txt
 
@@ -297,29 +292,30 @@ class Website_generator():
                 map_center = image.get('center_map',photo_coord)
                 if str(image.get('center_map'))=='1':
                     map_center = photo_coord
-
-                map_js = '''
-            var photo_coord = ['''+photo_coord+''']
-            var map = L.map('map').setView(['''+map_center+'''], '''+data['map_zoom']+''');
-            var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
-                maxZoom: 18,
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            });
-            var tiles = OpenStreetMap_DE.addTo(map);
-            var circle = L.circle(photo_coord, {
-                color: 'red',
-                fillColor: '#f03',
-                fillOpacity: 0.5,
-                radius: 200
-            }).addTo(map).bindPopup('Гиперссылка на картографический сервис');
-                '''
+                if wkt_geometry is  None:
+                    map_js = ''
+                else:
+                    map_js = '''
+                var photo_coord = ['''+photo_coord+''']
+                var map = L.map('map').setView(['''+map_center+'''], '''+data['map_zoom']+''');
+                var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+                    maxZoom: 18,
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                });
+                var tiles = OpenStreetMap_DE.addTo(map);
+                var circle = L.circle(photo_coord, {
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 200
+                }).addTo(map).bindPopup('Гиперссылка на картографический сервис');
+                    '''
                 google_counter_trolleway_github = """<!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119801939-1"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'UA-119801939-1');
         </script>"""
                 google_counter = '''<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -328,7 +324,6 @@ class Website_generator():
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-3J5MD6L525');
 </script>'''
                 yandex_counter_trolleway_github_io = '''<!-- Yandex.Metrika counter -->
@@ -336,7 +331,6 @@ class Website_generator():
            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
            ym(87742115, "init", {
                 clickmap:true,
                 trackLinks:true,
@@ -352,7 +346,6 @@ class Website_generator():
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
    ym(55429573, "init", {
         clickmap:true,
         trackLinks:true,
@@ -465,12 +458,10 @@ class Website_generator():
                 else:
                     photo4template['source_srcset']=''
                     
-                #if image.get('canonical_url'):    
-                #    photo4template['canonical_url']= '<link rel="canonical" href="{canonical_url}" />'.format(canonical_url=canonical_url)
-                #else:
-                #    photo4template['canonical_url'] = ''
-                photo4template['canonical_url'] = ''
-                
+                if image.get('canonical_url'):
+                     photo4template['canonical_url']='<link rel="canonical" href="{canonical_url}" />'.format(canonical_url=image.get('canonical_url'))
+                else:
+                    photo4template['canonical_url']=''
                 
                 if photo4template['city'] != '': photo4template['city']+='.'
                 assert photo4template['sublocation'] is not None, photo4template
@@ -570,7 +561,6 @@ class Website_generator():
             
   // initialize the map
   var map = L.map('map').setView([37.35, 55.08], 3);
-
 var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 	maxZoom: 18,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -582,14 +572,11 @@ var tiles = OpenStreetMap_DE.addTo(map);
             
 function onEachFeature(feature, layer) {
 var popupContent = '' ; // make string from variables 
-
 if (feature.properties && feature.properties.popupContent) {
     popupContent += feature.properties.popupContent;
 }
-
 layer.bindPopup(popupContent,{maxWidth : 800});
 }
-
 var geojsonMarkerOptions = {
 	radius: 8,
 	fillColor: "#ff7800",
@@ -598,7 +585,6 @@ var geojsonMarkerOptions = {
 	opacity: 1,
 	fillOpacity: 0.8
 };
-
 var layer_photos = L.geoJSON(photos, {
     onEachFeature: onEachFeature,
 	pointToLayer: function (feature, latlng) {
@@ -607,7 +593,6 @@ var layer_photos = L.geoJSON(photos, {
 })
 layer_photos.addTo(map);
 map.fitBounds(layer_photos.getBounds());
-
             '''
 
 

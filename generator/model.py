@@ -339,7 +339,7 @@ WHERE wkt_geometry LIKE '%(0.0%';
 
                         DROP VIEW  IF EXISTS view_canonical_urls;
         CREATE VIEW view_canonical_urls AS  
-        SELECT DISTINCT photoid, uri|| '/' || printf('%05d',photoid) || '.htm' AS canonical_url, wkt_geometry, direction, datetime FROM(
+        SELECT DISTINCT photoid, uri|| '/' || 'I'|| printf('%05d',photoid) || '.htm' AS canonical_url, wkt_geometry, direction, datetime FROM(
 SELECT photos.photoid,
 pages.uri,
 pages.page_group ,
