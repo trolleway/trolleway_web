@@ -330,8 +330,46 @@ ORDER BY pages.uri, photos_pages."order";
         cur_photos = self.con.cursor()
 
         locations = self.locations2dict()
-        
+
         sql = '''
+        -- clean zero geometry
+UPDATE photos
+SET wkt_geometry = NULL
+WHERE wkt_geometry LIKE '%(0.0%';
+
+                        DROP VIEW  IF EXISTS view_canonical_urls;
+        CREATE VIEW view_canonical_urls AS  
+        SELECT DISTINCT photoid, uri|| '/' || printf('%05d',photoid) || '.htm' AS canonical_url, wkt_geometry, direction, datetime FROM(
+SELECT photos.photoid,
+pages.uri,
+pages.page_group ,
+photos.wkt_geometry,
+photos.direction,
+photos.datetime 
+FROM photos JOIN pages ON photos.pages = pages.uri AND pages.source='photos' AND pages.hidden=0
+
+UNION 
+SELECT photos.photoid,
+pages.uri,
+pages.page_group ,
+photos.wkt_geometry,
+photos.direction,
+photos.datetime 
+FROM photos JOIN pages ON photos.tags = pages.uri AND pages.source='tags' AND pages.hidden=0
+
+UNION 
+SELECT photos.photoid,
+pages.uri,
+pages.page_group ,
+photos.wkt_geometry,
+photos.direction,
+photos.datetime 
+FROM photos JOIN pages JOIN photos_pages
+WHERE photos.photoid = photos_pages.photoid AND photos_pages.pageid = pages.pageid  AND pages.source='photos_pages' AND pages.hidden=0
+ORDER BY photoid, page_group ASC
+)
+GROUP BY photoid;
+
         DROP VIEW  IF EXISTS view_photos;
         CREATE VIEW view_photos AS SELECT 
 photos.photoid ,
@@ -355,11 +393,13 @@ photos.date_append,
 photos.caption_en,
 photos.has_ar169,
 photos.has_arvert,
-licenses.code AS license_code
+licenses.code AS license_code,
+view_canonical_urls.canonical_url AS canonical_url
 FROM photos 
 LEFT OUTER JOIN locations locations_city ON locations_city.name_int = photos.city 
 LEFT OUTER JOIN locations locations_sublocation ON locations_sublocation.name_int = photos.sublocation
-LEFT JOIN licenses ON licenses.id = photos.license;
+LEFT JOIN licenses ON licenses.id = photos.license
+LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.photoid ;
         '''
         cur_photos.executescript(sql)
 
@@ -548,6 +588,8 @@ LEFT JOIN licenses ON licenses.id = photos.license;
                     image['uri_next']=uris[counter+1]
                 
                 if db_photo.get('caption'): image['caption'] = db_photo.get('caption')
+                if db_page['uri'] not in db_photo.get('canonical_url','') and db_photo.get('canonical_url') is not None:
+                    image['canonical_url'] = 'https://trolleway.com/reports/'+db_photo.get('canonical_url')
                 
                     
                 city = db_photo.get('city','')

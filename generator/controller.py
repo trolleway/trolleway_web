@@ -464,6 +464,12 @@ class Website_generator():
                     photo4template['source_srcset']+='<source srcset="{image_url_base}.webp"  media="(min-aspect-ratio: 1/1)" type="image/webp">'.format(image_url_base=photo4template['image_url_base']) +"\n"
                 else:
                     photo4template['source_srcset']=''
+                    
+                #if image.get('canonical_url'):    
+                #    photo4template['canonical_url']= '<link rel="canonical" href="{canonical_url}" />'.format(canonical_url=canonical_url)
+                #else:
+                #    photo4template['canonical_url'] = ''
+                photo4template['canonical_url'] = ''
                 
                 
                 if photo4template['city'] != '': photo4template['city']+='.'
