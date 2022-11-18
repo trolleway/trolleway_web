@@ -11,8 +11,9 @@ RUN groupadd -g $gid trolleway && useradd --home /home/trolleway -u $uid -g $gid
 RUN echo 'trolleway:user' | chpasswd
 
 
-RUN apt-get update && apt-get install --no-install-recommends -y python3-pip time imagemagick parallel
-RUN pip3 install exif iptcinfo3 requests shapely python-dateutil tqdm
+RUN apt-get update && apt-get install --no-install-recommends -y python3-pip time imagemagick parallel gdal-bin git
+RUN pip3 install exif iptcinfo3 requests shapely python-dateutil tqdm GDAL
+RUN pip3 install --upgrade --force-reinstall git+https://github.com/nextgis/pyngw.git
 
 #RUN apt-get install -y exiftool
 #install latest exiftool for webp write from https://exiftool.org/forum/index.php?topic=11619.0 https://github.com/marco-schmidt/am/blob/c5b7904cdd1629f08caac09e90f0f53a2393ca1b/Dockerfile#L30

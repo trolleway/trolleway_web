@@ -3,7 +3,7 @@
 
 import json
 import logging
-import os
+import os, subprocess
 import sqlite3
 
 from shapely import wkt
@@ -107,7 +107,11 @@ class Model():
     def dir2db(self,path,base_url=''):
 
         today = datetime.today()
+        cmd = ['python3', 'generator/thumbnails-parallel.py','--path',path.replace('/storage/','/images_origins/')]
+        subprocess.run(cmd)
+
         assert os.path.isdir(path)
+        
 
         for (root,dirs,files) in os.walk(path):
             images = list()
@@ -337,9 +341,9 @@ UPDATE photos
 SET wkt_geometry = NULL
 WHERE wkt_geometry LIKE '%(0.0%';
 
-                        DROP VIEW  IF EXISTS view_canonical_urls;
-        CREATE VIEW view_canonical_urls AS  
-        SELECT DISTINCT photoid, uri|| '/' || 'I'|| printf('%05d',photoid) || '.htm' AS canonical_url, wkt_geometry, direction, datetime FROM(
+DROP VIEW IF EXISTS view_canonical_urls;
+CREATE VIEW view_canonical_urls AS  
+SELECT DISTINCT photoid, uri|| '/' || 'I'|| printf('%05d',photoid) || '.htm' AS canonical_url, wkt_geometry, direction, datetime FROM(
 SELECT photos.photoid,
 pages.uri,
 pages.page_group ,
@@ -369,6 +373,15 @@ WHERE photos.photoid = photos_pages.photoid AND photos_pages.pageid = pages.page
 ORDER BY photoid, page_group ASC
 )
 GROUP BY photoid;
+
+DROP VIEW IF EXISTS view_photos_geodata;
+CREATE VIEW view_photos_geodata AS  
+SELECT photoid, 'https://trolleway.com/reports/' || replace(replace(replace(canonical_url,
+    " ", "%20"),
+    "(", "%28"),
+    ")", "%29")  AS canonical_url, wkt_geometry, direction, datetime FROM view_canonical_urls
+WHERE wkt_geometry IS NOT NULL;
+
 
         DROP VIEW  IF EXISTS view_photos;
         CREATE VIEW view_photos AS SELECT 
@@ -402,6 +415,21 @@ LEFT JOIN licenses ON licenses.id = photos.license
 LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.photoid ;
         '''
         cur_photos.executescript(sql)
+        
+        cmd = '''
+        ogr2ogr \
+  -f "GPKG" -overwrite -progress html/temp_photos.gpkg \
+  generator/web.sqlite \
+  -sql \
+  "SELECT
+     *,
+     ST_GeomFromText(wkt_geometry, 4326) AS geometry
+   FROM
+     view_photos_geodata" \
+  -nln "photos" -s_srs EPSG:4326 -t_srs EPSG:4326
+        '''
+        os.system(cmd)
+
 
         sql = "SELECT COUNT(*) as count FROM pages WHERE hidden=0 ;"
         cur_pages.execute(sql)
