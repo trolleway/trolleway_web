@@ -507,9 +507,9 @@ class Website_generator():
                 "properties": {"popupContent":popup_content},
                 "geometry": { "type": "Point", "coordinates": [photo4template['lon'], photo4template['lat']]}
                 }
-                if photo4template['lon'] != 0:
+                if photo4template['lon'] != 0 and photo4template['lon'] is not None and photo4template['lon'] != 'null':
                     leaflet_geojson_features.append(leaflet_geojson_part)
-
+                    
             if not data.get('hide'):
                 sitemap_page_record={'loc':self.sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
                 sitemap_page_record['lastmod']=GALLERY_DATE_MOD

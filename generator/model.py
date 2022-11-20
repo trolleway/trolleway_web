@@ -36,6 +36,8 @@ class Model():
         cur.execute("SELECT * FROM photos ORDER BY photoid")
         results = cur.fetchall()
         assert len(results) > 0
+        
+        self.exiftool_path = '/opt/exiftool/exiftool'
 
     def dms_to_dd(self,d, m, s):
         dd = d + float(m)/60 + float(s)/3600
@@ -44,13 +46,20 @@ class Model():
 
     def image2datetime(self,path):
         with open(path, 'rb') as image_file:
-            image_exif = Image(image_file)
-            
             try:
+                image_exif = Image(image_file)
+            
                 dt_str = image_exif.get('datetime_original',None)
                 dt_obj = datetime.strptime(dt_str, '%Y:%m:%d %H:%M:%S')
             except:
                 dt_obj = None
+                cmd = [self.exiftool_path,path,'-datetimeoriginal','-csv']
+                exiftool_text_result =  subprocess.check_output(cmd)
+                tmp = exiftool_text_result.splitlines()[1].split(b',')
+                if len(tmp)>1:
+                    dt_str = tmp[1]
+                    dt_obj = datetime.strptime(dt_str.decode('UTF-8'), '%Y:%m:%d %H:%M:%S')
+                
             
 
             if dt_obj is None:
@@ -122,7 +131,7 @@ class Model():
                 if 'arvert' in filename: continue
                 filepath = os.path.join(root,filename)
                 
-                self.logger.debug(filename)
+                self.logger.debug(filepath)
                 temp_path = os.path.normpath(path)
                 path_as_list = temp_path.split(os.sep)
 
@@ -538,7 +547,6 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
             for key in dublicated_titles_clusters:
                 if len(dublicated_titles_clusters[key]) == 1:
                     continue
-                #print(key,dublicated_titles_clusters[key])
                 
                 #add direction text if exist
                 for photoid in dublicated_titles_clusters[key]:
@@ -565,7 +573,7 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
             for key in dublicated_titles_clusters:
                 if len(dublicated_titles_clusters[key]) == 1:
                     continue
-                print(key,dublicated_titles_clusters[key])
+
                 cleaned_filenames = list()
                 for photoid in dublicated_titles_clusters[key]:
                     for db_photo in photos:
@@ -573,7 +581,7 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
                             uri=db_photo['hotlink']
                             filename=uri.replace('_','-').replace('-ORIGINALFILE','').replace('-ar169','').replace('-arvert','').split('/')[-1].split('.')[0]
                             filename=filename.strip('-')
-                            print(filename)
+
                             cleaned_filenames.append(filename)
                 counter = 0
                 for photoid in dublicated_titles_clusters[key]:
