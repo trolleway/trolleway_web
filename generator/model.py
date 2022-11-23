@@ -415,6 +415,9 @@ photos.date_append,
 photos.caption_en,
 photos.has_ar169,
 photos.has_arvert,
+photos.lens,
+photos.medium,
+photos.film,
 licenses.code AS license_code,
 view_canonical_urls.canonical_url AS canonical_url
 FROM photos 
@@ -624,7 +627,7 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
                     image['uri_next']=uris[counter+1]
                 
                 if db_photo.get('caption'): image['caption'] = db_photo.get('caption')
-                if db_page['uri'] not in db_photo.get('canonical_url','') and db_photo.get('canonical_url') is not None:
+                if db_photo.get('canonical_url') is not None  and db_page['uri'] not in db_photo.get('canonical_url',''):
                     image['canonical_url'] = 'https://trolleway.com/reports/'+db_photo.get('canonical_url')
                 
                     

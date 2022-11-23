@@ -210,4 +210,5 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_respon
 }
 .photo_index_caption_en {
 	display: block;
+	text-align: center;
 }
