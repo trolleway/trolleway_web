@@ -6,13 +6,13 @@ import argparse
 
 
 
-def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False, path=None):
+def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False, subdir=None):
     '''
     create thumbnails for tree
     '''
     
-    if path:
-        optional_path = os.path.join(src_dir,path)
+    if subdir is not None:
+        optional_path = os.path.join(src_dir,subdir)
         assert os.path.isdir(optional_path),'must exist '+optional_path
     
     accepted_exts = ['.jpg','.jpeg','.tif','.tiff','.webp']
@@ -33,7 +33,8 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False, path
     convert_tuples = []
     
     source_dir = src_dir
-    if path: source_dir = optional_path
+    if subdir is not None: 
+        source_dir = optional_path
     for dirpath, dnames, fnames in os.walk(source_dir):
         for file in fnames:
             if file.lower().endswith(tuple(accepted_exts)) == False: continue
@@ -73,4 +74,4 @@ args = parser.parse_args()
 
 #thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True)
 #thumbnails_create('/home/trolleway/VirtualBoxShared/website-expose-transfer','/media/trolleway/UBUNTU 22_0/thumbnails',check_exists = True)
-thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True,squash = args.squash, path = args.path )
+thumbnails_create('/opt/images_origins','/opt/storage',check_exists = True,squash = args.squash, subdir = args.path )

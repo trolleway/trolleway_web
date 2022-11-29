@@ -1,13 +1,35 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import argparse, os
 from model import Model
 
+
+
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='Import directory with images, create thumbnails and make sql')
+
+    #parser.add_argument('--squash', required=False,  action='store_true')
+    #parser.add_argument('--no-squash', dest='squash', required=False,  action='store_false')
+    parser.add_argument('path',   help='path')
+
+
+    args = parser.parse_args()
+
+    if not os.path.isdir(args.path):
+        raise FileNotFoundError(args.path)
+
+
     #processor = Website_generator()
     #processor.json_from_dir('/opt/storage/2022/2022-07_moscow','https://trolleway.com/storage')
     model = Model()
-    model.dir2db('/opt/storage/2022/2022-11-vereya','https://trolleway.com/storage')
+    
+    model.dir2db(args.path,'https://trolleway.com/storage')
+    
+    #model.dir2db('/opt/storage/2014/2014-02-peshelan-railway','https://trolleway.com/storage')
+    #model.dir2db('/opt/storage/2014/2014-02-kerzenets-railway','https://trolleway.com/storage')
+    #model.dir2db('/opt/storage/2022/2022-11-vereya','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2010/2010-04-polotsk','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2022/2022-08-sakhalin2','https://trolleway.com/storage')
     #model.dir2db('/opt/storage/2022/2022-11-winzavod','https://trolleway.com/storage')

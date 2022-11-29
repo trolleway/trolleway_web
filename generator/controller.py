@@ -509,7 +509,8 @@ class Website_generator():
                 }
                 if photo4template['lon'] != 0 and photo4template['lon'] is not None and photo4template['lon'] != 'null':
                     leaflet_geojson_features.append(leaflet_geojson_part)
-                    
+                
+            
             if not data.get('hide'):
                 sitemap_page_record={'loc':self.sitemap_base_url+output_directory_name+'/'+'index.htm','priority':'0.6'}
                 sitemap_page_record['lastmod']=GALLERY_DATE_MOD
@@ -518,7 +519,7 @@ class Website_generator():
             
 
 
-            # ----------- index page
+            # ----------- photos index page
 
             with open(template_index_filepath, encoding='utf-8') as template_file:
                 template = template_file.read()
@@ -548,6 +549,14 @@ class Website_generator():
                     if fname=='HEADER.htm':
                         continue
                     shutil.copy2(os.path.join(src,fname), dst)
+            # if exists poster image for index.htm
+            index_meta_og_image = ''
+
+            if os.path.isfile(os.path.join(output_directory_path,'poster.jpg')):
+
+                index_meta_og_image = '''<meta property="og:image" content="{url}" /> <meta name="twitter:image" content="{url}" />'''.format(url='https://trolleway.com/reports/'+os.path.split(output_directory_path)[-1]+'/poster.jpg')
+                
+                
             
                 
             #---------- map on index page
@@ -650,7 +659,8 @@ map.fitBounds(layer_photos.getBounds());
                 map_js = map_js,
                 gallery_start_uri=gallery_start_uri,
                 license_footer = license_footer,
-                description=self.drop_html_tags(text),
+                description=self.drop_html_tags(text.split('\n')[0]+' Фото в высоком разрешении.'),
+                meta_og_image=index_meta_og_image,
                 )
 
             html = html.replace('<!--google_counter-->',google_counter)

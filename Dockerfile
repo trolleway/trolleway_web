@@ -33,6 +33,8 @@ RUN set -ex; \
   rm -f $EXIFTOOL_ARCHIVE ;\
   ./exiftool -ver && cd /
 
+RUN apt-get install -y  dialog whiptail
+
 #add to sudoers
 RUN apt-get install -y apt-utils
 RUN apt-get install -y sudo
@@ -47,3 +49,4 @@ RUN mkdir /opt/website
 RUN chmod  --recursive 777 /opt/website
 
 WORKDIR /opt/website
+ENTRYPOINT ["/opt/website/interface.sh"] 
