@@ -376,14 +376,14 @@ class Website_generator():
 
                     
                 if 'sublocation' in image and image['sublocation'] is not None:
-                    if image['sublocation'] not in caption_location:
+                    if image['sublocation'].upper() not in caption_location.upper():
                         if caption_location != '':
                             caption_location = caption_location + ', ' + image['sublocation']
                         else:
                             caption_location = image['sublocation']
                             
                 if 'city' in image:
-                    if image['city'] not in caption_location:
+                    if image['city'].upper() not in caption_location.upper():
                         if caption_location != '':
                             caption_location = caption_location + ', ' + image['city']
                         else:

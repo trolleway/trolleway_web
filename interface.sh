@@ -72,6 +72,9 @@ else
      
 fi
 
+from="images_origins"
+to="storage"
+FILE="${FILE/$from/$to}"
 
 python3 generator/dir2db.py ${FILE}
 
