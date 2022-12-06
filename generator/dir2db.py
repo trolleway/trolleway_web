@@ -16,6 +16,8 @@ if __name__ == "__main__":
 
 
     args = parser.parse_args()
+    
+    args.path = args.path.replace('images_origins','storage')
 
     if not os.path.isdir(args.path):
         raise FileNotFoundError(args.path)

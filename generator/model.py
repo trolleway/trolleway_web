@@ -114,13 +114,13 @@ class Model():
         return names
     
     def dir2db(self,path,base_url=''):
+        #read directory with images. Generate SQL file for manual check and append to database.
 
         today = datetime.today()
         cmd = ['python3', 'generator/thumbnails-parallel.py','--path',path.replace('/storage/','/images_origins/')]
         subprocess.run(cmd)
 
         assert os.path.isdir(path)
-        
 
         for (root,dirs,files) in os.walk(path):
             images = list()
@@ -141,8 +141,6 @@ class Model():
                 city = None
                 sublocation = None
                 objectname = None
-                
-
 
                 if info['city'] is not None:
                     city = info['city'].decode('UTF-8')
@@ -225,7 +223,7 @@ class Model():
                 )
 
         
-        sql+='''INSERT INTO pages(uri,title, date_mod, inserting_id,  "source", "order"  ) VALUES ("{page_url}", "{date}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
+        sql+='''INSERT INTO pages(uri, title, ha, date_mod, inserting_id,  "source", "order"  ) VALUES ("{page_url}", "{page_url}", "{page_url}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
         page_url=page_url,
         inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
         date=today.strftime('%Y-%m-%d'))
