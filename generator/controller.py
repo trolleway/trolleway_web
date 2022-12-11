@@ -575,7 +575,12 @@ var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmd
 	maxZoom: 18,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
+var trolleway_tramlines = L.tileLayer('https://trolleway.nextgis.com/api/component/render/tile?resource=5101&x={x}&y={y}&z={z}', {
+	maxZoom: 18,
+	attribution: '&copy; Artem Svetlov'
+});
 var tiles = OpenStreetMap_DE.addTo(map);
+var tiles = trolleway_tramlines.addTo(map);
 '''
             map_js += leaflet_geojson_text
             map_js += '''
