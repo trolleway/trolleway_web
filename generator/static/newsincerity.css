@@ -114,6 +114,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: flex-end;
 align-items: center;
+background-color: #333333;
 }
 
 .stack__element {
