@@ -413,6 +413,7 @@ photos.date_append,
 photos.caption_en,
 photos.has_ar169,
 photos.has_arvert,
+photos.fit_contain,
 photos.lens,
 photos.medium,
 photos.film,
@@ -683,6 +684,8 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
                     image['ar169'] = True
                 if db_photo.get('has_arvert',0)  is not None and db_photo.get('has_arvert',0)>0 :
                     image['arvert'] = True
+                if db_photo.get('fit_contain',0)  is not None and db_photo.get('fit_contain',0)>0 :
+                    image['fit_contain'] = True
                 if db_photo.get('sitemap_lastmod') is not None:
                     image['sitemap_lastmod'] = db_photo.get('sitemap_lastmod')                    
                     

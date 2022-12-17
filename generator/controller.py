@@ -452,6 +452,10 @@ class Website_generator():
                     photo4template['source_srcset']+='<source srcset="{image_url_base}_ar169.webp" media="(min-aspect-ratio: 16/9)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
                 if image.get('arvert'):
                     photo4template['source_srcset']+='<source srcset="{image_url_base}_arvert.webp" media="(max-aspect-ratio: 1/1)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
+                if image.get('fit_contain'):
+                    photo4template['image_css_class']='stack__element_forced_contain'
+                else:
+                    photo4template['image_css_class']='stack__element'
                     
                 if 'ORIGINALFILE' not in image['url']:
                     photo4template['source_srcset']+='<source srcset="{image_url_base}.webp"  media="(min-aspect-ratio: 1/1)" type="image/webp">'.format(image_url_base=photo4template['image_url_base']) +"\n"
@@ -676,13 +680,37 @@ map.fitBounds(layer_photos.getBounds());
                 text_file.write(html)
 
         #sitemap
+        
+        #index page last update for sitemap
+        dates_galleries_create=list()
+        for json_filename in json_files:
+            with open(os.path.join(self.json_dir,json_filename), encoding='utf-8') as json_file:
+                try:
+                    data = json.load(json_file)
+                except Exception as e:
+                    print('error open json '+os.path.join(self.json_dir,json_filename))
+                    print(e)
+                    print()
+                    continue
+            assert data is not None
+            if 'date_mod' in data:
+                dates_galleries_create.append(data['date_mod'])
 
+        latest_page_update = sorted(dates_galleries_create)[-1]
+        sitemap_page_record={'loc':self.sitemap_base_url+''+'index.htm','priority':'0.6'}
+        sitemap_page_record['lastmod']=latest_page_update
+        pages2sitemap.insert(0,sitemap_page_record)
+        sitemap_page_record={'loc':'https://trolleway.com/index.htm','priority':'0.2'}
+        pages2sitemap.insert(0,sitemap_page_record)
+                
+        
+        out = ''
         with open(sitemap_path_manual, encoding='utf-8') as sitemap_manual:
                 sitemap_template = sitemap_manual.read()
 
-
+        #regular photo pages to sitemap
         with open(sitemap_path, "w", encoding='utf-8') as text_file:
-            out = ''
+            
             for page in pages2sitemap:
                 if 'image_url' in page:
                     imgurl='<image:image><image:loc>{url_image}</image:loc></image:image>'.format(url_image=page['image_url'])
