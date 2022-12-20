@@ -116,6 +116,7 @@ class Model():
     def dir2db(self,path,base_url=''):
         #read directory with images. Generate SQL file for manual check and append to database.
 
+        #compress images begin
         today = datetime.today()
         cmd = ['python3', 'generator/thumbnails-parallel.py','--path',path.replace('/storage/','/images_origins/')]
         subprocess.run(cmd)
@@ -184,6 +185,25 @@ class Model():
 
                 images.append(image)
 
+        #end compress images
+        
+        #for append photos in gallery: filter images already exists in database
+        new_images = list()
+        some_images_exists = False
+        for image in images:
+            sql = "SELECT Count() FROM photos WHERE hotlink = '{hotlink}' ".format(hotlink=image['url_hotlink'])
+            cur_photos = self.con.cursor()
+            cur_photos.execute(sql)
+            count = cur_photos.fetchone()[0]
+            print(count)
+            if count == 0:
+                new_images.append(image)
+            else:
+                some_images_exists = True
+        images = new_images
+        
+        
+        #begin make sql code
         #sql="BEGIN TRANSACTION; \n"
         sql = ""
         sql_custom = ""
@@ -223,16 +243,17 @@ class Model():
                 )
 
         
-        sql+='''INSERT INTO pages(uri, title, ha, date_mod, inserting_id,  "source", "order"  ) VALUES ("{page_url}", "{page_url}", "{page_url}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
-        page_url=page_url,
-        inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
-        date=today.strftime('%Y-%m-%d'))
-        sql += '''/* INSERT INTO photos_pages (photoid, pageuri, pageid, inserting_id) SELECT photoid, "{page_url}",0, "{inserting_id}"
-        FROM photos
-        WHERE photos.inserting_id='{inserting_id}'
-        ORDER BY photos.hotlink;\n */ '''.format(inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),page_url=page_url,)
-        sql += '''-- UPDATE photos_pages SET pageid = (SELECT pageid FROM pages WHERE uri='{page_url}') WHERE pageuri='{page_url}';\n   '''.format(page_url=page_url)
-        sql += '''-- UPDATE photos_pages SET pageuri = '';\n   '''
+        if not(some_images_exists):
+            sql+='''INSERT INTO pages(uri, title, ha, date_mod, inserting_id,  "source", "order"  ) VALUES ("{page_url}", "{page_url}", "{page_url}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
+            page_url=page_url,
+            inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),
+            date=today.strftime('%Y-%m-%d'))
+        #sql += '''/* INSERT INTO photos_pages (photoid, pageuri, pageid, inserting_id) SELECT photoid, "{page_url}",0, "{inserting_id}"
+        #FROM photos
+        #WHERE photos.inserting_id='{inserting_id}'
+        #ORDER BY photos.hotlink;\n */ '''.format(inserting_id=today.strftime('%Y-%m-%d-%H%M%S'),page_url=page_url,)
+        #sql += '''-- UPDATE photos_pages SET pageid = (SELECT pageid FROM pages WHERE uri='{page_url}') WHERE pageuri='{page_url}';\n   '''.format(page_url=page_url)
+        #sql += '''-- UPDATE photos_pages SET pageuri = '';\n   '''
 
         #sql+="COMMIT;"
 

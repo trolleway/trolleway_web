@@ -92,7 +92,7 @@ $DIALOG --clear --title "Select operation" \
         --menu "Select operation:" 20 81 8 \
         "generate_html"  "Generate HTML" \
         "rebuild_thumbnails"  "Rebuild thumbnails" \
-        "import_dir"  "import_dir" \
+        "import_dir"  "import/append photos from directory" \
         "webmap_update"  "webmap_update" \
         "exif2sidecar"  "exif2sidecar" \
         "exit"  "Exit" 2> $tempfile
