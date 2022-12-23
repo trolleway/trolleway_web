@@ -1,0 +1,23 @@
+#Redirect 301 / https://trolleway.com
+
+Redirect gone /reports/2022-elektrogorsk/
+Redirect gone /reports/2022-kaluga-film/
+Redirect gone /reports/2022-voskresensk-culture-center/
+
+RedirectMatch 301 "/i/vladisovtok-2018/*$" https://trolleway.com/reports/2018-07_vladivostok/index.htm
+RedirectMatch 301 "/i/vladivostok-2019/*$" https://trolleway.com/reports/2019-04_vladivostok/index.htm
+RedirectMatch 301 "/i/chs2-electric-locomotives/*$" "https://trolleway.com/reports/RZD ChS2/index.htm"
+RedirectMatch 301 "/i/kerzenec-narrow-gauge-railway-2014/*$" "https://trolleway.com/reports/2014-02-kerzenets-railway/index.htm"
+RedirectMatch 301 "/i/semigorodnaya-narrow-gauge-railway/*$" "https://trolleway.com/reports/2015-10-semigorodnaya/index.htm"
+RedirectMatch 301 "/i/svarzikarus/*$" "https://trolleway.com/reports/2003-08-svarz-ikarus/index.htm"
+RedirectMatch 301 "/i/tula-tram-2000s-epoch/*$" "https://trolleway.com/reports/2003-11-tula-tram/index.htm"
+RedirectMatch 301 "/i/tula-trolleybus-2000s-epoch/*$" "https://trolleway.com/reports/2003-11-tula-trolleybus/index.htm"
+RedirectMatch 301 "/i/lipetsk/*$" "https://trolleway.com/reports/2015-12-lipetsk/index.htm"
+
+
+#RedirectMatch gone "/reports/2022-elektrogorsk/*.htm$"
+#RedirectMatch gone "/reports/2022-kaluga-film/*.htm$"
+#RedirectMatch gone "/reports/2022-voskresensk-culture-center/*.htm$"
+
+AddType image/webp .webp
+AddType application/gpx+xml gpx
