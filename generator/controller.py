@@ -392,18 +392,22 @@ class Website_generator():
                 caption_location = caption_location.replace('.,','.')
                 
                 if 'film' in image:
-                    film = '<span>Снято на плёнку '+image.get('film')+'</span> '
+                    film = '<span>Taken on film '+image.get('film')+'</span> '
                 else:
                     film = ''                
                 if 'lens' in image:
-                    lens = '<span>Обьектив '+image.get('lens')+'</span> '
+                    lens = '<span>Lens '+image.get('lens')+'</span> '
                 else:
                     lens = ''
+                if 'ORIGINALFILE' in image['url']:
+                    film += '<span>Original file from digital camera</span> '
                     
                 #dirty generation of caption, but quick to implement
                 tech_info = ''
                 tech_info = ', '.join([film,lens])
                 tech_info = tech_info.replace(' ,',',')
+                tech_info = tech_info.strip()
+                if tech_info.endswith(','): tech_info = tech_info[0:-1]
                 if tech_info == ', ': tech_info = ''
                 
                 licenses_footer = dict()

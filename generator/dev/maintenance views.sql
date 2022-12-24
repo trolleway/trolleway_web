@@ -56,3 +56,7 @@ WHERE photos.photoid = photos_pages.photoid AND photos_pages.pageid = pages.page
 ORDER BY photoid, page_group ASC
 )
 GROUP BY photoid
+
+-----------
+
+UPDATE photos SET fit_contain = 1 WHERE photoid=3377;

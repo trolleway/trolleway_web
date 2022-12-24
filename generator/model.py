@@ -15,6 +15,7 @@ from datetime import datetime
 from dateutil import parser
 from tqdm import tqdm
 import copy
+import shutil
 import pprint
 
 
@@ -357,11 +358,14 @@ ORDER BY pages.uri, photos_pages."order";
         return name
         
         
-    def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content')):
+    def db2gallery_jsons(self,path=os.path.join(os.path.dirname(os.path.realpath(__file__ )),'content'), process_recently_updated = False, recently_days = 2):
         cur_pages = self.con.cursor()
         cur_photos = self.con.cursor()
 
         locations = self.locations2dict()
+        
+        if os.path.isdir(path): shutil.rmtree(path)
+        os.makedirs(path)
 
         sql = '''
         -- clean zero geometry
@@ -461,18 +465,36 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
   -nln "photos" -s_srs EPSG:4326 -t_srs EPSG:4326
         '''
         os.system(cmd)
+        
+        
+
+        select_only_recently_updated = '''
+        
+        SELECT DISTINCT pages.* FROM photos JOIN pages ON photos.pages = pages.uri AND pages.source='photos' AND pages.hidden=0 WHERE (date(photos.date_append) > date('now','-{recently_days} day') or date(photos.update_timestamp) > date('now','-{recently_days} day') or date(pages.date_mod) > date('now','-{recently_days} day'))
+        UNION
+        SELECT DISTINCT pages.* FROM photos JOIN pages ON photos.tags = pages.uri AND pages.source='tags' AND pages.hidden=0 WHERE (date(photos.date_append) > date('now','-{recently_days} day') or date(photos.update_timestamp) > date('now','-{recently_days} day') or date(pages.date_mod) > date('now','-{recently_days} day'))
+        UNION
+        SELECT DISTINCT pages.* FROM photos JOIN pages JOIN photos_pages  WHERE photos.photoid = photos_pages.photoid AND photos_pages.pageid = pages.pageid  AND pages.source='photos_pages' AND pages.hidden=0 AND (date(photos.date_append) > date('now','-{recently_days} day') or date(photos.update_timestamp) > date('now','-{recently_days} day') or date(pages.date_mod) > date('now','-{recently_days} day'))
+        
+        '''
+        select_only_recently_updated = select_only_recently_updated.format(recently_days=recently_days)
 
 
-        sql = "SELECT COUNT(*) as count FROM pages WHERE hidden=0 ;"
+        sql_all_pages = 'SELECT * FROM pages WHERE hidden=0 ;'
+        if process_recently_updated:
+            sql = select_only_recently_updated
+        else:
+            sql = sql_all_pages
+        
         cur_pages.execute(sql)
-        row = cur_pages.fetchone()
-        count=row['count']
+        pages = cur_pages.fetchall()
+       
+        count = len(pages)
+        
         pbar = tqdm(total=count)
         
-        sql = "SELECT * FROM pages WHERE hidden=0 ;"
-        
 
-        for row in cur_pages.execute(sql):
+        for row in pages:
             
             
             db_page = dict(row)
@@ -723,11 +745,10 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
         pbar.close()
 
 
-
-
-
-
 if __name__ == "__main__":
+    '''
     model = Model()
     model.db2gallery_jsons()
     model.pages_index_jsons()
+    '''
+    print('call db2json.py instead')

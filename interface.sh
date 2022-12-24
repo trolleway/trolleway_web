@@ -2,7 +2,11 @@
 
 #------------------------
 generate_html() {
-time python3 generator/model.py && time python3 generator/controller.py
+time python3 generator/db2json.py && time python3 generator/controller.py
+}
+#------------------------
+generate_html_recent() {
+time python3 generator/db2json.py --recent && time python3 generator/controller.py
 }
 
 #------------------------
@@ -90,6 +94,7 @@ trap "rm -f $tempfile" 0 1 2 5 15
 
 $DIALOG --clear --title "Select operation" \
         --menu "Select operation:" 20 81 8 \
+        "generate_html_recent"  "Generate HTML for recent changed pages" \
         "generate_html"  "Generate HTML" \
         "rebuild_thumbnails"  "Rebuild thumbnails" \
         "import_dir"  "import/append photos from directory" \
@@ -108,6 +113,7 @@ case $retval in
 
     case $choice in
         generate_html) generate_html;;
+        generate_html_recent) generate_html_recent;;
         rebuild_thumbnails) rebuild_thumbnails;;
         import_dir) import_dir;;
         webmap_update) webmap_update;;
