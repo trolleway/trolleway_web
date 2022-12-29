@@ -212,8 +212,19 @@ class Website_generator():
                 GALLERY_DATE_MOD = datetime.today().strftime('%Y-%m-%d')
 
             # target directory calc
+            if 'uri' in data:
+                output_directory_name = data['uri']
+                directory_level=data['uri'].count('/')
+                html_basedir='../'
+                for i in range(0,directory_level):
+                    html_basedir+='../'
+                self.logger.debug(html_basedir)
+                
+            else:
+                output_directory_name = os.path.splitext(json_filename)[0]
+                directory_level = 0
+                html_basedir='../'
 
-            output_directory_name = os.path.splitext(json_filename)[0]
             output_directory_path = os.path.join(output_directory,output_directory_name)
 
             if not os.path.isdir(output_directory_path):
@@ -256,16 +267,16 @@ class Website_generator():
                     rel_left = 'up'
 
                 if current_image == 1:
-                    right_link_image = '''<img class="left_arrow"   alt="Go to next page" src="../Controls_chapter_next.svg">'''
+                    right_link_image = '''<img class="left_arrow"   alt="Go to next page" src="{html_basedir}Controls_chapter_next.svg">'''.format(html_basedir=html_basedir)
                 elif current_image == len(data['images']):
-                    right_link_image = '''<img class="right_arrow"   alt="Go to index page" src="../Controls_eject.svg">'''
+                    right_link_image = '''<img class="right_arrow"   alt="Go to index page" src="{html_basedir}Controls_eject.svg">'''.format(html_basedir=html_basedir)
                 else:
-                    right_link_image = '''<img class="right_arrow"   alt="Go to next page" src="../Controls_chapter_next.svg">'''
+                    right_link_image = '''<img class="right_arrow"   alt="Go to next page" src="{html_basedir}Controls_chapter_next.svg">'''.format(html_basedir=html_basedir)
 
                 if current_image == 1:
-                    left_link_image = '''<img class="left_arrow"  alt="Go to index page" src="../Controls_eject.svg">'''
+                    left_link_image = '''<img class="left_arrow"  alt="Go to index page" src="{html_basedir}Controls_eject.svg">'''.format(html_basedir=html_basedir)
                 else:
-                    left_link_image = '''<img class="right_arrow"   alt="Go to previous page" src="../Controls_chapter_previous.svg">'''
+                    left_link_image = '''<img class="right_arrow"   alt="Go to previous page" src="{html_basedir}Controls_chapter_previous.svg">'''.format(html_basedir=html_basedir)
 
 
 
@@ -451,6 +462,7 @@ class Website_generator():
                 photo4template['license_footer']=licenses_footer[image.get('license','cc-by')]
                 photo4template['license']=image.get('license') #for index
                 photo4template['source_srcset']=''
+                photo4template['html_basedir']=html_basedir
                 
                 if image.get('ar169'):
                     photo4template['source_srcset']+='<source srcset="{image_url_base}_ar169.webp" media="(min-aspect-ratio: 16/9)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
@@ -674,6 +686,7 @@ map.fitBounds(layer_photos.getBounds());
                 license_footer = license_footer,
                 description=self.drop_html_tags(text.split('\n')[0]+' Фото в высоком разрешении.'),
                 meta_og_image=index_meta_og_image,
+                html_basedir=html_basedir,
                 )
 
             html = html.replace('<!--google_counter-->',google_counter)

@@ -498,7 +498,8 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
             
             
             db_page = dict(row)
-            json_path = os.path.join(path,db_page['uri'])+'.json'
+            pbar.set_description(db_page['uri'])
+            json_path = os.path.join(path,db_page['uri'].replace('/','-'))+'.json'
 
             json_content={
             "title": db_page['title'],
@@ -508,6 +509,7 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
  "map_center": db_page['map_center_str'] or '',
  "map_zoom": "12",
  "date_mod": db_page['date_mod'] or ''}
+            if '/' in db_page['uri']: json_content['uri']=db_page['uri']
             images = list()
 
             if db_page.get('source','') in ('','photos_pages'):
@@ -741,6 +743,7 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
                 json_str = json.dumps(json_content, ensure_ascii=False,indent = 1).encode('utf8')
                 outfile.write(json_str)
                 
+            pbar.set_description('')
             pbar.update(1)
         pbar.close()
 
