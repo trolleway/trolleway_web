@@ -25,6 +25,8 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False):
         newpath = path.replace(src_dir,dst_dir) #potential fail place
         if not os.path.isdir(newpath):
             os.makedirs(newpath)
+            
+
 
     convert_tuples = []
     for dirpath, dnames, fnames in os.walk(src_dir):

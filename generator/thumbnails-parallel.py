@@ -25,9 +25,11 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False, subd
     for dirpath, dnames, fnames in os.walk(src_dir):
         for dir in dnames:
             paths.append(os.path.join(dirpath, dir))
+    
+
     for path in paths:
         newpath = path.replace(src_dir,dst_dir) #potential fail place
-        if not os.path.isdir(newpath):
+        if not os.path.isdir(newpath) and newpath.endswith('no-copy')==False:
             os.makedirs(newpath)
 
     convert_tuples = []
@@ -35,8 +37,18 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False, subd
     source_dir = src_dir
     if subdir is not None: 
         source_dir = optional_path
+        
+    copied_media_dirs = list()
     for dirpath, dnames, fnames in os.walk(source_dir):
         for file in fnames:
+            if dirpath.endswith(os.sep+'no-copy'):
+                continue
+            if dirpath.endswith(os.sep+'media'):
+                if dirpath not in copied_media_dirs:
+                    if os.path.exists(dirpath.replace(src_dir,dst_dir)): shutil.rmtree(dirpath.replace(src_dir,dst_dir))
+                    shutil.copytree(dirpath,dirpath.replace(src_dir,dst_dir))
+                    copied_media_dirs.append(dirpath)
+                continue
             if file.lower().endswith(tuple(accepted_exts)) == False: continue
             src =  os.path.join(dirpath,file)
             dst = os.path.join(dirpath.replace(src_dir,dst_dir),file)
