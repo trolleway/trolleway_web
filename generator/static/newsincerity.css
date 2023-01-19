@@ -73,7 +73,7 @@ h3 {
   object-fit:fill;
 	height: 100%;
 	float: right;
-	width: 200px;
+	width: 25%;
 }
 @media only screen and (orientation:portrait) {
   #forwardlink img {
@@ -95,7 +95,7 @@ h3 {
 #backwardlink img {
     object-fit:fill;
 	height: 100%;
-	width: 200px;
+	width: 25%;
 }
 @media only screen and (orientation:portrait) {
   #backwardlink img {
