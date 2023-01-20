@@ -448,7 +448,9 @@ FROM photos
 LEFT OUTER JOIN locations locations_city ON locations_city.name_int = photos.city 
 LEFT OUTER JOIN locations locations_sublocation ON locations_sublocation.name_int = photos.sublocation
 LEFT JOIN licenses ON licenses.id = photos.license
-LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.photoid ;
+LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.photoid 
+WHERE photos.notready=0
+;
         '''
         cur_photos.executescript(sql)
         
@@ -472,7 +474,7 @@ LEFT OUTER JOIN view_canonical_urls ON photos.photoid = view_canonical_urls.phot
         
         SELECT DISTINCT pages.* FROM photos JOIN pages ON photos.pages = pages.uri AND pages.source='photos' AND pages.hidden=0 WHERE (date(photos.date_append) > date('now','-{recently_days} day') or date(photos.update_timestamp) > date('now','-{recently_days} day') or date(pages.date_mod) > date('now','-{recently_days} day'))
         UNION
-        SELECT DISTINCT pages.* FROM photos JOIN pages ON photos.tags = pages.uri AND pages.source='tags' AND pages.hidden=0 WHERE (date(photos.date_append) > date('now','-{recently_days} day') or date(photos.update_timestamp) > date('now','-{recently_days} day') or date(pages.date_mod) > date('now','-{recently_days} day'))
+        SELECT DISTINCT pages.* FROM photos JOIN pages ON photos.tags LIKE '%'||pages.uri||'%' AND pages.source='tags' AND pages.hidden=0 WHERE (date(photos.date_append) > date('now','-{recently_days} day') or date(photos.update_timestamp) > date('now','-{recently_days} day') or date(pages.date_mod) > date('now','-{recently_days} day'))
         UNION
         SELECT DISTINCT pages.* FROM photos JOIN pages JOIN photos_pages  WHERE photos.photoid = photos_pages.photoid AND photos_pages.pageid = pages.pageid  AND pages.source='photos_pages' AND pages.hidden=0 AND (date(photos.date_append) > date('now','-{recently_days} day') or date(photos.update_timestamp) > date('now','-{recently_days} day') or date(pages.date_mod) > date('now','-{recently_days} day'))
         
