@@ -391,7 +391,7 @@ pages.page_group ,
 photos.wkt_geometry,
 photos.direction,
 photos.datetime 
-FROM photos JOIN pages ON photos.tags = pages.uri AND pages.source='tags' AND pages.hidden=0 AND photos.notready=0
+FROM photos JOIN pages ON photos.tags LIKE '%'||pages.uri||'%' AND pages.source='tags' AND pages.hidden=0 AND photos.notready=0
 
 UNION 
 SELECT photos.photoid,
