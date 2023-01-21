@@ -382,7 +382,7 @@ pages.page_group ,
 photos.wkt_geometry,
 photos.direction,
 photos.datetime 
-FROM photos JOIN pages ON photos.pages = pages.uri AND pages.source='photos' AND pages.hidden=0
+FROM photos JOIN pages ON photos.pages = pages.uri AND pages.source='photos' AND pages.hidden=0 AND photos.notready=0
 
 UNION 
 SELECT photos.photoid,
@@ -391,7 +391,7 @@ pages.page_group ,
 photos.wkt_geometry,
 photos.direction,
 photos.datetime 
-FROM photos JOIN pages ON photos.tags = pages.uri AND pages.source='tags' AND pages.hidden=0
+FROM photos JOIN pages ON photos.tags = pages.uri AND pages.source='tags' AND pages.hidden=0 AND photos.notready=0
 
 UNION 
 SELECT photos.photoid,
@@ -401,7 +401,7 @@ photos.wkt_geometry,
 photos.direction,
 photos.datetime 
 FROM photos JOIN pages JOIN photos_pages
-WHERE photos.photoid = photos_pages.photoid AND photos_pages.pageid = pages.pageid  AND pages.source='photos_pages' AND pages.hidden=0
+WHERE photos.photoid = photos_pages.photoid AND photos_pages.pageid = pages.pageid  AND pages.source='photos_pages' AND pages.hidden=0 AND photos.notready=0
 ORDER BY photoid, page_group ASC
 )
 GROUP BY photoid;
@@ -412,7 +412,7 @@ SELECT photoid, 'https://trolleway.com/reports/' || replace(replace(replace(cano
     " ", "%20"),
     "(", "%28"),
     ")", "%29")  AS canonical_url, wkt_geometry, direction, datetime FROM view_canonical_urls
-WHERE wkt_geometry IS NOT NULL;
+WHERE wkt_geometry IS NOT NULL ;
 
 
         DROP VIEW  IF EXISTS view_photos;
@@ -678,7 +678,7 @@ WHERE photos.notready=0
                 
                     
                 city = db_photo.get('city','')
-                if city != '' and city is not None:
+                if db_page['no_print_city']==0 and  city != '' and city is not None:
                     if city in locations:
                         city = locations[city]                
                     image['city']=city
