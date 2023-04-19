@@ -1,8 +1,12 @@
 FROM ubuntu:focal
-
 ARG DEBIAN_FRONTEND=noninteractive
 ARG APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 
+RUN apt-get update 
+
+
+
+RUN apt-get install --no-install-recommends -y python3-pip time imagemagick parallel gdal-bin git
 
 ARG uid=1000
 ARG gid=1000
@@ -10,8 +14,6 @@ RUN groupadd -g $gid trolleway && useradd --home /home/trolleway -u $uid -g $gid
   && mkdir -p /home/trolleway && chown -R trolleway:trolleway /home/trolleway
 RUN echo 'trolleway:user' | chpasswd
 
-
-RUN apt-get update && apt-get install --no-install-recommends -y python3-pip time imagemagick parallel gdal-bin git
 RUN pip3 install exif iptcinfo3 requests shapely python-dateutil tqdm GDAL
 RUN pip3 install --upgrade --force-reinstall git+https://github.com/nextgis/pyngw.git
 
@@ -45,6 +47,8 @@ ADD https://api.github.com/repos/trolleway/trolleway.github.io/git/refs/heads/ma
 #The API call will return different results when the head changes, invalidating the docker cache
 
 RUN mkdir /opt/website
+
+RUN pip3 install --upgrade numpy
 
 RUN chmod  --recursive 777 /opt/website
 

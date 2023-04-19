@@ -7,7 +7,7 @@ simple python generator of static web photo gallery
 ```
 docker build -f Dockerfile -t trolleway_website:dev .
 docker run --rm -it -v ${PWD}:/opt/website -v c:\trolleway\website-storage\storage\:/opt/storage -v c:\trolleway\website-storage\master\:/opt/images_origins  trolleway_website:dev  /bin/bash
-docker run --rm -it -v c:\trolleway\trolleway_web\trolleway_web\:/opt/website -v c:\trolleway\trolleway_web\storage\:/opt/storage -v c:\trolleway\trolleway_web\storage\origins\:/opt/images_origins  trolleway_website:dev  /bin/bash
+docker run --rm -it -v c:\trolleway\trolleway_web\trolleway_web\:/opt/website -v c:\trolleway\trolleway_web\storage\:/opt/storage -v c:\trolleway\trolleway_web\storage\master\:/opt/images_origins  trolleway_website:dev  /bin/bash
 ```
 Add photos to database:
 ```
