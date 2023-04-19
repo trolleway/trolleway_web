@@ -440,8 +440,10 @@ photos.has_ar169,
 photos.has_arvert,
 photos.fit_contain,
 photos.lens,
+photos.camera,
 photos.medium,
 photos.film,
+photos.hotlink_commons,
 licenses.code AS license_code,
 view_canonical_urls.canonical_url AS canonical_url
 FROM photos 
@@ -727,6 +729,8 @@ WHERE photos.notready=0
                     image['camera'] = db_photo.get('camera')
                 if db_photo.get('datetime') is not None:
                     image['datetime'] = db_photo.get('datetime')
+                if db_photo.get('hotlink_commons') is not None:
+                    image['hotlink_commons'] = db_photo.get('hotlink_commons')
                 if db_photo.get('has_ar169',0) is not None and db_photo.get('has_ar169',0)>0 :
                     image['ar169'] = True
                 if db_photo.get('has_arvert',0)  is not None and db_photo.get('has_arvert',0)>0 :

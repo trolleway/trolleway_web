@@ -410,16 +410,23 @@ class Website_generator():
                     lens = '<span>Lens '+image.get('lens')+'</span> '
                 else:
                     lens = ''
+                if 'camera' in image:
+                    camera = image.get('camera')
+                else:
+                    camera = ''
                 if 'ORIGINALFILE' in image['url']:
                     film += '<span>Original file from digital camera</span> '
                     
                 #dirty generation of caption, but quick to implement
                 tech_info = ''
-                tech_info = ', '.join([film,lens])
+                tech_info = ' '.join([film, camera, lens])
                 tech_info = tech_info.replace(' ,',',')
                 tech_info = tech_info.strip()
                 if tech_info.endswith(','): tech_info = tech_info[0:-1]
                 if tech_info == ', ': tech_info = ''
+                
+                commons_link = image.get('hotlink_commons','')
+                if commons_link != '': commons_link = '<div lang="en"><a href="{url}">Uncompressed source image page on Wikimedia Commons</a></div>'.format(url=commons_link)
                 
                 licenses_footer = dict()
                 licenses_footer['cc-by']='''       <a rel="cc:attributionURL" property="dc:title">Photo</a> by
@@ -463,6 +470,7 @@ class Website_generator():
                 photo4template['license']=image.get('license') #for index
                 photo4template['source_srcset']=''
                 photo4template['html_basedir']=html_basedir
+                photo4template['optional_commons_link']=commons_link
                 
                 if image.get('ar169'):
                     photo4template['source_srcset']+='<source srcset="{image_url_base}_ar169.webp" media="(min-aspect-ratio: 16/9)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"
