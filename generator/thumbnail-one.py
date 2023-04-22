@@ -44,7 +44,7 @@ def photo_thumbnail(src,dst,overwrite = False):
             if not args.squash: 
                 cmd = ['convert', src , '-auto-orient' , '-compress', 'JPEG', '-quality', '80', path_resized]
             else:
-                cmd = ['convert', src , '-auto-orient' , '-compress', 'JPEG', '-quality', '70', path_resized]
+                cmd = ['convert', src , '-auto-orient' , '-compress', 'JPEG', '-quality', '70', path_resized]                                
             subprocess.run(cmd)
             #add author
             cmd = ['/opt/exiftool/exiftool', '-artist=Artem Svetlov', '-overwrite_original',  path_resized]      
@@ -83,9 +83,19 @@ def photo_thumbnail(src,dst,overwrite = False):
             
             subprocess.run(cmd)
             if os.path.getsize(path_resized)>1024*1024*3:
+                # if source is big: compress more
                 cmd = ['convert' ,  src ,
                 '-define', 'webp:image-hint=photo',
                 '-quality','82',
+                '-define', 'webp:method=5',
+                '-define', 'webp:thread-level=1',
+                '-unsharp', '0.5x0.5+0.5+0.008',
+                path_resized]
+            if 'arvert' in src:
+                #assume vertical version needed only for smartphones, compress more
+                cmd = ['convert' ,  src ,
+                '-define', 'webp:image-hint=photo',
+                '-quality','50',
                 '-define', 'webp:method=5',
                 '-define', 'webp:thread-level=1',
                 '-unsharp', '0.5x0.5+0.5+0.008',
