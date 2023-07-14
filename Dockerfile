@@ -1,11 +1,8 @@
-FROM ubuntu:focal
+FROM ubuntu:22.04
 ARG DEBIAN_FRONTEND=noninteractive
 ARG APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 
 RUN apt-get update 
-
-
-
 RUN apt-get install --no-install-recommends -y python3-pip time imagemagick parallel gdal-bin git
 
 ARG uid=1000
