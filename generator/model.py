@@ -162,6 +162,20 @@ class Model():
                 else:
                     caption = ''
                 image = {'caption':caption,'url_hotlink':url}
+                
+                # read .json sidecar file created by github.com/trolleway/commons-uploader
+                json_filename = os.path.splitext(os.path.basename(filename))[0]+'.json'
+                if os.path.isfile(json_filename):
+                    try:
+                        with open(json_filename) as json_file:
+                            json_sidecar_content = json.load(json_file)
+                            image['caption'] = json_sidecar_content.get('caption','') + ' ' + image['caption']
+                            image['caption_en'] = json_sidecar_content.get('caption_en','')
+                            image['commons_hotlink'] = json_sidecar_content.get('hotlink_commons','')
+                    
+                    except:
+                        pass
+                
                 if city is not None: image['city']=city
                 if sublocation is not None: image['sublocation']=sublocation
 
@@ -181,7 +195,11 @@ class Model():
                 if os.path.exists(filepath.replace('.jpg','_arvert.webp')):
                     image['has_arvert']=1
                 else:
-                    image['has_arvert']=0               
+                    image['has_arvert']=0 
+                if '_fit.' in filepath:
+                    image['fit_contain']=1
+                else:
+                    image['fit_contain']=0               
 
 
                 images.append(image)
@@ -214,12 +232,13 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
             
-            tmpstr = '''INSERT INTO photos (hotlink,caption,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert)
-            VALUES ( "{hotlink}" , "{caption}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert} );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,caption_en,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert, fit_contain, commons_hotlink)
+            VALUES ( "{hotlink}" , "{caption}","{caption_en}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert}, {fit_contain},"{commons_hotlink}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
                 caption = image['caption'].replace('"','""'),
+                caption_en = image.get('caption_en','').replace('"','""'),
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
                 pages = page_url,
@@ -227,8 +246,10 @@ class Model():
                 sublocation = image.get('sublocation',''),
                 has_ar169 = image.get('has_ar169'),
                 has_arvert = image.get('has_arvert'),
+                fit_contain = image.get('fit_contain'),
                 direction = image.get('direction'),
-                objectname = image.get('objectname','').replace('"','""')
+                objectname = image.get('objectname','').replace('"','""'),
+                commons_hotlink = image.get('commons_hotlink',''),
                 )
 
             sql += tmpstr
@@ -243,7 +264,7 @@ class Model():
                 sublocation = image.get('sublocation','')
                 )
 
-        
+        # create page record
         if not(some_images_exists):
             sql+='''INSERT INTO pages(uri, title, ha, date_mod, inserting_id,  "source", "order"  ) VALUES ("{page_url}", "{page_url}", "{page_url}", "{date}", '{inserting_id}', 'photos','dates' );\n '''.format(
             page_url=page_url,
