@@ -34,6 +34,15 @@ def photo_thumbnail(src,dst,overwrite = False):
     '''
 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.jpg')
+
+    # copy optional sidecar files
+    json_filename = os.path.splitext(src)[0]+'.json'
+    json_filename_dest = os.path.splitext(path_resized)[0]+'.json'
+    if os.path.isfile(json_filename):
+        shutil.copyfile(json_filename,json_filename_dest)
+    del json_filename
+    del json_filename_dest
+    
     if (is_small_image or keep_original_file) and src.lower().endswith('.jpg'):
         shutil.copyfile(src,path_resized)
     elif aspect_ratio_version:

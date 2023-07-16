@@ -164,18 +164,21 @@ class Model():
                 image = {'caption':caption,'url_hotlink':url}
                 
                 # read .json sidecar file created by github.com/trolleway/commons-uploader
-                json_filename = os.path.splitext(os.path.basename(filename))[0]+'.json'
+                json_filename = os.path.join(root,os.path.splitext(os.path.basename(filename))[0]+'.json')
+                print(json_filename)
                 if os.path.isfile(json_filename):
+                    print('json exist')
                     try:
                         with open(json_filename) as json_file:
                             json_sidecar_content = json.load(json_file)
+                            print('signal')
+                            
                             image['caption'] = json_sidecar_content.get('caption','') + ' ' + image['caption']
                             image['caption_en'] = json_sidecar_content.get('caption_en','')
-                            image['commons_hotlink'] = json_sidecar_content.get('hotlink_commons','')
+                            image['hotlink_commons'] = json_sidecar_content.get('hotlink_commons','')
                     
                     except:
                         pass
-                
                 if city is not None: image['city']=city
                 if sublocation is not None: image['sublocation']=sublocation
 
@@ -232,8 +235,8 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
             
-            tmpstr = '''INSERT INTO photos (hotlink,caption,caption_en,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert, fit_contain, commons_hotlink)
-            VALUES ( "{hotlink}" , "{caption}","{caption_en}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert}, {fit_contain},"{commons_hotlink}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,caption_en,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert, fit_contain, hotlink_commons)
+            VALUES ( "{hotlink}" , "{caption}","{caption_en}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert}, {fit_contain},"{hotlink_commons}" );\n  '''
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
@@ -249,7 +252,7 @@ class Model():
                 fit_contain = image.get('fit_contain'),
                 direction = image.get('direction'),
                 objectname = image.get('objectname','').replace('"','""'),
-                commons_hotlink = image.get('commons_hotlink',''),
+                hotlink_commons = image.get('hotlink_commons',''),
                 )
 
             sql += tmpstr
