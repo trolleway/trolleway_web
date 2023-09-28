@@ -212,3 +212,22 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_respon
 	display: block;
 	text-align: center;
 }
+
+/* photo index page on mobile: show photos at full screen width*/
+@media only screen and (orientation:portrait) {
+  /* photo is stretch to screen wide*/
+  
+
+
+
+  span.thumbnails figure {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  /* photo caption is not stretch*/
+    span.thumbnails figure figcaption{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+}
