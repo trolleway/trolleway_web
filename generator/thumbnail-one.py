@@ -43,6 +43,7 @@ def photo_thumbnail(src,dst,overwrite = False):
     del json_filename
     del json_filename_dest
     
+    # == CONVERT TO JPG
     if (is_small_image or keep_original_file) and src.lower().endswith('.jpg'):
         shutil.copyfile(src,path_resized)
     elif aspect_ratio_version:
@@ -64,6 +65,7 @@ def photo_thumbnail(src,dst,overwrite = False):
                 cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
                 subprocess.run(cmd)
     
+    # == CONVERT TO WEBP
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.webp')
     if src.lower().endswith('.webp'):
         shutil.copy(src,path_resized)
@@ -100,6 +102,8 @@ def photo_thumbnail(src,dst,overwrite = False):
                 '-define', 'webp:thread-level=1',
                 '-unsharp', '0.5x0.5+0.5+0.008',
                 path_resized]
+                
+                subprocess.run(cmd)
             if 'arvert' in src:
                 #assume vertical version needed only for smartphones, compress more
                 cmd = ['convert' ,  src ,
@@ -111,7 +115,19 @@ def photo_thumbnail(src,dst,overwrite = False):
                 path_resized]
             
                 subprocess.run(cmd) 
-
+            
+            # if source is heic image from iPhone: assume it already well compressed, store to loseless webp
+            if  src.lower().endswith('.heic') and filesize/(1024*1024) < 1.5:
+                
+                cmd = ['convert' ,  src ,
+                '-define', 'webp:image-hint=photo',
+                '-define', 'webp:loseless=true',
+                '-define', 'webp:method=5',
+                '-define', 'webp:thread-level=1',
+                path_resized]
+            
+                subprocess.run(cmd) 
+                
             #add metadata to webp. required exiftool 12
             #add author
             cmd = ['/opt/exiftool/exiftool', '-artist=Artem Svetlov', '-overwrite_original',  path_resized]      
@@ -121,7 +137,8 @@ def photo_thumbnail(src,dst,overwrite = False):
             if os.path.isfile(src_file_basepart + '.xmp'):
                 cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
                 subprocess.run(cmd)
-
+    
+    # == CREATE THUMBNAILS 
     path_resized = os.path.join(os.path.dirname(dst) , os.path.basename(os.path.splitext(dst)[0])+'.t.jpg')
     if not aspect_ratio_version:
         if ( os.path.isfile(path_resized) == False or overwrite ):

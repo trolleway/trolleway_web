@@ -40,8 +40,6 @@ RUN apt-get install -y sudo
 RUN adduser trolleway sudo
 RUN usermod -aG sudo trolleway
 
-ADD https://api.github.com/repos/trolleway/trolleway.github.io/git/refs/heads/master   ver.json
-#The API call will return different results when the head changes, invalidating the docker cache
 
 RUN mkdir /opt/website
 

@@ -15,7 +15,7 @@ def thumbnails_create(src_dir, dst_dir, check_exists = False, squash=False, subd
         optional_path = os.path.join(src_dir,subdir)
         assert os.path.isdir(optional_path),'must exist '+optional_path
     
-    accepted_exts = ['.jpg','.jpeg','.tif','.tiff','.webp']
+    accepted_exts = ['.jpg','.jpeg','.tif','.tiff','.webp','.heic']
     assert os.path.isdir(src_dir)
     if not os.path.isdir(dst_dir):
         os.makedirs(dst_dir)
