@@ -4,24 +4,14 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <!-- l.easybutton https://github.com/CliffCloud/Leaflet.EasyButton -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+<link rel="stylesheet" href="trolleway_architecture_guide_map.css">
 <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
 	  
     <title>trolleway architecture guide</title>
-    <meta name="description" content="My map of architecture ">
+    <meta name="description" content="My map of modern architecture">
 	  	<meta charset="utf-8" />
 
-	  
-    <style>
-body {
-    padding: 0;
-    margin: 0;
-}
-html, body, #mapid {
-    height: 100%;
-    width: 100vw;
-}
 
-           </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J5MD6L525"></script>
@@ -96,6 +86,11 @@ var tms_trolleway_landcover = L.tileLayer('https://trolleway.nextgis.com/api/com
 L.easyButton('<img src="gps.svg">', function(btn, map){
 mymap.locate({setView: true, maxZoom: 15});
 }).addTo(mymap);	    
+
+// DOWNLOAD BUTTON
+L.easyButton('<img style="width:20;" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTMiIGhlaWdodD0iOTQiIHZpZXdCb3g9IjAgMCA5MyA5NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQ3IDc1TDcwLjA5NCAzNUgyMy45MDZMNDcgNzVaTTQzIDBWMzlINTFWMEg0M1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik00LjUgNDcuNVY4OS41SDg5VjQ3LjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iOCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" />', function(btn, map){
+window.open('https://trolleway.nextgis.com/resource/4098/export');
+}).addTo(mymap);
 	    
     </script>
   </body>
