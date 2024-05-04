@@ -96,6 +96,10 @@ var tms_trolleway_landcover = L.tileLayer('https://trolleway.nextgis.com/api/com
 L.easyButton('<img src="gps.svg">', function(btn, map){
 mymap.locate({setView: true, maxZoom: 15});
 }).addTo(mymap);	    
+
+L.easyButton('⭳', function(btn, map){
+window.open('https://trolleway.nextgis.com/resource/4098/export');
+}).addTo(mymap);
 	    
     </script>
   </body>
