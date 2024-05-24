@@ -5,6 +5,12 @@ import subprocess
 import argparse
 
 
+def is_image_small(src)->bool:
+    filesize = os.path.getsize(src)
+    if filesize/(1024*1024) < 1.5:
+        return True
+    return False
+    
 def photo_thumbnail(src,dst,overwrite = False):
 
     #print(src+' to '+dst)
@@ -15,9 +21,7 @@ def photo_thumbnail(src,dst,overwrite = False):
     keep_original_file = False
     aspect_ratio_version = False
     
-    filesize = os.path.getsize(src)
-    if filesize/(1024*1024) < 1.5:
-        is_small_image = True
+    is_small_image = is_image_small(src)
         
     if 'ORIGINALFILE' in src:
         keep_original_file = True
