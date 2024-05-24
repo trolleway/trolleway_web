@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Russian Wikivoyage cultural heritage Russia</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 10%;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    Обьекты культурного наследия взятые из Russian Wikivoyage. <a
+      href="https://trolleway.nextgis.com/resource/2478/display?panel=none">Зеркало на другом картодвижке в
+      nextgis.com</a>
+  </div>
+  <div id="map"></div>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidHJvbGxld2F5IiwiYSI6IlJ6cEFTNDAifQ.2YGjS6Ii9Q3DRtm-Yo8-og';
+    const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+      style: 'mapbox://styles/trolleway/clfz8oqjb008601ogg7dsnkyg', // style URL
+      zoom: 7, // starting zoom
+      center: [37.666, 55.666], // starting position
+
+
+
+    });
+
+
+
+    map.on('load', () => {
+      // Load an image from an external URL.
+      map.loadImage(
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Distinctive_emblem_for_cultural_property.svg/160px-Distinctive_emblem_for_cultural_property.svg.png',
+        (error, image) => {
+          if (error) throw error;
+
+          map.setFog({
+            color: 'rgb(186, 210, 235)', // Lower atmosphere
+            'high-color': 'rgb(136, 92, 223)', // Upper atmosphere
+            'horizon-blend': 0.02, // Atmosphere thickness (default 0.2 at low zooms)
+            'space-color': 'rgb(150, 11, 25)', // Background color
+            'star-intensity': 0.999 // Background star brightness (default 0.35 at low zoooms )
+          });
+
+          // Add the image to the map style.
+          map.addImage('cat', image);
+
+          // Add a data source containing point featurs.
+          map.addSource('point', {
+            'type': 'vector',
+            'tiles': [
+              'https://trolleway.nextgis.com/api/component/feature_layer/mvt?resource=5330&x={x}&y={y}&z={z}'
+            ],
+            'bounds': [-180, 41, 180, 85.051129],
+            'minzoom': 4,
+            //'maxzoom': 14
+            "volatile": true,
+            "terrain": {
+              "source": "mapbox-raster-dem",
+              "exaggeration": 2
+            }
+          });
+
+          map.addLayer({
+            'id': 'points-shape',
+            'type': 'circle',
+            'source': 'point', // reference the data source
+            'source-layer': 'ngw:5226',
+            'paint': {
+              'circle-radius': [
+        "match",
+        [
+          "get",
+          "status"
+        ],
+        [
+          "destroyed"
+        ],
+        3,
+        2
+      ],
+              'circle-color':  [
+        "match",
+        [
+          "get",
+          "status"
+        ],
+        [
+          "destroyed"
+        ],
+        "#999999",
+        "#e92b2b"
+      ],
+              'circle-stroke-color': '#440000',
+              'circle-stroke-width': 1,
+            }
+          });
+
+          // Add a layer to use the image to represent the data.
+          map.addLayer({
+            'id': 'points',
+            'type': 'symbol',
+            'source': 'point', // reference the data source
+            'source-layer': 'ngw:5226',
+            'layout': {
+              //'icon-image': 'cat', // reference the image
+              'icon-size': 0.25,
+              'text-field': ['get', 'name'],
+              'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+              'text-offset': [0, 0.45],
+              'text-anchor': 'bottom',
+              //'text-halo-width': 1,
+              //'text-halo-color': '#ffffff',
+            }
+          });
+
+          map.addControl(
+            new mapboxgl.GeolocateControl({
+              positionOptions: {
+                enableHighAccuracy: true
+              },
+              // When active the map will receive updates to the device's location as it changes.
+              trackUserLocation: true,
+              // Draw an arrow next to the location dot to indicate which direction the device is heading.
+              showUserHeading: true
+            })
+          );
+
+
+          // disable map rotation using right click + drag
+          map.dragRotate.disable();
+
+          // disable map rotation using touch rotation gesture
+          map.touchZoomRotate.disableRotation();
+
+
+        }
+      );
+    });
+
+
+  </script>
+
+</body>
+
+</html>
