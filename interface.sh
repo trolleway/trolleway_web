@@ -77,7 +77,7 @@ else
 fi
 
 
-python3 generator/thumbnails-parallel.py --path ${FILE}
+# moved to model.py      python3 generator/thumbnails-parallel.py --path ${FILE}
 
 python3 generator/dir2db.py ${FILE}
 
