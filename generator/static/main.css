@@ -210,7 +210,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_respon
 }
 .photo_index_caption_en {
 	display: block;
-	text-align: center;
+	color: gray;
+	font-family: "Titillium Web", sans-serif;
+	font-style: normal;
 }
 
 /* photo index page on mobile: show photos at full screen width*/
