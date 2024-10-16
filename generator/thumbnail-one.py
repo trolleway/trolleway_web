@@ -60,11 +60,17 @@ def photo_thumbnail(src,dst,overwrite = False):
             else:
                 cmd = ['convert', src , '-auto-orient' , '-compress', 'JPEG', '-quality', '70', path_resized]                                
             subprocess.run(cmd)
+            
+            src_file_basepart = os.path.splitext(src)[0]
+            #copy exif tags for non-jpeg sources
+            if src.lower().endswith('.tif') or src.lower().endswith('.tiff'):
+                cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src, '-overwrite_original',  path_resized]        #'-all:all' ,
+                subprocess.run(cmd)
+            
             #add author
             cmd = ['/opt/exiftool/exiftool', '-artist=Artem Svetlov', '-overwrite_original',  path_resized]      
             subprocess.run(cmd)    
             #apply exif tags from sidecar file if exist
-            src_file_basepart = os.path.splitext(src)[0]
             if os.path.isfile(src_file_basepart + '.xmp'):
                 cmd = ['/opt/exiftool/exiftool', '-charset', 'utf8', '-tagsfromfile', src_file_basepart+'.xmp', '-overwrite_original',  path_resized]        #'-all:all' ,
                 subprocess.run(cmd)
