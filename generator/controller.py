@@ -471,6 +471,7 @@ class Website_generator():
                 photo4template['source_srcset']=''
                 photo4template['html_basedir']=html_basedir
                 photo4template['optional_commons_link']=commons_link
+                photo4template['prerender']='''{ "prerender":[{"urls":["'''+photo4template['url_right']+'''"]}]}'''
                 
                 if image.get('ar169'):
                     photo4template['source_srcset']+='<source srcset="{image_url_base}_ar169.webp" media="(min-aspect-ratio: 16/9)" type="image/webp">'.format(image_url_base=photo4template['image_url_base'])+"\n"

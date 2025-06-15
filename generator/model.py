@@ -518,7 +518,10 @@ WHERE photos.notready=0
         pages = cur_pages.fetchall()
        
         count = len(pages)
-        
+        if process_recently_updated and count==0:
+            print('no recent pages returned from database')
+            print(sql)
+            quit()
         pbar = tqdm(total=count)
         
 
