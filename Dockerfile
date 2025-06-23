@@ -44,6 +44,7 @@ RUN usermod -aG sudo trolleway
 RUN mkdir /opt/website
 
 RUN pip3 install --upgrade numpy
+RUN pip3 install --upgrade flickrapi
 
 RUN chmod  --recursive 777 /opt/website
 

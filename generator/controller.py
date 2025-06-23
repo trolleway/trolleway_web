@@ -15,6 +15,7 @@ from iptcinfo3 import IPTCInfo
 from shapely import wkt
 from shapely.geometry import Point
 from datetime import datetime
+from tqdm import tqdm
 
 
 class Website_generator():
@@ -250,7 +251,8 @@ class Website_generator():
             coords_list = list()
             photos4template = list()
             leaflet_geojson_features = list()
-            for image in data['images']:
+            for image in tqdm(data['images']):
+                schema_org_sameas=list()
                 current_image += 1
 
                 if current_image < count_images:
@@ -426,7 +428,16 @@ class Website_generator():
                 if tech_info == ', ': tech_info = ''
                 
                 commons_link = image.get('hotlink_commons','')
-                if commons_link != '': commons_link = '<div lang="en"><a href="{url}">Uncompressed source image page on Wikimedia Commons</a></div>'.format(url=commons_link)
+                if commons_link != '': commons_link = '<div lang="en"><a href="{url}" rel="external">Uncompressed source image page on Wikimedia Commons</a></div>'.format(url=image.get('hotlink_commons',''))
+                if commons_link != '': schema_org_sameas.append(image.get('hotlink_commons',''))
+                                
+                flickr_link = image.get('url_flickr','')
+                if flickr_link != '': flickr_link = '<div lang="en"><a href="{url}" rel="external">Uncompressed source image page on flickr</a></div>'.format(url=image.get('url_flickr',''))
+                if flickr_link != '': schema_org_sameas.append(image.get('url_flickr',''))
+                                                
+                shutterstock_link = image.get('url_shutterstock','')
+                if shutterstock_link != '': shutterstock_link = '<div lang="en"><a href="{url}" rel="external">Royalty free license this image for use in media</a></div>'.format(url=image.get('url_shutterstock',''))
+                if shutterstock_link != '': schema_org_sameas.append(image.get('url_shutterstock',''))
                 
                 licenses_footer = dict()
                 licenses_footer['cc-by']='''       <a rel="cc:attributionURL" property="dc:title">Photo</a> by
@@ -471,6 +482,8 @@ class Website_generator():
                 photo4template['source_srcset']=''
                 photo4template['html_basedir']=html_basedir
                 photo4template['optional_commons_link']=commons_link
+                photo4template['optional_flickr_link']=flickr_link
+                photo4template['optional_shutterstock_link']=shutterstock_link
                 photo4template['prerender']='''{ "prerender":[{"urls":["'''+photo4template['url_right']+'''"]}]}'''
                 
                 if image.get('ar169'):
@@ -495,13 +508,22 @@ class Website_generator():
                 if photo4template['city'] != '': photo4template['city']+='.'
                 assert photo4template['sublocation'] is not None, photo4template
                 if photo4template['sublocation'] != '': photo4template['sublocation']+='.'
-
+                
+                sameas =schema_org_sameas
+                if len(schema_org_sameas)==0:
+                    sameastext = ''
+                elif len(schema_org_sameas)==1:
+                    sameastext = '"sameAs":"'+schema_org_sameas[0]+'",'
+                elif len(schema_org_sameas)>1:
+                    sameastext = '"sameAs": [' + ','.join(f'"{item}"' for item in schema_org_sameas) + '],'
                 schema_org_js = '''<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"ImageObject","contentUrl":"{contentUrl}","license":"https:\/\/creativecommons.org\/licenses\/by\/4.0","acquireLicensePage":"{page_url}", 
+                {sameastext}
                 "creator": {"@type": "Person","name": "Artem Svetlov"},
                 "contentLocation": {"@type": "Place", "geo": {    "@type": "GeoCoordinates",    "latitude": "{lat}",    "longitude": "{lon}" }}}"}</script>'''
                 schema_org_js=schema_org_js.replace('{contentUrl}',photo4template['image_url'])
                 schema_org_js=schema_org_js.replace('{lat}',str(lat or ''))
                 schema_org_js=schema_org_js.replace('{lon}',str(lon or ''))
+                schema_org_js=schema_org_js.replace('{sameastext}',sameastext)
                 schema_org_js=schema_org_js.replace('{page_url}',photo4template['page_url_absolute'].replace('/','\/'))
                 photo4template['schema_org_js'] = schema_org_js
                 
@@ -554,7 +576,7 @@ class Website_generator():
                 template = template_file.read()
 
             if 'text_en' in data:
-                content_en = '<div class="en" >'+data['text_en']+'</div>'+"\n"
+                content_en = '<div>'+data['text_en']+'</div>'+"\n"
             else:
                 content_en = "\n"
 
@@ -567,7 +589,7 @@ class Website_generator():
             html_text_filename = os.path.join(self.texts_dir,json_filename.replace('.json',''),'HEADER.htm')
             print('search for '+html_text_filename)
             if os.path.exists(html_text_filename):
-                text = self.get_body_from_html(html_text_filename)
+                text = data.get('text','') + "<p>\n" + self.get_body_from_html(html_text_filename)
             else:
                 text = data.get('text','')
             #---------- copy images for header

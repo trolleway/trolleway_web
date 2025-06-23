@@ -17,6 +17,7 @@ from tqdm import tqdm
 import copy
 import shutil
 import pprint
+import dateutil.parser
 
 
 
@@ -136,6 +137,7 @@ class Model():
                 self.logger.debug(filepath)
                 temp_path = os.path.normpath(path)
                 path_as_list = temp_path.split(os.sep)
+                image=dict()
 
                 url = base_url + '/' + os.path.join(path_as_list[-2],path_as_list[-1]) + '/' + filename
 
@@ -143,6 +145,16 @@ class Model():
                 city = None
                 sublocation = None
                 objectname = None
+                json_sidecar_content = dict()
+                json_filename = os.path.join(root,os.path.splitext(os.path.basename(filename))[0]+'.json')
+                if os.path.isfile(json_filename):
+                    print('json exist')
+                    try:
+                        with open(json_filename) as json_file:
+                            json_sidecar_content = json.load(json_file)
+                            print('sidecar file read')
+                    except:
+                        pass
 
                 if info['city'] is not None:
                     city = info['city'].decode('UTF-8')
@@ -154,36 +166,31 @@ class Model():
                     except:
                         objectname = info['object name'].decode('CP1251')
                 caption = info['caption/abstract']
-                if caption is not None:
+                if json_sidecar_content.get('description','') != '':
+                    image['caption_en'] = json_sidecar_content['description']
+                elif caption is not None:
                     try:
                         caption = caption.decode('UTF-8')
                     except:
                         caption = caption.decode('CP1251')
                 else:
                     caption = ''
-                image = {'caption':caption,'url_hotlink':url}
+                image['caption'] = caption
+                del caption
+                image['url_hotlink']=url
                 
-                # read .json sidecar file created by github.com/trolleway/commons-uploader
-                json_filename = os.path.join(root,os.path.splitext(os.path.basename(filename))[0]+'.json')
-                print(json_filename)
-                if os.path.isfile(json_filename):
-                    print('json exist')
-                    try:
-                        with open(json_filename) as json_file:
-                            json_sidecar_content = json.load(json_file)
-                            print('signal')
-                            
-                            image['caption'] = json_sidecar_content.get('caption','') + ' ' + image['caption']
-                            image['caption_en'] = json_sidecar_content.get('caption_en','')
-                            image['hotlink_commons'] = json_sidecar_content.get('hotlink_commons','')
-                    
-                    except:
-                        pass
+
+                lat,lon,direction=self.image2latlon(os.path.join(root,filename))
+                # read .json sidecar file created by importers from external services
+                if json_sidecar_content.get('datetaken','') != '':
+                    photo_datetime = dateutil.parser.parse(json_sidecar_content['datetaken'])
+                else:
+                    photo_datetime = self.image2datetime(os.path.join(root,filename))
+                if json_sidecar_content.get('flickr_url','') != '':
+                    image['url_flickr'] = json_sidecar_content['flickr_url']
                 if city is not None: image['city']=city
                 if sublocation is not None: image['sublocation']=sublocation
 
-                lat,lon,direction=self.image2latlon(os.path.join(root,filename))
-                photo_datetime = self.image2datetime(os.path.join(root,filename))
                 
 
                 image['wkt_geometry']=wkt.dumps(Point(lon or 0,lat or 0),rounding_precision=5)
@@ -217,7 +224,6 @@ class Model():
             cur_photos = self.con.cursor()
             cur_photos.execute(sql)
             count = cur_photos.fetchone()[0]
-            print(count)
             if count == 0:
                 new_images.append(image)
             else:
@@ -235,12 +241,14 @@ class Model():
         for image in images:
             values.append([image['url_hotlink'],image.get('caption',''),image.get('city','')])
             
-            tmpstr = '''INSERT INTO photos (hotlink,caption,caption_en,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert, fit_contain, hotlink_commons)
-            VALUES ( "{hotlink}" , "{caption}","{caption_en}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert}, {fit_contain},"{hotlink_commons}" );\n  '''
+            tmpstr = '''INSERT INTO photos (hotlink,caption,caption_en,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert, fit_contain, hotlink_commons, url_flickr)
+            VALUES ( "{hotlink}" , "{caption}","{caption_en}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert}, {fit_contain},"{hotlink_commons}","{url_flickr}" );\n  '''
+            if image.get('caption','') is None: image['caption']=''
+            print(image['url_flickr'])
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
-                caption = image['caption'].replace('"','""'),
+                caption = image.get('caption','').replace('"','""'),
                 caption_en = image.get('caption_en','').replace('"','""'),
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
@@ -253,6 +261,7 @@ class Model():
                 direction = image.get('direction'),
                 objectname = image.get('objectname','').replace('"','""'),
                 hotlink_commons = image.get('hotlink_commons',''),
+                url_flickr = image.get('url_flickr',''),
                 )
 
             sql += tmpstr
@@ -468,6 +477,8 @@ photos.camera,
 photos.medium,
 photos.film,
 photos.hotlink_commons,
+photos.url_flickr,
+photos.url_shutterstock,
 licenses.code AS license_code,
 view_canonical_urls.canonical_url AS canonical_url
 FROM photos 
@@ -702,7 +713,7 @@ WHERE photos.notready=0
                     image['uri_next']=uris[counter+1]
                 
                 if db_photo.get('caption'): image['caption'] = db_photo.get('caption')
-                if db_photo.get('canonical_url') is not None  and db_page['uri'] not in db_photo.get('canonical_url',''):
+                if db_photo.get('canonical_url') is not None:#  and db_page['uri'] not in db_photo.get('canonical_url',''):
                     image['canonical_url'] = 'https://trolleway.com/reports/'+db_photo.get('canonical_url')
                 
                     
@@ -758,6 +769,10 @@ WHERE photos.notready=0
                     image['datetime'] = db_photo.get('datetime')
                 if db_photo.get('hotlink_commons') is not None:
                     image['hotlink_commons'] = db_photo.get('hotlink_commons')
+                if db_photo.get('url_flickr') is not None:
+                    image['url_flickr'] = db_photo.get('url_flickr')
+                if db_photo.get('url_shutterstock') is not None:
+                    image['url_shutterstock'] = db_photo.get('url_shutterstock')
                 if db_photo.get('has_ar169',0) is not None and db_photo.get('has_ar169',0)>0 :
                     image['ar169'] = True
                 if db_photo.get('has_arvert',0)  is not None and db_photo.get('has_arvert',0)>0 :
@@ -782,9 +797,5 @@ WHERE photos.notready=0
 
 
 if __name__ == "__main__":
-    '''
-    model = Model()
-    model.db2gallery_jsons()
-    model.pages_index_jsons()
-    '''
+
     print('call db2json.py instead')

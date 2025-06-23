@@ -162,19 +162,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_respon
 }
 
 /* Create two equal columns that floats next to each other */
-.ru {
+.column {
   float: left;
   width: 50%;
   padding: 10px;
 
 }
-.en {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  background-color: var(--color-secondary-2-0);;
 
-}
 
 /* Clear floats after the columns */
 .text:after {
