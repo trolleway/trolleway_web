@@ -147,6 +147,7 @@ class Model():
                 objectname = None
                 json_sidecar_content = dict()
                 json_filename = os.path.join(root,os.path.splitext(os.path.basename(filename))[0]+'.json')
+                json_filename = json_filename.replace('_fit','')
                 if os.path.isfile(json_filename):
                     print('json exist')
                     try:
@@ -244,7 +245,6 @@ class Model():
             tmpstr = '''INSERT INTO photos (hotlink,caption,caption_en,city,sublocation, objectname, inserting_id, wkt_geometry, direction, datetime, date_append, pages, has_ar169, has_arvert, fit_contain, hotlink_commons, url_flickr)
             VALUES ( "{hotlink}" , "{caption}","{caption_en}", "{city}", "{sublocation}", "{objectname}", "{inserting_id}", "{wkt_geometry}",  {direction},"{datetime}", "{date_append}", "{pages}", {has_ar169} , {has_arvert}, {fit_contain},"{hotlink_commons}","{url_flickr}" );\n  '''
             if image.get('caption','') is None: image['caption']=''
-            print(image['url_flickr'])
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
