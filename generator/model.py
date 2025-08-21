@@ -134,6 +134,7 @@ class Model():
                 if 'arvert' in filename: continue
                 filepath = os.path.join(root,filename)
                 
+                self.logger.debug('')
                 self.logger.debug(filepath)
                 temp_path = os.path.normpath(path)
                 path_as_list = temp_path.split(os.sep)
@@ -147,13 +148,14 @@ class Model():
                 objectname = None
                 json_sidecar_content = dict()
                 json_filename = os.path.join(root,os.path.splitext(os.path.basename(filename))[0]+'.json')
-                json_filename = json_filename.replace('_fit','')
+                if os.path.isfile(json_filename.replace('_fit','')):
+                    json_filename = json_filename.replace('_fit','')
                 if os.path.isfile(json_filename):
-                    print('json exist')
+                    self.logger.debug('json exist')
                     try:
                         with open(json_filename) as json_file:
                             json_sidecar_content = json.load(json_file)
-                            print('sidecar file read')
+                            self.logger.debug('sidecar file read')
                     except:
                         pass
 

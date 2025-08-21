@@ -1,18 +1,18 @@
-FROM ubuntu:22.04
+FROM ubuntu:latest
 ARG DEBIAN_FRONTEND=noninteractive
 ARG APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=DontWarn
 
 RUN apt-get update 
 RUN apt-get install --no-install-recommends -y python3-pip time imagemagick parallel gdal-bin git
 
-ARG uid=1000
-ARG gid=1000
-RUN groupadd -g $gid trolleway && useradd --home /home/trolleway -u $uid -g $gid trolleway  \
-  && mkdir -p /home/trolleway && chown -R trolleway:trolleway /home/trolleway
-RUN echo 'trolleway:user' | chpasswd
+#ARG uid=1000
+#ARG gid=1000
+#RUN groupadd -g $gid trolleway && useradd --home /home/trolleway -u $uid -g $gid trolleway  \
+#  && mkdir -p /home/trolleway && chown -R trolleway:trolleway /home/trolleway
+#RUN echo 'trolleway:user' | chpasswd
 
-RUN pip3 install exif iptcinfo3 requests shapely python-dateutil tqdm GDAL
-RUN pip3 install --upgrade --force-reinstall git+https://github.com/nextgis/pyngw.git
+RUN pip3 install --break-system-packages exif iptcinfo3 requests shapely python-dateutil tqdm GDAL numpy flickrapi
+RUN pip3 install --break-system-packages --upgrade --force-reinstall git+https://github.com/nextgis/pyngw.git
 
 #RUN apt-get install -y exiftool
 #install latest exiftool for webp write from https://exiftool.org/forum/index.php?topic=11619.0 https://github.com/marco-schmidt/am/blob/c5b7904cdd1629f08caac09e90f0f53a2393ca1b/Dockerfile#L30
@@ -37,14 +37,14 @@ RUN apt-get install -y  dialog whiptail
 #add to sudoers
 RUN apt-get install -y apt-utils
 RUN apt-get install -y sudo
-RUN adduser trolleway sudo
-RUN usermod -aG sudo trolleway
+#RUN adduser trolleway sudo
+#RUN usermod -aG sudo trolleway
 
 
 RUN mkdir /opt/website
 
-RUN pip3 install --upgrade numpy
-RUN pip3 install --upgrade flickrapi
+#RUN pip3 install --upgrade numpy
+#RUN pip3 install --upgrade flickrapi
 
 RUN chmod  --recursive 777 /opt/website
 

@@ -516,7 +516,7 @@ class Website_generator():
                     sameastext = '"sameAs":"'+schema_org_sameas[0]+'",'
                 elif len(schema_org_sameas)>1:
                     sameastext = '"sameAs": [' + ','.join(f'"{item}"' for item in schema_org_sameas) + '],'
-                schema_org_js = '''<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"ImageObject","contentUrl":"{contentUrl}","license":"https:\/\/creativecommons.org\/licenses\/by\/4.0","acquireLicensePage":"{page_url}", 
+                schema_org_js = r'''<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"ImageObject","contentUrl":"{contentUrl}","license":"https:\/\/creativecommons.org\/licenses\/by\/4.0","acquireLicensePage":"{page_url}", 
                 {sameastext}
                 "creator": {"@type": "Person","name": "Artem Svetlov"},
                 "contentLocation": {"@type": "Place", "geo": {    "@type": "GeoCoordinates",    "latitude": "{lat}",    "longitude": "{lon}" }}}"}</script>'''
@@ -524,7 +524,7 @@ class Website_generator():
                 schema_org_js=schema_org_js.replace('{lat}',str(lat or ''))
                 schema_org_js=schema_org_js.replace('{lon}',str(lon or ''))
                 schema_org_js=schema_org_js.replace('{sameastext}',sameastext)
-                schema_org_js=schema_org_js.replace('{page_url}',photo4template['page_url_absolute'].replace('/','\/'))
+                schema_org_js=schema_org_js.replace('{page_url}',photo4template['page_url_absolute'].replace('/',r'\/'))
                 photo4template['schema_org_js'] = schema_org_js
                 
                 photos4template.append(photo4template)
