@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo map viewer (OGC API Features + OpenLayers)</title>
+
+  <!-- OpenLayers CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css" />
+
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #151822;
+      --text: #e6e8ee;
+      --muted: #9aa0aa;
+      --accent: #4ea2f5;
+      --border: #222735;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Page layout: top map, bottom image pane */
+    .page {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+    .map-wrap {
+      position: relative;
+      height: 50vh;
+      min-height: 300px;
+      border-bottom: 1px solid var(--border);
+      background: #000;
+    }
+    #map {
+      position: absolute;
+      inset: 0;
+    }
+
+    /* Center crosshair overlay */
+    .crosshair {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 32px;
+      height: 32px;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+    }
+    .crosshair::before,
+    .crosshair::after {
+      content: "";
+      position: absolute;
+      background: var(--accent);
+      opacity: 0.9;
+      box-shadow: 0 0 6px rgba(78,162,245,0.6);
+    }
+    .crosshair::before {
+      /* vertical line */
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    .crosshair::after {
+      /* horizontal line */
+      height: 2px;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    /* Bottom image panel */
+    .image-panel {
+      height: 50vh;
+      min-height: 300px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 10px;
+      padding: 14px;
+      background: var(--panel);
+    }
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--muted);
+      box-shadow: 0 0 0 2px rgba(255,255,255,0.06) inset;
+    }
+    .status-dot.active {
+      background: var(--accent);
+    }
+    .title {
+      font-weight: 600;
+      color: var(--text);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .image-wrap {
+      position: relative;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #0b0d13;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .placeholder {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .error {
+      color: #ff6b6b;
+      font-size: 14px;
+    }
+
+    /* Mobile-friendly touch target spacing */
+    @media (max-width: 640px) {
+      .image-panel {
+        padding: 10px;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="map-wrap">
+      <div id="map"></div>
+      <div class="crosshair" aria-hidden="true"></div>
+    </div>
+
+    <div class="image-panel">
+      <div class="info-row">
+        <div id="statusDot" class="status-dot" title="Query status"></div>
+        <div id="title" class="title">Move the map to load a photo for the center.</div>
+      </div>
+      <div class="image-wrap">
+        <img id="photo" alt="Selected feature image" style="display:none;" />
+        <div id="placeholder" class="placeholder">No image loaded yet.</div>
+        <div id="error" class="error" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OpenLayers JS -->
+  <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+  <script>
+    // --- Config ---
+    const OGCF_ENDPOINT = "https://trolleway.nextgis.com/api/resource/7695/ogcf";
+    // Optional: If your OGCF has a single collection, items may be available directly at /items.
+    // If not, set COLLECTION_ID to one of the collections and use /collections/{id}/items.
+    const COLLECTION_ID = "items"; // e.g., "photos"; leave null to use /items
+
+    // --- DOM refs ---
+    const titleEl = document.getElementById("title");
+    const photoEl = document.getElementById("photo");
+    const placeholderEl = document.getElementById("placeholder");
+    const errorEl = document.getElementById("error");
+    const statusDotEl = document.getElementById("statusDot");
+
+    // --- OpenLayers setup ---
+    const osm = new ol.layer.Tile({
+      source: new ol.source.OSM()
+    });
+
+    const view = new ol.View({
+      center: ol.proj.fromLonLat([37.6173, 55.7558]), // Moscow
+      zoom: 12,
+      minZoom: 2,
+      maxZoom: 19
+    });
+
+    const map = new ol.Map({
+      target: "map",
+      layers: [osm],
+      view: view,
+      
+    });
+
+    // --- Utility: build a small bbox around the center in EPSG:4326 using 50px radius ---
+    function getCenterBboxLonLat(pxRadius = 50) {
+      const size = map.getSize();
+      if (!size) return null;
+
+      const centerPixel = [size[0] / 2, size[1] / 2];
+      const pMin = [centerPixel[0] - pxRadius, centerPixel[1] - pxRadius];
+      const pMax = [centerPixel[0] + pxRadius, centerPixel[1] + pxRadius];
+
+      const cMin3857 = map.getCoordinateFromPixel(pMin);
+      const cMax3857 = map.getCoordinateFromPixel(pMax);
+      const cMin4326 = ol.proj.transform(cMin3857, "EPSG:3857", "EPSG:4326");
+      const cMax4326 = ol.proj.transform(cMax3857, "EPSG:3857", "EPSG:4326");
+
+      const minLon = Math.min(cMin4326[0], cMax4326[0]);
+      const maxLon = Math.max(cMin4326[0], cMax4326[0]);
+      const minLat = Math.min(cMin4326[1], cMax4326[1]);
+      const maxLat = Math.max(cMin4326[1], cMax4326[1]);
+
+      return { minLon, minLat, maxLon, maxLat };
+    }
+
+    // --- Fetch nearest feature by bbox around center ---
+    async function fetchFeatureForCenter() {
+      const bbox = getCenterBboxLonLat(60); // slightly larger window for reliability
+      if (!bbox) return;
+
+      setStatus("loading");
+      clearError();
+
+      // Prefer collection-specific items if available
+      const itemsUrl = COLLECTION_ID
+        ? `${OGCF_ENDPOINT}/collections/${encodeURIComponent(COLLECTION_ID)}/items`
+        : `${OGCF_ENDPOINT}/items`;
+
+      const url = new URL(itemsUrl);
+      url.searchParams.set("bbox", `${bbox.minLon},${bbox.minLat},${bbox.maxLon},${bbox.maxLat}`);
+      url.searchParams.set("limit", "1");
+      url.searchParams.set("f", "json");
+
+      try {
+        const res = await fetch(url.toString(), {
+          headers: {
+            "Accept": "application/geo+json, application/json;q=0.9, */*;q=0.1"
+          },
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+        const data = await res.json();
+        const features = data.features || [];
+        if (features.length === 0) {
+          showNoImage("No features found at map center.");
+          setStatus("idle");
+          return;
+        }
+
+        const props = features[0].properties || {};
+        const title = props.title || "Untitled";
+        const imgUrl = props.url_o || props.url || null;
+
+        titleEl.textContent = title;
+
+        if (imgUrl) {
+          photoEl.src = imgUrl;
+          photoEl.style.display = "block";
+          placeholderEl.style.display = "none";
+        } else {
+          showNoImage("Feature has no image URL (url_o).");
+        }
+
+        setStatus("active");
+      } catch (err) {
+        showError(`Failed to load feature: ${err.message}`);
+        setStatus("idle");
+      }
+    }
+
+    // --- Status / UI helpers ---
+    function setStatus(state) {
+      statusDotEl.classList.remove("active");
+      if (state === "active") {
+        statusDotEl.classList.add("active");
+      }
+      if (state === "loading") {
+        placeholderEl.textContent = "Loading image…";
+        placeholderEl.style.display = photoEl.style.display === "block" ? "none" : "block";
+      }
+    }
+    function showNoImage(message) {
+      photoEl.style.display = "none";
+      photoEl.removeAttribute("src");
+      placeholderEl.textContent = message;
+      placeholderEl.style.display = "block";
+    }
+    function showError(message) {
+      errorEl.textContent = message;
+      errorEl.style.display = "block";
+      photoEl.style.display = "none";
+      placeholderEl.style.display = "none";
+    }
+    function clearError() {
+      errorEl.textContent = "";
+      errorEl.style.display = "none";
+    }
+
+    // --- Debounce moveend to avoid excessive requests ---
+    let moveendTimer = null;
+    map.on("moveend", () => {
+      if (moveendTimer) clearTimeout(moveendTimer);
+      moveendTimer = setTimeout(fetchFeatureForCenter, 180);
+    });
+
+
+	// --- Custom TMS layer from NextGIS ---
+	const tmsLayer = new ol.layer.Tile({
+	  source: new ol.source.XYZ({
+		url: "https://trolleway.nextgis.com/api/component/render/tile?resource=7696&nd=204&z={z}&x={x}&y={y}",
+		tileSize: 256,
+		crossOrigin: "anonymous" // optional, helps with CORS
+	  }),
+	  opacity: 0.8 // adjust transparency if you want to see OSM underneath
+	});
+
+	// Add to map
+	map.addLayer(tmsLayer);
+
+
+
+    // Initial load
+    fetchFeatureForCenter();
+  </script>
+</body>
+</html>
