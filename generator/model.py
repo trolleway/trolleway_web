@@ -250,7 +250,7 @@ class Model():
             tmpstr = tmpstr.format(hotlink=image['url_hotlink'],
                 inserting_id = today.strftime('%Y-%m-%d-%H%M%S'),
                 date_append = today.strftime('%Y-%m-%d'),
-                caption = image.get('caption','').replace('"','""'),
+                caption = str(image.get('caption','')).replace('"','""'),
                 caption_en = image.get('caption_en','').replace('"','""'),
                 datetime = image['datetime'].isoformat() if image['datetime'] is not None else '',
                 wkt_geometry = image['wkt_geometry'],
@@ -365,6 +365,7 @@ ORDER BY pages.uri, photos_pages."order";
         with open(json_path, "wb") as outfile:
             json_str = json.dumps(pages_data, ensure_ascii=False,indent = 1).encode('utf8')
             outfile.write(json_str)
+
         
     def make_location_string(self,db_photo):
         

@@ -17,6 +17,7 @@ from shapely.geometry import Point
 from datetime import datetime
 from tqdm import tqdm
 
+import urllib.parse
 
 class Website_generator():
 
@@ -371,7 +372,7 @@ class Website_generator():
                 
 
 
-                image['url'] = image['url_hotlink']
+                image['url'] = 'https:'+urllib.parse.quote(image['url_hotlink'][image['url_hotlink'].find('//'):])
 
                 caption = image.get('caption','')
                 caption = caption or ''

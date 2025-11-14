@@ -142,15 +142,15 @@
         gap: 8px;
       }
     }
+	
+	a:link {
+  color: cyan; /* Or any other color value like #0000FF, rgb(0,0,255) */
+}
+
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="map-wrap">
-      <div id="map"></div>
-      <div class="crosshair" aria-hidden="true"></div>
-    </div>
-
     <div class="image-panel">
       <div class="info-row">
         <div id="statusDot" class="status-dot" title="Query status"></div>
@@ -161,6 +161,11 @@
         <div id="placeholder" class="placeholder">No image loaded yet.</div>
         <div id="error" class="error" style="display:none;"></div>
       </div>
+    </div>
+
+    <div class="map-wrap">
+      <div id="map"></div>
+      <div class="crosshair" aria-hidden="true"></div>
     </div>
   </div>
 
@@ -186,9 +191,9 @@
     });
 
     const view = new ol.View({
-      center: ol.proj.fromLonLat([37.6173, 55.7558]), // Moscow
-      zoom: 12,
-      minZoom: 2,
+      center: ol.proj.fromLonLat([37.620556,55.711116]), // Moscow
+      zoom: 10,
+      minZoom: 3,
       maxZoom: 19
     });
 
@@ -259,7 +264,7 @@
         const title = props.title || "Untitled";
         const imgUrl = props.url_o || props.url || null;
 
-        titleEl.textContent = title;
+        titleEl.innerHTML = '<a href="'+props.url+'">'+title+'</a>';
 
         if (imgUrl) {
           photoEl.src = imgUrl;
