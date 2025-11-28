@@ -228,7 +228,7 @@
 
     // --- Fetch nearest feature by bbox around center ---
     async function fetchFeatureForCenter() {
-      const bbox = getCenterBboxLonLat(60); // slightly larger window for reliability
+      const bbox = getCenterBboxLonLat(10); // slightly larger window for reliability
       if (!bbox) return;
 
       setStatus("loading");
@@ -262,7 +262,7 @@
 
         const props = features[0].properties || {};
         const title = props.title || "Untitled";
-        const imgUrl = props.url_o || props.url || null;
+        const imgUrl = props.url_k || props.url_o || props.url || null;
 
         titleEl.innerHTML = '<a href="'+props.url+'">'+title+'</a>';
 
