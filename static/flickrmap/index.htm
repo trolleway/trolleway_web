@@ -147,6 +147,27 @@
   color: cyan; /* Or any other color value like #0000FF, rgb(0,0,255) */
 }
 
+/* Styles for the custom legend overlay */
+.map-legend-overlay {
+    position: absolute;
+    bottom: 10px;          /* Distance from the bottom edge */
+    left: 10px;            /* Distance from the left edge */
+    background-color: white;
+    padding: 4px 6px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    z-index: 10;           /* Ensures it sits above map tiles */
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+/* Optional: Make the legend text smaller and cleaner */
+.map-legend-overlay p {
+    margin: 0;
+    padding: 0;
+}
+
   </style>
 </head>
 <body>
@@ -164,7 +185,11 @@
     </div>
 
     <div class="map-wrap">
-      <div id="map"></div>
+      <div id="map">
+	  <div id="map-legend" class="map-legend-overlay">
+            <img src="legend.svg">
+        </div>
+		</div>
       <div class="crosshair" aria-hidden="true"></div>
     </div>
   </div>
